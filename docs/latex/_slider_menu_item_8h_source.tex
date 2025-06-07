@@ -1,0 +1,38 @@
+\doxysection{Slider\+Menu\+Item.\+h}
+\hypertarget{_slider_menu_item_8h_source}{}\label{_slider_menu_item_8h_source}\index{Celeste/SliderMenuItem.h@{Celeste/SliderMenuItem.h}}
+\mbox{\hyperlink{_slider_menu_item_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_menu_item_8h}{MenuItem.h}}"{}}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_pause_menu}{PauseMenu}};}
+\DoxyCodeLine{00005\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_slider_menu_item_a5d9730a9d054c905745640f023718675}{SliderMenuItem}}\ final\ :}
+\DoxyCodeLine{00006\ \ \ \ \ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_menu_item_a1dab15f86586e486bb0b90f3fc0db510}{MenuItem}}}
+\DoxyCodeLine{00007\ \{}
+\DoxyCodeLine{00008\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00009\ \ \ \ \ \textcolor{comment}{//\ CONSTRUCTOR}}
+\DoxyCodeLine{00010\ \ \ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{class_slider_menu_item_a5d9730a9d054c905745640f023718675}{SliderMenuItem}}(\textcolor{keyword}{const}\ std::string\&\ title,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ fontSize,\ \textcolor{keywordtype}{int}\ startPercent,\ \textcolor{keywordtype}{void}\ (\mbox{\hyperlink{class_pause_menu}{PauseMenu}}::*\ func)(\textcolor{keywordtype}{int}),\ \mbox{\hyperlink{class_pause_menu}{PauseMenu}}*\ pm);}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00012\ \ \ \ \ \textcolor{comment}{//\ FUNCTIONS}}
+\DoxyCodeLine{00013\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_slider_menu_item_a41abad7d2a083488f3c0d7b91cbd5bcc}{AdjustSliderLeft}}();}
+\DoxyCodeLine{00014\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_slider_menu_item_a3fe62fc64600361669cd1ad3d33c905a}{AdjustSliderRight}}();}
+\DoxyCodeLine{00015\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_slider_menu_item_ab4a20e4b5122b3a824e797dac43eee8d}{Draw}}(\textcolor{keywordtype}{bool}\ selected)\ \textcolor{keyword}{const\ override};}
+\DoxyCodeLine{00016\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_slider_menu_item_a2e9e1a49f05d0450ef6af9ef0c31cc50}{DrawSlider}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00017\ }
+\DoxyCodeLine{00018\ \ \ \ \ \textcolor{comment}{//\ SETTERS}}
+\DoxyCodeLine{00019\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_slider_menu_item_a14cdb721ca4a62dcdcc0d2ea9a925384}{SetPercentage}}(\textcolor{keywordtype}{int}\ percentage);}
+\DoxyCodeLine{00020\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_slider_menu_item_a85e354bf8811a965eda5340767995efb}{SetDstRect}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{struct_rectf}{Rectf}}\&\ rect)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00021\ }
+\DoxyCodeLine{00022\ \ \ \ \ \textcolor{comment}{//\ GETTER}}
+\DoxyCodeLine{00023\ \ \ \ \ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{class_slider_menu_item_a616639abe83e2d60d80f49b60535af1e}{GetWidth}}()\ \textcolor{keyword}{const\ override};}
+\DoxyCodeLine{00024\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00025\ \ \ \ \ \textcolor{comment}{//\ MEMBERS}}
+\DoxyCodeLine{00026\ \ \ \ \ \textcolor{keywordtype}{int}\ m\_Percentage;}
+\DoxyCodeLine{00027\ \ \ \ \ void\ (\mbox{\hyperlink{class_pause_menu}{PauseMenu}}::*\ m\_Function)(int);}
+\DoxyCodeLine{00028\ \ \ \ \ \mbox{\hyperlink{class_pause_menu}{PauseMenu}}*\ m\_PauseMenu;}
+\DoxyCodeLine{00029\ \ \ \ \ \mbox{\hyperlink{struct_rectf}{Rectf}}\ m\_SliderRect;}
+\DoxyCodeLine{00030\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{float}\ m\_Offset;}
+\DoxyCodeLine{00031\ \};}
+\DoxyCodeLine{00032\ }
+
+\end{DoxyCode}

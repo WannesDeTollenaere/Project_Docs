@@ -1,0 +1,77 @@
+\doxysection{Chapter\+Info.\+h}
+\hypertarget{_chapter_info_8h_source}{}\label{_chapter_info_8h_source}\index{Celeste/ChapterInfo.h@{Celeste/ChapterInfo.h}}
+\mbox{\hyperlink{_chapter_info_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_interactable_item_8h}{InteractableItem.h}}"{}}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_spike_8h}{Spike.h}}"{}}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_trampoline_8h}{Trampoline.h}}"{}}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_strawberry_8h}{Strawberry.h}}"{}}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_respawn_zone_8h}{RespawnZone.h}}"{}}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_dash_crystal_8h}{DashCrystal.h}}"{}}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_crumble_block_8h}{CrumbleBlock.h}}"{}}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_cog_platform_8h}{CogPlatform.h}}"{}}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_flying_strawberry_8h}{FlyingStrawberry.h}}"{}}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_level_8h}{Level.h}}"{}}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_sound_stream_8h}{SoundStream.h}}"{}}}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00015\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_chapter_info_a923ef83c63c7a5db03b05809c7ccb091}{ChapterInfo}}}
+\DoxyCodeLine{00016\ \{}
+\DoxyCodeLine{00017\ \ \ \ \ std::string\ \mbox{\hyperlink{struct_chapter_info_a530a8c9abbf666e28652ea7d7fe2e788}{name}};}
+\DoxyCodeLine{00018\ \ \ \ \ \mbox{\hyperlink{class_sound_stream}{SoundStream}}\ \mbox{\hyperlink{struct_chapter_info_a25af4f03155625e5e3852c378c7e317f}{soundTrack}};}
+\DoxyCodeLine{00019\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{struct_chapter_info_aaa996dd10a3340f01726bdd318fa4b47}{deathCount}};}
+\DoxyCodeLine{00020\ \ \ \ \ std::vector<Trampoline>\ \mbox{\hyperlink{struct_chapter_info_a0e4b5167b4c57d635a52fc829bea7f64}{trampolines}};}
+\DoxyCodeLine{00021\ \ \ \ \ std::vector<Spike>\ \mbox{\hyperlink{struct_chapter_info_a67a5141429935809bcf6a43462bc5c94}{spikes}};}
+\DoxyCodeLine{00022\ \ \ \ \ std::vector<Level>\ \mbox{\hyperlink{struct_chapter_info_a3d3610d2bf328db6604fc8bd9bb7e555}{levels}};}
+\DoxyCodeLine{00023\ \ \ \ \ std::vector<Strawberry>\ \mbox{\hyperlink{struct_chapter_info_a0770a345af22a5208027442d9762418f}{strawberrys}};}
+\DoxyCodeLine{00024\ \ \ \ \ std::vector<RespawnZone>\ \mbox{\hyperlink{struct_chapter_info_ad35843a0d4da0e09f0fede20d1cc1cb2}{respawnZones}};}
+\DoxyCodeLine{00025\ \ \ \ \ std::vector<CrumbleBlock>\ \mbox{\hyperlink{struct_chapter_info_a172706f58aa7a5910ae4acc389f54920}{crumbleBlocks}};}
+\DoxyCodeLine{00026\ \ \ \ \ std::vector<DashCrystal>\ \mbox{\hyperlink{struct_chapter_info_a2eeb618435ae5ff8a912f39505db4771}{dashCrystals}};}
+\DoxyCodeLine{00027\ \ \ \ \ std::vector<FlyingStrawberry>\ \mbox{\hyperlink{struct_chapter_info_a2193f38118e08ece026019643aa74028}{flyingBerries}};}
+\DoxyCodeLine{00028\ \ \ \ \ std::vector<CogPlatform>\ \mbox{\hyperlink{struct_chapter_info_a829fb1fd8f1da6baaaa89d67b226a905}{cogPlatforms}};}
+\DoxyCodeLine{00029\ \ \ \ \ std::vector<std::vector<Vector2f>>\ \mbox{\hyperlink{struct_chapter_info_a4385812aff7ded50ab7435d866f93199}{collisionBounds}};}
+\DoxyCodeLine{00030\ \ \ \ \ std::vector<InteractableItem*>\ \mbox{\hyperlink{struct_chapter_info_a9dc1ca989be77e3d3002437c62f18aa7}{allItems}};}
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00032\ \ \ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{struct_chapter_info_a923ef83c63c7a5db03b05809c7ccb091}{ChapterInfo}}(\textcolor{keyword}{const}\ std::string\&\ \mbox{\hyperlink{struct_chapter_info_a530a8c9abbf666e28652ea7d7fe2e788}{name}},\ \textcolor{keyword}{const}\ std::string\&\ \ soundPath)\ :}
+\DoxyCodeLine{00033\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct_chapter_info_a530a8c9abbf666e28652ea7d7fe2e788}{name}}\{\ \mbox{\hyperlink{struct_chapter_info_a530a8c9abbf666e28652ea7d7fe2e788}{name}}\ \},}
+\DoxyCodeLine{00034\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct_chapter_info_a25af4f03155625e5e3852c378c7e317f}{soundTrack}}\{\ soundPath\ \},}
+\DoxyCodeLine{00035\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct_chapter_info_aaa996dd10a3340f01726bdd318fa4b47}{deathCount}}\{0\}}
+\DoxyCodeLine{00036\ \ \ \ \ \{}
+\DoxyCodeLine{00037\ \ \ \ \ \}}
+\DoxyCodeLine{00038\ }
+\DoxyCodeLine{00039\ \ \ \ \ std::vector<InteractableItem*>\ \mbox{\hyperlink{struct_chapter_info_a18bcf2ea12498cbd5a06e5893739ee10}{GetAllInteractableItemPointers}}()\ noexcept}
+\DoxyCodeLine{00040\ \ \ \ \ \{}
+\DoxyCodeLine{00041\ \ \ \ \ \ \ \ \ std::vector<InteractableItem*>\ items;}
+\DoxyCodeLine{00042\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (\mbox{\hyperlink{class_level}{Level}}\&\ level\ :\ \mbox{\hyperlink{struct_chapter_info_a3d3610d2bf328db6604fc8bd9bb7e555}{levels}})\ \{}
+\DoxyCodeLine{00043\ \ \ \ \ \ \ \ \ \ \ \ \ items.emplace\_back(\&level);}
+\DoxyCodeLine{00044\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00045\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (\mbox{\hyperlink{class_strawberry}{Strawberry}}\&\ berry\ :\ \mbox{\hyperlink{struct_chapter_info_a0770a345af22a5208027442d9762418f}{strawberrys}})\ \{}
+\DoxyCodeLine{00046\ \ \ \ \ \ \ \ \ \ \ \ \ items.emplace\_back(\&berry);}
+\DoxyCodeLine{00047\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00048\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (\mbox{\hyperlink{class_flying_strawberry}{FlyingStrawberry}}\&\ berry\ :\ \mbox{\hyperlink{struct_chapter_info_a2193f38118e08ece026019643aa74028}{flyingBerries}})\ \{}
+\DoxyCodeLine{00049\ \ \ \ \ \ \ \ \ \ \ \ \ items.emplace\_back(\&berry);}
+\DoxyCodeLine{00050\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00051\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (\mbox{\hyperlink{class_trampoline}{Trampoline}}\&\ trampoline\ :\ \mbox{\hyperlink{struct_chapter_info_a0e4b5167b4c57d635a52fc829bea7f64}{trampolines}})\ \{}
+\DoxyCodeLine{00052\ \ \ \ \ \ \ \ \ \ \ \ \ items.emplace\_back(\&trampoline);}
+\DoxyCodeLine{00053\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00054\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (\mbox{\hyperlink{class_spike}{Spike}}\&\ spike\ :\ \mbox{\hyperlink{struct_chapter_info_a67a5141429935809bcf6a43462bc5c94}{spikes}})\ \{}
+\DoxyCodeLine{00055\ \ \ \ \ \ \ \ \ \ \ \ \ items.emplace\_back(\&spike);}
+\DoxyCodeLine{00056\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00057\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (\mbox{\hyperlink{class_respawn_zone}{RespawnZone}}\&\ respawnZone\ :\ \mbox{\hyperlink{struct_chapter_info_ad35843a0d4da0e09f0fede20d1cc1cb2}{respawnZones}})\ \{}
+\DoxyCodeLine{00058\ \ \ \ \ \ \ \ \ \ \ \ \ items.emplace\_back(\&respawnZone);}
+\DoxyCodeLine{00059\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00060\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (\mbox{\hyperlink{class_crumble_block}{CrumbleBlock}}\&\ crumbleBlock\ :\ \mbox{\hyperlink{struct_chapter_info_a172706f58aa7a5910ae4acc389f54920}{crumbleBlocks}})\ \{}
+\DoxyCodeLine{00061\ \ \ \ \ \ \ \ \ \ \ \ \ items.emplace\_back(\&crumbleBlock);}
+\DoxyCodeLine{00062\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00063\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (\mbox{\hyperlink{class_dash_crystal}{DashCrystal}}\&\ dashCrystal\ :\ \mbox{\hyperlink{struct_chapter_info_a2eeb618435ae5ff8a912f39505db4771}{dashCrystals}})\ \{}
+\DoxyCodeLine{00064\ \ \ \ \ \ \ \ \ \ \ \ \ items.emplace\_back(\&dashCrystal);}
+\DoxyCodeLine{00065\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00066\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (\mbox{\hyperlink{class_cog_platform}{CogPlatform}}\&\ cogPlatfom\ :\ \mbox{\hyperlink{struct_chapter_info_a829fb1fd8f1da6baaaa89d67b226a905}{cogPlatforms}})\ \{}
+\DoxyCodeLine{00067\ \ \ \ \ \ \ \ \ \ \ \ \ items.emplace\_back(\&cogPlatfom);}
+\DoxyCodeLine{00068\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00069\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ items;}
+\DoxyCodeLine{00070\ \ \ \ \ \}}
+\DoxyCodeLine{00071\ \};\ }
+
+\end{DoxyCode}

@@ -1,0 +1,22 @@
+<map id="CogPlatform::PlayerInteraction" name="CogPlatform::PlayerInteraction">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,56,206,83"/>
+<area shape="rect" id="Node000002" href="$class_character.html#ad4cf75aee602249dff4bdb61f20eb5f2" title=" " alt="" coords="274,5,380,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="167,53,258,32,259,37,168,58"/>
+<area shape="rect" id="Node000003" href="$class_character.html#a0b790800d6ff90eebee18bce25177fce" title=" " alt="" coords="254,56,401,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="206,67,238,67,238,72,206,72"/>
+<area shape="rect" id="Node000004" href="$namespaceutils.html#a11a0eb68e467a22aed74f507057c39ed" title=" " alt="" coords="261,107,394,133"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="168,81,252,100,250,105,167,86"/>
+<area shape="rect" id="Node000005" href="$namespaceutils.html#a760075559e6ab59c1daec763fab2b488" title=" " alt="" coords="449,107,632,133"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="394,117,433,117,433,123,394,123"/>
+<area shape="rect" id="Node000006" href="$struct_vector2f.html#af8ceb9310d7065eb485e47b072a5b143" title=" " alt="" coords="680,56,824,83"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="599,103,678,84,679,89,600,109"/>
+<area shape="rect" id="Node000008" href="$struct_vector2f.html#acedb20d25ccc3009546e120eda010bf5" title=" " alt="" coords="876,144,992,171"/>
+<area shape="poly" id="edge8_Node000005_Node000008" title=" " alt="" coords="609,131,681,143,774,150,861,154,860,159,774,156,680,148,608,137"/>
+<area shape="rect" id="Node000009" href="$struct_vector2f.html#aba5dd756c385551a19d36b57d8cbf629" title=" " alt="" coords="680,107,824,133"/>
+<area shape="poly" id="edge9_Node000005_Node000009" title=" " alt="" coords="633,117,665,117,665,123,633,123"/>
+<area shape="rect" id="Node000007" href="$struct_vector2f.html#a3db9a868c58bc809e5e09a88d65a77ec" title=" " alt="" coords="872,81,997,108"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="824,77,857,81,856,87,823,82"/>
+<area shape="poly" id="edge7_Node000007_Node000007" title=" " alt="" coords="903,82,898,73,901,63,914,57,934,55,956,57,968,64,965,68,955,62,934,60,915,62,905,67,903,72,908,80"/>
+<area shape="poly" id="edge11_Node000009_Node000007" title=" " alt="" coords="823,107,856,103,857,108,824,113"/>
+<area shape="poly" id="edge10_Node000009_Node000008" title=" " alt="" coords="821,131,862,140,861,145,820,137"/>
+</map>

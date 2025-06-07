@@ -1,0 +1,23 @@
+<map id="Celeste/Trampoline.h" name="Celeste/Trampoline.h">
+<area shape="rect" id="Node000001" title=" " alt="" coords="308,5,454,32"/>
+<area shape="rect" id="Node000002" href="$_chapter_info_8h.html" title=" " alt="" coords="217,80,366,107"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="355,44,309,82,305,78,352,40"/>
+<area shape="rect" id="Node000011" href="$_trampoline_8cpp.html" title=" " alt="" coords="390,80,550,107"/>
+<area shape="poly" id="edge10_Node000001_Node000011" title=" " alt="" coords="410,40,456,78,453,82,407,44"/>
+<area shape="rect" id="Node000003" href="$_chapter_loader_8h.html" title=" " alt="" coords="208,155,375,181"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="294,122,294,154,289,154,289,122"/>
+<area shape="rect" id="Node000004" href="$_chapter_loader_8cpp.html" title=" " alt="" coords="5,229,186,256"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="244,190,131,231,129,226,242,185"/>
+<area shape="rect" id="Node000005" href="$_level_manager_8h.html" title=" " alt="" coords="210,229,373,256"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="294,197,294,229,289,229,289,197"/>
+<area shape="rect" id="Node000010" href="$_pause_menu_8cpp.html" title=" " alt="" coords="397,229,562,256"/>
+<area shape="poly" id="edge9_Node000003_Node000010" title=" " alt="" coords="339,185,447,226,446,231,337,190"/>
+<area shape="rect" id="Node000006" href="$_game_8h.html" title=" " alt="" coords="148,304,264,331"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="267,268,223,306,219,302,264,264"/>
+<area shape="rect" id="Node000009" href="$_level_manager_8cpp.html" title=" " alt="" coords="289,304,465,331"/>
+<area shape="poly" id="edge8_Node000005_Node000009" title=" " alt="" coords="319,264,364,302,360,306,316,268"/>
+<area shape="rect" id="Node000007" href="$_game_8cpp.html" title=" " alt="" coords="66,379,197,405"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="184,343,146,380,143,376,181,340"/>
+<area shape="rect" id="Node000008" href="$main_8cpp.html" title=" " alt="" coords="220,379,344,405"/>
+<area shape="poly" id="edge7_Node000006_Node000008" title=" " alt="" coords="232,340,271,376,267,380,228,343"/>
+</map>

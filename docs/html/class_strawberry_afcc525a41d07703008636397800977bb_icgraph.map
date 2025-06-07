@@ -1,0 +1,10 @@
+<map id="Strawberry::Reset" name="Strawberry::Reset">
+<area shape="rect" id="Node000001" title=" " alt="" coords="456,56,583,83"/>
+<area shape="rect" id="Node000002" href="$class_strawberry.html#a673f5c80b8d67a2580087a4eae0832b6" title=" " alt="" coords="239,5,386,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="447,54,370,35,371,30,448,49"/>
+<area shape="rect" id="Node000003" href="$class_flying_strawberry.html#ada0a996bd7bd79f240b85762a24fd2ed" title=" " alt="" coords="5,73,170,116"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="440,77,170,93,170,87,440,71"/>
+<area shape="rect" id="Node000004" href="$class_strawberry.html#a2e5468a8badbbf84cd37d12c34042061" title=" " alt="" coords="218,107,408,133"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="448,90,371,109,370,103,447,84"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="202,110,170,107,170,101,202,105"/>
+</map>

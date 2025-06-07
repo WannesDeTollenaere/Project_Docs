@@ -1,0 +1,57 @@
+\doxysection{Hair.\+h}
+\hypertarget{_hair_8h_source}{}\label{_hair_8h_source}\index{Celeste/Hair.h@{Celeste/Hair.h}}
+\mbox{\hyperlink{_hair_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_transform_8h}{Transform.h}}"{}}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ "{}vector"{}}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_texture_8h}{Texture.h}}"{}}}
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00006\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_hair_a645515687b164ad22b9373c30a14af6d}{Hair}}}
+\DoxyCodeLine{00007\ \{}
+\DoxyCodeLine{00008\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00009\ \ \ \ \ \textcolor{keyword}{enum\ class}\ \mbox{\hyperlink{class_hair_aa36e09ffac55698b8942220ce2fcbd0e}{Type}}\ \{}
+\DoxyCodeLine{00010\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_hair_aa36e09ffac55698b8942220ce2fcbd0ea48d6215903dff56238e52e8891380c8f}{blue}},}
+\DoxyCodeLine{00011\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_hair_aa36e09ffac55698b8942220ce2fcbd0eabda9643ac6601722a28f238714274da4}{red}}}
+\DoxyCodeLine{00012\ \ \ \ \ \};}
+\DoxyCodeLine{00013\ \ \ \ \ \textcolor{comment}{//\ CONSTRUCTORS}}
+\DoxyCodeLine{00014\ \ \ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{class_hair_a645515687b164ad22b9373c30a14af6d}{Hair}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{struct_vector2f}{Vector2f}}\&\ anchorOffset,\ \textcolor{keywordtype}{float}\ maxOffsetLength,\ \textcolor{keywordtype}{float}\ minOffsetLength,\ \textcolor{keywordtype}{float}\ partSize\ =\ 30.f);}
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00016\ \ \ \ \ \textcolor{comment}{//\ FUNCTIONS}}
+\DoxyCodeLine{00017\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_hair_a0b22dc1cb67f2d72c149b360f7e7f807}{Update}}(\textcolor{keywordtype}{float}\ elapsedSec);}
+\DoxyCodeLine{00018\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_hair_a1f70eb552413a4e9c0448089835e2722}{Draw}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00019\ \ \ \ \ }
+\DoxyCodeLine{00020\ }
+\DoxyCodeLine{00021\ \ \ \ \ \textcolor{comment}{//\ SETTERS}}
+\DoxyCodeLine{00022\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_hair_ac5b20368fbcda3f186dc37e3f6d17be1}{SetPartOffset}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{struct_vector2f}{Vector2f}}\&\ partOffset);}
+\DoxyCodeLine{00023\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_hair_a8f53c050a12bf8d125adbb0f8d8a41ad}{SetHairAnchorPos}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{struct_vector2f}{Vector2f}}\&\ position);}
+\DoxyCodeLine{00024\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_hair_a8029aa2cc8404b0b6876dbbf48d65024}{SetHairType}}(\mbox{\hyperlink{class_hair_aa36e09ffac55698b8942220ce2fcbd0e}{Hair::Type}}\ type);}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00026\ \ \ \ \ \textcolor{comment}{//\ GETTERS}}
+\DoxyCodeLine{00027\ \ \ \ \ \mbox{\hyperlink{class_hair_aa36e09ffac55698b8942220ce2fcbd0e}{Hair::Type}}\ \mbox{\hyperlink{class_hair_a54a8fcbde9557a515c77f9e85938c153}{GetHairType}}()\ const\ noexcept;}
+\DoxyCodeLine{00028\ private:}
+\DoxyCodeLine{00029\ \ \ \ \ \textcolor{comment}{//\ TEXTURES}}
+\DoxyCodeLine{00030\ \ \ \ \ \mbox{\hyperlink{class_texture}{Texture}}\ m\_HairAnchorTextureRed;}
+\DoxyCodeLine{00031\ \ \ \ \ \mbox{\hyperlink{class_texture}{Texture}}\ m\_HairAnchorTextureBlue;}
+\DoxyCodeLine{00032\ \ \ \ \ \mbox{\hyperlink{class_texture}{Texture}}\ m\_HairPartsTextureRed;}
+\DoxyCodeLine{00033\ \ \ \ \ \mbox{\hyperlink{class_texture}{Texture}}\ m\_HairPartsTextureBlue;}
+\DoxyCodeLine{00034\ \ \ \ \ \mbox{\hyperlink{class_texture}{Texture}}\ m\_HairPartsOutline;}
+\DoxyCodeLine{00035\ \ \ \ \ \mbox{\hyperlink{class_texture}{Texture}}\ m\_HairAnchorOutline;}
+\DoxyCodeLine{00036\ }
+\DoxyCodeLine{00037\ \ \ \ \ \textcolor{comment}{//\ MEMBERS}}
+\DoxyCodeLine{00038\ \ \ \ \ \mbox{\hyperlink{struct_vector2f}{Vector2f}}\ m\_OffsetBetweenParts;}
+\DoxyCodeLine{00039\ \ \ \ \ \textcolor{keywordtype}{float}\ m\_MaxOffsetLength,\ m\_MinOffsetLength;}
+\DoxyCodeLine{00040\ \ \ \ \ \mbox{\hyperlink{struct_transform}{Transform}}\ m\_hairAnchor;}
+\DoxyCodeLine{00041\ \ \ \ \ std::vector<\mbox{\hyperlink{struct_transform}{Transform}}>\ m\_hairParts;}
+\DoxyCodeLine{00042\ \ \ \ \ const\ \textcolor{keywordtype}{float}\ gravity;}
+\DoxyCodeLine{00043\ \ \ \ \ const\ \textcolor{keywordtype}{float}\ m\_PartSize;}
+\DoxyCodeLine{00044\ \ \ \ \ const\ \textcolor{keywordtype}{int}\ m\_HairPartCount;}
+\DoxyCodeLine{00045\ \ \ \ \ \mbox{\hyperlink{class_hair_aa36e09ffac55698b8942220ce2fcbd0e}{Type}}\ m\_hairType;}
+\DoxyCodeLine{00046\ }
+\DoxyCodeLine{00047\ \ \ \ \ \textcolor{comment}{//FUNCTIONS}}
+\DoxyCodeLine{00048\ \ \ \ \ \textcolor{keywordtype}{void}\ DrawParts()\ const;}
+\DoxyCodeLine{00049\ \ \ \ \ \textcolor{keywordtype}{void}\ DrawAnchor()\ const;}
+\DoxyCodeLine{00050\ \};}
+\DoxyCodeLine{00051\ }
+
+\end{DoxyCode}

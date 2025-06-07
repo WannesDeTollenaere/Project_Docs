@@ -1,0 +1,7 @@
+<map id="Trampoline::Trampoline" name="Trampoline::Trampoline">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,43,163,69"/>
+<area shape="rect" id="Node000002" href="$class_counted_item.html#a7a4f3ec5e121b459d51a818c9ed0e269" title=" " alt="" coords="234,5,405,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="162,44,218,37,219,42,163,49"/>
+<area shape="rect" id="Node000003" href="$class_interactable_item.html#a5e5b9c459514e29098aaff5e62761569" title=" " alt="" coords="211,72,428,99"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="163,63,196,67,195,72,162,68"/>
+</map>

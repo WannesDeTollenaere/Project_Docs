@@ -1,0 +1,66 @@
+\doxysection{Cog\+Platform.\+h}
+\hypertarget{_cog_platform_8h_source}{}\label{_cog_platform_8h_source}\index{Celeste/CogPlatform.h@{Celeste/CogPlatform.h}}
+\mbox{\hyperlink{_cog_platform_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_interactable_item_8h}{InteractableItem.h}}"{}}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_counted_item_8h}{CountedItem.h}}"{}}}
+\DoxyCodeLine{00004\ }
+\DoxyCodeLine{00005\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_texture}{Texture}};}
+\DoxyCodeLine{00006\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_sound_effect}{SoundEffect}};}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_cog_platform_aa8ddb28be91c8e5887864a9a7df629e1}{CogPlatform}}\ final:}
+\DoxyCodeLine{00009\ \ \ \ \ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_interactable_item_a5e5b9c459514e29098aaff5e62761569}{InteractableItem}},}
+\DoxyCodeLine{00010\ \ \ \ \ \textcolor{keyword}{protected}\ \mbox{\hyperlink{class_counted_item_a379818e68b8231fbfad8c51cbf2add57}{CountedItem}}<CogPlatform>}
+\DoxyCodeLine{00011\ \{}
+\DoxyCodeLine{00012\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00013\ \ \ \ \ \textcolor{comment}{//\ CONSTRUCTOR}}
+\DoxyCodeLine{00014\ \ \ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{class_cog_platform_aa8ddb28be91c8e5887864a9a7df629e1}{CogPlatform}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{struct_rectf}{Rectf}}\&\ bounds,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{struct_vector2f}{Vector2f}}\&\ startPos,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{struct_vector2f}{Vector2f}}\&\ endPos);}
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00016\ \ \ \ \ \textcolor{comment}{//\ FUNCTIONS}}
+\DoxyCodeLine{00017\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_cog_platform_aeef0da62f2ae9b037694af27c427272c}{Draw}}()\ \textcolor{keyword}{const\ override};}
+\DoxyCodeLine{00018\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_cog_platform_afd4a86f749690313b5bd2587f15c6ce8}{PlayerInteraction}}(\mbox{\hyperlink{class_character}{Character}}\&\ character,\ \textcolor{keywordtype}{float}\ elapsedSec)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00020\ \ \ \ \ \textcolor{comment}{//\ COPY\ CONSTRUCTOR}}
+\DoxyCodeLine{00021\ \ \ \ \ \mbox{\hyperlink{class_cog_platform_ae87052d2e9b8be5ef36272841790684a}{CogPlatform}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_cog_platform_aa8ddb28be91c8e5887864a9a7df629e1}{CogPlatform}}\&\ other)\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00022\ \ \ \ \ \mbox{\hyperlink{class_cog_platform_a538bda666c9623304ddb39fc9afc843c}{CogPlatform}}(\mbox{\hyperlink{class_cog_platform_aa8ddb28be91c8e5887864a9a7df629e1}{CogPlatform}}\&\&\ other)\ \textcolor{keyword}{noexcept}\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00024\ \ \ \ \ \textcolor{comment}{//\ ASSIGNMENT\ OPPERATOR}}
+\DoxyCodeLine{00025\ \ \ \ \ \mbox{\hyperlink{class_cog_platform_aa8ddb28be91c8e5887864a9a7df629e1}{CogPlatform}}\&\ \mbox{\hyperlink{class_cog_platform_aa123b1f6fee96a0202700f7f5685b1a7}{operator=}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_cog_platform_aa8ddb28be91c8e5887864a9a7df629e1}{CogPlatform}}\&\ other)\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00026\ \ \ \ \ \mbox{\hyperlink{class_cog_platform_aa8ddb28be91c8e5887864a9a7df629e1}{CogPlatform}}\&\ \mbox{\hyperlink{class_cog_platform_a2232e46890ae94b60060e8200000fdef}{operator=}}(\mbox{\hyperlink{class_cog_platform_aa8ddb28be91c8e5887864a9a7df629e1}{CogPlatform}}\&\&\ other)\ \textcolor{keyword}{noexcept}\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00027\ }
+\DoxyCodeLine{00028\ \ \ \ \ \textcolor{comment}{//DESTRUCTOR}}
+\DoxyCodeLine{00029\ \ \ \ \ \mbox{\hyperlink{class_cog_platform_a675fe5d55d9d8698c600b9b36e1cad66}{\string~CogPlatform}}()\ noexcept\ override;}
+\DoxyCodeLine{00030\ private:}
+\DoxyCodeLine{00031\ \ \ \ \ enum\ class\ State\ \{}
+\DoxyCodeLine{00032\ \ \ \ \ \ \ \ \ idle,}
+\DoxyCodeLine{00033\ \ \ \ \ \ \ \ \ flyoff,}
+\DoxyCodeLine{00034\ \ \ \ \ \ \ \ \ comingBack,}
+\DoxyCodeLine{00035\ \ \ \ \ \ \ \ \ resetting}
+\DoxyCodeLine{00036\ \ \ \ \ \};}
+\DoxyCodeLine{00037\ }
+\DoxyCodeLine{00038\ \ \ \ \ \textcolor{comment}{//\ MEMBERS}}
+\DoxyCodeLine{00039\ \ \ \ \ \textcolor{keyword}{const}\ \mbox{\hyperlink{struct_vector2f}{Vector2f}}\ m\_StartPos;}
+\DoxyCodeLine{00040\ \ \ \ \ \textcolor{keyword}{const}\ \mbox{\hyperlink{struct_vector2f}{Vector2f}}\ m\_EndPos;}
+\DoxyCodeLine{00041\ }
+\DoxyCodeLine{00042\ \ \ \ \ State\ m\_State;}
+\DoxyCodeLine{00043\ \ \ \ \ \textcolor{keywordtype}{float}\ m\_TotalElapsedSec;}
+\DoxyCodeLine{00044\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{float}\ m\_TimeToReachEnding;}
+\DoxyCodeLine{00045\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{float}\ m\_PauseTime;}
+\DoxyCodeLine{00046\ \ \ \ \ \mbox{\hyperlink{struct_rectf}{Rectf}}\ m\_TriggerCollider;}
+\DoxyCodeLine{00047\ \ \ \ \ \textcolor{keywordtype}{bool}\ m\_Jumped;}
+\DoxyCodeLine{00048\ }
+\DoxyCodeLine{00049\ \ \ \ \ \textcolor{keyword}{static}\ \mbox{\hyperlink{class_texture}{Texture}}*\ m\_pTexture;}
+\DoxyCodeLine{00050\ \ \ \ \ \textcolor{keywordtype}{size\_t}\ m\_CogID;}
+\DoxyCodeLine{00051\ }
+\DoxyCodeLine{00052\ \ \ \ \ \textcolor{comment}{//\ SOUND}}
+\DoxyCodeLine{00053\ \ \ \ \ \textcolor{keyword}{static}\ \mbox{\hyperlink{class_sound_effect}{SoundEffect}}*\ m\_pTouchSoundEffect;}
+\DoxyCodeLine{00054\ \ \ \ \ \textcolor{keyword}{static}\ \mbox{\hyperlink{class_sound_effect}{SoundEffect}}*\ m\_pRespawnSoundEffect;}
+\DoxyCodeLine{00055\ \ \ \ \ \textcolor{keyword}{static}\ \mbox{\hyperlink{class_sound_effect}{SoundEffect}}*\ m\_pResetSoundEffect;}
+\DoxyCodeLine{00056\ }
+\DoxyCodeLine{00057\ \ \ \ \ \textcolor{comment}{//\ FUNCTIONS}}
+\DoxyCodeLine{00058\ \ \ \ \ \textcolor{keywordtype}{void}\ MoveBounds(\mbox{\hyperlink{class_character}{Character}}\&\ character);}
+\DoxyCodeLine{00059\ \};}
+\DoxyCodeLine{00060\ }
+
+\end{DoxyCode}

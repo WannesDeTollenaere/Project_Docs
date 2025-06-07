@@ -1,0 +1,48 @@
+\doxysection{Save\+File\+IO.\+h}
+\hypertarget{_save_file_i_o_8h_source}{}\label{_save_file_i_o_8h_source}\index{Celeste/SaveFileIO.h@{Celeste/SaveFileIO.h}}
+\mbox{\hyperlink{_save_file_i_o_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#include\ "{}vector"{}}}
+\DoxyCodeLine{00003\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_save_file_information}{SaveFileInformation}}\ \{}
+\DoxyCodeLine{00004\ \ \ \ \ \mbox{\hyperlink{struct_vector2f}{Vector2f}}\ \mbox{\hyperlink{struct_save_file_information_a0c81af65c436d38e9ed588ffdd21c19c}{respawnPos}};}
+\DoxyCodeLine{00005\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{struct_save_file_information_a1d4d0490eb344a44418898aebe65e7f0}{deathCount}};}
+\DoxyCodeLine{00006\ \ \ \ \ std::vector<int>\ \mbox{\hyperlink{struct_save_file_information_acf866807f3e2fdedaca0c508d3270a89}{StrawberryIdx}};}
+\DoxyCodeLine{00007\ \};}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_save_file_i_o_ac5f49bf9e5512d5f254c86d48abc4e0f}{SaveFileIO}}\ final}
+\DoxyCodeLine{00010\ \{}
+\DoxyCodeLine{00011\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00012\ \ \ \ \ \textcolor{comment}{//\ CONSTRUCTOR}}
+\DoxyCodeLine{00013\ \ \ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{class_save_file_i_o_ac5f49bf9e5512d5f254c86d48abc4e0f}{SaveFileIO}}(\textcolor{keyword}{const}\ std::string\&\ chapter);}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00015\ \ \ \ \ \textcolor{comment}{//\ FUCNTIONS}}
+\DoxyCodeLine{00016\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_save_file_i_o_af9338d7a77b6284ee598f33122a822c2}{Save}}();}
+\DoxyCodeLine{00017\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_save_file_i_o_a278f80bd1718da870e21d69d022da759}{EmptySaveFile}}();}
+\DoxyCodeLine{00018\ }
+\DoxyCodeLine{00019\ \ \ \ \ \textcolor{comment}{//\ GETTERS}}
+\DoxyCodeLine{00020\ \ \ \ \ \mbox{\hyperlink{struct_save_file_information}{SaveFileInformation}}\ \mbox{\hyperlink{class_save_file_i_o_aee9e46efdbe82948da59cfa55611efd0}{GetInformation}}()\ \textcolor{keyword}{const}\ \textcolor{keyword}{noexcept};}
+\DoxyCodeLine{00021\ \ \ \ \ }
+\DoxyCodeLine{00022\ \ \ \ \ \textcolor{comment}{//\ SETTERS}}
+\DoxyCodeLine{00023\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_save_file_i_o_aa5be35596e137e024cfa2f43011568c4}{SetRespawnPos}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{struct_vector2f}{Vector2f}}\&\ respawnPos);}
+\DoxyCodeLine{00024\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_save_file_i_o_ab522ce3253c1f01a455bf63bfe3ab0c2}{SetStrawberryIdx}}(\textcolor{keyword}{const}\ std::vector<int>\&\ StrawberryIdx);}
+\DoxyCodeLine{00025\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_save_file_i_o_a70112fdd291f5a099c09183b70aab08a}{SetDeadCount}}(\textcolor{keywordtype}{int}\ deadCount);}
+\DoxyCodeLine{00026\ }
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{comment}{//\ DESTRUCTOR}}
+\DoxyCodeLine{00028\ \ \ \ \ \mbox{\hyperlink{class_save_file_i_o_a45f5cf1bd536c35accdbbf226065b6a7}{\string~SaveFileIO}}()\ noexcept\ =\ default;}
+\DoxyCodeLine{00029\ }
+\DoxyCodeLine{00030\ \ \ \ \ \textcolor{comment}{//\ COPY\ CONSTRUCTOR}}
+\DoxyCodeLine{00031\ \ \ \ \ \mbox{\hyperlink{class_save_file_i_o_ac5f49bf9e5512d5f254c86d48abc4e0f}{SaveFileIO}}(const\ \mbox{\hyperlink{class_save_file_i_o_ac5f49bf9e5512d5f254c86d48abc4e0f}{SaveFileIO}}\&\ other)\ =\ default;}
+\DoxyCodeLine{00032\ \ \ \ \ \mbox{\hyperlink{class_save_file_i_o_ac5f49bf9e5512d5f254c86d48abc4e0f}{SaveFileIO}}(\mbox{\hyperlink{class_save_file_i_o_ac5f49bf9e5512d5f254c86d48abc4e0f}{SaveFileIO}}\&\&\ other)\ noexcept\ =\ default;}
+\DoxyCodeLine{00033\ }
+\DoxyCodeLine{00034\ \ \ \ \ \textcolor{comment}{//\ ASSIGNMENT\ OPPERATOR}}
+\DoxyCodeLine{00035\ \ \ \ \ \mbox{\hyperlink{class_save_file_i_o_ac5f49bf9e5512d5f254c86d48abc4e0f}{SaveFileIO}}\&\ operator=(const\ \mbox{\hyperlink{class_save_file_i_o_ac5f49bf9e5512d5f254c86d48abc4e0f}{SaveFileIO}}\&\ other);}
+\DoxyCodeLine{00036\ \ \ \ \ \mbox{\hyperlink{class_save_file_i_o_ac5f49bf9e5512d5f254c86d48abc4e0f}{SaveFileIO}}\&\ operator=(\mbox{\hyperlink{class_save_file_i_o_ac5f49bf9e5512d5f254c86d48abc4e0f}{SaveFileIO}}\&\&\ other)\ noexcept\ =\ default;}
+\DoxyCodeLine{00037\ private:}
+\DoxyCodeLine{00038\ \ \ \ \ \mbox{\hyperlink{struct_save_file_information}{SaveFileInformation}}\ m\_SafeFileInformation;}
+\DoxyCodeLine{00039\ \ \ \ \ const\ std::\textcolor{keywordtype}{string}\ m\_Chapter;}
+\DoxyCodeLine{00040\ \ \ \ \ \textcolor{keywordtype}{void}\ LoadFile();}
+\DoxyCodeLine{00041\ \};}
+\DoxyCodeLine{00042\ }
+
+\end{DoxyCode}

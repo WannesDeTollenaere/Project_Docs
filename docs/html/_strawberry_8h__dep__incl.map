@@ -1,0 +1,28 @@
+<map id="Celeste/Strawberry.h" name="Celeste/Strawberry.h">
+<area shape="rect" id="Node000001" title=" " alt="" coords="346,5,490,32"/>
+<area shape="rect" id="Node000002" href="$_chapter_info_8h.html" title=" " alt="" coords="217,155,366,181"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="372,41,343,59,319,82,308,100,301,119,295,155,290,154,296,118,304,97,315,78,340,54,369,37"/>
+<area shape="rect" id="Node000011" href="$_flying_strawberry_8h.html" title=" " alt="" coords="329,80,507,107"/>
+<area shape="poly" id="edge10_Node000001_Node000011" title=" " alt="" coords="421,48,421,80,416,80,416,48"/>
+<area shape="rect" id="Node000013" href="$_strawberry_8cpp.html" title=" " alt="" coords="532,80,689,107"/>
+<area shape="poly" id="edge13_Node000001_Node000013" title=" " alt="" coords="467,35,577,77,576,82,465,40"/>
+<area shape="rect" id="Node000003" href="$_chapter_loader_8h.html" title=" " alt="" coords="208,229,375,256"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="294,197,294,229,289,229,289,197"/>
+<area shape="rect" id="Node000004" href="$_chapter_loader_8cpp.html" title=" " alt="" coords="5,304,186,331"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="244,264,131,306,129,301,242,259"/>
+<area shape="rect" id="Node000005" href="$_level_manager_8h.html" title=" " alt="" coords="210,304,373,331"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="294,272,294,304,289,304,289,272"/>
+<area shape="rect" id="Node000010" href="$_pause_menu_8cpp.html" title=" " alt="" coords="397,304,562,331"/>
+<area shape="poly" id="edge9_Node000003_Node000010" title=" " alt="" coords="339,259,447,301,446,306,337,264"/>
+<area shape="rect" id="Node000006" href="$_game_8h.html" title=" " alt="" coords="148,379,264,405"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="267,343,223,380,219,376,264,339"/>
+<area shape="rect" id="Node000009" href="$_level_manager_8cpp.html" title=" " alt="" coords="289,379,465,405"/>
+<area shape="poly" id="edge8_Node000005_Node000009" title=" " alt="" coords="319,339,364,376,360,380,316,343"/>
+<area shape="rect" id="Node000007" href="$_game_8cpp.html" title=" " alt="" coords="66,453,197,480"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="184,418,146,455,143,451,181,414"/>
+<area shape="rect" id="Node000008" href="$main_8cpp.html" title=" " alt="" coords="220,453,344,480"/>
+<area shape="poly" id="edge7_Node000006_Node000008" title=" " alt="" coords="232,414,271,451,267,455,228,418"/>
+<area shape="poly" id="edge11_Node000011_Node000002" title=" " alt="" coords="384,117,315,156,312,152,382,112"/>
+<area shape="rect" id="Node000012" href="$_flying_strawberry_8cpp.html" title=" " alt="" coords="390,155,582,181"/>
+<area shape="poly" id="edge12_Node000011_Node000012" title=" " alt="" coords="442,116,476,152,473,156,439,120"/>
+</map>

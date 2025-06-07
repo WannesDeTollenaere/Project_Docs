@@ -1,0 +1,37 @@
+\doxysection{Character\+Sound\+Manager.\+h}
+\hypertarget{_character_sound_manager_8h_source}{}\label{_character_sound_manager_8h_source}\index{Celeste/CharacterSoundManager.h@{Celeste/CharacterSoundManager.h}}
+\mbox{\hyperlink{_character_sound_manager_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_character_state_8h}{CharacterState.h}}"{}}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_sound_effect_8h}{SoundEffect.h}}"{}}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_sound_stream_8h}{SoundStream.h}}"{}}}
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00006\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_character_sound_manager_ab292d0924b1dc18ec86719727663ffbd}{CharacterSoundManager}}}
+\DoxyCodeLine{00007\ \{}
+\DoxyCodeLine{00008\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00009\ \ \ \ \ \textcolor{comment}{//\ CONSTRUCTOR}}
+\DoxyCodeLine{00010\ \ \ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{class_character_sound_manager_ab292d0924b1dc18ec86719727663ffbd}{CharacterSoundManager}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{_character_state_8h_aacbb008a93d24b04a8779bbdbd8880b5}{CharacterState}}*\ state);}
+\DoxyCodeLine{00011\ \ \ \ \ }
+\DoxyCodeLine{00012\ \ \ \ \ \textcolor{comment}{//\ FUNCTIONS\ }}
+\DoxyCodeLine{00013\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_character_sound_manager_af9bf54c2beb609f8e51e127270e5d06d}{PlayDashEffect}}();}
+\DoxyCodeLine{00014\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_character_sound_manager_afa07e9e80bbca765628332cfc44c6e77}{Update}}(\textcolor{keywordtype}{float}\ elapsedSec);}
+\DoxyCodeLine{00015\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00016\ \ \ \ \ \textcolor{comment}{//\ MEMBERS}}
+\DoxyCodeLine{00017\ \ \ \ \ \textcolor{keyword}{const}\ \mbox{\hyperlink{_character_state_8h_aacbb008a93d24b04a8779bbdbd8880b5}{CharacterState}}*\ m\_State;}
+\DoxyCodeLine{00018\ \ \ \ \ \mbox{\hyperlink{_character_state_8h_aacbb008a93d24b04a8779bbdbd8880b5}{CharacterState}}\ m\_PreviousState;}
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00020\ \ \ \ \ \textcolor{comment}{//\ SOUNDEFFECTS\ (MEMBERS)}}
+\DoxyCodeLine{00021\ \ \ \ \ \mbox{\hyperlink{class_sound_effect}{SoundEffect}}\ m\_DashSoundEffect;}
+\DoxyCodeLine{00022\ \ \ \ \ \mbox{\hyperlink{class_sound_effect}{SoundEffect}}\ m\_DeadSoundEffect;}
+\DoxyCodeLine{00023\ \ \ \ \ \mbox{\hyperlink{class_sound_effect}{SoundEffect}}\ m\_GrabSoundEffect;}
+\DoxyCodeLine{00024\ \ \ \ \ \mbox{\hyperlink{class_sound_effect}{SoundEffect}}\ m\_JumpSoundEffect;}
+\DoxyCodeLine{00025\ \ \ \ \ \mbox{\hyperlink{class_sound_effect}{SoundEffect}}\ m\_LandingSoundEffect;}
+\DoxyCodeLine{00026\ \ \ \ \ \mbox{\hyperlink{class_sound_effect}{SoundEffect}}\ m\_WalkingSoundEffect;}
+\DoxyCodeLine{00027\ \ \ \ \ }
+\DoxyCodeLine{00028\ \ \ \ \ \textcolor{comment}{//\ FUNCTIONS}}
+\DoxyCodeLine{00029\ \ \ \ \ \textcolor{keywordtype}{void}\ PlaySoundBasedOnState();}
+\DoxyCodeLine{00030\ \};}
+\DoxyCodeLine{00031\ }
+
+\end{DoxyCode}

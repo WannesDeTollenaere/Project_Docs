@@ -1,0 +1,47 @@
+\doxysection{Trampoline.\+h}
+\hypertarget{_trampoline_8h_source}{}\label{_trampoline_8h_source}\index{Celeste/Trampoline.h@{Celeste/Trampoline.h}}
+\mbox{\hyperlink{_trampoline_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_interactable_item_8h}{InteractableItem.h}}"{}}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_counted_item_8h}{CountedItem.h}}"{}}}
+\DoxyCodeLine{00004\ }
+\DoxyCodeLine{00005\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_sound_effect}{SoundEffect}};}
+\DoxyCodeLine{00006\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_animation_manager}{AnimationManager}};}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_trampoline_ace1cf28072a6f622073d499acfe3dee8}{Trampoline}}\ final\ :}
+\DoxyCodeLine{00009\ \ \ \ \ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_interactable_item_a5e5b9c459514e29098aaff5e62761569}{InteractableItem}},}
+\DoxyCodeLine{00010\ \ \ \ \ \textcolor{keyword}{protected}\ \mbox{\hyperlink{class_counted_item_a379818e68b8231fbfad8c51cbf2add57}{CountedItem}}<Trampoline>}
+\DoxyCodeLine{00011\ \{}
+\DoxyCodeLine{00012\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00013\ \ \ \ \ \textcolor{comment}{//\ CONSTRUCTORS}}
+\DoxyCodeLine{00014\ \ \ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{class_trampoline_ace1cf28072a6f622073d499acfe3dee8}{Trampoline}}(\textcolor{keywordtype}{float}\ x,\ \textcolor{keywordtype}{float}\ y,\ \textcolor{keywordtype}{float}\ width,\ \textcolor{keywordtype}{float}\ height);}
+\DoxyCodeLine{00015\ \ \ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{class_trampoline_ace1cf28072a6f622073d499acfe3dee8}{Trampoline}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{struct_rectf}{Rectf}}\&\ bounds);}
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00017\ \ \ \ \ \textcolor{comment}{//\ FUNCTIONS}}
+\DoxyCodeLine{00018\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_trampoline_a0fc132ff143a1be5c5fde7f094e0a1c3}{Draw}}()\ \textcolor{keyword}{const\ override};}
+\DoxyCodeLine{00019\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_trampoline_a8c4a369bfdfba21767d45ec9f83be487}{PlayerInteraction}}(\mbox{\hyperlink{class_character}{Character}}\&\ character,\ \textcolor{keywordtype}{float}\ elapsedSec)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00020\ }
+\DoxyCodeLine{00021\ \ \ \ \ \textcolor{comment}{//\ COPY\ CONSTRUCTOR}}
+\DoxyCodeLine{00022\ \ \ \ \ \mbox{\hyperlink{class_trampoline_abe2f88eae397242bc3085a86d522a019}{Trampoline}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_trampoline_ace1cf28072a6f622073d499acfe3dee8}{Trampoline}}\&\ other)\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00023\ \ \ \ \ \mbox{\hyperlink{class_trampoline_a36ba7988b88993ee872e412fc6e158a0}{Trampoline}}(\mbox{\hyperlink{class_trampoline_ace1cf28072a6f622073d499acfe3dee8}{Trampoline}}\&\&\ other)\ \textcolor{keyword}{noexcept}\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00024\ }
+\DoxyCodeLine{00025\ \ \ \ \ \textcolor{comment}{//\ ASSIGNMENT\ OPPERATOR}}
+\DoxyCodeLine{00026\ \ \ \ \ \mbox{\hyperlink{class_trampoline_ace1cf28072a6f622073d499acfe3dee8}{Trampoline}}\&\ \mbox{\hyperlink{class_trampoline_a9b15452cd28b86bb95ad638707af3bb0}{operator=}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_trampoline_ace1cf28072a6f622073d499acfe3dee8}{Trampoline}}\&\ other)\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00027\ \ \ \ \ \mbox{\hyperlink{class_trampoline_ace1cf28072a6f622073d499acfe3dee8}{Trampoline}}\&\ \mbox{\hyperlink{class_trampoline_ada1743f336a2065ee4a0bd628d594a21}{operator=}}(\mbox{\hyperlink{class_trampoline_ace1cf28072a6f622073d499acfe3dee8}{Trampoline}}\&\&\ other)\ \textcolor{keyword}{noexcept}\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00029\ \ \ \ \ \textcolor{comment}{//DESTRUCTOR}}
+\DoxyCodeLine{00030\ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{class_trampoline_ac7da59d8546a3e773d233cc92855bf18}{\string~Trampoline}}()\ noexcept\ override;}
+\DoxyCodeLine{00031\ private:}
+\DoxyCodeLine{00032\ \ \ \ \ \textcolor{comment}{//\ MEMBERS}}
+\DoxyCodeLine{00033\ \ \ \ \ \mbox{\hyperlink{struct_vector2f}{Vector2f}}\ m\_Facing;}
+\DoxyCodeLine{00034\ }
+\DoxyCodeLine{00035\ \ \ \ \ \textcolor{comment}{//\ ANIMATIONVARIABLES}}
+\DoxyCodeLine{00036\ \ \ \ \ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{int}\ m\_TrampolineID;}
+\DoxyCodeLine{00037\ \ \ \ \ static\ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{int}\ m\_LowestID;}
+\DoxyCodeLine{00038\ \ \ \ \ static\ \mbox{\hyperlink{class_animation_manager}{AnimationManager}}*\ m\_pAnimationManager;}
+\DoxyCodeLine{00039\ \ \ \ \ static\ \mbox{\hyperlink{class_sound_effect}{SoundEffect}}*\ m\_pSoundEffect;}
+\DoxyCodeLine{00040\ \};}
+\DoxyCodeLine{00041\ }
+
+\end{DoxyCode}

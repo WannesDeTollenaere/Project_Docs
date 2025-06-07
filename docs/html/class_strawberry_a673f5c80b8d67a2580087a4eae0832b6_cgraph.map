@@ -1,0 +1,11 @@
+<map id="Strawberry::operator=" name="Strawberry::operator=">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,80,153,107"/>
+<area shape="rect" id="Node000002" href="$class_strawberry.html#a0fd0213e45339451f5cdf2e88e4054a4" title=" " alt="" coords="217,29,340,56"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="134,77,208,58,209,63,135,82"/>
+<area shape="rect" id="Node000003" href="$class_strawberry.html#afcc525a41d07703008636397800977bb" title=" " alt="" coords="215,80,342,107"/>
+<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="153,91,199,91,199,96,153,96"/>
+<area shape="rect" id="Node000004" href="$class_strawberry.html#ab4dff64037a1d41eb23ef267eeda6510" title=" " alt="" coords="201,155,356,181"/>
+<area shape="poly" id="edge4_Node000001_Node000004" title=" " alt="" coords="118,105,227,146,225,151,116,110"/>
+<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="244,30,238,21,243,11,256,5,278,3,302,5,315,12,312,16,301,10,278,8,258,10,246,15,244,20,249,27"/>
+<area shape="poly" id="edge5_Node000004_Node000004" title=" " alt="" coords="244,156,238,146,243,136,256,130,278,128,302,131,315,137,312,142,301,136,278,133,258,135,246,140,244,145,249,153"/>
+</map>

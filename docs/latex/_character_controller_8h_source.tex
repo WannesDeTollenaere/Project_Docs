@@ -1,0 +1,59 @@
+\doxysection{Character\+Controller.\+h}
+\hypertarget{_character_controller_8h_source}{}\label{_character_controller_8h_source}\index{Celeste/CharacterController.h@{Celeste/CharacterController.h}}
+\mbox{\hyperlink{_character_controller_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_game_object_8h}{GameObject.h}}"{}}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_vector2x2f_8h}{Vector2x2f.h}}"{}}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00006\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_character_controller_a7c3e4c2476ca8f6c4a94bf5c1766aae0}{CharacterController}}}
+\DoxyCodeLine{00007\ \{}
+\DoxyCodeLine{00008\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00009\ \ \ \ \ \textcolor{comment}{//\ CONSTRUCTORS}}
+\DoxyCodeLine{00010\ \ \ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{class_character_controller_a7c3e4c2476ca8f6c4a94bf5c1766aae0}{CharacterController}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{struct_vector2f}{Vector2f}}\&\ startPos,\ \textcolor{keywordtype}{float}\ width=\ 20.f,\ \textcolor{keywordtype}{float}\ heigth\ =\ 20.f);}
+\DoxyCodeLine{00011\ \ \ \ \ }
+\DoxyCodeLine{00012\ \ \ \ \ \textcolor{comment}{//\ FUNCTIONS}}
+\DoxyCodeLine{00013\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_character_controller_ad8b0a065cb10e6a2b1900057648ab4d9}{Move}}(}
+\DoxyCodeLine{00014\ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ \mbox{\hyperlink{struct_vector2f}{Vector2f}}\&\ deltaMovement,}
+\DoxyCodeLine{00015\ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ std::vector<std::vector<Vector2f>>\&\ worldVertexTable}
+\DoxyCodeLine{00016\ \ \ \ \ );}
+\DoxyCodeLine{00017\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_character_controller_a9f85da12db6b7f0a375235f54b425b05}{Jump}}();}
+\DoxyCodeLine{00018\ \ \ \ \ }
+\DoxyCodeLine{00019\ \ \ \ \ \textcolor{comment}{//\ SETTERS}}
+\DoxyCodeLine{00020\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_character_controller_a7e6e40b5a158112debbd105f4f8035a0}{SetPosition}}(\mbox{\hyperlink{struct_vector2f}{Vector2f}}\ position);}
+\DoxyCodeLine{00021\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_character_controller_a94c7b7ebfbddd5b3b1c4409a339b9ab8}{OffsetPosition}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{struct_vector2f}{Vector2f}}\&\ offset);}
+\DoxyCodeLine{00022\ }
+\DoxyCodeLine{00023\ \ \ \ \ \textcolor{comment}{//\ GETTERS}}
+\DoxyCodeLine{00024\ \ \ \ \ \mbox{\hyperlink{struct_rectf}{Rectf}}\ \mbox{\hyperlink{class_character_controller_a059501cb5c0330b7baf253571919b96e}{GetHitBox}}()\ \textcolor{keyword}{const}\ \textcolor{keyword}{noexcept};}
+\DoxyCodeLine{00025\ \ \ \ \ \mbox{\hyperlink{struct_vector2f}{Vector2f}}\ \mbox{\hyperlink{class_character_controller_aa0009cf46a8ff0bf43bf6398f43a6d60}{GetPosition}}()\ \textcolor{keyword}{const}\ \textcolor{keyword}{noexcept};}
+\DoxyCodeLine{00026\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_character_controller_a1f56ffee4c046fb4dd75b64cf7113ac9}{IsOnGround}}()\ \textcolor{keyword}{const}\ \textcolor{keyword}{noexcept};}
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_character_controller_a9a20225fd27adeb9b642bcc90cde2a73}{IsOnCeiling}}()\ \textcolor{keyword}{const}\ \textcolor{keyword}{noexcept};}
+\DoxyCodeLine{00028\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_character_controller_a1586d8a630018e8608a0f59f5271c248}{IsFacingWall}}()\ \textcolor{keyword}{const}\ \textcolor{keyword}{noexcept};}
+\DoxyCodeLine{00029\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_character_controller_abcfcda1eac581b9acbeca21ea1a3efbe}{IsRunningAgainstWall}}()\ \textcolor{keyword}{const}\ \textcolor{keyword}{noexcept};}
+\DoxyCodeLine{00030\ \ \ \ \ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{class_character_controller_ac4f6fbd8e14c3ff23837ed783c37fe18}{GetWidth}}()\ \textcolor{keyword}{const}\ \textcolor{keyword}{noexcept};}
+\DoxyCodeLine{00031\ \ \ \ \ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{class_character_controller_a23ff8e105443bb930d1740025aa97eeb}{GetHeight}}()\ \textcolor{keyword}{const}\ \textcolor{keyword}{noexcept};}
+\DoxyCodeLine{00032\ }
+\DoxyCodeLine{00033\ \ \ \ \ \textcolor{comment}{//\ FUNCTION\ FOR\ DEBUG\ (draw\ of\ the\ rays)}}
+\DoxyCodeLine{00034\ \ \ \ \ std::vector<Vector2x2f>\ \mbox{\hyperlink{class_character_controller_a9a4301bb6e1ef84274d326d046b1bab3}{GetCollisionRays}}()\ \textcolor{keyword}{const}\ \textcolor{keyword}{noexcept};}
+\DoxyCodeLine{00035\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00036\ \ \ \ \ \textcolor{comment}{//\ MEMBERS}}
+\DoxyCodeLine{00037\ \ \ \ \ \mbox{\hyperlink{struct_vector2f}{Vector2f}}\ m\_Position;}
+\DoxyCodeLine{00038\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{float}\ m\_Width,\ m\_Height;}
+\DoxyCodeLine{00039\ \ \ \ \ \textcolor{keywordtype}{bool}\ m\_IsOnGround;}
+\DoxyCodeLine{00040\ \ \ \ \ \textcolor{keywordtype}{bool}\ m\_IsFacingWall;}
+\DoxyCodeLine{00041\ \ \ \ \ \textcolor{keywordtype}{bool}\ m\_IsOnCeiling;}
+\DoxyCodeLine{00042\ \ \ \ \ \textcolor{keywordtype}{bool}\ m\_IsRunningAgainstWall;}
+\DoxyCodeLine{00043\ }
+\DoxyCodeLine{00044\ \ \ \ \ \textcolor{comment}{//\ collision\ rays}}
+\DoxyCodeLine{00045\ \ \ \ \ \mbox{\hyperlink{struct_vector2x2f}{Vector2x2f}}}
+\DoxyCodeLine{00046\ \ \ \ \ \ \ \ \ m\_RayTopToBottomLeft,}
+\DoxyCodeLine{00047\ \ \ \ \ \ \ \ \ m\_RayTopToBottomRight,}
+\DoxyCodeLine{00048\ \ \ \ \ \ \ \ \ m\_RayLeftToRightTop,}
+\DoxyCodeLine{00049\ \ \ \ \ \ \ \ \ m\_RayLeftToRightBottom,}
+\DoxyCodeLine{00050\ \ \ \ \ \ \ \ \ m\_RayTopToBottomMiddle,}
+\DoxyCodeLine{00051\ \ \ \ \ \ \ \ \ m\_RayLeftToRightMiddle\ ;}
+\DoxyCodeLine{00052\ \};}
+\DoxyCodeLine{00053\ }
+
+\end{DoxyCode}

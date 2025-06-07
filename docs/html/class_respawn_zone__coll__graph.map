@@ -1,0 +1,7 @@
+<map id="RespawnZone" name="RespawnZone">
+<area shape="rect" id="Node000001" title=" " alt="" coords="10,180,116,207"/>
+<area shape="rect" id="Node000002" href="$class_interactable_item.html" title=" " alt="" coords="5,104,121,131"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="66,146,66,180,60,180,60,146"/>
+<area shape="rect" id="Node000003" href="$struct_rectf.html" title=" " alt="" coords="36,5,90,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="66,48,66,104,60,104,60,48"/>
+</map>

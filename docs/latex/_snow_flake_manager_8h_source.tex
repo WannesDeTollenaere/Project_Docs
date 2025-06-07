@@ -1,0 +1,35 @@
+\doxysection{Snow\+Flake\+Manager.\+h}
+\hypertarget{_snow_flake_manager_8h_source}{}\label{_snow_flake_manager_8h_source}\index{Celeste/SnowFlakeManager.h@{Celeste/SnowFlakeManager.h}}
+\mbox{\hyperlink{_snow_flake_manager_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_game_object_8h}{GameObject.h}}"{}}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_snow_flake_8h}{SnowFlake.h}}"{}}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00006\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_snow_flake_manager_a36a3785dc83ac5a2c77cc94e3ca15fbc}{SnowFlakeManager}}\ final\ :}
+\DoxyCodeLine{00007\ \ \ \ \ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_game_object_a3e9a5668734f19ec906d3f7504766440}{GameObject}}}
+\DoxyCodeLine{00008\ \{}
+\DoxyCodeLine{00009\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00010\ \ \ \ \ \textcolor{comment}{//\ CONSTRUCTORS}}
+\DoxyCodeLine{00011\ \ \ \ \ \mbox{\hyperlink{class_snow_flake_manager_a36a3785dc83ac5a2c77cc94e3ca15fbc}{SnowFlakeManager}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{struct_rectf}{Rectf}}\&\ windowBounds);}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00013\ \ \ \ \ \textcolor{comment}{//\ FUNCTIONS\ (inherited)}}
+\DoxyCodeLine{00014\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_snow_flake_manager_ac970433acd611cefd4db963e0b2c2fe6}{Draw}}()\ \textcolor{keyword}{const\ override};}
+\DoxyCodeLine{00015\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_snow_flake_manager_a949dbbdbd107a06ef9926faa4201fcd6}{Update}}(\textcolor{keywordtype}{float}\ elapsedSec)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00017\ \ \ \ \ \textcolor{comment}{//\ FUNCTIONS\ }}
+\DoxyCodeLine{00018\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_snow_flake_manager_a0b7c3366d1f89094fd93031bff36fe00}{MoveCanvas}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{struct_rectf}{Rectf}}\&\ canvas);}
+\DoxyCodeLine{00019\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_snow_flake_manager_a295be81d4aedc787a7a1f6aad01a1600}{SetBoundries}}(\textcolor{keywordtype}{float}\ width,\ \textcolor{keywordtype}{float}\ height);}
+\DoxyCodeLine{00020\ }
+\DoxyCodeLine{00021\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00022\ \ \ \ \ \textcolor{comment}{//\ MEMBERS}}
+\DoxyCodeLine{00023\ \ \ \ \ std::vector<SnowFlake>\ m\_SnowFlakes;}
+\DoxyCodeLine{00024\ \ \ \ \ \textcolor{keywordtype}{float}\ m\_WindowWidth,\ m\_WindowHeight;}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00026\ \ \ \ \ \textcolor{comment}{//\ FUNCTIONS}}
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{keywordtype}{void}\ InitializeSnowFlakes();}
+\DoxyCodeLine{00028\ \};}
+\DoxyCodeLine{00029\ }
+
+\end{DoxyCode}

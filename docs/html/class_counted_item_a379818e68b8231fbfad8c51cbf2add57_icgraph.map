@@ -1,0 +1,11 @@
+<map id="CountedItem::CountedItem" name="CountedItem::CountedItem">
+<area shape="rect" id="Node000001" title=" " alt="" coords="233,81,412,108"/>
+<area shape="rect" id="Node000002" href="$class_counted_item.html#a1ca64d423104327ee1dc415f0c993a8b" title=" " alt="" coords="5,5,185,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="271,78,184,47,147,35,148,30,186,41,273,73"/>
+<area shape="rect" id="Node000003" href="$class_counted_item.html#a2f0158d7499f2b0779dfc6a8105747f3" title=" " alt="" coords="5,56,185,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="217,86,185,82,186,77,218,80"/>
+<area shape="rect" id="Node000004" href="$class_counted_item.html#aa782288d34bfef1fbb3e7660f203aac5" title=" " alt="" coords="15,107,175,133"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="217,109,175,114,175,108,217,104"/>
+<area shape="rect" id="Node000005" href="$class_counted_item.html#ab4702946d4d6418d896a5411adf3427c" title=" " alt="" coords="15,157,175,184"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="273,116,186,148,148,159,147,154,184,143,271,111"/>
+</map>

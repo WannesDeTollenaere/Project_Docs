@@ -1,0 +1,150 @@
+\doxysection{Level Class Reference}
+\hypertarget{class_level}{}\label{class_level}\index{Level@{Level}}
+
+
+{\ttfamily \#include $<$Level.\+h$>$}
+
+
+
+Inheritance diagram for Level\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=167pt]{class_level__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Level\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=176pt]{class_level__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_level_a07851c4b8fa8c0cf72f6b4b6144591b5}{Level}} (float x, float y, float width, float height)
+\item 
+\mbox{\hyperlink{class_level_a41cd15dc51bc40c3edacf0afaa14cf25}{Level}} (const \mbox{\hyperlink{struct_rectf}{Rectf}} \&rect)
+\item 
+void \mbox{\hyperlink{class_level_a580564d5ba985ea6644cde213074d2c4}{Draw}} () const override
+\item 
+void \mbox{\hyperlink{class_level_a2fa077407b0deca2d008f636d4a7b03a}{Player\+Interaction}} (\mbox{\hyperlink{class_character}{Character}} \&character, float elapsed\+Sec) override
+\item 
+bool \mbox{\hyperlink{class_level_adf4233f98d55734b3862b4862ea83a27}{Does\+Collide}} (const \mbox{\hyperlink{class_character}{Character}} \&character) const
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_interactable_item}{Interactable\+Item}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_interactable_item_a5e5b9c459514e29098aaff5e62761569}{Interactable\+Item}} (const \mbox{\hyperlink{struct_rectf}{Rectf}} \&bounds)
+\item 
+\mbox{\hyperlink{class_interactable_item_a6bdd4d54f5965b13c2e68617c7321eb7}{Interactable\+Item}} (float x, float y, float width, float height)
+\item 
+\mbox{\hyperlink{class_interactable_item_a5a6b7071c26aea54f770dcddea4d4673}{Interactable\+Item}} (const \mbox{\hyperlink{struct_vector2f}{Vector2f}} \&position, float width, float height)
+\item 
+\mbox{\hyperlink{struct_rectf}{Rectf}} \mbox{\hyperlink{class_interactable_item_a446bdb0ccbff7de5951c0a3175bab008}{Get\+Bounds}} () const noexcept
+\item 
+bool \mbox{\hyperlink{class_interactable_item_aca9a06af6a60be1d7cc2e61ea6a18893}{Has\+Collision\+Bounds}} () const noexcept
+\item 
+virtual std\+::vector$<$ \mbox{\hyperlink{struct_vector2f}{Vector2f}} $>$ \mbox{\hyperlink{class_interactable_item_a4f4343a4b509fdf7253038f67238c5ae}{Get\+Collision\+Bounds}} () const noexcept
+\item 
+\mbox{\hyperlink{class_interactable_item_a9124be31fe21f1cbe122579dde8f9252}{Interactable\+Item}} (const \mbox{\hyperlink{class_interactable_item}{Interactable\+Item}} \&other)=default
+\item 
+\mbox{\hyperlink{class_interactable_item_ae94edc84b2ceb14edb952a3edb676772}{Interactable\+Item}} (\mbox{\hyperlink{class_interactable_item}{Interactable\+Item}} \&\&other) noexcept=default
+\item 
+\mbox{\hyperlink{class_interactable_item}{Interactable\+Item}} \& \mbox{\hyperlink{class_interactable_item_a67139551064d009752d97e2e77ef865f}{operator=}} (const \mbox{\hyperlink{class_interactable_item}{Interactable\+Item}} \&other)=default
+\item 
+\mbox{\hyperlink{class_interactable_item}{Interactable\+Item}} \& \mbox{\hyperlink{class_interactable_item_a4d5baa6774ebb9137c08921d3c421d09}{operator=}} (\mbox{\hyperlink{class_interactable_item}{Interactable\+Item}} \&\&other) noexcept=default
+\item 
+virtual \mbox{\hyperlink{class_interactable_item_aa3d008d77d5f29c2673a991e24ed9301}{\texorpdfstring{$\sim$}{\string~}\+Interactable\+Item}} () noexcept=default
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_interactable_item}{Interactable\+Item}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_rectf}{Rectf}} \mbox{\hyperlink{class_interactable_item_afddb710738697e6bbbd141c154d50335}{m\+\_\+\+Bounds}}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{struct_vector2f}{Vector2f}} $>$ \mbox{\hyperlink{class_interactable_item_aa38359a5d89f9690f9b8cddc4de3458e}{m\+\_\+\+Collision\+Bounds}}
+\end{DoxyCompactItemize}
+
+
+\label{doc-constructors}
+\Hypertarget{class_level_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_level_a07851c4b8fa8c0cf72f6b4b6144591b5}\index{Level@{Level}!Level@{Level}}
+\index{Level@{Level}!Level@{Level}}
+\doxysubsubsection{\texorpdfstring{Level()}{Level()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_level_a07851c4b8fa8c0cf72f6b4b6144591b5} 
+Level\+::\+Level (\begin{DoxyParamCaption}\item[{float}]{x}{, }\item[{float}]{y}{, }\item[{float}]{width}{, }\item[{float}]{height}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=348pt]{class_level_a07851c4b8fa8c0cf72f6b4b6144591b5_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_level_a41cd15dc51bc40c3edacf0afaa14cf25}\index{Level@{Level}!Level@{Level}}
+\index{Level@{Level}!Level@{Level}}
+\doxysubsubsection{\texorpdfstring{Level()}{Level()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_level_a41cd15dc51bc40c3edacf0afaa14cf25} 
+Level\+::\+Level (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_rectf}{Rectf}} \&}]{rect}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=348pt]{class_level_a41cd15dc51bc40c3edacf0afaa14cf25_cgraph}
+\end{center}
+\end{figure}
+
+
+\label{doc-func-members}
+\Hypertarget{class_level_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_level_adf4233f98d55734b3862b4862ea83a27}\index{Level@{Level}!DoesCollide@{DoesCollide}}
+\index{DoesCollide@{DoesCollide}!Level@{Level}}
+\doxysubsubsection{\texorpdfstring{DoesCollide()}{DoesCollide()}}
+{\footnotesize\ttfamily \label{class_level_adf4233f98d55734b3862b4862ea83a27} 
+bool Level\+::\+Does\+Collide (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_character}{Character}} \&}]{character}{}\end{DoxyParamCaption}) const}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_level_adf4233f98d55734b3862b4862ea83a27_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_level_a580564d5ba985ea6644cde213074d2c4}\index{Level@{Level}!Draw@{Draw}}
+\index{Draw@{Draw}!Level@{Level}}
+\doxysubsubsection{\texorpdfstring{Draw()}{Draw()}}
+{\footnotesize\ttfamily \label{class_level_a580564d5ba985ea6644cde213074d2c4} 
+void Level\+::\+Draw (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_interactable_item_af87c8f5b507f809c6eb2ea5b43d83c25}{Interactable\+Item}}.
+
+\Hypertarget{class_level_a2fa077407b0deca2d008f636d4a7b03a}\index{Level@{Level}!PlayerInteraction@{PlayerInteraction}}
+\index{PlayerInteraction@{PlayerInteraction}!Level@{Level}}
+\doxysubsubsection{\texorpdfstring{PlayerInteraction()}{PlayerInteraction()}}
+{\footnotesize\ttfamily \label{class_level_a2fa077407b0deca2d008f636d4a7b03a} 
+void Level\+::\+Player\+Interaction (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_character}{Character}} \&}]{character}{, }\item[{float}]{elapsed\+Sec}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_interactable_item_a18b200bb2e7fc662ea1c2d1a11e483d2}{Interactable\+Item}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Celeste/\mbox{\hyperlink{_level_8h}{Level.\+h}}\item 
+Celeste/\mbox{\hyperlink{_level_8cpp}{Level.\+cpp}}\end{DoxyCompactItemize}

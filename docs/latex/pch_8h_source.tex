@@ -1,0 +1,26 @@
+\doxysection{pch.\+h}
+\hypertarget{pch_8h_source}{}\label{pch_8h_source}\index{Celeste/pch.h@{Celeste/pch.h}}
+\mbox{\hyperlink{pch_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ \textcolor{comment}{//ML\ Detection\ Extension}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#ifdef\ \_DEBUG}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#define\ \_CRTDBG\_MAP\_ALLOC}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <cstdlib>}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ <crtdbg.h>}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#define\ DEBUG\_NEW\ new(\_NORMAL\_BLOCK,\ \_\_FILE\_\_,\ \_\_LINE\_\_)}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#define\ new\ DEBUG\_NEW}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00010\ \textcolor{comment}{//\ SDL\ and\ OpenGL\ Includes}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#pragma\ warning(disable\ :\ 26812)}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#pragma\ warning(disable\ :\ 4820)}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#include\ <SDL.h>}}
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#include\ <SDL\_opengl.h>}}
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#include\ <SDL\_ttf.h>}\ }
+\DoxyCodeLine{00016\ \textcolor{preprocessor}{\#include\ <SDL\_mixer.h>}\ }
+\DoxyCodeLine{00017\ \textcolor{preprocessor}{\#include\ <SDL\_image.h>}}
+\DoxyCodeLine{00018\ }
+\DoxyCodeLine{00019\ \textcolor{preprocessor}{\#pragma\ warning(default\ :\ 26812)}}
+\DoxyCodeLine{00020\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{structs_8h}{structs.h}}"{}}}
+
+\end{DoxyCode}

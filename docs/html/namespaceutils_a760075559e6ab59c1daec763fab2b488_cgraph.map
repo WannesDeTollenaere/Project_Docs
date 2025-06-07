@@ -1,0 +1,14 @@
+<map id="utils::DistPointLineSegment" name="utils::DistPointLineSegment">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,56,189,83"/>
+<area shape="rect" id="Node000002" href="$struct_vector2f.html#af8ceb9310d7065eb485e47b072a5b143" title=" " alt="" coords="237,5,380,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="155,53,234,34,235,39,157,58"/>
+<area shape="rect" id="Node000004" href="$struct_vector2f.html#acedb20d25ccc3009546e120eda010bf5" title=" " alt="" coords="432,93,549,120"/>
+<area shape="poly" id="edge4_Node000001_Node000004" title=" " alt="" coords="165,81,237,92,331,100,417,103,417,108,330,105,236,97,164,86"/>
+<area shape="rect" id="Node000005" href="$struct_vector2f.html#aba5dd756c385551a19d36b57d8cbf629" title=" " alt="" coords="237,56,380,83"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="189,67,221,67,221,72,189,72"/>
+<area shape="rect" id="Node000003" href="$struct_vector2f.html#a3db9a868c58bc809e5e09a88d65a77ec" title=" " alt="" coords="428,31,553,57"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="381,26,413,31,412,36,380,31"/>
+<area shape="poly" id="edge3_Node000003_Node000003" title=" " alt="" coords="459,32,454,22,458,12,470,6,491,4,513,7,524,13,522,18,511,12,491,9,472,11,462,16,459,21,464,29"/>
+<area shape="poly" id="edge7_Node000005_Node000003" title=" " alt="" coords="380,57,412,52,413,57,381,62"/>
+<area shape="poly" id="edge6_Node000005_Node000004" title=" " alt="" coords="377,81,418,89,417,94,376,86"/>
+</map>

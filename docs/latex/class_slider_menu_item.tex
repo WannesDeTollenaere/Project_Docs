@@ -1,0 +1,230 @@
+\doxysection{Slider\+Menu\+Item Class Reference}
+\hypertarget{class_slider_menu_item}{}\label{class_slider_menu_item}\index{SliderMenuItem@{SliderMenuItem}}
+
+
+{\ttfamily \#include $<$Slider\+Menu\+Item.\+h$>$}
+
+
+
+Inheritance diagram for Slider\+Menu\+Item\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=164pt]{class_slider_menu_item__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Slider\+Menu\+Item\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=202pt]{class_slider_menu_item__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_slider_menu_item_a5d9730a9d054c905745640f023718675}{Slider\+Menu\+Item}} (const std\+::string \&title, const int font\+Size, int start\+Percent, void(Pause\+Menu\+::\texorpdfstring{$\ast$}{*}func)(int), \mbox{\hyperlink{class_pause_menu}{Pause\+Menu}} \texorpdfstring{$\ast$}{*}pm)
+\item 
+void \mbox{\hyperlink{class_slider_menu_item_a41abad7d2a083488f3c0d7b91cbd5bcc}{Adjust\+Slider\+Left}} ()
+\item 
+void \mbox{\hyperlink{class_slider_menu_item_a3fe62fc64600361669cd1ad3d33c905a}{Adjust\+Slider\+Right}} ()
+\item 
+void \mbox{\hyperlink{class_slider_menu_item_ab4a20e4b5122b3a824e797dac43eee8d}{Draw}} (bool selected) const override
+\item 
+void \mbox{\hyperlink{class_slider_menu_item_a2e9e1a49f05d0450ef6af9ef0c31cc50}{Draw\+Slider}} () const
+\item 
+void \mbox{\hyperlink{class_slider_menu_item_a14cdb721ca4a62dcdcc0d2ea9a925384}{Set\+Percentage}} (int percentage)
+\item 
+void \mbox{\hyperlink{class_slider_menu_item_a85e354bf8811a965eda5340767995efb}{Set\+Dst\+Rect}} (const \mbox{\hyperlink{struct_rectf}{Rectf}} \&rect) override
+\item 
+float \mbox{\hyperlink{class_slider_menu_item_a616639abe83e2d60d80f49b60535af1e}{Get\+Width}} () const override
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_menu_item}{Menu\+Item}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_menu_item_a1dab15f86586e486bb0b90f3fc0db510}{Menu\+Item}} (const std\+::string \&title, const int font\+Size)
+\item 
+virtual float \mbox{\hyperlink{class_menu_item_a07c8f5adc4870b53e41d24851bd33c01}{Get\+Height}} () const
+\item 
+virtual \mbox{\hyperlink{class_menu_item_adfaf02b281169b8bc9b3d3725ef74a3d}{\texorpdfstring{$\sim$}{\string~}\+Menu\+Item}} () noexcept=default
+\item 
+\mbox{\hyperlink{class_menu_item_a58ed9fd57ae28569d4ece70c6ab97ff5}{Menu\+Item}} (const \mbox{\hyperlink{class_menu_item}{Menu\+Item}} \&other)=default
+\item 
+\mbox{\hyperlink{class_menu_item}{Menu\+Item}} \& \mbox{\hyperlink{class_menu_item_a01018f8bda54da2c74445cfbf41fc6a1}{operator=}} (const \mbox{\hyperlink{class_menu_item}{Menu\+Item}} \&other)=default
+\item 
+\mbox{\hyperlink{class_menu_item_a21dc4f56a813a25af9be986f61cc5993}{Menu\+Item}} (\mbox{\hyperlink{class_menu_item}{Menu\+Item}} \&\&other) noexcept=default
+\item 
+\mbox{\hyperlink{class_menu_item}{Menu\+Item}} \& \mbox{\hyperlink{class_menu_item_ad6eaa7d8a1df9a14cf1f2c055a9ca2b7}{operator=}} (\mbox{\hyperlink{class_menu_item}{Menu\+Item}} \&\&other) noexcept=default
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_menu_item}{Menu\+Item}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_rectf}{Rectf}} \mbox{\hyperlink{class_menu_item_a4e7e9345532067ffab3537f4383bafe2}{m\+\_\+dst\+Rect}}
+\item 
+\mbox{\hyperlink{class_texture}{Texture}} \mbox{\hyperlink{class_menu_item_a154c29229c2eac5f7a94079f67584148}{m\+\_\+\+Text}}
+\item 
+std\+::string \mbox{\hyperlink{class_menu_item_ae5e50c770b9e4db5fc09bf856f2eafc4}{m\+\_\+\+Title}}
+\item 
+const int \mbox{\hyperlink{class_menu_item_a0e39d6d73c0e101651e1582a50cfc5dd}{m\+\_\+\+Font\+Size}}
+\end{DoxyCompactItemize}
+
+
+\label{doc-constructors}
+\Hypertarget{class_slider_menu_item_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_slider_menu_item_a5d9730a9d054c905745640f023718675}\index{SliderMenuItem@{SliderMenuItem}!SliderMenuItem@{SliderMenuItem}}
+\index{SliderMenuItem@{SliderMenuItem}!SliderMenuItem@{SliderMenuItem}}
+\doxysubsubsection{\texorpdfstring{SliderMenuItem()}{SliderMenuItem()}}
+{\footnotesize\ttfamily \label{class_slider_menu_item_a5d9730a9d054c905745640f023718675} 
+Slider\+Menu\+Item\+::\+Slider\+Menu\+Item (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{title}{, }\item[{const int}]{font\+Size}{, }\item[{int}]{start\+Percent}{, }\item[{void(Pause\+Menu\+::\texorpdfstring{$\ast$}{*}}]{func~}{)(int), }\item[{\mbox{\hyperlink{class_pause_menu}{Pause\+Menu}} \texorpdfstring{$\ast$}{*}}]{pm}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_slider_menu_item_a5d9730a9d054c905745640f023718675_cgraph}
+\end{center}
+\end{figure}
+
+
+\label{doc-func-members}
+\Hypertarget{class_slider_menu_item_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_slider_menu_item_a41abad7d2a083488f3c0d7b91cbd5bcc}\index{SliderMenuItem@{SliderMenuItem}!AdjustSliderLeft@{AdjustSliderLeft}}
+\index{AdjustSliderLeft@{AdjustSliderLeft}!SliderMenuItem@{SliderMenuItem}}
+\doxysubsubsection{\texorpdfstring{AdjustSliderLeft()}{AdjustSliderLeft()}}
+{\footnotesize\ttfamily \label{class_slider_menu_item_a41abad7d2a083488f3c0d7b91cbd5bcc} 
+void Slider\+Menu\+Item\+::\+Adjust\+Slider\+Left (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_slider_menu_item_a41abad7d2a083488f3c0d7b91cbd5bcc_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_slider_menu_item_a41abad7d2a083488f3c0d7b91cbd5bcc_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_slider_menu_item_a3fe62fc64600361669cd1ad3d33c905a}\index{SliderMenuItem@{SliderMenuItem}!AdjustSliderRight@{AdjustSliderRight}}
+\index{AdjustSliderRight@{AdjustSliderRight}!SliderMenuItem@{SliderMenuItem}}
+\doxysubsubsection{\texorpdfstring{AdjustSliderRight()}{AdjustSliderRight()}}
+{\footnotesize\ttfamily \label{class_slider_menu_item_a3fe62fc64600361669cd1ad3d33c905a} 
+void Slider\+Menu\+Item\+::\+Adjust\+Slider\+Right (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_slider_menu_item_a3fe62fc64600361669cd1ad3d33c905a_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_slider_menu_item_a3fe62fc64600361669cd1ad3d33c905a_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_slider_menu_item_ab4a20e4b5122b3a824e797dac43eee8d}\index{SliderMenuItem@{SliderMenuItem}!Draw@{Draw}}
+\index{Draw@{Draw}!SliderMenuItem@{SliderMenuItem}}
+\doxysubsubsection{\texorpdfstring{Draw()}{Draw()}}
+{\footnotesize\ttfamily \label{class_slider_menu_item_ab4a20e4b5122b3a824e797dac43eee8d} 
+void Slider\+Menu\+Item\+::\+Draw (\begin{DoxyParamCaption}\item[{bool}]{selected}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_menu_item_a731b3c3ec8d6c67850ad01ef3acbb3b6}{Menu\+Item}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_slider_menu_item_ab4a20e4b5122b3a824e797dac43eee8d_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_slider_menu_item_a2e9e1a49f05d0450ef6af9ef0c31cc50}\index{SliderMenuItem@{SliderMenuItem}!DrawSlider@{DrawSlider}}
+\index{DrawSlider@{DrawSlider}!SliderMenuItem@{SliderMenuItem}}
+\doxysubsubsection{\texorpdfstring{DrawSlider()}{DrawSlider()}}
+{\footnotesize\ttfamily \label{class_slider_menu_item_a2e9e1a49f05d0450ef6af9ef0c31cc50} 
+void Slider\+Menu\+Item\+::\+Draw\+Slider (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_slider_menu_item_a2e9e1a49f05d0450ef6af9ef0c31cc50_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_slider_menu_item_a2e9e1a49f05d0450ef6af9ef0c31cc50_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_slider_menu_item_a616639abe83e2d60d80f49b60535af1e}\index{SliderMenuItem@{SliderMenuItem}!GetWidth@{GetWidth}}
+\index{GetWidth@{GetWidth}!SliderMenuItem@{SliderMenuItem}}
+\doxysubsubsection{\texorpdfstring{GetWidth()}{GetWidth()}}
+{\footnotesize\ttfamily \label{class_slider_menu_item_a616639abe83e2d60d80f49b60535af1e} 
+float Slider\+Menu\+Item\+::\+Get\+Width (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_menu_item_a71c73bf07171a574e83e73c6908e9cbb}{Menu\+Item}}.
+
+\Hypertarget{class_slider_menu_item_a85e354bf8811a965eda5340767995efb}\index{SliderMenuItem@{SliderMenuItem}!SetDstRect@{SetDstRect}}
+\index{SetDstRect@{SetDstRect}!SliderMenuItem@{SliderMenuItem}}
+\doxysubsubsection{\texorpdfstring{SetDstRect()}{SetDstRect()}}
+{\footnotesize\ttfamily \label{class_slider_menu_item_a85e354bf8811a965eda5340767995efb} 
+void Slider\+Menu\+Item\+::\+Set\+Dst\+Rect (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_rectf}{Rectf}} \&}]{rect}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_menu_item_aacb4eaf5fdd68936c1665b65ddf912f0}{Menu\+Item}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_slider_menu_item_a85e354bf8811a965eda5340767995efb_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_slider_menu_item_a14cdb721ca4a62dcdcc0d2ea9a925384}\index{SliderMenuItem@{SliderMenuItem}!SetPercentage@{SetPercentage}}
+\index{SetPercentage@{SetPercentage}!SliderMenuItem@{SliderMenuItem}}
+\doxysubsubsection{\texorpdfstring{SetPercentage()}{SetPercentage()}}
+{\footnotesize\ttfamily \label{class_slider_menu_item_a14cdb721ca4a62dcdcc0d2ea9a925384} 
+void Slider\+Menu\+Item\+::\+Set\+Percentage (\begin{DoxyParamCaption}\item[{int}]{percentage}{}\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_slider_menu_item_a14cdb721ca4a62dcdcc0d2ea9a925384_icgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Celeste/\mbox{\hyperlink{_slider_menu_item_8h}{Slider\+Menu\+Item.\+h}}\item 
+Celeste/\mbox{\hyperlink{_slider_menu_item_8cpp}{Slider\+Menu\+Item.\+cpp}}\end{DoxyCompactItemize}

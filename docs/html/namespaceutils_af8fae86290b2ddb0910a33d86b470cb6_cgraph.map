@@ -1,0 +1,16 @@
+<map id="utils::IsPointInPolygon" name="utils::IsPointInPolygon">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,31,158,57"/>
+<area shape="rect" id="Node000002" href="$namespaceutils.html#a9ef86448634b099a56f145753593ab2f" title=" " alt="" coords="206,31,393,57"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="158,41,190,41,190,47,158,47"/>
+<area shape="rect" id="Node000003" href="$struct_vector2f.html#ab99fa60e5b7af169760de9057863423b" title=" " alt="" coords="676,5,834,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="393,36,660,21,661,27,394,41"/>
+<area shape="rect" id="Node000005" href="$namespaceutils.html#afa48cca7d08708b5ce3581974e9c39aa" title=" " alt="" coords="441,56,628,83"/>
+<area shape="poly" id="edge5_Node000002_Node000005" title=" " alt="" coords="394,51,426,55,425,60,393,57"/>
+<area shape="rect" id="Node000004" href="$struct_vector2f.html#a3db9a868c58bc809e5e09a88d65a77ec" title=" " alt="" coords="882,31,1007,57"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="834,27,867,31,866,36,834,32"/>
+<area shape="poly" id="edge4_Node000004_Node000004" title=" " alt="" coords="912,32,906,22,910,12,923,6,944,4,967,7,979,13,977,18,965,12,944,9,925,11,914,16,912,21,917,29"/>
+<area shape="poly" id="edge6_Node000005_Node000003" title=" " alt="" coords="595,53,679,33,680,39,597,58"/>
+<area shape="rect" id="Node000006" href="$struct_vector2f.html#af8ceb9310d7065eb485e47b072a5b143" title=" " alt="" coords="683,56,827,83"/>
+<area shape="poly" id="edge7_Node000005_Node000006" title=" " alt="" coords="629,67,668,67,668,72,629,72"/>
+<area shape="poly" id="edge8_Node000006_Node000004" title=" " alt="" coords="827,57,866,52,867,57,827,62"/>
+</map>

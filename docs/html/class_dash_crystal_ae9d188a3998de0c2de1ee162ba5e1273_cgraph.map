@@ -1,0 +1,24 @@
+<map id="DashCrystal::PlayerInteraction" name="DashCrystal::PlayerInteraction">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,81,206,108"/>
+<area shape="rect" id="Node000002" href="$class_character.html#a0b790800d6ff90eebee18bce25177fce" title=" " alt="" coords="286,5,434,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="143,78,253,41,281,34,283,39,254,47,145,83"/>
+<area shape="rect" id="Node000003" href="$class_character.html#a5f03513497f6766307128980a7c641ce" title=" " alt="" coords="254,56,466,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="206,82,238,79,238,84,207,87"/>
+<area shape="rect" id="Node000004" href="$namespaceutils.html#a11a0eb68e467a22aed74f507057c39ed" title=" " alt="" coords="293,107,426,133"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="207,102,278,109,277,114,206,107"/>
+<area shape="rect" id="Node000010" href="$class_character.html#ad86bc482bf4f17bff08a76d3ff54749e" title=" " alt="" coords="284,157,436,184"/>
+<area shape="poly" id="edge12_Node000001_Node000010" title=" " alt="" coords="145,106,254,143,283,150,281,156,253,148,143,111"/>
+<area shape="rect" id="Node000005" href="$namespaceutils.html#a760075559e6ab59c1daec763fab2b488" title=" " alt="" coords="514,107,697,133"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="427,117,498,117,498,123,427,123"/>
+<area shape="rect" id="Node000006" href="$struct_vector2f.html#af8ceb9310d7065eb485e47b072a5b143" title=" " alt="" coords="745,56,889,83"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="664,103,743,84,744,89,665,109"/>
+<area shape="rect" id="Node000008" href="$struct_vector2f.html#acedb20d25ccc3009546e120eda010bf5" title=" " alt="" coords="941,144,1058,171"/>
+<area shape="poly" id="edge8_Node000005_Node000008" title=" " alt="" coords="674,131,746,143,839,150,926,154,925,159,839,156,745,148,673,137"/>
+<area shape="rect" id="Node000009" href="$struct_vector2f.html#aba5dd756c385551a19d36b57d8cbf629" title=" " alt="" coords="745,107,889,133"/>
+<area shape="poly" id="edge9_Node000005_Node000009" title=" " alt="" coords="698,117,730,117,730,123,698,123"/>
+<area shape="rect" id="Node000007" href="$struct_vector2f.html#a3db9a868c58bc809e5e09a88d65a77ec" title=" " alt="" coords="937,81,1062,108"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="889,77,922,81,921,87,888,82"/>
+<area shape="poly" id="edge7_Node000007_Node000007" title=" " alt="" coords="968,82,963,73,966,63,979,57,999,55,1021,57,1033,64,1030,68,1020,62,999,60,980,62,970,67,968,72,973,80"/>
+<area shape="poly" id="edge11_Node000009_Node000007" title=" " alt="" coords="888,107,921,103,922,108,889,113"/>
+<area shape="poly" id="edge10_Node000009_Node000008" title=" " alt="" coords="886,131,927,140,926,145,885,137"/>
+</map>

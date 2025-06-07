@@ -1,0 +1,28 @@
+<map id="Strawberry::PlayerInteraction" name="Strawberry::PlayerInteraction">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,132,196,159"/>
+<area shape="rect" id="Node000002" href="$class_character.html#a0b790800d6ff90eebee18bce25177fce" title=" " alt="" coords="259,5,406,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="116,129,169,87,205,63,242,42,257,35,259,40,245,46,208,67,173,91,119,134"/>
+<area shape="rect" id="Node000003" href="$class_game_object.html#ac3bd47953a5614e49e3739955fb5d669" title=" " alt="" coords="248,56,418,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="138,129,243,92,266,85,267,90,245,97,140,134"/>
+<area shape="rect" id="Node000004" href="$namespaceutils.html#a11a0eb68e467a22aed74f507057c39ed" title=" " alt="" coords="266,107,400,133"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="196,132,250,126,251,132,196,138"/>
+<area shape="rect" id="Node000010" href="$class_character.html#a9ccad0ccca398eed8e4e2b101f47a883" title=" " alt="" coords="248,157,418,184"/>
+<area shape="poly" id="edge12_Node000001_Node000010" title=" " alt="" coords="196,153,233,157,232,162,196,158"/>
+<area shape="rect" id="Node000011" href="$class_character.html#a51c025cc2193ef3fe81395d5e85dd017" title=" " alt="" coords="244,208,422,235"/>
+<area shape="poly" id="edge13_Node000001_Node000011" title=" " alt="" coords="140,157,245,193,267,201,266,206,243,199,138,162"/>
+<area shape="rect" id="Node000012" href="$class_strawberry.html#afcc525a41d07703008636397800977bb" title=" " alt="" coords="269,259,396,285"/>
+<area shape="poly" id="edge14_Node000001_Node000012" title=" " alt="" coords="119,157,173,200,208,224,245,244,259,251,257,255,242,249,205,228,169,204,116,161"/>
+<area shape="rect" id="Node000005" href="$namespaceutils.html#a760075559e6ab59c1daec763fab2b488" title=" " alt="" coords="470,107,653,133"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="400,117,454,117,454,123,400,123"/>
+<area shape="rect" id="Node000006" href="$struct_vector2f.html#af8ceb9310d7065eb485e47b072a5b143" title=" " alt="" coords="701,56,845,83"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="620,103,699,84,700,89,621,109"/>
+<area shape="rect" id="Node000008" href="$struct_vector2f.html#acedb20d25ccc3009546e120eda010bf5" title=" " alt="" coords="897,144,1014,171"/>
+<area shape="poly" id="edge8_Node000005_Node000008" title=" " alt="" coords="630,131,702,143,795,150,882,154,881,159,795,156,701,148,629,137"/>
+<area shape="rect" id="Node000009" href="$struct_vector2f.html#aba5dd756c385551a19d36b57d8cbf629" title=" " alt="" coords="701,107,845,133"/>
+<area shape="poly" id="edge9_Node000005_Node000009" title=" " alt="" coords="654,117,686,117,686,123,654,123"/>
+<area shape="rect" id="Node000007" href="$struct_vector2f.html#a3db9a868c58bc809e5e09a88d65a77ec" title=" " alt="" coords="893,81,1018,108"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="845,77,878,81,877,87,844,82"/>
+<area shape="poly" id="edge7_Node000007_Node000007" title=" " alt="" coords="924,82,919,73,922,63,935,57,955,55,977,57,989,64,986,68,976,62,955,60,936,62,926,67,924,72,929,80"/>
+<area shape="poly" id="edge11_Node000009_Node000007" title=" " alt="" coords="844,107,877,103,878,108,845,113"/>
+<area shape="poly" id="edge10_Node000009_Node000008" title=" " alt="" coords="842,131,883,140,882,145,841,137"/>
+</map>

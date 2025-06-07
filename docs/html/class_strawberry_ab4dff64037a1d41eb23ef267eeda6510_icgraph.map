@@ -1,0 +1,22 @@
+<map id="Strawberry::Strawberry" name="Strawberry::Strawberry">
+<area shape="rect" id="Node000001" title=" " alt="" coords="446,219,601,245"/>
+<area shape="poly" id="edge9_Node000001_Node000001" title=" " alt="" coords="559,206,547,200,524,197,502,199,490,204,488,209,493,217,489,220,482,210,487,200,501,194,524,192,548,195,561,201"/>
+<area shape="rect" id="Node000002" href="$class_flying_strawberry.html#a3603795cd3a0c20e776eafe4138f59b4" title=" " alt="" coords="236,101,398,144"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="488,212,397,158,373,147,375,142,399,154,491,208"/>
+<area shape="rect" id="Node000007" href="$class_strawberry.html#a81dca459e7fc2dac2c2ab3cff76c6145" title=" " alt="" coords="243,168,390,195"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="451,217,374,198,375,193,452,212"/>
+<area shape="rect" id="Node000008" href="$class_strawberry.html#a673f5c80b8d67a2580087a4eae0832b6" title=" " alt="" coords="243,219,390,245"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="430,235,391,235,391,229,430,229"/>
+<area shape="rect" id="Node000009" href="$class_strawberry.html#a29384527bb818f4f24983b24b5e04fd3" title=" " alt="" coords="239,269,394,296"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="452,252,375,271,374,266,451,247"/>
+<area shape="rect" id="Node000010" href="$class_strawberry.html#a089a694b74e5e7c5ce542ca943c72848" title=" " alt="" coords="239,320,394,347"/>
+<area shape="poly" id="edge10_Node000001_Node000010" title=" " alt="" coords="492,257,449,284,399,310,370,322,368,317,397,306,446,279,489,252"/>
+<area shape="rect" id="Node000003" href="$class_flying_strawberry.html#ac1a195cd4ae7ae45963af4d7630235eb" title=" " alt="" coords="15,5,178,48"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="259,96,187,62,159,51,161,46,189,58,261,92"/>
+<area shape="rect" id="Node000004" href="$class_flying_strawberry.html#aa70131b40e4fb24eb03a9c6ecbfd2d59" title=" " alt="" coords="15,72,178,115"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="220,112,178,107,179,102,220,107"/>
+<area shape="rect" id="Node000005" href="$class_flying_strawberry.html#a13e7820116a2e072653974d1cbd9496c" title=" " alt="" coords="5,139,188,165"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="221,138,189,142,188,137,220,133"/>
+<area shape="rect" id="Node000006" href="$class_flying_strawberry.html#a415c4868ba7ff99c77a638df1e7e0684" title=" " alt="" coords="5,189,188,216"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="250,153,237,158,189,180,153,191,151,186,187,175,235,154,248,148"/>
+</map>

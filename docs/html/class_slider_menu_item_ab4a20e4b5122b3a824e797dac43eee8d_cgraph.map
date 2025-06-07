@@ -1,0 +1,14 @@
+<map id="SliderMenuItem::Draw" name="SliderMenuItem::Draw">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,55,157,81"/>
+<area shape="rect" id="Node000002" href="$class_texture.html#a7b647d8063384d6f94375245f6139ee9" title=" " alt="" coords="245,29,348,56"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="157,56,230,48,230,53,157,62"/>
+<area shape="rect" id="Node000003" href="$class_slider_menu_item.html#a2e9e1a49f05d0450ef6af9ef0c31cc50" title=" " alt="" coords="205,80,389,107"/>
+<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="157,74,189,78,189,83,157,80"/>
+<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="260,30,254,21,258,11,273,5,297,3,322,5,336,12,334,16,321,10,297,8,274,10,262,15,259,20,265,27"/>
+<area shape="rect" id="Node000004" href="$namespaceutils.html#a4580e5c28f2812f929cdbd60059b2635" title=" " alt="" coords="437,29,601,56"/>
+<area shape="poly" id="edge4_Node000003_Node000004" title=" " alt="" coords="358,77,442,57,443,63,359,82"/>
+<area shape="rect" id="Node000005" href="$namespaceutils.html#aa8fda4c292a496aeb53a87e7b6dc32f1" title=" " alt="" coords="464,80,574,107"/>
+<area shape="poly" id="edge5_Node000003_Node000005" title=" " alt="" coords="389,91,449,91,449,96,389,96"/>
+<area shape="rect" id="Node000006" href="$namespaceutils.html#abc8380a69410c7b193d9d36474ae211f" title=" " alt="" coords="467,131,571,157"/>
+<area shape="poly" id="edge6_Node000003_Node000006" title=" " alt="" coords="359,105,452,126,451,131,358,110"/>
+</map>

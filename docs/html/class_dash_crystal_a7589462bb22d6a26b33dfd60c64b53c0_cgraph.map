@@ -1,0 +1,9 @@
+<map id="DashCrystal::DashCrystal" name="DashCrystal::DashCrystal">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,43,181,69"/>
+<area shape="rect" id="Node000002" href="$class_dash_crystal.html#a374494580df528b1eed16b39dd79ff93" title=" " alt="" coords="229,43,404,69"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="181,53,213,53,213,59,181,59"/>
+<area shape="rect" id="Node000003" href="$class_counted_item.html#a7a4f3ec5e121b459d51a818c9ed0e269" title=" " alt="" coords="470,5,651,48"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="404,43,454,37,455,42,405,48"/>
+<area shape="rect" id="Node000004" href="$class_interactable_item.html#a5e5b9c459514e29098aaff5e62761569" title=" " alt="" coords="452,72,669,99"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="405,64,437,68,436,73,404,69"/>
+</map>

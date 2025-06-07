@@ -1,0 +1,126 @@
+\doxysection{Respawn\+Zone Class Reference}
+\hypertarget{class_respawn_zone}{}\label{class_respawn_zone}\index{RespawnZone@{RespawnZone}}
+
+
+{\ttfamily \#include $<$Respawn\+Zone.\+h$>$}
+
+
+
+Inheritance diagram for Respawn\+Zone\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=167pt]{class_respawn_zone__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Respawn\+Zone\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=176pt]{class_respawn_zone__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_respawn_zone_a151582924ebad3e69266a852bc5daf1c}{Respawn\+Zone}} (const \mbox{\hyperlink{struct_rectf}{Rectf}} \&bounds)
+\item 
+void \mbox{\hyperlink{class_respawn_zone_a061fb1d731ab1cac459d7f87f524342a}{Draw}} () const override
+\item 
+void \mbox{\hyperlink{class_respawn_zone_a5c821db8bbdc1da0401f633af761687c}{Player\+Interaction}} (\mbox{\hyperlink{class_character}{Character}} \&character, float elapsed\+Sec) override
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_interactable_item}{Interactable\+Item}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_interactable_item_a5e5b9c459514e29098aaff5e62761569}{Interactable\+Item}} (const \mbox{\hyperlink{struct_rectf}{Rectf}} \&bounds)
+\item 
+\mbox{\hyperlink{class_interactable_item_a6bdd4d54f5965b13c2e68617c7321eb7}{Interactable\+Item}} (float x, float y, float width, float height)
+\item 
+\mbox{\hyperlink{class_interactable_item_a5a6b7071c26aea54f770dcddea4d4673}{Interactable\+Item}} (const \mbox{\hyperlink{struct_vector2f}{Vector2f}} \&position, float width, float height)
+\item 
+\mbox{\hyperlink{struct_rectf}{Rectf}} \mbox{\hyperlink{class_interactable_item_a446bdb0ccbff7de5951c0a3175bab008}{Get\+Bounds}} () const noexcept
+\item 
+bool \mbox{\hyperlink{class_interactable_item_aca9a06af6a60be1d7cc2e61ea6a18893}{Has\+Collision\+Bounds}} () const noexcept
+\item 
+virtual std\+::vector$<$ \mbox{\hyperlink{struct_vector2f}{Vector2f}} $>$ \mbox{\hyperlink{class_interactable_item_a4f4343a4b509fdf7253038f67238c5ae}{Get\+Collision\+Bounds}} () const noexcept
+\item 
+\mbox{\hyperlink{class_interactable_item_a9124be31fe21f1cbe122579dde8f9252}{Interactable\+Item}} (const \mbox{\hyperlink{class_interactable_item}{Interactable\+Item}} \&other)=default
+\item 
+\mbox{\hyperlink{class_interactable_item_ae94edc84b2ceb14edb952a3edb676772}{Interactable\+Item}} (\mbox{\hyperlink{class_interactable_item}{Interactable\+Item}} \&\&other) noexcept=default
+\item 
+\mbox{\hyperlink{class_interactable_item}{Interactable\+Item}} \& \mbox{\hyperlink{class_interactable_item_a67139551064d009752d97e2e77ef865f}{operator=}} (const \mbox{\hyperlink{class_interactable_item}{Interactable\+Item}} \&other)=default
+\item 
+\mbox{\hyperlink{class_interactable_item}{Interactable\+Item}} \& \mbox{\hyperlink{class_interactable_item_a4d5baa6774ebb9137c08921d3c421d09}{operator=}} (\mbox{\hyperlink{class_interactable_item}{Interactable\+Item}} \&\&other) noexcept=default
+\item 
+virtual \mbox{\hyperlink{class_interactable_item_aa3d008d77d5f29c2673a991e24ed9301}{\texorpdfstring{$\sim$}{\string~}\+Interactable\+Item}} () noexcept=default
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_interactable_item}{Interactable\+Item}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_rectf}{Rectf}} \mbox{\hyperlink{class_interactable_item_afddb710738697e6bbbd141c154d50335}{m\+\_\+\+Bounds}}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{struct_vector2f}{Vector2f}} $>$ \mbox{\hyperlink{class_interactable_item_aa38359a5d89f9690f9b8cddc4de3458e}{m\+\_\+\+Collision\+Bounds}}
+\end{DoxyCompactItemize}
+
+
+\label{doc-constructors}
+\Hypertarget{class_respawn_zone_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_respawn_zone_a151582924ebad3e69266a852bc5daf1c}\index{RespawnZone@{RespawnZone}!RespawnZone@{RespawnZone}}
+\index{RespawnZone@{RespawnZone}!RespawnZone@{RespawnZone}}
+\doxysubsubsection{\texorpdfstring{RespawnZone()}{RespawnZone()}}
+{\footnotesize\ttfamily \label{class_respawn_zone_a151582924ebad3e69266a852bc5daf1c} 
+Respawn\+Zone\+::\+Respawn\+Zone (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_rectf}{Rectf}} \&}]{bounds}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_respawn_zone_a151582924ebad3e69266a852bc5daf1c_cgraph}
+\end{center}
+\end{figure}
+
+
+\label{doc-func-members}
+\Hypertarget{class_respawn_zone_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_respawn_zone_a061fb1d731ab1cac459d7f87f524342a}\index{RespawnZone@{RespawnZone}!Draw@{Draw}}
+\index{Draw@{Draw}!RespawnZone@{RespawnZone}}
+\doxysubsubsection{\texorpdfstring{Draw()}{Draw()}}
+{\footnotesize\ttfamily \label{class_respawn_zone_a061fb1d731ab1cac459d7f87f524342a} 
+void Respawn\+Zone\+::\+Draw (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_interactable_item_af87c8f5b507f809c6eb2ea5b43d83c25}{Interactable\+Item}}.
+
+\Hypertarget{class_respawn_zone_a5c821db8bbdc1da0401f633af761687c}\index{RespawnZone@{RespawnZone}!PlayerInteraction@{PlayerInteraction}}
+\index{PlayerInteraction@{PlayerInteraction}!RespawnZone@{RespawnZone}}
+\doxysubsubsection{\texorpdfstring{PlayerInteraction()}{PlayerInteraction()}}
+{\footnotesize\ttfamily \label{class_respawn_zone_a5c821db8bbdc1da0401f633af761687c} 
+void Respawn\+Zone\+::\+Player\+Interaction (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_character}{Character}} \&}]{character}{, }\item[{float}]{elapsed\+Sec}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_interactable_item_a18b200bb2e7fc662ea1c2d1a11e483d2}{Interactable\+Item}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_respawn_zone_a5c821db8bbdc1da0401f633af761687c_cgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Celeste/\mbox{\hyperlink{_respawn_zone_8h}{Respawn\+Zone.\+h}}\item 
+Celeste/\mbox{\hyperlink{_respawn_zone_8cpp}{Respawn\+Zone.\+cpp}}\end{DoxyCompactItemize}

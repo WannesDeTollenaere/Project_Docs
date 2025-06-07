@@ -1,0 +1,24 @@
+\doxysection{Selectable\+Menu\+Item.\+h}
+\hypertarget{_selectable_menu_item_8h_source}{}\label{_selectable_menu_item_8h_source}\index{Celeste/SelectableMenuItem.h@{Celeste/SelectableMenuItem.h}}
+\mbox{\hyperlink{_selectable_menu_item_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_menu_item_8h}{MenuItem.h}}"{}}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_pause_menu}{PauseMenu}};}
+\DoxyCodeLine{00005\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_selectable_menu_item_ac08d8f73811f3e2103533dd45421e181}{SelectableMenuItem}}\ final\ :}
+\DoxyCodeLine{00006\ \ \ \ \ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_menu_item_a1dab15f86586e486bb0b90f3fc0db510}{MenuItem}}}
+\DoxyCodeLine{00007\ \{}
+\DoxyCodeLine{00008\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00009\ \ \ \ \ \textcolor{comment}{//\ CONSTRUCTOR}}
+\DoxyCodeLine{00010\ \ \ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{class_selectable_menu_item_ac08d8f73811f3e2103533dd45421e181}{SelectableMenuItem}}(\textcolor{keyword}{const}\ std::string\&\ title,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ fontSize,\ \textcolor{keywordtype}{void}\ (\mbox{\hyperlink{class_pause_menu}{PauseMenu}}::*\ func)(),\ \mbox{\hyperlink{class_pause_menu}{PauseMenu}}*\ pm);}
+\DoxyCodeLine{00011\ \ \ \ \ \textcolor{comment}{//\ FUNCTIONS}}
+\DoxyCodeLine{00012\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_selectable_menu_item_ad0938f5725479a0255790e5e5078ce12}{Select}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00013\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00014\ \ \ \ \ \textcolor{comment}{//\ MEMBERS}}
+\DoxyCodeLine{00015\ \ \ \ \ void\ (\mbox{\hyperlink{class_pause_menu}{PauseMenu}}::*\ m\_Function)();}
+\DoxyCodeLine{00016\ \ \ \ \ \mbox{\hyperlink{class_pause_menu}{PauseMenu}}*\ m\_PauseMenu;}
+\DoxyCodeLine{00017\ \};}
+\DoxyCodeLine{00018\ }
+
+\end{DoxyCode}

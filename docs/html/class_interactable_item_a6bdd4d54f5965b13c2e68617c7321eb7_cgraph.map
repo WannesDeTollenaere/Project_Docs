@@ -1,0 +1,5 @@
+<map id="InteractableItem::InteractableItem" name="InteractableItem::InteractableItem">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,223,32"/>
+<area shape="rect" id="Node000002" href="$class_interactable_item.html#a5e5b9c459514e29098aaff5e62761569" title=" " alt="" coords="271,5,488,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="223,16,255,16,255,21,223,21"/>
+</map>

@@ -1,0 +1,88 @@
+\doxysection{Base\+Game.\+h}
+\hypertarget{_base_game_8h_source}{}\label{_base_game_8h_source}\index{Engine/BaseGame.h@{Engine/BaseGame.h}}
+\mbox{\hyperlink{_base_game_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{structs_8h}{structs.h}}"{}}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ "{}SDL.h"{}}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <map>}}
+\DoxyCodeLine{00005\ \textcolor{comment}{//\ https://BaseGameprogrammingpatterns.com/subclass-\/sandbox.html}}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_base_game_a76b8f6a3eac263f5007d9851c54a6e28}{BaseGame}}}
+\DoxyCodeLine{00009\ \{}
+\DoxyCodeLine{00010\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00011\ \ \ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{class_base_game_a76b8f6a3eac263f5007d9851c54a6e28}{BaseGame}}(\ \textcolor{keyword}{const}\ \mbox{\hyperlink{struct_window}{Window}}\&\ window\ );}
+\DoxyCodeLine{00012\ \ \ \ \ \mbox{\hyperlink{class_base_game_a2b1e167243c6a6bb7788f3af518d5407}{BaseGame}}(\ \textcolor{keyword}{const}\ \mbox{\hyperlink{class_base_game_a76b8f6a3eac263f5007d9851c54a6e28}{BaseGame}}\&\ other\ )\ =\ \textcolor{keyword}{delete};}
+\DoxyCodeLine{00013\ \ \ \ \ \mbox{\hyperlink{class_base_game_a76b8f6a3eac263f5007d9851c54a6e28}{BaseGame}}\&\ \mbox{\hyperlink{class_base_game_a2543fcf63bd404a59a798bfc91a26037}{operator=}}(\ \textcolor{keyword}{const}\ \mbox{\hyperlink{class_base_game_a76b8f6a3eac263f5007d9851c54a6e28}{BaseGame}}\&\ other\ )\ =\ \textcolor{keyword}{delete};}
+\DoxyCodeLine{00014\ \ \ \ \ \mbox{\hyperlink{class_base_game_a6cf6fb977a6673b274a99ce224e84a95}{BaseGame}}(\mbox{\hyperlink{class_base_game_a76b8f6a3eac263f5007d9851c54a6e28}{BaseGame}}\&\&\ other)\ =\ \textcolor{keyword}{delete};}
+\DoxyCodeLine{00015\ \ \ \ \ \mbox{\hyperlink{class_base_game_a76b8f6a3eac263f5007d9851c54a6e28}{BaseGame}}\&\ \mbox{\hyperlink{class_base_game_a85e11d7168155fb661492bd081dca5ea}{operator=}}(\mbox{\hyperlink{class_base_game_a76b8f6a3eac263f5007d9851c54a6e28}{BaseGame}}\&\&\ other)\ =\ \textcolor{keyword}{delete};}
+\DoxyCodeLine{00016\ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{class_base_game_a99743ef9d33d73ffe6c8a849f8ea323d}{\string~BaseGame}}(\ );}
+\DoxyCodeLine{00017\ }
+\DoxyCodeLine{00018\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_base_game_a22a10352261e4934eb79112672d65002}{Run}}(\ );}
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00020\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_base_game_a05e785e32705834ffc85afeb0f7fd263}{Update}}(\textcolor{keywordtype}{float}\ elapsedSec)}
+\DoxyCodeLine{00021\ \ \ \ \ \{}
+\DoxyCodeLine{00022\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00023\ \ \ \ \ \}}
+\DoxyCodeLine{00024\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_base_game_ab299454e35b27e3472b032a6bac61fbb}{Draw}}()\textcolor{keyword}{\ const}}
+\DoxyCodeLine{00025\ \textcolor{keyword}{\ \ \ \ }\{}
+\DoxyCodeLine{00026\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00027\ \ \ \ \ \}}
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00029\ \ \ \ \ \textcolor{comment}{//\ Event\ handling}}
+\DoxyCodeLine{00030\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_base_game_a05d771925703ab5c7a725ee77cb2cc27}{ProcessKeyDownEvent}}(\textcolor{keyword}{const}\ SDL\_KeyboardEvent\&\ e)}
+\DoxyCodeLine{00031\ \ \ \ \ \{}
+\DoxyCodeLine{00032\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00033\ \ \ \ \ \}}
+\DoxyCodeLine{00034\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_base_game_a3965ace2f42349f8ae451aed552c8d7c}{ProcessKeyUpEvent}}(\textcolor{keyword}{const}\ SDL\_KeyboardEvent\&\ e)}
+\DoxyCodeLine{00035\ \ \ \ \ \{}
+\DoxyCodeLine{00036\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00037\ \ \ \ \ \}}
+\DoxyCodeLine{00038\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_base_game_a2fa82b132b67d0a99949b4aafa3d1c80}{ProcessMouseMotionEvent}}(\textcolor{keyword}{const}\ SDL\_MouseMotionEvent\&\ e)}
+\DoxyCodeLine{00039\ \ \ \ \ \{}
+\DoxyCodeLine{00040\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00041\ \ \ \ \ \}}
+\DoxyCodeLine{00042\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_base_game_a80fb29e3dda10ec474d386e68529c865}{ProcessMouseDownEvent}}(\textcolor{keyword}{const}\ SDL\_MouseButtonEvent\&\ e)}
+\DoxyCodeLine{00043\ \ \ \ \ \{}
+\DoxyCodeLine{00044\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00045\ \ \ \ \ \}}
+\DoxyCodeLine{00046\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_base_game_a9de1f092b8ed30f30e774bec464e90e5}{ProcessMouseUpEvent}}(\textcolor{keyword}{const}\ SDL\_MouseButtonEvent\&\ e)}
+\DoxyCodeLine{00047\ \ \ \ \ \{}
+\DoxyCodeLine{00048\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00049\ \ \ \ \ \}}
+\DoxyCodeLine{00050\ }
+\DoxyCodeLine{00051\ \ \ \ \ \textcolor{keyword}{const}\ \mbox{\hyperlink{struct_rectf}{Rectf}}\&\ \mbox{\hyperlink{class_base_game_a3d1875a0bb6da063a0698fc25820e6fc}{GetViewPort}}()\textcolor{keyword}{\ const}}
+\DoxyCodeLine{00052\ \textcolor{keyword}{\ \ \ \ }\{}
+\DoxyCodeLine{00053\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ m\_Viewport;}
+\DoxyCodeLine{00054\ \ \ \ \ \}}
+\DoxyCodeLine{00055\ }
+\DoxyCodeLine{00056\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00057\ \ \ \ \ \textcolor{comment}{//\ DATA\ MEMBERS}}
+\DoxyCodeLine{00058\ \ \ \ \ \textcolor{comment}{//\ The\ window\ properties}}
+\DoxyCodeLine{00059\ \ \ \ \ \textcolor{keyword}{const}\ \mbox{\hyperlink{struct_window}{Window}}\ m\_Window;}
+\DoxyCodeLine{00060\ \ \ \ \ \textcolor{keyword}{const}\ \mbox{\hyperlink{struct_rectf}{Rectf}}\ m\_Viewport;}
+\DoxyCodeLine{00061\ \ \ \ \ \textcolor{comment}{//\ The\ window\ we\ render\ to}}
+\DoxyCodeLine{00062\ \ \ \ \ SDL\_Window*\ m\_pWindow;}
+\DoxyCodeLine{00063\ \ \ \ \ \textcolor{comment}{//\ OpenGL\ context}}
+\DoxyCodeLine{00064\ \ \ \ \ SDL\_GLContext\ m\_pContext;}
+\DoxyCodeLine{00065\ \ \ \ \ \textcolor{comment}{//\ Init\ info}}
+\DoxyCodeLine{00066\ \ \ \ \ \textcolor{keywordtype}{bool}\ m\_Initialized;}
+\DoxyCodeLine{00067\ \ \ \ \ \textcolor{comment}{//\ Prevent\ timing\ jumps\ when\ debugging}}
+\DoxyCodeLine{00068\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{float}\ m\_MaxElapsedSeconds;}
+\DoxyCodeLine{00069\ \ \ \ \ }
+\DoxyCodeLine{00070\ \ \ \ \ \textcolor{comment}{//\ FUNCTIONS}}
+\DoxyCodeLine{00071\ \ \ \ \ \textcolor{keywordtype}{void}\ InitializeGameEngine(\ );}
+\DoxyCodeLine{00072\ \ \ \ \ \textcolor{keywordtype}{void}\ CleanupGameEngine(\ );}
+\DoxyCodeLine{00073\ \ \ \ \ \textcolor{comment}{//\ Controller\ helper\ functions}}
+\DoxyCodeLine{00074\ \ \ \ \ \textcolor{keywordtype}{void}\ InitControllerMap();}
+\DoxyCodeLine{00075\ \ \ \ \ \textcolor{keywordtype}{bool}\ HandleControllerButton(SDL\_Event\&\ e,\ Uint32\ type);}
+\DoxyCodeLine{00076\ \ \ \ \ \textcolor{keywordtype}{void}\ HandleControllerAnalogyJoystick(Sint16\ value,\ SDL\_Scancode\ keyNeg,\ SDL\_Scancode\ keyPos);}
+\DoxyCodeLine{00077\ \ \ \ \ \textcolor{keywordtype}{void}\ SendKeyEvent(SDL\_Scancode\ scanCode,\ Uint32\ type);}
+\DoxyCodeLine{00078\ \ \ \ \ \textcolor{keywordtype}{void}\ ModifyKeyboardState(SDL\_Scancode\ scanCode,\ \textcolor{keywordtype}{bool}\ isPressed);}
+\DoxyCodeLine{00079\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keyword}{static}\ \textcolor{keywordtype}{int}\ AXIS\_DEADZONE\ =\ 8000;}
+\DoxyCodeLine{00080\ \ \ \ \ \textcolor{comment}{//\ Controller\ mappings}}
+\DoxyCodeLine{00081\ \ \ \ \ std::map<Uint8,\ SDL\_Scancode>\ m\_ControllerMap;}
+\DoxyCodeLine{00082\ \};}
+
+\end{DoxyCode}

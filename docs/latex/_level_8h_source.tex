@@ -1,0 +1,25 @@
+\doxysection{Level.\+h}
+\hypertarget{_level_8h_source}{}\label{_level_8h_source}\index{Celeste/Level.h@{Celeste/Level.h}}
+\mbox{\hyperlink{_level_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_interactable_item_8h}{InteractableItem.h}}"{}}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_level_a07851c4b8fa8c0cf72f6b4b6144591b5}{Level}}\ final\ :}
+\DoxyCodeLine{00005\ \ \ \ \ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_interactable_item_a5e5b9c459514e29098aaff5e62761569}{InteractableItem}}}
+\DoxyCodeLine{00006\ \{}
+\DoxyCodeLine{00007\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00008\ \ \ \ \ \textcolor{comment}{//\ CONSTRUCTORS}}
+\DoxyCodeLine{00009\ \ \ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{class_level_a07851c4b8fa8c0cf72f6b4b6144591b5}{Level}}(\textcolor{keywordtype}{float}\ x,\ \textcolor{keywordtype}{float}\ y,\ \textcolor{keywordtype}{float}\ width,\ \textcolor{keywordtype}{float}\ height);}
+\DoxyCodeLine{00010\ \ \ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{class_level_a07851c4b8fa8c0cf72f6b4b6144591b5}{Level}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{struct_rectf}{Rectf}}\&\ rect);}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00012\ \ \ \ \ \textcolor{comment}{//\ FUNCTIONS}}
+\DoxyCodeLine{00013\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_level_a580564d5ba985ea6644cde213074d2c4}{Draw}}()\ \textcolor{keyword}{const\ override};}
+\DoxyCodeLine{00014\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_level_a2fa077407b0deca2d008f636d4a7b03a}{PlayerInteraction}}(\mbox{\hyperlink{class_character}{Character}}\&\ character,\ \textcolor{keywordtype}{float}\ elapsedSec)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00015\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_level_adf4233f98d55734b3862b4862ea83a27}{DoesCollide}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_character}{Character}}\&\ character)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00016\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00017\ \ \ \ \ \textcolor{comment}{//\ NO\ MEMBERS\ ONLY\ DIFFERENT\ BEHAVIOUR}}
+\DoxyCodeLine{00018\ \};}
+\DoxyCodeLine{00019\ }
+
+\end{DoxyCode}

@@ -1,0 +1,71 @@
+\doxysection{structs.\+h}
+\hypertarget{structs_8h_source}{}\label{structs_8h_source}\index{Engine/structs.h@{Engine/structs.h}}
+\mbox{\hyperlink{structs_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_vector2f_8h}{Vector2f.h}}"{}}}
+\DoxyCodeLine{00004\ }
+\DoxyCodeLine{00005\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_window_a096e99b45b9fb32bdcb085c4d2b26f80}{Window}}}
+\DoxyCodeLine{00006\ \{}
+\DoxyCodeLine{00007\ \ \ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{struct_window_a096e99b45b9fb32bdcb085c4d2b26f80}{Window}}(\ \textcolor{keyword}{const}\ std::string\&\ \mbox{\hyperlink{struct_window_accc3e5364fced57c273820aa51410e12}{title}}\ =\ \textcolor{stringliteral}{"{}Title"{}},\ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{struct_window_a021230db4d8baa3f1b6c55ed435fa0b8}{width}}\ =\ 320.0f,\ }
+\DoxyCodeLine{00008\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{struct_window_a644883a2aa2210d9d2aea2f30d1a7f0a}{height}}\ =\ 180.0f,\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{struct_window_a579306d6ae5326fc4defdf325e0bfb8c}{isVSyncOn}}\ =\ \textcolor{keyword}{true}\ );}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00010\ \ \ \ \ std::string\ \mbox{\hyperlink{struct_window_accc3e5364fced57c273820aa51410e12}{title}};}
+\DoxyCodeLine{00011\ \ \ \ \ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{struct_window_a021230db4d8baa3f1b6c55ed435fa0b8}{width}};}
+\DoxyCodeLine{00012\ \ \ \ \ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{struct_window_a644883a2aa2210d9d2aea2f30d1a7f0a}{height}};}
+\DoxyCodeLine{00013\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{struct_window_a579306d6ae5326fc4defdf325e0bfb8c}{isVSyncOn}};}
+\DoxyCodeLine{00014\ \};}
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00017\ }
+\DoxyCodeLine{00018\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_rectf_ab015f5d3355ae9d3e4b571dcaa2cc2ff}{Rectf}}}
+\DoxyCodeLine{00019\ \{}
+\DoxyCodeLine{00020\ \ \ \ \ \mbox{\hyperlink{struct_rectf_ab015f5d3355ae9d3e4b571dcaa2cc2ff}{Rectf}}(\ );}
+\DoxyCodeLine{00021\ \ \ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{struct_rectf_ab015f5d3355ae9d3e4b571dcaa2cc2ff}{Rectf}}(\ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{struct_rectf_a84271e5dbac74301f84ffecb9db81e08}{left}},\ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{struct_rectf_aa0cda1137482a84ec63bc03709fdaabd}{bottom}},\ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{struct_rectf_a401af5b051cfac76f4dc2d74ae43fa64}{width}},\ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{struct_rectf_ac533702666475cbf633a54677e9d0007}{height}}\ );}
+\DoxyCodeLine{00022\ \ \ \ \ }
+\DoxyCodeLine{00023\ \ \ \ \ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{struct_rectf_a84271e5dbac74301f84ffecb9db81e08}{left}};}
+\DoxyCodeLine{00024\ \ \ \ \ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{struct_rectf_aa0cda1137482a84ec63bc03709fdaabd}{bottom}};}
+\DoxyCodeLine{00025\ \ \ \ \ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{struct_rectf_a401af5b051cfac76f4dc2d74ae43fa64}{width}};}
+\DoxyCodeLine{00026\ \ \ \ \ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{struct_rectf_ac533702666475cbf633a54677e9d0007}{height}};}
+\DoxyCodeLine{00027\ }
+\DoxyCodeLine{00028\ \};}
+\DoxyCodeLine{00029\ }
+\DoxyCodeLine{00030\ }
+\DoxyCodeLine{00031\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_color4f_a24044cceccf770993106b86d391e8fcc}{Color4f}}}
+\DoxyCodeLine{00032\ \{}
+\DoxyCodeLine{00033\ \ \ \ \ \mbox{\hyperlink{struct_color4f_a24044cceccf770993106b86d391e8fcc}{Color4f}}(\ );}
+\DoxyCodeLine{00034\ \ \ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{struct_color4f_a24044cceccf770993106b86d391e8fcc}{Color4f}}(\ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{struct_color4f_a8847fbffe7a19883edf391fd6d65e611}{r}},\ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{struct_color4f_a8c646470c48187666dd1c2229a8176b8}{g}},\ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{struct_color4f_a327fbb9795c268dbd99614befbde2f75}{b}},\ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{struct_color4f_a3d576c84cd596acb80d08268ee98101e}{a}}\ );}
+\DoxyCodeLine{00035\ \ \ \ \ }
+\DoxyCodeLine{00036\ \ \ \ \ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{struct_color4f_a8847fbffe7a19883edf391fd6d65e611}{r}};}
+\DoxyCodeLine{00037\ \ \ \ \ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{struct_color4f_a8c646470c48187666dd1c2229a8176b8}{g}};}
+\DoxyCodeLine{00038\ \ \ \ \ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{struct_color4f_a327fbb9795c268dbd99614befbde2f75}{b}};}
+\DoxyCodeLine{00039\ \ \ \ \ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{struct_color4f_a3d576c84cd596acb80d08268ee98101e}{a}};}
+\DoxyCodeLine{00040\ \};}
+\DoxyCodeLine{00041\ }
+\DoxyCodeLine{00042\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_circlef_a4c6ce742384d9ff7bd2cace18fb48a03}{Circlef}}}
+\DoxyCodeLine{00043\ \{}
+\DoxyCodeLine{00044\ \ \ \ \ \mbox{\hyperlink{struct_circlef_a4c6ce742384d9ff7bd2cace18fb48a03}{Circlef}}(\ );}
+\DoxyCodeLine{00045\ \ \ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{struct_circlef_a4c6ce742384d9ff7bd2cace18fb48a03}{Circlef}}(\ \textcolor{keyword}{const}\ \mbox{\hyperlink{struct_vector2f}{Vector2f}}\&\ \mbox{\hyperlink{struct_circlef_aff74ad457d1d2a3a71ceed031cb31953}{center}},\ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{struct_circlef_a43727650565d10fbf7e4d01159a40df2}{radius}}\ );}
+\DoxyCodeLine{00046\ \ \ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{struct_circlef_a4c6ce742384d9ff7bd2cace18fb48a03}{Circlef}}(\ \textcolor{keywordtype}{float}\ centerX,\ \textcolor{keywordtype}{float}\ centerY,\ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{struct_circlef_a43727650565d10fbf7e4d01159a40df2}{radius}}\ );}
+\DoxyCodeLine{00047\ }
+\DoxyCodeLine{00048\ \ \ \ \ \mbox{\hyperlink{struct_vector2f}{Vector2f}}\ \mbox{\hyperlink{struct_circlef_aff74ad457d1d2a3a71ceed031cb31953}{center}};}
+\DoxyCodeLine{00049\ \ \ \ \ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{struct_circlef_a43727650565d10fbf7e4d01159a40df2}{radius}};}
+\DoxyCodeLine{00050\ \};}
+\DoxyCodeLine{00051\ }
+\DoxyCodeLine{00052\ }
+\DoxyCodeLine{00053\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_ellipsef_a18e90be76cc7f8d35cead1c70ee10fa3}{Ellipsef}}}
+\DoxyCodeLine{00054\ \{}
+\DoxyCodeLine{00055\ \ \ \ \ \mbox{\hyperlink{struct_ellipsef_a18e90be76cc7f8d35cead1c70ee10fa3}{Ellipsef}}(\ );}
+\DoxyCodeLine{00056\ \ \ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{struct_ellipsef_a18e90be76cc7f8d35cead1c70ee10fa3}{Ellipsef}}(\ \textcolor{keyword}{const}\ \mbox{\hyperlink{struct_vector2f}{Vector2f}}\&\ \mbox{\hyperlink{struct_ellipsef_a33c9f56e78d3db4c24737130abec757c}{center}},\ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{struct_ellipsef_ae1511fa1dcebbcaa411bab9e1bcb2a76}{radiusX}},\ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{struct_ellipsef_acb31bf57992a226c5d2e12ec09066be5}{radiusY}}\ );}
+\DoxyCodeLine{00057\ \ \ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{struct_ellipsef_a18e90be76cc7f8d35cead1c70ee10fa3}{Ellipsef}}(\ \textcolor{keywordtype}{float}\ centerX,\ \textcolor{keywordtype}{float}\ centerY,\ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{struct_ellipsef_ae1511fa1dcebbcaa411bab9e1bcb2a76}{radiusX}},\ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{struct_ellipsef_acb31bf57992a226c5d2e12ec09066be5}{radiusY}}\ );}
+\DoxyCodeLine{00058\ }
+\DoxyCodeLine{00059\ \ \ \ \ \mbox{\hyperlink{struct_vector2f}{Vector2f}}\ \mbox{\hyperlink{struct_ellipsef_a33c9f56e78d3db4c24737130abec757c}{center}};}
+\DoxyCodeLine{00060\ \ \ \ \ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{struct_ellipsef_ae1511fa1dcebbcaa411bab9e1bcb2a76}{radiusX}};}
+\DoxyCodeLine{00061\ \ \ \ \ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{struct_ellipsef_acb31bf57992a226c5d2e12ec09066be5}{radiusY}};}
+\DoxyCodeLine{00062\ \};}
+\DoxyCodeLine{00063\ }
+\DoxyCodeLine{00064\ }
+\DoxyCodeLine{00065\ }
+
+\end{DoxyCode}

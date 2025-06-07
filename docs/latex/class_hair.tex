@@ -1,0 +1,133 @@
+\doxysection{Hair Class Reference}
+\hypertarget{class_hair}{}\label{class_hair}\index{Hair@{Hair}}
+
+
+{\ttfamily \#include $<$Hair.\+h$>$}
+
+\doxysubsubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum class \mbox{\hyperlink{class_hair_aa36e09ffac55698b8942220ce2fcbd0e}{Type}} \{ \mbox{\hyperlink{class_hair_aa36e09ffac55698b8942220ce2fcbd0ea48d6215903dff56238e52e8891380c8f}{blue}}
+, \mbox{\hyperlink{class_hair_aa36e09ffac55698b8942220ce2fcbd0eabda9643ac6601722a28f238714274da4}{red}}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_hair_a645515687b164ad22b9373c30a14af6d}{Hair}} (const \mbox{\hyperlink{struct_vector2f}{Vector2f}} \&anchor\+Offset, float max\+Offset\+Length, float min\+Offset\+Length, float part\+Size=30.f)
+\item 
+void \mbox{\hyperlink{class_hair_a0b22dc1cb67f2d72c149b360f7e7f807}{Update}} (float elapsed\+Sec)
+\item 
+void \mbox{\hyperlink{class_hair_a1f70eb552413a4e9c0448089835e2722}{Draw}} () const
+\item 
+void \mbox{\hyperlink{class_hair_ac5b20368fbcda3f186dc37e3f6d17be1}{Set\+Part\+Offset}} (const \mbox{\hyperlink{struct_vector2f}{Vector2f}} \&part\+Offset)
+\item 
+void \mbox{\hyperlink{class_hair_a8f53c050a12bf8d125adbb0f8d8a41ad}{Set\+Hair\+Anchor\+Pos}} (const \mbox{\hyperlink{struct_vector2f}{Vector2f}} \&position)
+\item 
+void \mbox{\hyperlink{class_hair_a8029aa2cc8404b0b6876dbbf48d65024}{Set\+Hair\+Type}} (\mbox{\hyperlink{class_hair_aa36e09ffac55698b8942220ce2fcbd0e}{Hair\+::\+Type}} type)
+\item 
+\mbox{\hyperlink{class_hair_aa36e09ffac55698b8942220ce2fcbd0e}{Hair\+::\+Type}} \mbox{\hyperlink{class_hair_a54a8fcbde9557a515c77f9e85938c153}{Get\+Hair\+Type}} () const noexcept
+\end{DoxyCompactItemize}
+
+
+\label{doc-enum-members}
+\Hypertarget{class_hair_doc-enum-members}
+\doxysubsection{Member Enumeration Documentation}
+\Hypertarget{class_hair_aa36e09ffac55698b8942220ce2fcbd0e}\index{Hair@{Hair}!Type@{Type}}
+\index{Type@{Type}!Hair@{Hair}}
+\doxysubsubsection{\texorpdfstring{Type}{Type}}
+{\footnotesize\ttfamily \label{class_hair_aa36e09ffac55698b8942220ce2fcbd0e} 
+enum class \mbox{\hyperlink{class_hair_aa36e09ffac55698b8942220ce2fcbd0e}{Hair\+::\+Type}}\hspace{0.3cm}{\ttfamily [strong]}}
+
+\begin{DoxyEnumFields}[2]{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{blue@{blue}!Hair@{Hair}}\index{Hair@{Hair}!blue@{blue}}}\Hypertarget{class_hair_aa36e09ffac55698b8942220ce2fcbd0ea48d6215903dff56238e52e8891380c8f}\label{class_hair_aa36e09ffac55698b8942220ce2fcbd0ea48d6215903dff56238e52e8891380c8f} 
+blue&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{red@{red}!Hair@{Hair}}\index{Hair@{Hair}!red@{red}}}\Hypertarget{class_hair_aa36e09ffac55698b8942220ce2fcbd0eabda9643ac6601722a28f238714274da4}\label{class_hair_aa36e09ffac55698b8942220ce2fcbd0eabda9643ac6601722a28f238714274da4} 
+red&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\label{doc-constructors}
+\Hypertarget{class_hair_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_hair_a645515687b164ad22b9373c30a14af6d}\index{Hair@{Hair}!Hair@{Hair}}
+\index{Hair@{Hair}!Hair@{Hair}}
+\doxysubsubsection{\texorpdfstring{Hair()}{Hair()}}
+{\footnotesize\ttfamily \label{class_hair_a645515687b164ad22b9373c30a14af6d} 
+Hair\+::\+Hair (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_vector2f}{Vector2f}} \&}]{anchor\+Offset}{, }\item[{float}]{max\+Offset\+Length}{, }\item[{float}]{min\+Offset\+Length}{, }\item[{float}]{part\+Size}{ = {\ttfamily 30.f}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+\label{doc-func-members}
+\Hypertarget{class_hair_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_hair_a1f70eb552413a4e9c0448089835e2722}\index{Hair@{Hair}!Draw@{Draw}}
+\index{Draw@{Draw}!Hair@{Hair}}
+\doxysubsubsection{\texorpdfstring{Draw()}{Draw()}}
+{\footnotesize\ttfamily \label{class_hair_a1f70eb552413a4e9c0448089835e2722} 
+void Hair\+::\+Draw (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+\Hypertarget{class_hair_a54a8fcbde9557a515c77f9e85938c153}\index{Hair@{Hair}!GetHairType@{GetHairType}}
+\index{GetHairType@{GetHairType}!Hair@{Hair}}
+\doxysubsubsection{\texorpdfstring{GetHairType()}{GetHairType()}}
+{\footnotesize\ttfamily \label{class_hair_a54a8fcbde9557a515c77f9e85938c153} 
+\mbox{\hyperlink{class_hair_aa36e09ffac55698b8942220ce2fcbd0e}{Hair\+::\+Type}} Hair\+::\+Get\+Hair\+Type (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+\Hypertarget{class_hair_a8f53c050a12bf8d125adbb0f8d8a41ad}\index{Hair@{Hair}!SetHairAnchorPos@{SetHairAnchorPos}}
+\index{SetHairAnchorPos@{SetHairAnchorPos}!Hair@{Hair}}
+\doxysubsubsection{\texorpdfstring{SetHairAnchorPos()}{SetHairAnchorPos()}}
+{\footnotesize\ttfamily \label{class_hair_a8f53c050a12bf8d125adbb0f8d8a41ad} 
+void Hair\+::\+Set\+Hair\+Anchor\+Pos (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_vector2f}{Vector2f}} \&}]{position}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_hair_a8029aa2cc8404b0b6876dbbf48d65024}\index{Hair@{Hair}!SetHairType@{SetHairType}}
+\index{SetHairType@{SetHairType}!Hair@{Hair}}
+\doxysubsubsection{\texorpdfstring{SetHairType()}{SetHairType()}}
+{\footnotesize\ttfamily \label{class_hair_a8029aa2cc8404b0b6876dbbf48d65024} 
+void Hair\+::\+Set\+Hair\+Type (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_hair_aa36e09ffac55698b8942220ce2fcbd0e}{Hair\+::\+Type}}}]{type}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_hair_ac5b20368fbcda3f186dc37e3f6d17be1}\index{Hair@{Hair}!SetPartOffset@{SetPartOffset}}
+\index{SetPartOffset@{SetPartOffset}!Hair@{Hair}}
+\doxysubsubsection{\texorpdfstring{SetPartOffset()}{SetPartOffset()}}
+{\footnotesize\ttfamily \label{class_hair_ac5b20368fbcda3f186dc37e3f6d17be1} 
+void Hair\+::\+Set\+Part\+Offset (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_vector2f}{Vector2f}} \&}]{part\+Offset}{}\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_hair_ac5b20368fbcda3f186dc37e3f6d17be1_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=287pt]{class_hair_ac5b20368fbcda3f186dc37e3f6d17be1_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_hair_a0b22dc1cb67f2d72c149b360f7e7f807}\index{Hair@{Hair}!Update@{Update}}
+\index{Update@{Update}!Hair@{Hair}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily \label{class_hair_a0b22dc1cb67f2d72c149b360f7e7f807} 
+void Hair\+::\+Update (\begin{DoxyParamCaption}\item[{float}]{elapsed\+Sec}{}\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_hair_a0b22dc1cb67f2d72c149b360f7e7f807_cgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Celeste/\mbox{\hyperlink{_hair_8h}{Hair.\+h}}\item 
+Celeste/\mbox{\hyperlink{_hair_8cpp}{Hair.\+cpp}}\end{DoxyCompactItemize}

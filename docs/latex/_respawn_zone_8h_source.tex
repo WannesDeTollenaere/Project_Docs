@@ -1,0 +1,23 @@
+\doxysection{Respawn\+Zone.\+h}
+\hypertarget{_respawn_zone_8h_source}{}\label{_respawn_zone_8h_source}\index{Celeste/RespawnZone.h@{Celeste/RespawnZone.h}}
+\mbox{\hyperlink{_respawn_zone_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_interactable_item_8h}{InteractableItem.h}}"{}}}
+\DoxyCodeLine{00003\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_respawn_zone_a151582924ebad3e69266a852bc5daf1c}{RespawnZone}}\ final\ :}
+\DoxyCodeLine{00004\ \ \ \ \ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_interactable_item_a5e5b9c459514e29098aaff5e62761569}{InteractableItem}}}
+\DoxyCodeLine{00005\ \{}
+\DoxyCodeLine{00006\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00007\ \ \ \ \ \textcolor{comment}{//\ CONSTRUCTORS}}
+\DoxyCodeLine{00008\ \ \ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{class_respawn_zone_a151582924ebad3e69266a852bc5daf1c}{RespawnZone}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{struct_rectf}{Rectf}}\&\ bounds);}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00010\ \ \ \ \ \textcolor{comment}{//\ FUNCTIONS}}
+\DoxyCodeLine{00011\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_respawn_zone_a061fb1d731ab1cac459d7f87f524342a}{Draw}}()\ \textcolor{keyword}{const\ override};}
+\DoxyCodeLine{00012\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_respawn_zone_a5c821db8bbdc1da0401f633af761687c}{PlayerInteraction}}(\mbox{\hyperlink{class_character}{Character}}\&\ character,\ \textcolor{keywordtype}{float}\ elapsedSec)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00013\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00014\ \ \ \ \ \textcolor{comment}{//\ MEMBERS}}
+\DoxyCodeLine{00015\ \ \ \ \ \textcolor{keyword}{const}\ \mbox{\hyperlink{struct_vector2f}{Vector2f}}\ m\_CenterPoint;}
+\DoxyCodeLine{00016\ \};}
+\DoxyCodeLine{00017\ }
+
+\end{DoxyCode}

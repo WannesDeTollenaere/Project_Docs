@@ -1,0 +1,11 @@
+<map id="CogPlatform::operator=" name="CogPlatform::operator=">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,43,163,69"/>
+<area shape="rect" id="Node000002" href="$class_cog_platform.html#aa8ddb28be91c8e5887864a9a7df629e1" title=" " alt="" coords="211,43,386,69"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="163,53,195,53,195,59,163,59"/>
+<area shape="rect" id="Node000003" href="$class_counted_item.html#a7a4f3ec5e121b459d51a818c9ed0e269" title=" " alt="" coords="452,5,633,48"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="386,43,436,37,437,42,387,48"/>
+<area shape="rect" id="Node000005" href="$class_interactable_item.html#a5e5b9c459514e29098aaff5e62761569" title=" " alt="" coords="434,72,651,99"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="387,64,419,68,418,73,386,69"/>
+<area shape="rect" id="Node000004" href="$class_counted_item.html#a379818e68b8231fbfad8c51cbf2add57" title=" " alt="" coords="699,5,881,48"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="634,24,684,24,684,29,634,29"/>
+</map>

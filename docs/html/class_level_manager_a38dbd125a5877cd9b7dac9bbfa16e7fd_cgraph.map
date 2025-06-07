@@ -1,0 +1,7 @@
+<map id="LevelManager::LevelManager" name="LevelManager::LevelManager">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,31,197,57"/>
+<area shape="rect" id="Node000002" href="$class_chapter.html#a61f218fd23651a6e857053bfc35841dc" title=" " alt="" coords="272,5,414,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="197,31,256,25,256,30,197,37"/>
+<area shape="rect" id="Node000003" href="$class_level_manager.html#abf0e37bef114c237d13ad57136f74812" title=" " alt="" coords="245,56,441,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="197,51,229,55,229,60,197,57"/>
+</map>

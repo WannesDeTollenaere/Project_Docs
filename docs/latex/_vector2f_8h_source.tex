@@ -1,0 +1,104 @@
+\doxysection{Vector2f.\+h}
+\hypertarget{_vector2f_8h_source}{}\label{_vector2f_8h_source}\index{Engine/Vector2f.h@{Engine/Vector2f.h}}
+\mbox{\hyperlink{_vector2f_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{structs_8h}{structs.h}}"{}}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_vector2f_a3db9a868c58bc809e5e09a88d65a77ec}{Vector2f}}\ final}
+\DoxyCodeLine{00005\ \{}
+\DoxyCodeLine{00006\ \ \ \ \ \textcolor{comment}{//\ -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{00007\ \ \ \ \ \textcolor{comment}{//\ Constructors\ }}
+\DoxyCodeLine{00008\ \ \ \ \ \textcolor{comment}{//\ -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00010\ \ \ \ \ \mbox{\hyperlink{struct_vector2f_a3db9a868c58bc809e5e09a88d65a77ec}{Vector2f}}(\ );}
+\DoxyCodeLine{00011\ \ \ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{struct_vector2f_a3db9a868c58bc809e5e09a88d65a77ec}{Vector2f}}(\ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{struct_vector2f_add58d2378e3a3abdb76cf0ac51c9acfc}{x}},\ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{struct_vector2f_a14874a72597fd358b15f8ba34b999c4d}{y}}\ );}
+\DoxyCodeLine{00012\ \ \ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{struct_vector2f_a3db9a868c58bc809e5e09a88d65a77ec}{Vector2f}}(\ \textcolor{keyword}{const}\ \mbox{\hyperlink{struct_vector2f_a3db9a868c58bc809e5e09a88d65a77ec}{Vector2f}}\&\ fromPoint,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{struct_vector2f_a3db9a868c58bc809e5e09a88d65a77ec}{Vector2f}}\&\ tillPoint\ );}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00014\ \ \ \ \ \textcolor{comment}{//\ -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{00015\ \ \ \ \ \textcolor{comment}{//\ Member\ operators}}
+\DoxyCodeLine{00016\ \ \ \ \ \textcolor{comment}{//\ -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{00017\ \ \ \ \ \mbox{\hyperlink{struct_vector2f_a3db9a868c58bc809e5e09a88d65a77ec}{Vector2f}}\ \mbox{\hyperlink{struct_vector2f_ab505d08473dd8b6d252ba02cf286487a}{operator-\/}}(\ )\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00018\ \ \ \ \ \mbox{\hyperlink{struct_vector2f_a3db9a868c58bc809e5e09a88d65a77ec}{Vector2f}}\ \mbox{\hyperlink{struct_vector2f_a6f4036a9001a257808e2f7d5509cbe26}{operator+}}(\ )\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00019\ \ \ \ \ \mbox{\hyperlink{struct_vector2f_a3db9a868c58bc809e5e09a88d65a77ec}{Vector2f}}\&\ \mbox{\hyperlink{struct_vector2f_a3a8bbf7e5231b7eaea34f6e837bfe1e6}{operator*=}}(\ \textcolor{keywordtype}{float}\ rhs);}
+\DoxyCodeLine{00020\ \ \ \ \ \mbox{\hyperlink{struct_vector2f_a3db9a868c58bc809e5e09a88d65a77ec}{Vector2f}}\&\ \mbox{\hyperlink{struct_vector2f_aa6b1edcb36e0e29954650737d9323f6d}{operator/=}}(\ \textcolor{keywordtype}{float}\ rhs);}
+\DoxyCodeLine{00021\ \ \ \ \ \mbox{\hyperlink{struct_vector2f_a3db9a868c58bc809e5e09a88d65a77ec}{Vector2f}}\&\ \mbox{\hyperlink{struct_vector2f_a1ede6ae22da4c7587db55e1317e68c11}{operator+=}}(\ \textcolor{keyword}{const}\ \mbox{\hyperlink{struct_vector2f_a3db9a868c58bc809e5e09a88d65a77ec}{Vector2f}}\&\ rhs);}
+\DoxyCodeLine{00022\ \ \ \ \ \mbox{\hyperlink{struct_vector2f_a3db9a868c58bc809e5e09a88d65a77ec}{Vector2f}}\&\ \mbox{\hyperlink{struct_vector2f_a9bc5443d2bde26493884c21083d17218}{operator-\/=}}(\ \textcolor{keyword}{const}\ \mbox{\hyperlink{struct_vector2f_a3db9a868c58bc809e5e09a88d65a77ec}{Vector2f}}\&\ rhs);}
+\DoxyCodeLine{00023\ \ \ \ \ \textcolor{keyword}{explicit}\ \textcolor{keyword}{operator}\ \mbox{\hyperlink{struct_vector2f_a3db9a868c58bc809e5e09a88d65a77ec}{Vector2f}}();\ }
+\DoxyCodeLine{00024\ }
+\DoxyCodeLine{00025\ \ \ \ \ \textcolor{comment}{//\ -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{00026\ \ \ \ \ \textcolor{comment}{//\ Methods}}
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{comment}{//\ -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00029\ \ \ \ \ \textcolor{comment}{//\ Are\ two\ vectors\ equal\ within\ a\ threshold?\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }}
+\DoxyCodeLine{00030\ \ \ \ \ \textcolor{comment}{//\ u.Equals(v)}}
+\DoxyCodeLine{00031\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{struct_vector2f_ac322ec5721fe544cbcfa51e821a6e5ef}{Equals}}(\ \textcolor{keyword}{const}\ \mbox{\hyperlink{struct_vector2f_a3db9a868c58bc809e5e09a88d65a77ec}{Vector2f}}\&\ other,\ \textcolor{keywordtype}{float}\ epsilon\ =\ 0.001f\ )\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00032\ }
+\DoxyCodeLine{00033\ \ \ \ \ \textcolor{comment}{//\ Convert\ to\ String\ }}
+\DoxyCodeLine{00034\ \ \ \ \ std::string\ \mbox{\hyperlink{struct_vector2f_a3b8a56444e80763dd5fc529c719cc0cb}{ToString}}(\ )\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00035\ }
+\DoxyCodeLine{00036\ \ \ \ \ \textcolor{comment}{//\ DotProduct}}
+\DoxyCodeLine{00037\ \ \ \ \ \textcolor{comment}{//\ float\ d\ =\ u.DotProduct(v);}}
+\DoxyCodeLine{00038\ \ \ \ \ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{struct_vector2f_af8ceb9310d7065eb485e47b072a5b143}{DotProduct}}(\ \textcolor{keyword}{const}\ \mbox{\hyperlink{struct_vector2f_a3db9a868c58bc809e5e09a88d65a77ec}{Vector2f}}\&\ other\ )\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00039\ }
+\DoxyCodeLine{00040\ \ \ \ \ \textcolor{comment}{//\ CrossProduct\ }}
+\DoxyCodeLine{00041\ \ \ \ \ \textcolor{comment}{//\ float\ d\ =\ u.CrossProduct(v);}}
+\DoxyCodeLine{00042\ \ \ \ \ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{struct_vector2f_ab99fa60e5b7af169760de9057863423b}{CrossProduct}}(\ \textcolor{keyword}{const}\ \mbox{\hyperlink{struct_vector2f_a3db9a868c58bc809e5e09a88d65a77ec}{Vector2f}}\&\ other\ )\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00043\ \ \ \ \ }
+\DoxyCodeLine{00044\ \ \ \ \ \textcolor{comment}{//\ Norm\ of\ a\ vector\ }}
+\DoxyCodeLine{00045\ \ \ \ \ \textcolor{comment}{//\ float\ l\ =\ v.Norm();}}
+\DoxyCodeLine{00046\ \ \ \ \ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{struct_vector2f_aa127d5e4e295e08fd9188263b0e5b65c}{Norm}}(\ )\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00047\ }
+\DoxyCodeLine{00048\ \ \ \ \ \textcolor{comment}{//\ Length\ of\ a\ vector:\ }}
+\DoxyCodeLine{00049\ \ \ \ \ \textcolor{comment}{//\ float\ l\ =\ v.Length();}}
+\DoxyCodeLine{00050\ \ \ \ \ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{struct_vector2f_acedb20d25ccc3009546e120eda010bf5}{Length}}(\ )\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00051\ }
+\DoxyCodeLine{00052\ \ \ \ \ \textcolor{comment}{//\ Square\ Length\ of\ a\ vector.}}
+\DoxyCodeLine{00053\ \ \ \ \ \textcolor{comment}{//\ Faster\ alternative\ for\ Length,\ sqrt\ is\ not\ executed.\ }}
+\DoxyCodeLine{00054\ \ \ \ \ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{struct_vector2f_acf521f53feed08a6d885f776b8a0aa23}{SquaredLength}}(\ )\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00055\ \ \ \ \ }
+\DoxyCodeLine{00056\ \ \ \ \ \textcolor{comment}{//\ AngleWith\ returns\ the\ smallest\ angle\ with\ another\ vector\ within\ the\ range\ [-\/PI/2,\ PI/2].\ }}
+\DoxyCodeLine{00057\ \ \ \ \ \textcolor{comment}{//\ A\ pos\ angle\ is\ counter\ clockwise\ from\ this\ to\ the\ other}}
+\DoxyCodeLine{00058\ \ \ \ \ \textcolor{comment}{//\ float\ angle\ =\ u.AngleWith(v);}}
+\DoxyCodeLine{00059\ \ \ \ \ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{struct_vector2f_a8745614603814f985431ba7b8a6edd75}{AngleWith}}(\ \textcolor{keyword}{const}\ \mbox{\hyperlink{struct_vector2f_a3db9a868c58bc809e5e09a88d65a77ec}{Vector2f}}\&\ other\ )\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00060\ }
+\DoxyCodeLine{00061\ }
+\DoxyCodeLine{00062\ \ \ \ \ \textcolor{comment}{//\ Returns\ normalized\ form\ of\ a\ vector}}
+\DoxyCodeLine{00063\ \ \ \ \ \textcolor{comment}{//\ Vector2f\ n\ =\ v.Normalized();}}
+\DoxyCodeLine{00064\ \ \ \ \ \mbox{\hyperlink{struct_vector2f_a3db9a868c58bc809e5e09a88d65a77ec}{Vector2f}}\ \mbox{\hyperlink{struct_vector2f_aba5dd756c385551a19d36b57d8cbf629}{Normalized}}(\ \textcolor{keywordtype}{float}\ epsilon\ =\ 0.001f\ )\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00065\ }
+\DoxyCodeLine{00066\ \ \ \ \ \textcolor{comment}{//\ Returns\ the\ orthogonal\ of\ the\ Vector2f}}
+\DoxyCodeLine{00067\ \ \ \ \ \textcolor{comment}{//\ Vector2f\ w\ =\ v.Orthogonal();}}
+\DoxyCodeLine{00068\ \ \ \ \ \mbox{\hyperlink{struct_vector2f_a3db9a868c58bc809e5e09a88d65a77ec}{Vector2f}}\ \mbox{\hyperlink{struct_vector2f_a368a0568a55e306014fc88a9720a1af2}{Orthogonal}}(\ )\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00069\ }
+\DoxyCodeLine{00070\ \ \ \ \ \textcolor{comment}{//\ Returns\ a\ vector\ that\ is\ the\ reflection\ of\ the\ Vector2f}}
+\DoxyCodeLine{00071\ \ \ \ \ \textcolor{comment}{//\ surfaceNormal:\ represents\ the\ normal\ of\ the\ surface\ at\ the\ reflection\ point}}
+\DoxyCodeLine{00072\ \ \ \ \ \mbox{\hyperlink{struct_vector2f_a3db9a868c58bc809e5e09a88d65a77ec}{Vector2f}}\ \mbox{\hyperlink{struct_vector2f_a2e6e32fa2f3c66edd27d696938b1cf47}{Reflect}}(\ \textcolor{keyword}{const}\ \mbox{\hyperlink{struct_vector2f_a3db9a868c58bc809e5e09a88d65a77ec}{Vector2f}}\&\ surfaceNormal\ )\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00073\ }
+\DoxyCodeLine{00074\ \ \ \ \ }
+\DoxyCodeLine{00075\ }
+\DoxyCodeLine{00076\ \ \ \ \ \textcolor{comment}{//\ Sets\ the\ values\ of\ x\ and\ y}}
+\DoxyCodeLine{00077\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{struct_vector2f_aa6484d4d3b2a06f13acd5a1f74a40912}{Set}}(\ \textcolor{keywordtype}{float}\ newX,\ \textcolor{keywordtype}{float}\ newY\ );}
+\DoxyCodeLine{00078\ }
+\DoxyCodeLine{00079\ \ \ \ \ \textcolor{comment}{//\ -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{00080\ \ \ \ \ \textcolor{comment}{//\ Datamembers\ }}
+\DoxyCodeLine{00081\ \ \ \ \ \textcolor{comment}{//\ -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{00082\ \ \ \ \ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{struct_vector2f_add58d2378e3a3abdb76cf0ac51c9acfc}{x}};}
+\DoxyCodeLine{00083\ \ \ \ \ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{struct_vector2f_a14874a72597fd358b15f8ba34b999c4d}{y}};}
+\DoxyCodeLine{00084\ \};}
+\DoxyCodeLine{00085\ \textcolor{comment}{//\ -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{00086\ \textcolor{comment}{//\ Non\ member\ operators}}
+\DoxyCodeLine{00087\ \textcolor{comment}{//\ -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{00088\ \mbox{\hyperlink{struct_vector2f}{Vector2f}}\ \mbox{\hyperlink{_vector2f_8h_a1287d7e8454e6d8bc8c8a3c8f1e99fb7}{operator*}}(\ \textcolor{keywordtype}{float}\ lhs,\ \mbox{\hyperlink{struct_vector2f}{Vector2f}}\ rhs\ );}
+\DoxyCodeLine{00089\ \mbox{\hyperlink{struct_vector2f}{Vector2f}}\ \mbox{\hyperlink{_vector2f_8h_a1287d7e8454e6d8bc8c8a3c8f1e99fb7}{operator*}}(\ \mbox{\hyperlink{struct_vector2f}{Vector2f}}\ lhs,\ \textcolor{keywordtype}{float}\ rhs\ );}
+\DoxyCodeLine{00090\ \mbox{\hyperlink{struct_vector2f}{Vector2f}}\ \mbox{\hyperlink{_vector2f_8h_aa7dd083205f3bd6d27af416a54965184}{operator/}}(\ \mbox{\hyperlink{struct_vector2f}{Vector2f}}\ lhs,\ \textcolor{keywordtype}{float}\ rhs\ );}
+\DoxyCodeLine{00091\ }
+\DoxyCodeLine{00092\ \mbox{\hyperlink{struct_vector2f}{Vector2f}}\ \mbox{\hyperlink{_vector2f_8h_ae6c80154fec82987444a0402ddaea291}{operator+}}(\ \mbox{\hyperlink{struct_vector2f}{Vector2f}}\ lhs,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{struct_vector2f}{Vector2f}}\&\ rhs\ );}
+\DoxyCodeLine{00093\ \mbox{\hyperlink{struct_vector2f}{Vector2f}}\ \mbox{\hyperlink{_vector2f_8h_a6c1a0280f04fa55477652ae0011bc79a}{operator-\/}}(\ \mbox{\hyperlink{struct_vector2f}{Vector2f}}\ lhs,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{struct_vector2f}{Vector2f}}\&\ rhs\ );}
+\DoxyCodeLine{00094\ }
+\DoxyCodeLine{00095\ std::ostream\&\ \mbox{\hyperlink{_vector2f_8h_a8f216ebe66aefa87dd657a5cee42b59d}{operator<<\ }}(\ std::ostream\&\ lhs,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{struct_vector2f}{Vector2f}}\&\ rhs\ );}
+\DoxyCodeLine{00096\ }
+\DoxyCodeLine{00097\ \textcolor{comment}{//helper\ func}}
+\DoxyCodeLine{00098\ \mbox{\hyperlink{struct_vector2f}{Vector2f}}\ \mbox{\hyperlink{_vector2f_8h_a8b8603f6db69bb991b8e0697f7d1ccef}{Lerp}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{struct_vector2f}{Vector2f}}\&\ startPos,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{struct_vector2f}{Vector2f}}\&\ targetPos,\ \textcolor{keywordtype}{float}\ deltaTime);}
+
+\end{DoxyCode}

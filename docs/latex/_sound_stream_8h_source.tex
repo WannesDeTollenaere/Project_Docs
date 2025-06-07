@@ -1,0 +1,30 @@
+\doxysection{Sound\+Stream.\+h}
+\hypertarget{_sound_stream_8h_source}{}\label{_sound_stream_8h_source}\index{Engine/SoundStream.h@{Engine/SoundStream.h}}
+\mbox{\hyperlink{_sound_stream_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00003\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_sound_stream_ad0d38073871e144726a9d4d174c63c9b}{SoundStream}}\ final}
+\DoxyCodeLine{00004\ \{}
+\DoxyCodeLine{00005\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00006\ \ \ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{class_sound_stream_ad0d38073871e144726a9d4d174c63c9b}{SoundStream}}(\ \textcolor{keyword}{const}\ std::string\&\ path\ );}
+\DoxyCodeLine{00007\ \ \ \ \ \mbox{\hyperlink{class_sound_stream_ac3f6f7413d56d4976c793bb77406570f}{\string~SoundStream}}(\ );}
+\DoxyCodeLine{00008\ \ \ \ \ \mbox{\hyperlink{class_sound_stream_a966f2536fc64b1ca015c985c3f546984}{SoundStream}}(\ \textcolor{keyword}{const}\ \mbox{\hyperlink{class_sound_stream_ad0d38073871e144726a9d4d174c63c9b}{SoundStream}}\&\ other\ )\ =\ \textcolor{keyword}{delete};}
+\DoxyCodeLine{00009\ \ \ \ \ \mbox{\hyperlink{class_sound_stream_ad0d38073871e144726a9d4d174c63c9b}{SoundStream}}\&\ \mbox{\hyperlink{class_sound_stream_abd3ae4811decd035fb5a7651c315ac9b}{operator=}}(\ \textcolor{keyword}{const}\ \mbox{\hyperlink{class_sound_stream_ad0d38073871e144726a9d4d174c63c9b}{SoundStream}}\&\ rhs\ )\ =\ \textcolor{keyword}{delete};}
+\DoxyCodeLine{00010\ \ \ \ \ \mbox{\hyperlink{class_sound_stream_af98d37be458634f8dc69e3f8e8936cd3}{SoundStream}}(\mbox{\hyperlink{class_sound_stream_ad0d38073871e144726a9d4d174c63c9b}{SoundStream}}\&\&\ other)\ =\ \textcolor{keyword}{delete};}
+\DoxyCodeLine{00011\ \ \ \ \ \mbox{\hyperlink{class_sound_stream_ad0d38073871e144726a9d4d174c63c9b}{SoundStream}}\&\ \mbox{\hyperlink{class_sound_stream_a537cd2129fd3cc7df09f625145c3465a}{operator=}}(\mbox{\hyperlink{class_sound_stream_ad0d38073871e144726a9d4d174c63c9b}{SoundStream}}\&\&\ other)\ =\ \textcolor{keyword}{delete};}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00013\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_sound_stream_a02ddea157bda90e4b401c3263bf8ff02}{IsLoaded}}(\ )\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00014\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_sound_stream_a944f43b36234dbb014aa3c1f358095ad}{Play}}(\ \textcolor{keywordtype}{bool}\ repeat\ )\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00015\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_sound_stream_ab68727164c3114164de66f4964a3b462}{Stop}}(\ );}
+\DoxyCodeLine{00016\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_sound_stream_a885a0589beb4994fd8255a54f43bb0be}{Pause}}(\ );}
+\DoxyCodeLine{00017\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_sound_stream_a540d33ffc9a23adaa82f472ef4f43f30}{Resume}}(\ );}
+\DoxyCodeLine{00018\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_sound_stream_a44ff03f08368c7e2954f59156df30105}{SetVolume}}(\textcolor{keywordtype}{int}\ value\ );}
+\DoxyCodeLine{00019\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_sound_stream_a9b29cc7d7e7963378068f02460c2aa2c}{GetVolume}}(\ );}
+\DoxyCodeLine{00020\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_sound_stream_aeb843bbcd1dde8e95eabeab0fb96d94e}{IsPlaying}}(\ );}
+\DoxyCodeLine{00021\ }
+\DoxyCodeLine{00022\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00023\ \ \ \ \ Mix\_Music\ *m\_pMixMusic;}
+\DoxyCodeLine{00024\ \};}
+
+\end{DoxyCode}

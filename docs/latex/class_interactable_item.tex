@@ -1,0 +1,273 @@
+\doxysection{Interactable\+Item Class Reference}
+\hypertarget{class_interactable_item}{}\label{class_interactable_item}\index{InteractableItem@{InteractableItem}}
+
+
+{\ttfamily \#include $<$Interactable\+Item.\+h$>$}
+
+
+
+Inheritance diagram for Interactable\+Item\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_interactable_item__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Interactable\+Item\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=176pt]{class_interactable_item__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_interactable_item_a5e5b9c459514e29098aaff5e62761569}{Interactable\+Item}} (const \mbox{\hyperlink{struct_rectf}{Rectf}} \&bounds)
+\item 
+\mbox{\hyperlink{class_interactable_item_a6bdd4d54f5965b13c2e68617c7321eb7}{Interactable\+Item}} (float x, float y, float width, float height)
+\item 
+\mbox{\hyperlink{class_interactable_item_a5a6b7071c26aea54f770dcddea4d4673}{Interactable\+Item}} (const \mbox{\hyperlink{struct_vector2f}{Vector2f}} \&position, float width, float height)
+\item 
+virtual void \mbox{\hyperlink{class_interactable_item_af87c8f5b507f809c6eb2ea5b43d83c25}{Draw}} () const =0
+\item 
+virtual void \mbox{\hyperlink{class_interactable_item_a18b200bb2e7fc662ea1c2d1a11e483d2}{Player\+Interaction}} (\mbox{\hyperlink{class_character}{Character}} \&character, float elapsed\+Sec)=0
+\item 
+\mbox{\hyperlink{struct_rectf}{Rectf}} \mbox{\hyperlink{class_interactable_item_a446bdb0ccbff7de5951c0a3175bab008}{Get\+Bounds}} () const noexcept
+\item 
+bool \mbox{\hyperlink{class_interactable_item_aca9a06af6a60be1d7cc2e61ea6a18893}{Has\+Collision\+Bounds}} () const noexcept
+\item 
+virtual std\+::vector$<$ \mbox{\hyperlink{struct_vector2f}{Vector2f}} $>$ \mbox{\hyperlink{class_interactable_item_a4f4343a4b509fdf7253038f67238c5ae}{Get\+Collision\+Bounds}} () const noexcept
+\item 
+\mbox{\hyperlink{class_interactable_item_a9124be31fe21f1cbe122579dde8f9252}{Interactable\+Item}} (const \mbox{\hyperlink{class_interactable_item}{Interactable\+Item}} \&other)=default
+\item 
+\mbox{\hyperlink{class_interactable_item_ae94edc84b2ceb14edb952a3edb676772}{Interactable\+Item}} (\mbox{\hyperlink{class_interactable_item}{Interactable\+Item}} \&\&other) noexcept=default
+\item 
+\mbox{\hyperlink{class_interactable_item}{Interactable\+Item}} \& \mbox{\hyperlink{class_interactable_item_a67139551064d009752d97e2e77ef865f}{operator=}} (const \mbox{\hyperlink{class_interactable_item}{Interactable\+Item}} \&other)=default
+\item 
+\mbox{\hyperlink{class_interactable_item}{Interactable\+Item}} \& \mbox{\hyperlink{class_interactable_item_a4d5baa6774ebb9137c08921d3c421d09}{operator=}} (\mbox{\hyperlink{class_interactable_item}{Interactable\+Item}} \&\&other) noexcept=default
+\item 
+virtual \mbox{\hyperlink{class_interactable_item_aa3d008d77d5f29c2673a991e24ed9301}{\texorpdfstring{$\sim$}{\string~}\+Interactable\+Item}} () noexcept=default
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_rectf}{Rectf}} \mbox{\hyperlink{class_interactable_item_afddb710738697e6bbbd141c154d50335}{m\+\_\+\+Bounds}}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{struct_vector2f}{Vector2f}} $>$ \mbox{\hyperlink{class_interactable_item_aa38359a5d89f9690f9b8cddc4de3458e}{m\+\_\+\+Collision\+Bounds}}
+\end{DoxyCompactItemize}
+
+
+\label{doc-constructors}
+\Hypertarget{class_interactable_item_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_interactable_item_a5e5b9c459514e29098aaff5e62761569}\index{InteractableItem@{InteractableItem}!InteractableItem@{InteractableItem}}
+\index{InteractableItem@{InteractableItem}!InteractableItem@{InteractableItem}}
+\doxysubsubsection{\texorpdfstring{InteractableItem()}{InteractableItem()}\hspace{0.1cm}{\footnotesize\ttfamily [1/5]}}
+{\footnotesize\ttfamily \label{class_interactable_item_a5e5b9c459514e29098aaff5e62761569} 
+Interactable\+Item\+::\+Interactable\+Item (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_rectf}{Rectf}} \&}]{bounds}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_interactable_item_a5e5b9c459514e29098aaff5e62761569_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_interactable_item_a6bdd4d54f5965b13c2e68617c7321eb7}\index{InteractableItem@{InteractableItem}!InteractableItem@{InteractableItem}}
+\index{InteractableItem@{InteractableItem}!InteractableItem@{InteractableItem}}
+\doxysubsubsection{\texorpdfstring{InteractableItem()}{InteractableItem()}\hspace{0.1cm}{\footnotesize\ttfamily [2/5]}}
+{\footnotesize\ttfamily \label{class_interactable_item_a6bdd4d54f5965b13c2e68617c7321eb7} 
+Interactable\+Item\+::\+Interactable\+Item (\begin{DoxyParamCaption}\item[{float}]{x}{, }\item[{float}]{y}{, }\item[{float}]{width}{, }\item[{float}]{height}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_interactable_item_a6bdd4d54f5965b13c2e68617c7321eb7_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_interactable_item_a5a6b7071c26aea54f770dcddea4d4673}\index{InteractableItem@{InteractableItem}!InteractableItem@{InteractableItem}}
+\index{InteractableItem@{InteractableItem}!InteractableItem@{InteractableItem}}
+\doxysubsubsection{\texorpdfstring{InteractableItem()}{InteractableItem()}\hspace{0.1cm}{\footnotesize\ttfamily [3/5]}}
+{\footnotesize\ttfamily \label{class_interactable_item_a5a6b7071c26aea54f770dcddea4d4673} 
+Interactable\+Item\+::\+Interactable\+Item (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_vector2f}{Vector2f}} \&}]{position}{, }\item[{float}]{width}{, }\item[{float}]{height}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_interactable_item_a5a6b7071c26aea54f770dcddea4d4673_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_interactable_item_a9124be31fe21f1cbe122579dde8f9252}\index{InteractableItem@{InteractableItem}!InteractableItem@{InteractableItem}}
+\index{InteractableItem@{InteractableItem}!InteractableItem@{InteractableItem}}
+\doxysubsubsection{\texorpdfstring{InteractableItem()}{InteractableItem()}\hspace{0.1cm}{\footnotesize\ttfamily [4/5]}}
+{\footnotesize\ttfamily \label{class_interactable_item_a9124be31fe21f1cbe122579dde8f9252} 
+Interactable\+Item\+::\+Interactable\+Item (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_interactable_item}{Interactable\+Item}} \&}]{other}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_interactable_item_a9124be31fe21f1cbe122579dde8f9252_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_interactable_item_ae94edc84b2ceb14edb952a3edb676772}\index{InteractableItem@{InteractableItem}!InteractableItem@{InteractableItem}}
+\index{InteractableItem@{InteractableItem}!InteractableItem@{InteractableItem}}
+\doxysubsubsection{\texorpdfstring{InteractableItem()}{InteractableItem()}\hspace{0.1cm}{\footnotesize\ttfamily [5/5]}}
+{\footnotesize\ttfamily \label{class_interactable_item_ae94edc84b2ceb14edb952a3edb676772} 
+Interactable\+Item\+::\+Interactable\+Item (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_interactable_item}{Interactable\+Item}} \&\&}]{other}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}, {\ttfamily [noexcept]}}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_interactable_item_ae94edc84b2ceb14edb952a3edb676772_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_interactable_item_aa3d008d77d5f29c2673a991e24ed9301}\index{InteractableItem@{InteractableItem}!````~InteractableItem@{\texorpdfstring{$\sim$}{\string~}InteractableItem}}
+\index{````~InteractableItem@{\texorpdfstring{$\sim$}{\string~}InteractableItem}!InteractableItem@{InteractableItem}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}InteractableItem()}{\string~InteractableItem()}}
+{\footnotesize\ttfamily \label{class_interactable_item_aa3d008d77d5f29c2673a991e24ed9301} 
+virtual Interactable\+Item\+::\texorpdfstring{$\sim$}{\string~}\+Interactable\+Item (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [default]}, {\ttfamily [noexcept]}}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_interactable_item_aa3d008d77d5f29c2673a991e24ed9301_cgraph}
+\end{center}
+\end{figure}
+
+
+\label{doc-func-members}
+\Hypertarget{class_interactable_item_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_interactable_item_af87c8f5b507f809c6eb2ea5b43d83c25}\index{InteractableItem@{InteractableItem}!Draw@{Draw}}
+\index{Draw@{Draw}!InteractableItem@{InteractableItem}}
+\doxysubsubsection{\texorpdfstring{Draw()}{Draw()}}
+{\footnotesize\ttfamily \label{class_interactable_item_af87c8f5b507f809c6eb2ea5b43d83c25} 
+virtual void Interactable\+Item\+::\+Draw (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{class_cog_platform_aeef0da62f2ae9b037694af27c427272c}{Cog\+Platform}}, \mbox{\hyperlink{class_crumble_block_a860ede5922b68420c0672b68bd53a226}{Crumble\+Block}}, \mbox{\hyperlink{class_dash_crystal_a38c87bd8df73b7cb6bab596ee5d55f33}{Dash\+Crystal}}, \mbox{\hyperlink{class_flying_strawberry_a0d9ddf2453f19d6a3e16df7fcb0f9025}{Flying\+Strawberry}}, \mbox{\hyperlink{class_level_a580564d5ba985ea6644cde213074d2c4}{Level}}, \mbox{\hyperlink{class_respawn_zone_a061fb1d731ab1cac459d7f87f524342a}{Respawn\+Zone}}, \mbox{\hyperlink{class_spike_a6ea9291299e83638d95081ab5b16a05c}{Spike}}, \mbox{\hyperlink{class_strawberry_a0fd0213e45339451f5cdf2e88e4054a4}{Strawberry}}, and \mbox{\hyperlink{class_trampoline_a0fc132ff143a1be5c5fde7f094e0a1c3}{Trampoline}}.
+
+\Hypertarget{class_interactable_item_a446bdb0ccbff7de5951c0a3175bab008}\index{InteractableItem@{InteractableItem}!GetBounds@{GetBounds}}
+\index{GetBounds@{GetBounds}!InteractableItem@{InteractableItem}}
+\doxysubsubsection{\texorpdfstring{GetBounds()}{GetBounds()}}
+{\footnotesize\ttfamily \label{class_interactable_item_a446bdb0ccbff7de5951c0a3175bab008} 
+\mbox{\hyperlink{struct_rectf}{Rectf}} Interactable\+Item\+::\+Get\+Bounds (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+\Hypertarget{class_interactable_item_a4f4343a4b509fdf7253038f67238c5ae}\index{InteractableItem@{InteractableItem}!GetCollisionBounds@{GetCollisionBounds}}
+\index{GetCollisionBounds@{GetCollisionBounds}!InteractableItem@{InteractableItem}}
+\doxysubsubsection{\texorpdfstring{GetCollisionBounds()}{GetCollisionBounds()}}
+{\footnotesize\ttfamily \label{class_interactable_item_a4f4343a4b509fdf7253038f67238c5ae} 
+std\+::vector$<$ \mbox{\hyperlink{struct_vector2f}{Vector2f}} $>$ Interactable\+Item\+::\+Get\+Collision\+Bounds (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [noexcept]}}
+
+
+
+Reimplemented in \mbox{\hyperlink{class_crumble_block_a08aa31eec30dae935aef94942a985b71}{Crumble\+Block}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_interactable_item_a4f4343a4b509fdf7253038f67238c5ae_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_interactable_item_aca9a06af6a60be1d7cc2e61ea6a18893}\index{InteractableItem@{InteractableItem}!HasCollisionBounds@{HasCollisionBounds}}
+\index{HasCollisionBounds@{HasCollisionBounds}!InteractableItem@{InteractableItem}}
+\doxysubsubsection{\texorpdfstring{HasCollisionBounds()}{HasCollisionBounds()}}
+{\footnotesize\ttfamily \label{class_interactable_item_aca9a06af6a60be1d7cc2e61ea6a18893} 
+bool Interactable\+Item\+::\+Has\+Collision\+Bounds (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_interactable_item_aca9a06af6a60be1d7cc2e61ea6a18893_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_interactable_item_a67139551064d009752d97e2e77ef865f}\index{InteractableItem@{InteractableItem}!operator=@{operator=}}
+\index{operator=@{operator=}!InteractableItem@{InteractableItem}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_interactable_item_a67139551064d009752d97e2e77ef865f} 
+\mbox{\hyperlink{class_interactable_item}{Interactable\+Item}} \& Interactable\+Item\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_interactable_item}{Interactable\+Item}} \&}]{other}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_interactable_item_a67139551064d009752d97e2e77ef865f_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_interactable_item_a4d5baa6774ebb9137c08921d3c421d09}\index{InteractableItem@{InteractableItem}!operator=@{operator=}}
+\index{operator=@{operator=}!InteractableItem@{InteractableItem}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_interactable_item_a4d5baa6774ebb9137c08921d3c421d09} 
+\mbox{\hyperlink{class_interactable_item}{Interactable\+Item}} \& Interactable\+Item\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_interactable_item}{Interactable\+Item}} \&\&}]{other}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}, {\ttfamily [noexcept]}}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_interactable_item_a4d5baa6774ebb9137c08921d3c421d09_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_interactable_item_a18b200bb2e7fc662ea1c2d1a11e483d2}\index{InteractableItem@{InteractableItem}!PlayerInteraction@{PlayerInteraction}}
+\index{PlayerInteraction@{PlayerInteraction}!InteractableItem@{InteractableItem}}
+\doxysubsubsection{\texorpdfstring{PlayerInteraction()}{PlayerInteraction()}}
+{\footnotesize\ttfamily \label{class_interactable_item_a18b200bb2e7fc662ea1c2d1a11e483d2} 
+virtual void Interactable\+Item\+::\+Player\+Interaction (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_character}{Character}} \&}]{character}{, }\item[{float}]{elapsed\+Sec}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{class_cog_platform_afd4a86f749690313b5bd2587f15c6ce8}{Cog\+Platform}}, \mbox{\hyperlink{class_crumble_block_af211a08e47f20f7343183341611d5653}{Crumble\+Block}}, \mbox{\hyperlink{class_dash_crystal_ae9d188a3998de0c2de1ee162ba5e1273}{Dash\+Crystal}}, \mbox{\hyperlink{class_flying_strawberry_ada0a996bd7bd79f240b85762a24fd2ed}{Flying\+Strawberry}}, \mbox{\hyperlink{class_level_a2fa077407b0deca2d008f636d4a7b03a}{Level}}, \mbox{\hyperlink{class_respawn_zone_a5c821db8bbdc1da0401f633af761687c}{Respawn\+Zone}}, \mbox{\hyperlink{class_spike_a7c79520a23045ef568326c1cedc2eba9}{Spike}}, \mbox{\hyperlink{class_strawberry_a2e5468a8badbbf84cd37d12c34042061}{Strawberry}}, and \mbox{\hyperlink{class_trampoline_a8c4a369bfdfba21767d45ec9f83be487}{Trampoline}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_interactable_item_a18b200bb2e7fc662ea1c2d1a11e483d2_cgraph}
+\end{center}
+\end{figure}
+
+
+\label{doc-variable-members}
+\Hypertarget{class_interactable_item_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_interactable_item_afddb710738697e6bbbd141c154d50335}\index{InteractableItem@{InteractableItem}!m\_Bounds@{m\_Bounds}}
+\index{m\_Bounds@{m\_Bounds}!InteractableItem@{InteractableItem}}
+\doxysubsubsection{\texorpdfstring{m\_Bounds}{m\_Bounds}}
+{\footnotesize\ttfamily \label{class_interactable_item_afddb710738697e6bbbd141c154d50335} 
+\mbox{\hyperlink{struct_rectf}{Rectf}} Interactable\+Item\+::m\+\_\+\+Bounds\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_interactable_item_aa38359a5d89f9690f9b8cddc4de3458e}\index{InteractableItem@{InteractableItem}!m\_CollisionBounds@{m\_CollisionBounds}}
+\index{m\_CollisionBounds@{m\_CollisionBounds}!InteractableItem@{InteractableItem}}
+\doxysubsubsection{\texorpdfstring{m\_CollisionBounds}{m\_CollisionBounds}}
+{\footnotesize\ttfamily \label{class_interactable_item_aa38359a5d89f9690f9b8cddc4de3458e} 
+std\+::vector$<$\mbox{\hyperlink{struct_vector2f}{Vector2f}}$>$ Interactable\+Item\+::m\+\_\+\+Collision\+Bounds\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Celeste/\mbox{\hyperlink{_interactable_item_8h}{Interactable\+Item.\+h}}\item 
+Celeste/\mbox{\hyperlink{_interactable_item_8cpp}{Interactable\+Item.\+cpp}}\end{DoxyCompactItemize}

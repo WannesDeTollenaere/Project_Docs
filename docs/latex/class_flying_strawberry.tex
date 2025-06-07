@@ -1,0 +1,289 @@
+\doxysection{Flying\+Strawberry Class Reference}
+\hypertarget{class_flying_strawberry}{}\label{class_flying_strawberry}\index{FlyingStrawberry@{FlyingStrawberry}}
+
+
+{\ttfamily \#include $<$Flying\+Strawberry.\+h$>$}
+
+
+
+Inheritance diagram for Flying\+Strawberry\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_flying_strawberry__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Flying\+Strawberry\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_flying_strawberry__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_flying_strawberry_a3603795cd3a0c20e776eafe4138f59b4}{Flying\+Strawberry}} (const \mbox{\hyperlink{struct_rectf}{Rectf}} \&bounds, const \mbox{\hyperlink{struct_rectf}{Rectf}} \&level\+Bounds)
+\item 
+void \mbox{\hyperlink{class_flying_strawberry_a0d9ddf2453f19d6a3e16df7fcb0f9025}{Draw}} () const override
+\item 
+void \mbox{\hyperlink{class_flying_strawberry_ada0a996bd7bd79f240b85762a24fd2ed}{Player\+Interaction}} (\mbox{\hyperlink{class_character}{Character}} \&character, float elapsed\+Sec) override
+\item 
+\mbox{\hyperlink{class_flying_strawberry_ac1a195cd4ae7ae45963af4d7630235eb}{Flying\+Strawberry}} (const \mbox{\hyperlink{class_flying_strawberry}{Flying\+Strawberry}} \&other)=default
+\item 
+\mbox{\hyperlink{class_flying_strawberry_aa70131b40e4fb24eb03a9c6ecbfd2d59}{Flying\+Strawberry}} (\mbox{\hyperlink{class_flying_strawberry}{Flying\+Strawberry}} \&\&other) noexcept=default
+\item 
+\mbox{\hyperlink{class_flying_strawberry}{Flying\+Strawberry}} \& \mbox{\hyperlink{class_flying_strawberry_a13e7820116a2e072653974d1cbd9496c}{operator=}} (const \mbox{\hyperlink{class_flying_strawberry}{Flying\+Strawberry}} \&other)=default
+\item 
+\mbox{\hyperlink{class_flying_strawberry}{Flying\+Strawberry}} \& \mbox{\hyperlink{class_flying_strawberry_a415c4868ba7ff99c77a638df1e7e0684}{operator=}} (\mbox{\hyperlink{class_flying_strawberry}{Flying\+Strawberry}} \&\&other) noexcept=default
+\item 
+\mbox{\hyperlink{class_flying_strawberry_a02fcc3deef30628892f3276e004ec394}{\texorpdfstring{$\sim$}{\string~}\+Flying\+Strawberry}} () noexcept override
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_strawberry}{Strawberry}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_strawberry_ab4dff64037a1d41eb23ef267eeda6510}{Strawberry}} (float x, float y, float width, float height)
+\item 
+\mbox{\hyperlink{class_strawberry_a26f3bcf7ad758cb9ffe408a6d65a8cb3}{Strawberry}} (const \mbox{\hyperlink{struct_rectf}{Rectf}} \&bounds)
+\item 
+void \mbox{\hyperlink{class_strawberry_a897041c2abde0dfa8707721d28cad769}{Revizualize}} ()
+\item 
+bool \mbox{\hyperlink{class_strawberry_a5e478e81e78321a1191872461c7a631c}{Is\+Picked\+Up}} () const noexcept
+\item 
+bool \mbox{\hyperlink{class_strawberry_ae47c4279731cc3caf274758f992ce838}{Is\+Ghost}} () const noexcept
+\item 
+void \mbox{\hyperlink{class_strawberry_a61400644943015fa56d48cf970a25852}{Set\+Ghost}} (bool prev)
+\item 
+\mbox{\hyperlink{class_strawberry_a29384527bb818f4f24983b24b5e04fd3}{Strawberry}} (const \mbox{\hyperlink{class_strawberry}{Strawberry}} \&other)=default
+\item 
+\mbox{\hyperlink{class_strawberry_a089a694b74e5e7c5ce542ca943c72848}{Strawberry}} (\mbox{\hyperlink{class_strawberry}{Strawberry}} \&\&other) noexcept=default
+\item 
+\mbox{\hyperlink{class_strawberry}{Strawberry}} \& \mbox{\hyperlink{class_strawberry_a81dca459e7fc2dac2c2ab3cff76c6145}{operator=}} (const \mbox{\hyperlink{class_strawberry}{Strawberry}} \&other)=default
+\item 
+\mbox{\hyperlink{class_strawberry}{Strawberry}} \& \mbox{\hyperlink{class_strawberry_a673f5c80b8d67a2580087a4eae0832b6}{operator=}} (\mbox{\hyperlink{class_strawberry}{Strawberry}} \&\&other) noexcept=default
+\item 
+virtual \mbox{\hyperlink{class_strawberry_a742143fd532ad4a14b0779d7efaa864f}{\texorpdfstring{$\sim$}{\string~}\+Strawberry}} () noexcept override
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_interactable_item}{Interactable\+Item}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_interactable_item_a5e5b9c459514e29098aaff5e62761569}{Interactable\+Item}} (const \mbox{\hyperlink{struct_rectf}{Rectf}} \&bounds)
+\item 
+\mbox{\hyperlink{class_interactable_item_a6bdd4d54f5965b13c2e68617c7321eb7}{Interactable\+Item}} (float x, float y, float width, float height)
+\item 
+\mbox{\hyperlink{class_interactable_item_a5a6b7071c26aea54f770dcddea4d4673}{Interactable\+Item}} (const \mbox{\hyperlink{struct_vector2f}{Vector2f}} \&position, float width, float height)
+\item 
+\mbox{\hyperlink{struct_rectf}{Rectf}} \mbox{\hyperlink{class_interactable_item_a446bdb0ccbff7de5951c0a3175bab008}{Get\+Bounds}} () const noexcept
+\item 
+bool \mbox{\hyperlink{class_interactable_item_aca9a06af6a60be1d7cc2e61ea6a18893}{Has\+Collision\+Bounds}} () const noexcept
+\item 
+virtual std\+::vector$<$ \mbox{\hyperlink{struct_vector2f}{Vector2f}} $>$ \mbox{\hyperlink{class_interactable_item_a4f4343a4b509fdf7253038f67238c5ae}{Get\+Collision\+Bounds}} () const noexcept
+\item 
+\mbox{\hyperlink{class_interactable_item_a9124be31fe21f1cbe122579dde8f9252}{Interactable\+Item}} (const \mbox{\hyperlink{class_interactable_item}{Interactable\+Item}} \&other)=default
+\item 
+\mbox{\hyperlink{class_interactable_item_ae94edc84b2ceb14edb952a3edb676772}{Interactable\+Item}} (\mbox{\hyperlink{class_interactable_item}{Interactable\+Item}} \&\&other) noexcept=default
+\item 
+\mbox{\hyperlink{class_interactable_item}{Interactable\+Item}} \& \mbox{\hyperlink{class_interactable_item_a67139551064d009752d97e2e77ef865f}{operator=}} (const \mbox{\hyperlink{class_interactable_item}{Interactable\+Item}} \&other)=default
+\item 
+\mbox{\hyperlink{class_interactable_item}{Interactable\+Item}} \& \mbox{\hyperlink{class_interactable_item_a4d5baa6774ebb9137c08921d3c421d09}{operator=}} (\mbox{\hyperlink{class_interactable_item}{Interactable\+Item}} \&\&other) noexcept=default
+\item 
+virtual \mbox{\hyperlink{class_interactable_item_aa3d008d77d5f29c2673a991e24ed9301}{\texorpdfstring{$\sim$}{\string~}\+Interactable\+Item}} () noexcept=default
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{class_strawberry}{Strawberry}}}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_strawberry_a073e8b3db19051d3656a294ae54a4626}{Draw}} (\mbox{\hyperlink{class_animation_manager}{Animation\+Manager}} \texorpdfstring{$\ast$}{*}AnimationM) const
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{class_counted_item}{Counted\+Item$<$ Strawberry $>$}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_counted_item_a379818e68b8231fbfad8c51cbf2add57}{Counted\+Item}} ()
+\item 
+\mbox{\hyperlink{class_counted_item}{Counted\+Item}} \& \mbox{\hyperlink{class_counted_item_aa782288d34bfef1fbb3e7660f203aac5}{operator=}} (const \mbox{\hyperlink{class_counted_item}{Counted\+Item}} \&other)=default
+\item 
+virtual \mbox{\hyperlink{class_counted_item_aea020fda431fdcb47017df22721022c7}{\texorpdfstring{$\sim$}{\string~}\+Counted\+Item}} () noexcept
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{class_counted_item}{Counted\+Item$<$ Flying\+Strawberry $>$}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_counted_item_a379818e68b8231fbfad8c51cbf2add57}{Counted\+Item}} ()
+\item 
+\mbox{\hyperlink{class_counted_item}{Counted\+Item}} \& \mbox{\hyperlink{class_counted_item_aa782288d34bfef1fbb3e7660f203aac5}{operator=}} (const \mbox{\hyperlink{class_counted_item}{Counted\+Item}} \&other)=default
+\item 
+virtual \mbox{\hyperlink{class_counted_item_aea020fda431fdcb47017df22721022c7}{\texorpdfstring{$\sim$}{\string~}\+Counted\+Item}} () noexcept
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Protected Member Functions inherited from \mbox{\hyperlink{class_counted_item}{Counted\+Item$<$ Strawberry $>$}}}
+\begin{DoxyCompactItemize}
+\item 
+static size\+\_\+t \mbox{\hyperlink{class_counted_item_a7a4f3ec5e121b459d51a818c9ed0e269}{Get\+Count}} () noexcept
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Protected Member Functions inherited from \mbox{\hyperlink{class_counted_item}{Counted\+Item$<$ Flying\+Strawberry $>$}}}
+\begin{DoxyCompactItemize}
+\item 
+static size\+\_\+t \mbox{\hyperlink{class_counted_item_a7a4f3ec5e121b459d51a818c9ed0e269}{Get\+Count}} () noexcept
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_strawberry}{Strawberry}}}
+\begin{DoxyCompactItemize}
+\item 
+const \mbox{\hyperlink{struct_vector2f}{Vector2f}} \mbox{\hyperlink{class_strawberry_a0466405a43fd7e567ca18ab3b099eeb9}{m\+\_\+\+Original\+Location}}
+\item 
+bool \mbox{\hyperlink{class_strawberry_aef55e3e2e2fc7dba4a88f7c3ecffcef7}{m\+\_\+\+Touched}}
+\item 
+bool \mbox{\hyperlink{class_strawberry_a5b867e264274496c57d1d646dbe6a181}{m\+\_\+\+Is\+Ghost}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_interactable_item}{Interactable\+Item}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_rectf}{Rectf}} \mbox{\hyperlink{class_interactable_item_afddb710738697e6bbbd141c154d50335}{m\+\_\+\+Bounds}}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{struct_vector2f}{Vector2f}} $>$ \mbox{\hyperlink{class_interactable_item_aa38359a5d89f9690f9b8cddc4de3458e}{m\+\_\+\+Collision\+Bounds}}
+\end{DoxyCompactItemize}
+
+
+\label{doc-constructors}
+\Hypertarget{class_flying_strawberry_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_flying_strawberry_a3603795cd3a0c20e776eafe4138f59b4}\index{FlyingStrawberry@{FlyingStrawberry}!FlyingStrawberry@{FlyingStrawberry}}
+\index{FlyingStrawberry@{FlyingStrawberry}!FlyingStrawberry@{FlyingStrawberry}}
+\doxysubsubsection{\texorpdfstring{FlyingStrawberry()}{FlyingStrawberry()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \label{class_flying_strawberry_a3603795cd3a0c20e776eafe4138f59b4} 
+Flying\+Strawberry\+::\+Flying\+Strawberry (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_rectf}{Rectf}} \&}]{bounds}{, }\item[{const \mbox{\hyperlink{struct_rectf}{Rectf}} \&}]{level\+Bounds}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_flying_strawberry_a3603795cd3a0c20e776eafe4138f59b4_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_flying_strawberry_a3603795cd3a0c20e776eafe4138f59b4_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_flying_strawberry_ac1a195cd4ae7ae45963af4d7630235eb}\index{FlyingStrawberry@{FlyingStrawberry}!FlyingStrawberry@{FlyingStrawberry}}
+\index{FlyingStrawberry@{FlyingStrawberry}!FlyingStrawberry@{FlyingStrawberry}}
+\doxysubsubsection{\texorpdfstring{FlyingStrawberry()}{FlyingStrawberry()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \label{class_flying_strawberry_ac1a195cd4ae7ae45963af4d7630235eb} 
+Flying\+Strawberry\+::\+Flying\+Strawberry (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_flying_strawberry}{Flying\+Strawberry}} \&}]{other}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_flying_strawberry_ac1a195cd4ae7ae45963af4d7630235eb_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_flying_strawberry_aa70131b40e4fb24eb03a9c6ecbfd2d59}\index{FlyingStrawberry@{FlyingStrawberry}!FlyingStrawberry@{FlyingStrawberry}}
+\index{FlyingStrawberry@{FlyingStrawberry}!FlyingStrawberry@{FlyingStrawberry}}
+\doxysubsubsection{\texorpdfstring{FlyingStrawberry()}{FlyingStrawberry()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily \label{class_flying_strawberry_aa70131b40e4fb24eb03a9c6ecbfd2d59} 
+Flying\+Strawberry\+::\+Flying\+Strawberry (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_flying_strawberry}{Flying\+Strawberry}} \&\&}]{other}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}, {\ttfamily [noexcept]}}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_flying_strawberry_aa70131b40e4fb24eb03a9c6ecbfd2d59_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_flying_strawberry_a02fcc3deef30628892f3276e004ec394}\index{FlyingStrawberry@{FlyingStrawberry}!````~FlyingStrawberry@{\texorpdfstring{$\sim$}{\string~}FlyingStrawberry}}
+\index{````~FlyingStrawberry@{\texorpdfstring{$\sim$}{\string~}FlyingStrawberry}!FlyingStrawberry@{FlyingStrawberry}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}FlyingStrawberry()}{\string~FlyingStrawberry()}}
+{\footnotesize\ttfamily \label{class_flying_strawberry_a02fcc3deef30628892f3276e004ec394} 
+Flying\+Strawberry\+::\texorpdfstring{$\sim$}{\string~}\+Flying\+Strawberry (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [noexcept]}}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=332pt]{class_flying_strawberry_a02fcc3deef30628892f3276e004ec394_cgraph}
+\end{center}
+\end{figure}
+
+
+\label{doc-func-members}
+\Hypertarget{class_flying_strawberry_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_flying_strawberry_a0d9ddf2453f19d6a3e16df7fcb0f9025}\index{FlyingStrawberry@{FlyingStrawberry}!Draw@{Draw}}
+\index{Draw@{Draw}!FlyingStrawberry@{FlyingStrawberry}}
+\doxysubsubsection{\texorpdfstring{Draw()}{Draw()}}
+{\footnotesize\ttfamily \label{class_flying_strawberry_a0d9ddf2453f19d6a3e16df7fcb0f9025} 
+void Flying\+Strawberry\+::\+Draw (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_strawberry_a0fd0213e45339451f5cdf2e88e4054a4}{Strawberry}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=327pt]{class_flying_strawberry_a0d9ddf2453f19d6a3e16df7fcb0f9025_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_flying_strawberry_a13e7820116a2e072653974d1cbd9496c}\index{FlyingStrawberry@{FlyingStrawberry}!operator=@{operator=}}
+\index{operator=@{operator=}!FlyingStrawberry@{FlyingStrawberry}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_flying_strawberry_a13e7820116a2e072653974d1cbd9496c} 
+\mbox{\hyperlink{class_flying_strawberry}{Flying\+Strawberry}} \& Flying\+Strawberry\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_flying_strawberry}{Flying\+Strawberry}} \&}]{other}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_flying_strawberry_a13e7820116a2e072653974d1cbd9496c_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_flying_strawberry_a415c4868ba7ff99c77a638df1e7e0684}\index{FlyingStrawberry@{FlyingStrawberry}!operator=@{operator=}}
+\index{operator=@{operator=}!FlyingStrawberry@{FlyingStrawberry}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_flying_strawberry_a415c4868ba7ff99c77a638df1e7e0684} 
+\mbox{\hyperlink{class_flying_strawberry}{Flying\+Strawberry}} \& Flying\+Strawberry\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_flying_strawberry}{Flying\+Strawberry}} \&\&}]{other}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}, {\ttfamily [noexcept]}}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_flying_strawberry_a415c4868ba7ff99c77a638df1e7e0684_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_flying_strawberry_ada0a996bd7bd79f240b85762a24fd2ed}\index{FlyingStrawberry@{FlyingStrawberry}!PlayerInteraction@{PlayerInteraction}}
+\index{PlayerInteraction@{PlayerInteraction}!FlyingStrawberry@{FlyingStrawberry}}
+\doxysubsubsection{\texorpdfstring{PlayerInteraction()}{PlayerInteraction()}}
+{\footnotesize\ttfamily \label{class_flying_strawberry_ada0a996bd7bd79f240b85762a24fd2ed} 
+void Flying\+Strawberry\+::\+Player\+Interaction (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_character}{Character}} \&}]{character}{, }\item[{float}]{elapsed\+Sec}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_strawberry_a2e5468a8badbbf84cd37d12c34042061}{Strawberry}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_flying_strawberry_ada0a996bd7bd79f240b85762a24fd2ed_cgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Celeste/\mbox{\hyperlink{_flying_strawberry_8h}{Flying\+Strawberry.\+h}}\item 
+Celeste/\mbox{\hyperlink{_flying_strawberry_8cpp}{Flying\+Strawberry.\+cpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,9 @@
+<map id="SliderMenuItem" name="SliderMenuItem">
+<area shape="rect" id="Node000001" title=" " alt="" coords="26,180,139,207"/>
+<area shape="rect" id="Node000002" href="$class_menu_item.html" title=" " alt="" coords="43,104,122,131"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="85,146,85,180,80,180,80,146"/>
+<area shape="rect" id="Node000003" href="$struct_rectf.html" title=" " alt="" coords="5,5,59,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="30,47,31,64,36,79,45,91,58,101,55,105,42,95,31,81,26,65,25,48"/>
+<area shape="rect" id="Node000004" href="$class_texture.html" title=" " alt="" coords="102,5,167,32"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="125,47,108,81,93,105,89,102,103,79,120,45"/>
+</map>

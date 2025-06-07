@@ -1,0 +1,24 @@
+<map id="Trampoline::PlayerInteraction" name="Trampoline::PlayerInteraction">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,81,197,108"/>
+<area shape="rect" id="Node000002" href="$class_character.html#aec011c2511a78fc3e07ce424a640d633" title=" " alt="" coords="245,5,397,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="140,78,244,41,263,35,265,40,246,47,142,83"/>
+<area shape="rect" id="Node000003" href="$class_character.html#a0b790800d6ff90eebee18bce25177fce" title=" " alt="" coords="247,56,394,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="197,81,232,77,232,82,197,86"/>
+<area shape="rect" id="Node000004" href="$namespaceutils.html#a11a0eb68e467a22aed74f507057c39ed" title=" " alt="" coords="254,107,388,133"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="197,103,239,108,238,113,197,108"/>
+<area shape="rect" id="Node000010" href="$class_character.html#ad86bc482bf4f17bff08a76d3ff54749e" title=" " alt="" coords="245,157,397,184"/>
+<area shape="poly" id="edge12_Node000001_Node000010" title=" " alt="" coords="142,106,246,143,265,149,263,154,244,148,140,111"/>
+<area shape="rect" id="Node000005" href="$namespaceutils.html#a760075559e6ab59c1daec763fab2b488" title=" " alt="" coords="445,107,628,133"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="388,117,429,117,429,123,388,123"/>
+<area shape="rect" id="Node000006" href="$struct_vector2f.html#af8ceb9310d7065eb485e47b072a5b143" title=" " alt="" coords="676,56,820,83"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="595,103,674,84,675,89,596,109"/>
+<area shape="rect" id="Node000008" href="$struct_vector2f.html#acedb20d25ccc3009546e120eda010bf5" title=" " alt="" coords="872,144,988,171"/>
+<area shape="poly" id="edge8_Node000005_Node000008" title=" " alt="" coords="605,131,677,143,770,150,857,154,856,159,770,156,676,148,604,137"/>
+<area shape="rect" id="Node000009" href="$struct_vector2f.html#aba5dd756c385551a19d36b57d8cbf629" title=" " alt="" coords="676,107,820,133"/>
+<area shape="poly" id="edge9_Node000005_Node000009" title=" " alt="" coords="629,117,661,117,661,123,629,123"/>
+<area shape="rect" id="Node000007" href="$struct_vector2f.html#a3db9a868c58bc809e5e09a88d65a77ec" title=" " alt="" coords="868,81,993,108"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="820,77,853,81,852,87,819,82"/>
+<area shape="poly" id="edge7_Node000007_Node000007" title=" " alt="" coords="899,82,894,73,897,63,910,57,930,55,952,57,964,64,961,68,951,62,930,60,911,62,901,67,899,72,904,80"/>
+<area shape="poly" id="edge11_Node000009_Node000007" title=" " alt="" coords="819,107,852,103,853,108,820,113"/>
+<area shape="poly" id="edge10_Node000009_Node000008" title=" " alt="" coords="817,131,858,140,857,145,816,137"/>
+</map>

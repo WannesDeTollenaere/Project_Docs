@@ -1,0 +1,127 @@
+\doxysection{Matrix2x3.\+h}
+\hypertarget{_matrix2x3_8h_source}{}\label{_matrix2x3_8h_source}\index{Engine/Matrix2x3.h@{Engine/Matrix2x3.h}}
+\mbox{\hyperlink{_matrix2x3_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_vector2f_8h}{Vector2f.h}}"{}}}
+\DoxyCodeLine{00004\ }
+\DoxyCodeLine{00005\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_matrix2x3_ad61ccbaf21b4a72f770f203d06fbf1cd}{Matrix2x3}}\ final}
+\DoxyCodeLine{00006\ \{}
+\DoxyCodeLine{00007\ \ \ \ \ \textcolor{comment}{//\ -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{00008\ \ \ \ \ \textcolor{comment}{//\ Constructors\ }}
+\DoxyCodeLine{00009\ \ \ \ \ \textcolor{comment}{//\ -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{00010\ \ \ \ \ \textcolor{comment}{//\ Default\ constructor\ results\ in\ a\ unity\ matrix}}
+\DoxyCodeLine{00011\ \ \ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{struct_matrix2x3_ad61ccbaf21b4a72f770f203d06fbf1cd}{Matrix2x3}}(\ \mbox{\hyperlink{struct_vector2f}{Vector2f}}\ \mbox{\hyperlink{struct_matrix2x3_a1ba51d3f85ec03dd03460719128ff77d}{dirX}}\ =\ \mbox{\hyperlink{struct_vector2f}{Vector2f}}\{\ 1,\ 0\ \},\ \mbox{\hyperlink{struct_vector2f}{Vector2f}}\ \mbox{\hyperlink{struct_matrix2x3_aed65965379fa7657eeeaf8a8e8d0fddd}{dirY}}\ =\ \mbox{\hyperlink{struct_vector2f}{Vector2f}}\{\ 0,\ 1\ \},\ \mbox{\hyperlink{struct_vector2f}{Vector2f}}\ origTrans\ =\ \mbox{\hyperlink{struct_vector2f}{Vector2f}}\{\ 0,\ 0\ \}\ );}
+\DoxyCodeLine{00012\ \ \ \ \ \textcolor{comment}{//\ Constructor,\ using\ floats,\ all\ required}}
+\DoxyCodeLine{00013\ \ \ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{struct_matrix2x3_ad61ccbaf21b4a72f770f203d06fbf1cd}{Matrix2x3}}(\ \textcolor{keywordtype}{float}\ e1X,\ \textcolor{keywordtype}{float}\ e1Y,\ \textcolor{keywordtype}{float}\ e2X,\ \textcolor{keywordtype}{float}\ e2Y,\ \textcolor{keywordtype}{float}\ oX,\ \textcolor{keywordtype}{float}\ oY\ );}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00015\ \ \ \ \ \textcolor{comment}{//\ -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{00016\ \ \ \ \ \textcolor{comment}{//\ General\ Methods\ }}
+\DoxyCodeLine{00017\ \ \ \ \ \textcolor{comment}{//\ -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{00018\ \ \ \ \ \textcolor{comment}{//\ Transform\ a\ vector\ by\ this\ matrix,\ no\ translation\ \ \ \ \ \ \ \ \ \ \ \ }}
+\DoxyCodeLine{00019\ \ \ \ \ \textcolor{comment}{//\ Vector2f\ vTransformed\ =\ mat.Transform(v);}}
+\DoxyCodeLine{00020\ \ \ \ \ \mbox{\hyperlink{struct_vector2f}{Vector2f}}\ \mbox{\hyperlink{struct_matrix2x3_a842297ce803b24a1a5530efdbcc190c3}{Transform}}(\ \textcolor{keyword}{const}\ \mbox{\hyperlink{struct_vector2f}{Vector2f}}\&\ v\ )\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00021\ }
+\DoxyCodeLine{00022\ \ \ \ \ \textcolor{comment}{//\ Transform\ a\ Rectf\ by\ this\ matrix,\ including\ translation\ \ }}
+\DoxyCodeLine{00023\ \ \ \ \ \textcolor{comment}{//\ std::vector<Vectof2f>\ transformedVertices\ =\ mat.Transform(r);}}
+\DoxyCodeLine{00024\ \ \ \ \ std::vector<Vector2f>\ \mbox{\hyperlink{struct_matrix2x3_a842297ce803b24a1a5530efdbcc190c3}{Transform}}(\ \textcolor{keyword}{const}\ \mbox{\hyperlink{struct_rectf}{Rectf}}\&\ r\ )\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00025\ \ \ \ \ }
+\DoxyCodeLine{00026\ }
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{comment}{//\ Transform\ a\ Rectf\ by\ this\ matrix,\ including\ translation}}
+\DoxyCodeLine{00028\ \ \ \ \ \textcolor{comment}{//\ Pass\ pointer\ to\ resulting\ array\ (size\ should\ be\ at\ least\ 4)}}
+\DoxyCodeLine{00029\ \ \ \ \ \textcolor{comment}{//\ \ \ Vectof2f\ transformedVertices[4];}}
+\DoxyCodeLine{00030\ \ \ \ \ \textcolor{comment}{//\ \ \ Transform(r,\ transformedVertices);}}
+\DoxyCodeLine{00031\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{struct_matrix2x3_a842297ce803b24a1a5530efdbcc190c3}{Transform}}(\ \textcolor{keyword}{const}\ \mbox{\hyperlink{struct_rectf}{Rectf}}\&\ r,\ \mbox{\hyperlink{struct_vector2f}{Vector2f}}*\ transVertices\ )\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00032\ }
+\DoxyCodeLine{00033\ \ \ \ \ \textcolor{comment}{//\ Transform\ a\ Polygon\ by\ this\ matrix,\ including\ translation\ \ \ \ }}
+\DoxyCodeLine{00034\ \ \ \ \ \textcolor{comment}{//\ std::vector<Vectof2f>\ transformedVertices\ =\ mat.Transform(vertices);}}
+\DoxyCodeLine{00035\ \ \ \ \ std::vector<Vector2f>\ \mbox{\hyperlink{struct_matrix2x3_a842297ce803b24a1a5530efdbcc190c3}{Transform}}(\ \textcolor{keyword}{const}\ std::vector<Vector2f>\&\ vertices\ )\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00036\ }
+\DoxyCodeLine{00037\ \ \ \ \ \textcolor{comment}{//\ Transform\ a\ Polygon\ by\ this\ matrix,\ including\ translation\ \ \ \ }}
+\DoxyCodeLine{00038\ \ \ \ \ \textcolor{comment}{//\ Pass\ pointer\ to\ resulting\ array\ (size\ should\ be\ at\ least\ size\ of\ polygon)}}
+\DoxyCodeLine{00039\ \ \ \ \ \textcolor{comment}{//\ \ \ Vectof2f\ transformedVertices[vertices.size()];}}
+\DoxyCodeLine{00040\ \ \ \ \ \textcolor{comment}{//\ \ \ Transform(vertices,\ transformedVertices);}}
+\DoxyCodeLine{00041\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{struct_matrix2x3_a842297ce803b24a1a5530efdbcc190c3}{Transform}}(\ \textcolor{keyword}{const}\ std::vector<Vector2f>\&\ vertices,\ \mbox{\hyperlink{struct_vector2f}{Vector2f}}*\ transVertices\ )\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00042\ }
+\DoxyCodeLine{00043\ \ \ \ \ \textcolor{comment}{//\ Transform\ a\ Polygon\ by\ this\ matrix,\ including\ translation\ \ \ \ }}
+\DoxyCodeLine{00044\ \ \ \ \ \textcolor{comment}{//\ \ \ Vectof2f\ transformedVertices[nrVertices];}}
+\DoxyCodeLine{00045\ \ \ \ \ \textcolor{comment}{//\ \ \ Transform(vertices,\ nrVertices,\ transformedVertices);}}
+\DoxyCodeLine{00046\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{struct_matrix2x3_a842297ce803b24a1a5530efdbcc190c3}{Transform}}(\ \textcolor{keyword}{const}\ \mbox{\hyperlink{struct_vector2f}{Vector2f}}*\ vertices,\ \ \mbox{\hyperlink{struct_vector2f}{Vector2f}}*\ transVertices,\ \textcolor{keywordtype}{size\_t}\ nrVertices\ )\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00047\ }
+\DoxyCodeLine{00048\ \ \ \ \ \textcolor{comment}{//\ Calculate\ the\ determinant}}
+\DoxyCodeLine{00049\ \ \ \ \ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{struct_matrix2x3_a7b1c010c0ce6a5752fc1536de34e6296}{Determinant}}(\ )\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00050\ }
+\DoxyCodeLine{00051\ \ \ \ \ \textcolor{comment}{//\ Calculate\ the\ inverse\ matrix}}
+\DoxyCodeLine{00052\ \ \ \ \ \mbox{\hyperlink{struct_matrix2x3_ad61ccbaf21b4a72f770f203d06fbf1cd}{Matrix2x3}}\ \mbox{\hyperlink{struct_matrix2x3_afbc3e76d9ad6b4520701d32c5927db21}{Inverse}}(\ )\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00053\ }
+\DoxyCodeLine{00054\ \ \ \ \ \textcolor{comment}{//\ Are\ two\ matrices\ equal\ within\ a\ threshold?\ \ \ }}
+\DoxyCodeLine{00055\ \ \ \ \ \textcolor{comment}{//\ mat1.Equals(mat2)}}
+\DoxyCodeLine{00056\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{struct_matrix2x3_a456cb41dbb6f08aa55abe26c1485e693}{Equals}}(\ \textcolor{keyword}{const}\ \mbox{\hyperlink{struct_matrix2x3_ad61ccbaf21b4a72f770f203d06fbf1cd}{Matrix2x3}}\&\ other,\ \textcolor{keywordtype}{float}\ epsilon\ =\ 0.001f\ )\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00057\ }
+\DoxyCodeLine{00058\ \ \ \ \ \textcolor{comment}{//\ Creates\ a\ string\ containing\ a\ text\ representation\ of\ the\ values\ of\ the\ matrix}}
+\DoxyCodeLine{00059\ \ \ \ \ std::string\ \mbox{\hyperlink{struct_matrix2x3_a0440f2a2d854d79c6acc1ab56d221e59}{ToString}}(\ )\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00060\ }
+\DoxyCodeLine{00061\ \ \ \ \ \textcolor{comment}{//\ Converts\ this\ matrix\ into\ a\ Identity\ matrix}}
+\DoxyCodeLine{00062\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{struct_matrix2x3_a55373760d93242c2f117ce67e50d0b88}{SetAsIdentity}}(\ );}
+\DoxyCodeLine{00063\ \ \ \ \ \textcolor{comment}{//\ Converts\ this\ matrix\ into\ a\ Rotate\ matrix}}
+\DoxyCodeLine{00064\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{struct_matrix2x3_aef1e669c4c66a65c068d1a20c2563868}{SetAsRotate}}(\ \textcolor{keywordtype}{float}\ degrees\ );}
+\DoxyCodeLine{00065\ \ \ \ \ \textcolor{comment}{//\ Converts\ this\ matrix\ into\ a\ Translation\ matrix}}
+\DoxyCodeLine{00066\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{struct_matrix2x3_ac349e965db69ed3eb3bb0a1d35d3ed61}{SetAsTranslate}}(\ \textcolor{keywordtype}{float}\ tx,\ \textcolor{keywordtype}{float}\ ty\ );}
+\DoxyCodeLine{00067\ \ \ \ \ \textcolor{comment}{//\ Converts\ this\ matrix\ into\ a\ Translation\ matrix}}
+\DoxyCodeLine{00068\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{struct_matrix2x3_ac349e965db69ed3eb3bb0a1d35d3ed61}{SetAsTranslate}}(\ \mbox{\hyperlink{struct_vector2f}{Vector2f}}\ pt\ );}
+\DoxyCodeLine{00069\ \ \ \ \ \textcolor{comment}{//\ Converts\ this\ matrix\ into\ a\ Scale\ matrix}}
+\DoxyCodeLine{00070\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{struct_matrix2x3_afbad61924313743f61dc1428ff8aab32}{SetAsScale}}(\ \textcolor{keywordtype}{float}\ sx,\ \textcolor{keywordtype}{float}\ sy\ );}
+\DoxyCodeLine{00071\ \ \ \ \ \textcolor{comment}{//\ Converts\ this\ matrix\ into\ a\ Scale\ matrix}}
+\DoxyCodeLine{00072\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{struct_matrix2x3_afbad61924313743f61dc1428ff8aab32}{SetAsScale}}(\ \textcolor{keywordtype}{float}\ s\ );}
+\DoxyCodeLine{00073\ }
+\DoxyCodeLine{00074\ \ \ \ \ \textcolor{comment}{//\ -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{00075\ \ \ \ \ \textcolor{comment}{//\ Static\ Matrix2x3\ object\ creation\ methods\ }}
+\DoxyCodeLine{00076\ \ \ \ \ \textcolor{comment}{//\ -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{00077\ \ \ \ \ \textcolor{comment}{//\ Instantiate\ a\ rotation\ matrix:\ }}
+\DoxyCodeLine{00078\ \ \ \ \ \textcolor{comment}{//\ Matrix\ matRot\ =\ Matrix::Rotation(45.0f);}}
+\DoxyCodeLine{00079\ \ \ \ \ \textcolor{keyword}{static}\ \mbox{\hyperlink{struct_matrix2x3_ad61ccbaf21b4a72f770f203d06fbf1cd}{Matrix2x3}}\ \mbox{\hyperlink{struct_matrix2x3_aed0a26eca83d2ddf32e6cfb598e6b736}{CreateRotationMatrix}}(\ \textcolor{keywordtype}{float}\ degrees\ );}
+\DoxyCodeLine{00080\ \ \ \ \ \textcolor{comment}{//\ Instantiate\ an\ identity\ matrix:\ }}
+\DoxyCodeLine{00081\ \ \ \ \ \textcolor{comment}{//\ Matrix2x3\ matId\ =\ Matrix2x3::Identity();}}
+\DoxyCodeLine{00082\ \ \ \ \ \textcolor{keyword}{static}\ \mbox{\hyperlink{struct_matrix2x3_ad61ccbaf21b4a72f770f203d06fbf1cd}{Matrix2x3}}\ \mbox{\hyperlink{struct_matrix2x3_abb909426e18e4ee36d71303dfb19180c}{CreateIdentityMatrix}}(\ );}
+\DoxyCodeLine{00083\ \ \ \ \ \textcolor{comment}{//\ Instantiate\ a\ scale\ matrix:\ }}
+\DoxyCodeLine{00084\ \ \ \ \ \textcolor{comment}{//\ Matrix\ matScale\ =\ Matrix::Scaling(2.0f);}}
+\DoxyCodeLine{00085\ \ \ \ \ \textcolor{keyword}{static}\ \mbox{\hyperlink{struct_matrix2x3_ad61ccbaf21b4a72f770f203d06fbf1cd}{Matrix2x3}}\ \mbox{\hyperlink{struct_matrix2x3_a711d56903759860eeb07792c0a18accf}{CreateScalingMatrix}}(\ \textcolor{keywordtype}{float}\ scale\ );}
+\DoxyCodeLine{00086\ \ \ \ \ \textcolor{comment}{//\ Instantiate\ a\ scale\ matrix:\ }}
+\DoxyCodeLine{00087\ \ \ \ \ \textcolor{comment}{//\ Matrix\ matScale\ =\ Matrix::Scaling(2.0f,-\/3.0f);}}
+\DoxyCodeLine{00088\ \ \ \ \ \textcolor{keyword}{static}\ \mbox{\hyperlink{struct_matrix2x3_ad61ccbaf21b4a72f770f203d06fbf1cd}{Matrix2x3}}\ \mbox{\hyperlink{struct_matrix2x3_a711d56903759860eeb07792c0a18accf}{CreateScalingMatrix}}(\ \textcolor{keywordtype}{float}\ scaleX,\ \textcolor{keywordtype}{float}\ scaleY\ );}
+\DoxyCodeLine{00089\ \ \ \ \ \textcolor{comment}{//\ Instantiate\ a\ scale\ matrix:\ }}
+\DoxyCodeLine{00090\ \ \ \ \ \textcolor{comment}{//\ Matrix\ matScale\ =\ Matrix::Scaling(\ Vector2f(2.0f,-\/3.0f)\ );}}
+\DoxyCodeLine{00091\ \ \ \ \ \textcolor{keyword}{static}\ \mbox{\hyperlink{struct_matrix2x3_ad61ccbaf21b4a72f770f203d06fbf1cd}{Matrix2x3}}\ \mbox{\hyperlink{struct_matrix2x3_a711d56903759860eeb07792c0a18accf}{CreateScalingMatrix}}(\ \mbox{\hyperlink{struct_vector2f}{Vector2f}}\ scaleVector\ );}
+\DoxyCodeLine{00092\ \ \ \ \ \textcolor{comment}{//\ Instantiate\ a\ translation\ matrix:\ }}
+\DoxyCodeLine{00093\ \ \ \ \ \textcolor{comment}{//\ Matrix\ matTrans\ =\ Matrix::Translation(\ Vector2f(2.0f,3.0f)\ );}}
+\DoxyCodeLine{00094\ \ \ \ \ \textcolor{keyword}{static}\ \mbox{\hyperlink{struct_matrix2x3_ad61ccbaf21b4a72f770f203d06fbf1cd}{Matrix2x3}}\ \mbox{\hyperlink{struct_matrix2x3_ac8a950cb3a25ebf8938678a010bd88d3}{CreateTranslationMatrix}}(\ \mbox{\hyperlink{struct_vector2f}{Vector2f}}\ origin\ );}
+\DoxyCodeLine{00095\ \ \ \ \ \textcolor{comment}{//\ Instantiate\ a\ translation\ matrix:\ }}
+\DoxyCodeLine{00096\ \ \ \ \ \textcolor{comment}{//\ Matrix\ matTrans\ =\ Matrix::Translation(2.0f,\ 3.0f);}}
+\DoxyCodeLine{00097\ \ \ \ \ \textcolor{keyword}{static}\ \mbox{\hyperlink{struct_matrix2x3_ad61ccbaf21b4a72f770f203d06fbf1cd}{Matrix2x3}}\ \mbox{\hyperlink{struct_matrix2x3_ac8a950cb3a25ebf8938678a010bd88d3}{CreateTranslationMatrix}}(\ \textcolor{keywordtype}{float}\ tx,\ \textcolor{keywordtype}{float}\ ty\ );}
+\DoxyCodeLine{00098\ }
+\DoxyCodeLine{00099\ \ \ \ \ \textcolor{comment}{//\ -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{00100\ \ \ \ \ \textcolor{comment}{//\ Datamembers}}
+\DoxyCodeLine{00101\ \ \ \ \ \textcolor{comment}{//\ -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{00102\ \ \ \ \ \mbox{\hyperlink{struct_vector2f}{Vector2f}}\ \mbox{\hyperlink{struct_matrix2x3_a1ba51d3f85ec03dd03460719128ff77d}{dirX}};\ \ \textcolor{comment}{//\ The\ first\ matrix\ vector\ (the\ "{}x-\/axis"{}),\ 1st\ column}}
+\DoxyCodeLine{00103\ \ \ \ \ \mbox{\hyperlink{struct_vector2f}{Vector2f}}\ \mbox{\hyperlink{struct_matrix2x3_aed65965379fa7657eeeaf8a8e8d0fddd}{dirY}};\ \ \textcolor{comment}{//\ The\ second\ matrix\ vector\ (the\ "{}y-\/axis"{}),\ second\ column}}
+\DoxyCodeLine{00104\ \ \ \ \ \mbox{\hyperlink{struct_vector2f}{Vector2f}}\ \mbox{\hyperlink{struct_matrix2x3_a9422fdaa13fc5e39b8544609a76ec43d}{orig}};\ \ \textcolor{comment}{//\ The\ origin\ of\ \ the\ coordinate\ matrix\ (the\ "{}translation"{}),\ third\ column}}
+\DoxyCodeLine{00105\ \};}
+\DoxyCodeLine{00106\ }
+\DoxyCodeLine{00107\ \textcolor{comment}{//\ -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{00108\ \textcolor{comment}{//\ Operators\ }}
+\DoxyCodeLine{00109\ \textcolor{comment}{//\ -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{00110\ \textcolor{comment}{//\ Are\ two\ matrices\ exactly\ equal?\ \ \ \ \ \ \ \ \ \ \ \ \ \ }}
+\DoxyCodeLine{00111\ \textcolor{comment}{//\ mat1\ ==\ mat2}}
+\DoxyCodeLine{00112\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{_matrix2x3_8h_ac147f8f50020921bd439e7f8d3a2ba25}{operator==}}(\ \textcolor{keyword}{const}\ \mbox{\hyperlink{struct_matrix2x3}{Matrix2x3}}\&\ lhs,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{struct_matrix2x3}{Matrix2x3}}\&\ rhs\ );}
+\DoxyCodeLine{00113\ \textcolor{comment}{//\ Are\ two\ matrices\ exactly\ unequal?\ \ \ \ \ \ \ \ \ \ \ \ }}
+\DoxyCodeLine{00114\ \textcolor{comment}{//\ mat1\ !=\ mat2}}
+\DoxyCodeLine{00115\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{_matrix2x3_8h_a7a861079513782a5000815af6cbe237a}{operator!=}}(\ \textcolor{keyword}{const}\ \mbox{\hyperlink{struct_matrix2x3}{Matrix2x3}}\&\ lhs,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{struct_matrix2x3}{Matrix2x3}}\&\ rhs\ );}
+\DoxyCodeLine{00116\ \textcolor{comment}{//\ Multiply\ matrices}}
+\DoxyCodeLine{00117\ \textcolor{comment}{//\ Matrix2x3\ matProduct\ \{mat1\ *\ mat2\};}}
+\DoxyCodeLine{00118\ \mbox{\hyperlink{struct_matrix2x3}{Matrix2x3}}\ \mbox{\hyperlink{_matrix2x3_8h_a7482da236ef842f60fdec8e9e7ab18ea}{operator*}}(\ \textcolor{keyword}{const}\ \mbox{\hyperlink{struct_matrix2x3}{Matrix2x3}}\&\ lhs,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{struct_matrix2x3}{Matrix2x3}}\&\ rhs\ );}
+\DoxyCodeLine{00119\ \textcolor{comment}{//\ Send\ matrix\ to\ output\ stream}}
+\DoxyCodeLine{00120\ \textcolor{comment}{//\ std::cout\ <<\ mat;}}
+\DoxyCodeLine{00121\ std::ostream\&\ \mbox{\hyperlink{_matrix2x3_8h_a67060ddabb744e63bf673f92799563a0}{operator<<}}(\ std::ostream\&\ os,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{struct_matrix2x3}{Matrix2x3}}\&\ matrix\ );}
+
+\end{DoxyCode}

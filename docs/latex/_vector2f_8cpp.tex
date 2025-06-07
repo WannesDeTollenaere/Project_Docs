@@ -1,0 +1,97 @@
+\doxysection{Engine/\+Vector2f.cpp File Reference}
+\hypertarget{_vector2f_8cpp}{}\label{_vector2f_8cpp}\index{Engine/Vector2f.cpp@{Engine/Vector2f.cpp}}
+{\ttfamily \#include "{}base.\+h"{}}\newline
+{\ttfamily \#include $<$cmath$>$}\newline
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$sstream$>$}\newline
+{\ttfamily \#include $<$iomanip$>$}\newline
+{\ttfamily \#include "{}Vector2f.\+h"{}}\newline
+Include dependency graph for Vector2f.\+cpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_vector2f_8cpp__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_vector2f}{Vector2f}} \mbox{\hyperlink{_vector2f_8cpp_a8b8603f6db69bb991b8e0697f7d1ccef}{Lerp}} (const \mbox{\hyperlink{struct_vector2f}{Vector2f}} \&start\+Pos, const \mbox{\hyperlink{struct_vector2f}{Vector2f}} \&target\+Pos, float delta\+Time)
+\item 
+\mbox{\hyperlink{struct_vector2f}{Vector2f}} \mbox{\hyperlink{_vector2f_8cpp_a1287d7e8454e6d8bc8c8a3c8f1e99fb7}{operator\texorpdfstring{$\ast$}{*}}} (float lhs, \mbox{\hyperlink{struct_vector2f}{Vector2f}} rhs)
+\item 
+\mbox{\hyperlink{struct_vector2f}{Vector2f}} \mbox{\hyperlink{_vector2f_8cpp_af5fcbca08776d14525d5f31fb92608cd}{operator\texorpdfstring{$\ast$}{*}}} (\mbox{\hyperlink{struct_vector2f}{Vector2f}} lhs, float rhs)
+\item 
+\mbox{\hyperlink{struct_vector2f}{Vector2f}} \mbox{\hyperlink{_vector2f_8cpp_aa7dd083205f3bd6d27af416a54965184}{operator/}} (\mbox{\hyperlink{struct_vector2f}{Vector2f}} lhs, float rhs)
+\item 
+\mbox{\hyperlink{struct_vector2f}{Vector2f}} \mbox{\hyperlink{_vector2f_8cpp_ae6c80154fec82987444a0402ddaea291}{operator+}} (\mbox{\hyperlink{struct_vector2f}{Vector2f}} lhs, const \mbox{\hyperlink{struct_vector2f}{Vector2f}} \&rhs)
+\item 
+\mbox{\hyperlink{struct_vector2f}{Vector2f}} \mbox{\hyperlink{_vector2f_8cpp_a6c1a0280f04fa55477652ae0011bc79a}{operator-\/}} (\mbox{\hyperlink{struct_vector2f}{Vector2f}} lhs, const \mbox{\hyperlink{struct_vector2f}{Vector2f}} \&rhs)
+\item 
+std\+::ostream \& \mbox{\hyperlink{_vector2f_8cpp_a8f216ebe66aefa87dd657a5cee42b59d}{operator$<$$<$}} (std\+::ostream \&lhs, const \mbox{\hyperlink{struct_vector2f}{Vector2f}} \&rhs)
+\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{_vector2f_8cpp_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{_vector2f_8cpp_a8b8603f6db69bb991b8e0697f7d1ccef}\index{Vector2f.cpp@{Vector2f.cpp}!Lerp@{Lerp}}
+\index{Lerp@{Lerp}!Vector2f.cpp@{Vector2f.cpp}}
+\doxysubsubsection{\texorpdfstring{Lerp()}{Lerp()}}
+{\footnotesize\ttfamily \label{_vector2f_8cpp_a8b8603f6db69bb991b8e0697f7d1ccef} 
+\mbox{\hyperlink{struct_vector2f}{Vector2f}} Lerp (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_vector2f}{Vector2f}} \&}]{start\+Pos}{, }\item[{const \mbox{\hyperlink{struct_vector2f}{Vector2f}} \&}]{target\+Pos}{, }\item[{float}]{delta\+Time}{}\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=222pt]{_vector2f_8cpp_a8b8603f6db69bb991b8e0697f7d1ccef_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{_vector2f_8cpp_a1287d7e8454e6d8bc8c8a3c8f1e99fb7}\index{Vector2f.cpp@{Vector2f.cpp}!operator\texorpdfstring{$\ast$}{*}@{operator\texorpdfstring{$\ast$}{*}}}
+\index{operator\texorpdfstring{$\ast$}{*}@{operator\texorpdfstring{$\ast$}{*}}!Vector2f.cpp@{Vector2f.cpp}}
+\doxysubsubsection{\texorpdfstring{operator\texorpdfstring{$\ast$}{*}()}{operator*()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{_vector2f_8cpp_a1287d7e8454e6d8bc8c8a3c8f1e99fb7} 
+\mbox{\hyperlink{struct_vector2f}{Vector2f}} operator\texorpdfstring{$\ast$}{*} (\begin{DoxyParamCaption}\item[{float}]{lhs}{, }\item[{\mbox{\hyperlink{struct_vector2f}{Vector2f}}}]{rhs}{}\end{DoxyParamCaption})}
+
+\Hypertarget{_vector2f_8cpp_af5fcbca08776d14525d5f31fb92608cd}\index{Vector2f.cpp@{Vector2f.cpp}!operator\texorpdfstring{$\ast$}{*}@{operator\texorpdfstring{$\ast$}{*}}}
+\index{operator\texorpdfstring{$\ast$}{*}@{operator\texorpdfstring{$\ast$}{*}}!Vector2f.cpp@{Vector2f.cpp}}
+\doxysubsubsection{\texorpdfstring{operator\texorpdfstring{$\ast$}{*}()}{operator*()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{_vector2f_8cpp_af5fcbca08776d14525d5f31fb92608cd} 
+\mbox{\hyperlink{struct_vector2f}{Vector2f}} operator\texorpdfstring{$\ast$}{*} (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_vector2f}{Vector2f}}}]{lhs}{, }\item[{float}]{rhs}{}\end{DoxyParamCaption})}
+
+\Hypertarget{_vector2f_8cpp_ae6c80154fec82987444a0402ddaea291}\index{Vector2f.cpp@{Vector2f.cpp}!operator+@{operator+}}
+\index{operator+@{operator+}!Vector2f.cpp@{Vector2f.cpp}}
+\doxysubsubsection{\texorpdfstring{operator+()}{operator+()}}
+{\footnotesize\ttfamily \label{_vector2f_8cpp_ae6c80154fec82987444a0402ddaea291} 
+\mbox{\hyperlink{struct_vector2f}{Vector2f}} operator+ (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_vector2f}{Vector2f}}}]{lhs}{, }\item[{const \mbox{\hyperlink{struct_vector2f}{Vector2f}} \&}]{rhs}{}\end{DoxyParamCaption})}
+
+\Hypertarget{_vector2f_8cpp_a6c1a0280f04fa55477652ae0011bc79a}\index{Vector2f.cpp@{Vector2f.cpp}!operator-\/@{operator-\/}}
+\index{operator-\/@{operator-\/}!Vector2f.cpp@{Vector2f.cpp}}
+\doxysubsubsection{\texorpdfstring{operator-\/()}{operator-()}}
+{\footnotesize\ttfamily \label{_vector2f_8cpp_a6c1a0280f04fa55477652ae0011bc79a} 
+\mbox{\hyperlink{struct_vector2f}{Vector2f}} operator-\/ (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_vector2f}{Vector2f}}}]{lhs}{, }\item[{const \mbox{\hyperlink{struct_vector2f}{Vector2f}} \&}]{rhs}{}\end{DoxyParamCaption})}
+
+\Hypertarget{_vector2f_8cpp_aa7dd083205f3bd6d27af416a54965184}\index{Vector2f.cpp@{Vector2f.cpp}!operator/@{operator/}}
+\index{operator/@{operator/}!Vector2f.cpp@{Vector2f.cpp}}
+\doxysubsubsection{\texorpdfstring{operator/()}{operator/()}}
+{\footnotesize\ttfamily \label{_vector2f_8cpp_aa7dd083205f3bd6d27af416a54965184} 
+\mbox{\hyperlink{struct_vector2f}{Vector2f}} operator/ (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_vector2f}{Vector2f}}}]{lhs}{, }\item[{float}]{rhs}{}\end{DoxyParamCaption})}
+
+\Hypertarget{_vector2f_8cpp_a8f216ebe66aefa87dd657a5cee42b59d}\index{Vector2f.cpp@{Vector2f.cpp}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!Vector2f.cpp@{Vector2f.cpp}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$()}{operator<<()}}
+{\footnotesize\ttfamily \label{_vector2f_8cpp_a8f216ebe66aefa87dd657a5cee42b59d} 
+std\+::ostream \& operator$<$$<$ (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{lhs}{, }\item[{const \mbox{\hyperlink{struct_vector2f}{Vector2f}} \&}]{rhs}{}\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=273pt]{_vector2f_8cpp_a8f216ebe66aefa87dd657a5cee42b59d_cgraph}
+\end{center}
+\end{figure}

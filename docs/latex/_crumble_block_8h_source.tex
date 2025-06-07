@@ -1,0 +1,67 @@
+\doxysection{Crumble\+Block.\+h}
+\hypertarget{_crumble_block_8h_source}{}\label{_crumble_block_8h_source}\index{Celeste/CrumbleBlock.h@{Celeste/CrumbleBlock.h}}
+\mbox{\hyperlink{_crumble_block_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_interactable_item_8h}{InteractableItem.h}}"{}}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_counted_item_8h}{CountedItem.h}}"{}}}
+\DoxyCodeLine{00004\ }
+\DoxyCodeLine{00005\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_texture}{Texture}};}
+\DoxyCodeLine{00006\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_sound_effect}{SoundEffect}};}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_crumble_block_aaebd22fd4ac1c8821cfb74f7461edb4d}{CrumbleBlock}}\ final\ :}
+\DoxyCodeLine{00009\ \ \ \ \ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_interactable_item_a5e5b9c459514e29098aaff5e62761569}{InteractableItem}},}
+\DoxyCodeLine{00010\ \ \ \ \ \textcolor{keyword}{protected}\ \mbox{\hyperlink{class_counted_item_a379818e68b8231fbfad8c51cbf2add57}{CountedItem}}<CrumbleBlock>}
+\DoxyCodeLine{00011\ \{}
+\DoxyCodeLine{00012\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00013\ \ \ \ \ \textcolor{comment}{//\ CONSTRUCTORS}}
+\DoxyCodeLine{00014\ \ \ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{class_crumble_block_aaebd22fd4ac1c8821cfb74f7461edb4d}{CrumbleBlock}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{struct_rectf}{Rectf}}\&\ bounds);}
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00016\ \ \ \ \ \textcolor{comment}{//\ FUNCTIONS}}
+\DoxyCodeLine{00017\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_crumble_block_a860ede5922b68420c0672b68bd53a226}{Draw}}()\ \textcolor{keyword}{const\ override};}
+\DoxyCodeLine{00018\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_crumble_block_af211a08e47f20f7343183341611d5653}{PlayerInteraction}}(\mbox{\hyperlink{class_character}{Character}}\&\ character,\ \textcolor{keywordtype}{float}\ elapsedSec)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00019\ \ \ \ \ std::vector<Vector2f>\ \mbox{\hyperlink{class_crumble_block_a08aa31eec30dae935aef94942a985b71}{GetCollisionBounds}}()\ \textcolor{keyword}{const}\ \textcolor{keyword}{noexcept}\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00020\ }
+\DoxyCodeLine{00021\ \ \ \ \ \textcolor{comment}{//\ COPY\ CONSTRUCTOR}}
+\DoxyCodeLine{00022\ \ \ \ \ \mbox{\hyperlink{class_crumble_block_a20b24ad8d5184de47efe80f01ba15c86}{CrumbleBlock}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_crumble_block_aaebd22fd4ac1c8821cfb74f7461edb4d}{CrumbleBlock}}\&\ other)\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00023\ \ \ \ \ \mbox{\hyperlink{class_crumble_block_a0d59c8868da1bed798c4a4b9ac52c111}{CrumbleBlock}}(\mbox{\hyperlink{class_crumble_block_aaebd22fd4ac1c8821cfb74f7461edb4d}{CrumbleBlock}}\&\&\ other)\ \textcolor{keyword}{noexcept}\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00024\ }
+\DoxyCodeLine{00025\ \ \ \ \ \textcolor{comment}{//\ ASSIGNMENT\ OPPERATOR}}
+\DoxyCodeLine{00026\ \ \ \ \ \mbox{\hyperlink{class_crumble_block_aaebd22fd4ac1c8821cfb74f7461edb4d}{CrumbleBlock}}\&\ \mbox{\hyperlink{class_crumble_block_ae2010e4176ee45a228c18c9911b800cd}{operator=}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_crumble_block_aaebd22fd4ac1c8821cfb74f7461edb4d}{CrumbleBlock}}\&\ other);}
+\DoxyCodeLine{00027\ \ \ \ \ \mbox{\hyperlink{class_crumble_block_aaebd22fd4ac1c8821cfb74f7461edb4d}{CrumbleBlock}}\&\ \mbox{\hyperlink{class_crumble_block_ab7d71c39b2f8baf75ec72bddc2f45b41}{operator=}}(\mbox{\hyperlink{class_crumble_block_aaebd22fd4ac1c8821cfb74f7461edb4d}{CrumbleBlock}}\&\&\ other)\ \textcolor{keyword}{noexcept}\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00029\ \ \ \ \ \textcolor{comment}{//DESTRUCTOR}}
+\DoxyCodeLine{00030\ \ \ \ \ \mbox{\hyperlink{class_crumble_block_af18e099a6bb3b1a02af3adefc6470040}{\string~CrumbleBlock}}()\ noexcept\ override;}
+\DoxyCodeLine{00031\ private:}
+\DoxyCodeLine{00032\ \ \ \ \ enum\ class\ State\ \{}
+\DoxyCodeLine{00033\ \ \ \ \ \ \ \ \ normal,}
+\DoxyCodeLine{00034\ \ \ \ \ \ \ \ \ touched,}
+\DoxyCodeLine{00035\ \ \ \ \ \ \ \ \ respawning}
+\DoxyCodeLine{00036\ \ \ \ \ \};}
+\DoxyCodeLine{00037\ }
+\DoxyCodeLine{00038\ \ \ \ \ \textcolor{comment}{//\ MEMBERS}}
+\DoxyCodeLine{00039\ \ \ \ \ std::vector<Rectf>\ m\_Blocks;}
+\DoxyCodeLine{00040\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{int}\ m\_AmountOfTiles;}
+\DoxyCodeLine{00041\ \ \ \ \ State\ m\_TileState;}
+\DoxyCodeLine{00042\ }
+\DoxyCodeLine{00043\ \ \ \ \ \textcolor{comment}{//\ TOUCH\ VARIABLES}}
+\DoxyCodeLine{00044\ \ \ \ \ \textcolor{keywordtype}{float}\ m\_Timer;}
+\DoxyCodeLine{00045\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{float}\ m\_RespawnTime;}
+\DoxyCodeLine{00046\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{float}\ m\_TouchTime;}
+\DoxyCodeLine{00047\ }
+\DoxyCodeLine{00048\ \ \ \ \ \textcolor{comment}{//\ TEXTURE\ VARIABLES}}
+\DoxyCodeLine{00049\ \ \ \ \ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{int}\ m\_CystalID;}
+\DoxyCodeLine{00050\ \ \ \ \ \textcolor{keyword}{static}\ \mbox{\hyperlink{class_texture}{Texture}}*\ m\_pCrumbleBlock;}
+\DoxyCodeLine{00051\ \ \ \ \ \textcolor{keyword}{static}\ \mbox{\hyperlink{class_texture}{Texture}}*\ m\_pOutline;}
+\DoxyCodeLine{00052\ }
+\DoxyCodeLine{00053\ \ \ \ \ \textcolor{comment}{//\ SOUND}}
+\DoxyCodeLine{00054\ \ \ \ \ \textcolor{keyword}{static}\ \mbox{\hyperlink{class_sound_effect}{SoundEffect}}*\ m\_pSoundEffect;}
+\DoxyCodeLine{00055\ }
+\DoxyCodeLine{00056\ \ \ \ \ \textcolor{comment}{//\ FUNCTIONS}}
+\DoxyCodeLine{00057\ \ \ \ \ \textcolor{keywordtype}{void}\ InitializeBlocks();}
+\DoxyCodeLine{00058\ \ \ \ \ \textcolor{keywordtype}{void}\ InitializeCollisionBounds();}
+\DoxyCodeLine{00059\ \ \ \ \ \textcolor{keywordtype}{float}\ TriangularSine(\textcolor{keywordtype}{float}\ t)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00060\ \};}
+\DoxyCodeLine{00061\ }
+
+\end{DoxyCode}

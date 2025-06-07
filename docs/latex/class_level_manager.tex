@@ -1,0 +1,249 @@
+\doxysection{Level\+Manager Class Reference}
+\hypertarget{class_level_manager}{}\label{class_level_manager}\index{LevelManager@{LevelManager}}
+
+
+{\ttfamily \#include $<$Level\+Manager.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_level_manager_a38dbd125a5877cd9b7dac9bbfa16e7fd}{Level\+Manager}} (float scale, const std\+::string \&chapter="{}1"{})
+\item 
+void \mbox{\hyperlink{class_level_manager_af92436916c12b8aef91b1525a30f66d7}{Draw}} () const
+\item 
+void \mbox{\hyperlink{class_level_manager_a16fd0d42381f73cfc7fb3717dc3a6d8d}{Update}} (float elapsed\+Sec, \mbox{\hyperlink{class_character}{Character}} \&character)
+\item 
+void \mbox{\hyperlink{class_level_manager_a63376e93bf312adc673dd93d5496ede4}{Reset}} (const std\+::string \&chapter="{}1"{})
+\item 
+void \mbox{\hyperlink{class_level_manager_ab6b8833b6e29154c3ad6b08a2e5b4aac}{Restart}} (const std\+::string \&chapter="{}1"{})
+\item 
+void \mbox{\hyperlink{class_level_manager_abf0e37bef114c237d13ad57136f74812}{Set\+Dead\+Count}} (int dead\+Count)
+\item 
+\mbox{\hyperlink{struct_rectf}{Rectf}} \mbox{\hyperlink{class_level_manager_a2b28fefadd563e3fa3baa8973842c989}{Get\+Current\+Bounds}} (const \mbox{\hyperlink{class_character}{Character}} \&character) const noexcept
+\item 
+void \mbox{\hyperlink{class_level_manager_a2cccefd2739479dff6bf9f5b5801dc9e}{Is\+Out\+Of\+Bounds}} (\mbox{\hyperlink{class_character}{Character}} \&character) const noexcept
+\item 
+std\+::vector$<$ std\+::vector$<$ \mbox{\hyperlink{struct_vector2f}{Vector2f}} $>$ $>$ \mbox{\hyperlink{class_level_manager_aef755789c6123b05ce85fbfb58872ebc}{Get\+Collision\+Bounds}} () const noexcept
+\item 
+\mbox{\hyperlink{struct_vector2f}{Vector2f}} \mbox{\hyperlink{class_level_manager_a5a982c2f1bac322df4e8232fbc3d4cf2}{Get\+Respawn\+Pos}} () const noexcept
+\item 
+\mbox{\hyperlink{struct_chapter_info}{Chapter\+Info}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_level_manager_a39287c617e9b1a3ee592c9b4a514e82e}{Get\+Chapter\+Info}} () const noexcept
+\item 
+int \mbox{\hyperlink{class_level_manager_a36e34ddbbb93cd3f347e0cca01762fe7}{Get\+Dead\+Count}} () const noexcept
+\item 
+\mbox{\hyperlink{class_level_manager_a607602dd7cb4d95eed181512b00e9eaf}{Level\+Manager}} (const \mbox{\hyperlink{class_level_manager}{Level\+Manager}} \&other)=default
+\item 
+\mbox{\hyperlink{class_level_manager_acfdcb27856194a4682a162ebf6969c7d}{Level\+Manager}} (\mbox{\hyperlink{class_level_manager}{Level\+Manager}} \&\&other) noexcept=default
+\item 
+\mbox{\hyperlink{class_level_manager}{Level\+Manager}} \& \mbox{\hyperlink{class_level_manager_ad1cbb8c0cc1e2e6094164190be4b1d02}{operator=}} (const \mbox{\hyperlink{class_level_manager}{Level\+Manager}} \&other)=default
+\item 
+\mbox{\hyperlink{class_level_manager}{Level\+Manager}} \& \mbox{\hyperlink{class_level_manager_a92a96cb8cbc688cc750dc6ad004fe933}{operator=}} (\mbox{\hyperlink{class_level_manager}{Level\+Manager}} \&\&other) noexcept=default
+\item 
+\mbox{\hyperlink{class_level_manager_a6f1c66b6d359da063c751c46cde2b065}{\texorpdfstring{$\sim$}{\string~}\+Level\+Manager}} () noexcept
+\end{DoxyCompactItemize}
+
+
+\label{doc-constructors}
+\Hypertarget{class_level_manager_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_level_manager_a38dbd125a5877cd9b7dac9bbfa16e7fd}\index{LevelManager@{LevelManager}!LevelManager@{LevelManager}}
+\index{LevelManager@{LevelManager}!LevelManager@{LevelManager}}
+\doxysubsubsection{\texorpdfstring{LevelManager()}{LevelManager()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \label{class_level_manager_a38dbd125a5877cd9b7dac9bbfa16e7fd} 
+Level\+Manager\+::\+Level\+Manager (\begin{DoxyParamCaption}\item[{float}]{scale}{, }\item[{const std\+::string \&}]{chapter}{ = {\ttfamily "{}1"{}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_level_manager_a38dbd125a5877cd9b7dac9bbfa16e7fd_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_level_manager_a38dbd125a5877cd9b7dac9bbfa16e7fd_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_level_manager_a607602dd7cb4d95eed181512b00e9eaf}\index{LevelManager@{LevelManager}!LevelManager@{LevelManager}}
+\index{LevelManager@{LevelManager}!LevelManager@{LevelManager}}
+\doxysubsubsection{\texorpdfstring{LevelManager()}{LevelManager()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \label{class_level_manager_a607602dd7cb4d95eed181512b00e9eaf} 
+Level\+Manager\+::\+Level\+Manager (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_level_manager}{Level\+Manager}} \&}]{other}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_level_manager_a607602dd7cb4d95eed181512b00e9eaf_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_level_manager_acfdcb27856194a4682a162ebf6969c7d}\index{LevelManager@{LevelManager}!LevelManager@{LevelManager}}
+\index{LevelManager@{LevelManager}!LevelManager@{LevelManager}}
+\doxysubsubsection{\texorpdfstring{LevelManager()}{LevelManager()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily \label{class_level_manager_acfdcb27856194a4682a162ebf6969c7d} 
+Level\+Manager\+::\+Level\+Manager (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_level_manager}{Level\+Manager}} \&\&}]{other}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}, {\ttfamily [noexcept]}}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_level_manager_acfdcb27856194a4682a162ebf6969c7d_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_level_manager_a6f1c66b6d359da063c751c46cde2b065}\index{LevelManager@{LevelManager}!````~LevelManager@{\texorpdfstring{$\sim$}{\string~}LevelManager}}
+\index{````~LevelManager@{\texorpdfstring{$\sim$}{\string~}LevelManager}!LevelManager@{LevelManager}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}LevelManager()}{\string~LevelManager()}}
+{\footnotesize\ttfamily \label{class_level_manager_a6f1c66b6d359da063c751c46cde2b065} 
+Level\+Manager\+::\texorpdfstring{$\sim$}{\string~}\+Level\+Manager (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+
+
+\label{doc-func-members}
+\Hypertarget{class_level_manager_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_level_manager_af92436916c12b8aef91b1525a30f66d7}\index{LevelManager@{LevelManager}!Draw@{Draw}}
+\index{Draw@{Draw}!LevelManager@{LevelManager}}
+\doxysubsubsection{\texorpdfstring{Draw()}{Draw()}}
+{\footnotesize\ttfamily \label{class_level_manager_af92436916c12b8aef91b1525a30f66d7} 
+void Level\+Manager\+::\+Draw (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+\Hypertarget{class_level_manager_a39287c617e9b1a3ee592c9b4a514e82e}\index{LevelManager@{LevelManager}!GetChapterInfo@{GetChapterInfo}}
+\index{GetChapterInfo@{GetChapterInfo}!LevelManager@{LevelManager}}
+\doxysubsubsection{\texorpdfstring{GetChapterInfo()}{GetChapterInfo()}}
+{\footnotesize\ttfamily \label{class_level_manager_a39287c617e9b1a3ee592c9b4a514e82e} 
+\mbox{\hyperlink{struct_chapter_info}{Chapter\+Info}} \texorpdfstring{$\ast$}{*} Level\+Manager\+::\+Get\+Chapter\+Info (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+\Hypertarget{class_level_manager_aef755789c6123b05ce85fbfb58872ebc}\index{LevelManager@{LevelManager}!GetCollisionBounds@{GetCollisionBounds}}
+\index{GetCollisionBounds@{GetCollisionBounds}!LevelManager@{LevelManager}}
+\doxysubsubsection{\texorpdfstring{GetCollisionBounds()}{GetCollisionBounds()}}
+{\footnotesize\ttfamily \label{class_level_manager_aef755789c6123b05ce85fbfb58872ebc} 
+std\+::vector$<$ std\+::vector$<$ \mbox{\hyperlink{struct_vector2f}{Vector2f}} $>$ $>$ Level\+Manager\+::\+Get\+Collision\+Bounds (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+\Hypertarget{class_level_manager_a2b28fefadd563e3fa3baa8973842c989}\index{LevelManager@{LevelManager}!GetCurrentBounds@{GetCurrentBounds}}
+\index{GetCurrentBounds@{GetCurrentBounds}!LevelManager@{LevelManager}}
+\doxysubsubsection{\texorpdfstring{GetCurrentBounds()}{GetCurrentBounds()}}
+{\footnotesize\ttfamily \label{class_level_manager_a2b28fefadd563e3fa3baa8973842c989} 
+\mbox{\hyperlink{struct_rectf}{Rectf}} Level\+Manager\+::\+Get\+Current\+Bounds (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_character}{Character}} \&}]{character}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+\Hypertarget{class_level_manager_a36e34ddbbb93cd3f347e0cca01762fe7}\index{LevelManager@{LevelManager}!GetDeadCount@{GetDeadCount}}
+\index{GetDeadCount@{GetDeadCount}!LevelManager@{LevelManager}}
+\doxysubsubsection{\texorpdfstring{GetDeadCount()}{GetDeadCount()}}
+{\footnotesize\ttfamily \label{class_level_manager_a36e34ddbbb93cd3f347e0cca01762fe7} 
+int Level\+Manager\+::\+Get\+Dead\+Count (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+\Hypertarget{class_level_manager_a5a982c2f1bac322df4e8232fbc3d4cf2}\index{LevelManager@{LevelManager}!GetRespawnPos@{GetRespawnPos}}
+\index{GetRespawnPos@{GetRespawnPos}!LevelManager@{LevelManager}}
+\doxysubsubsection{\texorpdfstring{GetRespawnPos()}{GetRespawnPos()}}
+{\footnotesize\ttfamily \label{class_level_manager_a5a982c2f1bac322df4e8232fbc3d4cf2} 
+\mbox{\hyperlink{struct_vector2f}{Vector2f}} Level\+Manager\+::\+Get\+Respawn\+Pos (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+\Hypertarget{class_level_manager_a2cccefd2739479dff6bf9f5b5801dc9e}\index{LevelManager@{LevelManager}!IsOutOfBounds@{IsOutOfBounds}}
+\index{IsOutOfBounds@{IsOutOfBounds}!LevelManager@{LevelManager}}
+\doxysubsubsection{\texorpdfstring{IsOutOfBounds()}{IsOutOfBounds()}}
+{\footnotesize\ttfamily \label{class_level_manager_a2cccefd2739479dff6bf9f5b5801dc9e} 
+void Level\+Manager\+::\+Is\+Out\+Of\+Bounds (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_character}{Character}} \&}]{character}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_level_manager_a2cccefd2739479dff6bf9f5b5801dc9e_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_level_manager_ad1cbb8c0cc1e2e6094164190be4b1d02}\index{LevelManager@{LevelManager}!operator=@{operator=}}
+\index{operator=@{operator=}!LevelManager@{LevelManager}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_level_manager_ad1cbb8c0cc1e2e6094164190be4b1d02} 
+\mbox{\hyperlink{class_level_manager}{Level\+Manager}} \& Level\+Manager\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_level_manager}{Level\+Manager}} \&}]{other}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_level_manager_ad1cbb8c0cc1e2e6094164190be4b1d02_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_level_manager_a92a96cb8cbc688cc750dc6ad004fe933}\index{LevelManager@{LevelManager}!operator=@{operator=}}
+\index{operator=@{operator=}!LevelManager@{LevelManager}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_level_manager_a92a96cb8cbc688cc750dc6ad004fe933} 
+\mbox{\hyperlink{class_level_manager}{Level\+Manager}} \& Level\+Manager\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_level_manager}{Level\+Manager}} \&\&}]{other}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}, {\ttfamily [noexcept]}}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_level_manager_a92a96cb8cbc688cc750dc6ad004fe933_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_level_manager_a63376e93bf312adc673dd93d5496ede4}\index{LevelManager@{LevelManager}!Reset@{Reset}}
+\index{Reset@{Reset}!LevelManager@{LevelManager}}
+\doxysubsubsection{\texorpdfstring{Reset()}{Reset()}}
+{\footnotesize\ttfamily \label{class_level_manager_a63376e93bf312adc673dd93d5496ede4} 
+void Level\+Manager\+::\+Reset (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{chapter}{ = {\ttfamily "{}1"{}}}\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_level_manager_a63376e93bf312adc673dd93d5496ede4_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_level_manager_ab6b8833b6e29154c3ad6b08a2e5b4aac}\index{LevelManager@{LevelManager}!Restart@{Restart}}
+\index{Restart@{Restart}!LevelManager@{LevelManager}}
+\doxysubsubsection{\texorpdfstring{Restart()}{Restart()}}
+{\footnotesize\ttfamily \label{class_level_manager_ab6b8833b6e29154c3ad6b08a2e5b4aac} 
+void Level\+Manager\+::\+Restart (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{chapter}{ = {\ttfamily "{}1"{}}}\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_level_manager_ab6b8833b6e29154c3ad6b08a2e5b4aac_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_level_manager_abf0e37bef114c237d13ad57136f74812}\index{LevelManager@{LevelManager}!SetDeadCount@{SetDeadCount}}
+\index{SetDeadCount@{SetDeadCount}!LevelManager@{LevelManager}}
+\doxysubsubsection{\texorpdfstring{SetDeadCount()}{SetDeadCount()}}
+{\footnotesize\ttfamily \label{class_level_manager_abf0e37bef114c237d13ad57136f74812} 
+void Level\+Manager\+::\+Set\+Dead\+Count (\begin{DoxyParamCaption}\item[{int}]{dead\+Count}{}\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_level_manager_abf0e37bef114c237d13ad57136f74812_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_level_manager_a16fd0d42381f73cfc7fb3717dc3a6d8d}\index{LevelManager@{LevelManager}!Update@{Update}}
+\index{Update@{Update}!LevelManager@{LevelManager}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily \label{class_level_manager_a16fd0d42381f73cfc7fb3717dc3a6d8d} 
+void Level\+Manager\+::\+Update (\begin{DoxyParamCaption}\item[{float}]{elapsed\+Sec}{, }\item[{\mbox{\hyperlink{class_character}{Character}} \&}]{character}{}\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_level_manager_a16fd0d42381f73cfc7fb3717dc3a6d8d_cgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Celeste/\mbox{\hyperlink{_level_manager_8h}{Level\+Manager.\+h}}\item 
+Celeste/\mbox{\hyperlink{_level_manager_8cpp}{Level\+Manager.\+cpp}}\end{DoxyCompactItemize}

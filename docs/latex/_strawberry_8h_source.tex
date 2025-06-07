@@ -1,0 +1,76 @@
+\doxysection{Strawberry.\+h}
+\hypertarget{_strawberry_8h_source}{}\label{_strawberry_8h_source}\index{Celeste/Strawberry.h@{Celeste/Strawberry.h}}
+\mbox{\hyperlink{_strawberry_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_interactable_item_8h}{InteractableItem.h}}"{}}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_animation_manager_8h}{AnimationManager.h}}"{}}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_counted_item_8h}{CountedItem.h}}"{}}}
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00006\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_sound_effect}{SoundEffect}};}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_strawberry_ab4dff64037a1d41eb23ef267eeda6510}{Strawberry}}:}
+\DoxyCodeLine{00009\ \ \ \ \ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_interactable_item_a5e5b9c459514e29098aaff5e62761569}{InteractableItem}},}
+\DoxyCodeLine{00010\ \ \ \ \ \textcolor{keyword}{protected}\ \mbox{\hyperlink{class_counted_item_a379818e68b8231fbfad8c51cbf2add57}{CountedItem}}<Strawberry>}
+\DoxyCodeLine{00011\ \{}
+\DoxyCodeLine{00012\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00013\ \ \ \ \ \textcolor{comment}{//\ CONSTRUCTORS}}
+\DoxyCodeLine{00014\ \ \ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{class_strawberry_ab4dff64037a1d41eb23ef267eeda6510}{Strawberry}}(\textcolor{keywordtype}{float}\ x,\ \textcolor{keywordtype}{float}\ y,\ \textcolor{keywordtype}{float}\ width,\ \textcolor{keywordtype}{float}\ height);}
+\DoxyCodeLine{00015\ \ \ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{class_strawberry_ab4dff64037a1d41eb23ef267eeda6510}{Strawberry}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{struct_rectf}{Rectf}}\&\ bounds);}
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00017\ \ \ \ \ \textcolor{comment}{//\ FUNCTIONS}}
+\DoxyCodeLine{00018\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_strawberry_a0fd0213e45339451f5cdf2e88e4054a4}{Draw}}()\ \textcolor{keyword}{const\ override};}
+\DoxyCodeLine{00019\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_strawberry_a2e5468a8badbbf84cd37d12c34042061}{PlayerInteraction}}(\mbox{\hyperlink{class_character}{Character}}\&\ character,\ \textcolor{keywordtype}{float}\ elapsedSec)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00020\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_strawberry_a897041c2abde0dfa8707721d28cad769}{Revizualize}}();}
+\DoxyCodeLine{00021\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_strawberry_a5e478e81e78321a1191872461c7a631c}{IsPickedUp}}()\ \textcolor{keyword}{const}\ \textcolor{keyword}{noexcept};}
+\DoxyCodeLine{00022\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_strawberry_ae47c4279731cc3caf274758f992ce838}{IsGhost}}()\ \textcolor{keyword}{const}\ \textcolor{keyword}{noexcept};}
+\DoxyCodeLine{00023\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_strawberry_a61400644943015fa56d48cf970a25852}{SetGhost}}(\textcolor{keywordtype}{bool}\ prev);}
+\DoxyCodeLine{00024\ }
+\DoxyCodeLine{00025\ \ \ \ \ \textcolor{comment}{//\ COPY\ CONSTRUCTOR}}
+\DoxyCodeLine{00026\ \ \ \ \ \mbox{\hyperlink{class_strawberry_a29384527bb818f4f24983b24b5e04fd3}{Strawberry}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_strawberry_ab4dff64037a1d41eb23ef267eeda6510}{Strawberry}}\&\ other)\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00027\ \ \ \ \ \mbox{\hyperlink{class_strawberry_a089a694b74e5e7c5ce542ca943c72848}{Strawberry}}(\mbox{\hyperlink{class_strawberry_ab4dff64037a1d41eb23ef267eeda6510}{Strawberry}}\&\&\ other)\ \textcolor{keyword}{noexcept}\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00029\ \ \ \ \ \textcolor{comment}{//\ ASSIGNMENT\ OPPERATOR}}
+\DoxyCodeLine{00030\ \ \ \ \ \mbox{\hyperlink{class_strawberry_ab4dff64037a1d41eb23ef267eeda6510}{Strawberry}}\&\ \mbox{\hyperlink{class_strawberry_a81dca459e7fc2dac2c2ab3cff76c6145}{operator=}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_strawberry_ab4dff64037a1d41eb23ef267eeda6510}{Strawberry}}\&\ other)\ =\textcolor{keywordflow}{default};}
+\DoxyCodeLine{00031\ \ \ \ \ \mbox{\hyperlink{class_strawberry_ab4dff64037a1d41eb23ef267eeda6510}{Strawberry}}\&\ \mbox{\hyperlink{class_strawberry_a673f5c80b8d67a2580087a4eae0832b6}{operator=}}(\mbox{\hyperlink{class_strawberry_ab4dff64037a1d41eb23ef267eeda6510}{Strawberry}}\&\&\ other)\ \textcolor{keyword}{noexcept}\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00032\ }
+\DoxyCodeLine{00033\ \ \ \ \ \textcolor{comment}{//DESTRUCTOR}}
+\DoxyCodeLine{00034\ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{class_strawberry_a742143fd532ad4a14b0779d7efaa864f}{\string~Strawberry}}()\ noexcept\ override;}
+\DoxyCodeLine{00035\ protected:}
+\DoxyCodeLine{00036\ \ \ \ \ \textcolor{comment}{//\ FUNCTIONS}}
+\DoxyCodeLine{00037\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_strawberry_a0fd0213e45339451f5cdf2e88e4054a4}{Draw}}(\mbox{\hyperlink{class_animation_manager}{AnimationManager}}*\ AnimationM)\ const;}
+\DoxyCodeLine{00038\ \ \ \ \ virtual\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_strawberry_afcc525a41d07703008636397800977bb}{Reset}}();}
+\DoxyCodeLine{00039\ }
+\DoxyCodeLine{00040\ \ \ \ \ \textcolor{comment}{//\ MEMBERS}}
+\DoxyCodeLine{00041\ \ \ \ \ const\ \mbox{\hyperlink{struct_vector2f}{Vector2f}}\ \mbox{\hyperlink{class_strawberry_a0466405a43fd7e567ca18ab3b099eeb9}{m\_OriginalLocation}};}
+\DoxyCodeLine{00042\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_strawberry_aef55e3e2e2fc7dba4a88f7c3ecffcef7}{m\_Touched}};}
+\DoxyCodeLine{00043\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_strawberry_a5b867e264274496c57d1d646dbe6a181}{m\_IsGhost}};}
+\DoxyCodeLine{00044\ private:}
+\DoxyCodeLine{00045\ \ \ \ \ enum\ class\ State\ \{}
+\DoxyCodeLine{00046\ \ \ \ \ \ \ \ \ idle,}
+\DoxyCodeLine{00047\ \ \ \ \ \ \ \ \ touched,}
+\DoxyCodeLine{00048\ \ \ \ \ \ \ \ \ pickedUp,}
+\DoxyCodeLine{00049\ \ \ \ \ \ \ \ \ dead}
+\DoxyCodeLine{00050\ \ \ \ \ \};}
+\DoxyCodeLine{00051\ }
+\DoxyCodeLine{00052\ \ \ \ \ \textcolor{comment}{//\ MEMBERS}}
+\DoxyCodeLine{00053\ \ \ \ \textcolor{keywordtype}{bool}\ m\_HasPickedUp;}
+\DoxyCodeLine{00054\ \ \ \ \textcolor{keywordtype}{float}\ m\_OnGroundTime;}
+\DoxyCodeLine{00055\ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{float}\ m\_PickupTime;}
+\DoxyCodeLine{00056\ \ \ \ \textcolor{keywordtype}{float}\ m\_TotalElapsedSec;}
+\DoxyCodeLine{00057\ \ \ \ State\ m\_State;}
+\DoxyCodeLine{00058\ }
+\DoxyCodeLine{00059\ \ \ \ \textcolor{comment}{//\ SOUND}}
+\DoxyCodeLine{00060\ \ \ \ \textcolor{keyword}{static}\ \mbox{\hyperlink{class_sound_effect}{SoundEffect}}*\ m\_pTouchSoundEffect;}
+\DoxyCodeLine{00061\ \ \ \ \textcolor{keyword}{static}\ \mbox{\hyperlink{class_sound_effect}{SoundEffect}}*\ m\_pPickupSoundEffect;}
+\DoxyCodeLine{00062\ \ \ \ \ }
+\DoxyCodeLine{00063\ \ \ \ \textcolor{comment}{//\ ANIMATIONVARIABLES}}
+\DoxyCodeLine{00064\ \ \ \ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{int}\ m\_StrawberryID;}
+\DoxyCodeLine{00065\ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{int}\ m\_LowestID;}
+\DoxyCodeLine{00066\ \ \ \ \textcolor{keyword}{static}\ \mbox{\hyperlink{class_animation_manager}{AnimationManager}}*\ m\_pAnimationManager;}
+\DoxyCodeLine{00067\ \ \ \ \textcolor{keyword}{static}\ \mbox{\hyperlink{class_animation_manager}{AnimationManager}}*\ m\_pGhostAnimationManager;}
+\DoxyCodeLine{00068\ \ \ \ \textcolor{keyword}{static}\ \mbox{\hyperlink{class_animation_manager}{AnimationManager}}*\ m\_pPickupAnimationManager;}
+\DoxyCodeLine{00069\ \};}
+\DoxyCodeLine{00070\ }
+
+\end{DoxyCode}

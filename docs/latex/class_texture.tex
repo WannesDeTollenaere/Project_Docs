@@ -1,0 +1,185 @@
+\doxysection{Texture Class Reference}
+\hypertarget{class_texture}{}\label{class_texture}\index{Texture@{Texture}}
+
+
+{\ttfamily \#include $<$Texture.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_texture_a71ede2b46099f7c975872b7f97f1ddad}{Texture}} (const std\+::string \&image\+Path)
+\item 
+\mbox{\hyperlink{class_texture_a34462b815b2f8b6941083a07e168ae2b}{Texture}} (const std\+::string \&text, TTF\+\_\+\+Font \texorpdfstring{$\ast$}{*}p\+Font, const \mbox{\hyperlink{struct_color4f}{Color4f}} \&text\+Color)
+\item 
+\mbox{\hyperlink{class_texture_a9abd5776bdebbb998b5b929bf34a54b5}{Texture}} (const std\+::string \&text, const std\+::string \&font\+Path, int pt\+Size, const \mbox{\hyperlink{struct_color4f}{Color4f}} \&text\+Color)
+\item 
+\mbox{\hyperlink{class_texture_a0b3765fe5b1a6847db044b88613efeff}{Texture}} (const \mbox{\hyperlink{class_texture}{Texture}} \&other)=delete
+\item 
+\mbox{\hyperlink{class_texture}{Texture}} \& \mbox{\hyperlink{class_texture_a8e209c709bfa2107baf790324f12ef53}{operator=}} (const \mbox{\hyperlink{class_texture}{Texture}} \&other)=delete
+\item 
+\mbox{\hyperlink{class_texture_a084244d7cb78794849469aabd9c602ec}{Texture}} (\mbox{\hyperlink{class_texture}{Texture}} \&\&other) noexcept
+\item 
+\mbox{\hyperlink{class_texture}{Texture}} \& \mbox{\hyperlink{class_texture_aa68afb4cfb10e3b5f6f6f83cfbda20b9}{operator=}} (\mbox{\hyperlink{class_texture}{Texture}} \&\&other) noexcept
+\item 
+\mbox{\hyperlink{class_texture_a09c4bcb7462f64c1d20fa69dba3cee8a}{\texorpdfstring{$\sim$}{\string~}\+Texture}} ()
+\item 
+void \mbox{\hyperlink{class_texture_a7b647d8063384d6f94375245f6139ee9}{Draw}} (const \mbox{\hyperlink{struct_vector2f}{Vector2f}} \&dst\+Bottom\+Left=\{\}, const \mbox{\hyperlink{struct_rectf}{Rectf}} \&src\+Rect=\{\}) const
+\item 
+void \mbox{\hyperlink{class_texture_a525b4cd9bedb1b05772aeb85e3845734}{Draw}} (const \mbox{\hyperlink{struct_rectf}{Rectf}} \&dst\+Rect, const \mbox{\hyperlink{struct_rectf}{Rectf}} \&src\+Rect=\{\}) const
+\item 
+float \mbox{\hyperlink{class_texture_a1ddf666c56410ecfd74d6a1f1927e9e4}{Get\+Width}} () const
+\item 
+float \mbox{\hyperlink{class_texture_a76bea9b8ce1f75ce5add78c4ff086667}{Get\+Height}} () const
+\item 
+bool \mbox{\hyperlink{class_texture_a61542511d0b33e405966007f60eaba5d}{Is\+Creation\+Ok}} () const
+\end{DoxyCompactItemize}
+
+
+\label{doc-constructors}
+\Hypertarget{class_texture_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_texture_a71ede2b46099f7c975872b7f97f1ddad}\index{Texture@{Texture}!Texture@{Texture}}
+\index{Texture@{Texture}!Texture@{Texture}}
+\doxysubsubsection{\texorpdfstring{Texture()}{Texture()}\hspace{0.1cm}{\footnotesize\ttfamily [1/5]}}
+{\footnotesize\ttfamily \label{class_texture_a71ede2b46099f7c975872b7f97f1ddad} 
+Texture\+::\+Texture (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{image\+Path}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=298pt]{class_texture_a71ede2b46099f7c975872b7f97f1ddad_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_texture_a34462b815b2f8b6941083a07e168ae2b}\index{Texture@{Texture}!Texture@{Texture}}
+\index{Texture@{Texture}!Texture@{Texture}}
+\doxysubsubsection{\texorpdfstring{Texture()}{Texture()}\hspace{0.1cm}{\footnotesize\ttfamily [2/5]}}
+{\footnotesize\ttfamily \label{class_texture_a34462b815b2f8b6941083a07e168ae2b} 
+Texture\+::\+Texture (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{text}{, }\item[{TTF\+\_\+\+Font \texorpdfstring{$\ast$}{*}}]{p\+Font}{, }\item[{const \mbox{\hyperlink{struct_color4f}{Color4f}} \&}]{text\+Color}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+\Hypertarget{class_texture_a9abd5776bdebbb998b5b929bf34a54b5}\index{Texture@{Texture}!Texture@{Texture}}
+\index{Texture@{Texture}!Texture@{Texture}}
+\doxysubsubsection{\texorpdfstring{Texture()}{Texture()}\hspace{0.1cm}{\footnotesize\ttfamily [3/5]}}
+{\footnotesize\ttfamily \label{class_texture_a9abd5776bdebbb998b5b929bf34a54b5} 
+Texture\+::\+Texture (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{text}{, }\item[{const std\+::string \&}]{font\+Path}{, }\item[{int}]{pt\+Size}{, }\item[{const \mbox{\hyperlink{struct_color4f}{Color4f}} \&}]{text\+Color}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+\Hypertarget{class_texture_a0b3765fe5b1a6847db044b88613efeff}\index{Texture@{Texture}!Texture@{Texture}}
+\index{Texture@{Texture}!Texture@{Texture}}
+\doxysubsubsection{\texorpdfstring{Texture()}{Texture()}\hspace{0.1cm}{\footnotesize\ttfamily [4/5]}}
+{\footnotesize\ttfamily \label{class_texture_a0b3765fe5b1a6847db044b88613efeff} 
+Texture\+::\+Texture (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_texture}{Texture}} \&}]{other}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=289pt]{class_texture_a0b3765fe5b1a6847db044b88613efeff_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_texture_a084244d7cb78794849469aabd9c602ec}\index{Texture@{Texture}!Texture@{Texture}}
+\index{Texture@{Texture}!Texture@{Texture}}
+\doxysubsubsection{\texorpdfstring{Texture()}{Texture()}\hspace{0.1cm}{\footnotesize\ttfamily [5/5]}}
+{\footnotesize\ttfamily \label{class_texture_a084244d7cb78794849469aabd9c602ec} 
+Texture\+::\+Texture (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_texture}{Texture}} \&\&}]{other}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=289pt]{class_texture_a084244d7cb78794849469aabd9c602ec_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_texture_a09c4bcb7462f64c1d20fa69dba3cee8a}\index{Texture@{Texture}!````~Texture@{\texorpdfstring{$\sim$}{\string~}Texture}}
+\index{````~Texture@{\texorpdfstring{$\sim$}{\string~}Texture}!Texture@{Texture}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}Texture()}{\string~Texture()}}
+{\footnotesize\ttfamily \label{class_texture_a09c4bcb7462f64c1d20fa69dba3cee8a} 
+Texture\+::\texorpdfstring{$\sim$}{\string~}\+Texture (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+\label{doc-func-members}
+\Hypertarget{class_texture_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_texture_a525b4cd9bedb1b05772aeb85e3845734}\index{Texture@{Texture}!Draw@{Draw}}
+\index{Draw@{Draw}!Texture@{Texture}}
+\doxysubsubsection{\texorpdfstring{Draw()}{Draw()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_texture_a525b4cd9bedb1b05772aeb85e3845734} 
+void Texture\+::\+Draw (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_rectf}{Rectf}} \&}]{dst\+Rect}{, }\item[{const \mbox{\hyperlink{struct_rectf}{Rectf}} \&}]{src\+Rect}{ = {\ttfamily \{\}}}\end{DoxyParamCaption}) const}
+
+\Hypertarget{class_texture_a7b647d8063384d6f94375245f6139ee9}\index{Texture@{Texture}!Draw@{Draw}}
+\index{Draw@{Draw}!Texture@{Texture}}
+\doxysubsubsection{\texorpdfstring{Draw()}{Draw()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_texture_a7b647d8063384d6f94375245f6139ee9} 
+void Texture\+::\+Draw (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_vector2f}{Vector2f}} \&}]{dst\+Bottom\+Left}{ = {\ttfamily \{\}}, }\item[{const \mbox{\hyperlink{struct_rectf}{Rectf}} \&}]{src\+Rect}{ = {\ttfamily \{\}}}\end{DoxyParamCaption}) const}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=158pt]{class_texture_a7b647d8063384d6f94375245f6139ee9_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=307pt]{class_texture_a7b647d8063384d6f94375245f6139ee9_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_texture_a76bea9b8ce1f75ce5add78c4ff086667}\index{Texture@{Texture}!GetHeight@{GetHeight}}
+\index{GetHeight@{GetHeight}!Texture@{Texture}}
+\doxysubsubsection{\texorpdfstring{GetHeight()}{GetHeight()}}
+{\footnotesize\ttfamily \label{class_texture_a76bea9b8ce1f75ce5add78c4ff086667} 
+float Texture\+::\+Get\+Height (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+\Hypertarget{class_texture_a1ddf666c56410ecfd74d6a1f1927e9e4}\index{Texture@{Texture}!GetWidth@{GetWidth}}
+\index{GetWidth@{GetWidth}!Texture@{Texture}}
+\doxysubsubsection{\texorpdfstring{GetWidth()}{GetWidth()}}
+{\footnotesize\ttfamily \label{class_texture_a1ddf666c56410ecfd74d6a1f1927e9e4} 
+float Texture\+::\+Get\+Width (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+\Hypertarget{class_texture_a61542511d0b33e405966007f60eaba5d}\index{Texture@{Texture}!IsCreationOk@{IsCreationOk}}
+\index{IsCreationOk@{IsCreationOk}!Texture@{Texture}}
+\doxysubsubsection{\texorpdfstring{IsCreationOk()}{IsCreationOk()}}
+{\footnotesize\ttfamily \label{class_texture_a61542511d0b33e405966007f60eaba5d} 
+bool Texture\+::\+Is\+Creation\+Ok (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+\Hypertarget{class_texture_a8e209c709bfa2107baf790324f12ef53}\index{Texture@{Texture}!operator=@{operator=}}
+\index{operator=@{operator=}!Texture@{Texture}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_texture_a8e209c709bfa2107baf790324f12ef53} 
+\mbox{\hyperlink{class_texture}{Texture}} \& Texture\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_texture}{Texture}} \&}]{other}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=298pt]{class_texture_a8e209c709bfa2107baf790324f12ef53_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_texture_aa68afb4cfb10e3b5f6f6f83cfbda20b9}\index{Texture@{Texture}!operator=@{operator=}}
+\index{operator=@{operator=}!Texture@{Texture}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_texture_aa68afb4cfb10e3b5f6f6f83cfbda20b9} 
+\mbox{\hyperlink{class_texture}{Texture}} \& Texture\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_texture}{Texture}} \&\&}]{other}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=298pt]{class_texture_aa68afb4cfb10e3b5f6f6f83cfbda20b9_cgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Engine/\mbox{\hyperlink{_texture_8h}{Texture.\+h}}\item 
+Engine/\mbox{\hyperlink{_texture_8cpp}{Texture.\+cpp}}\end{DoxyCompactItemize}

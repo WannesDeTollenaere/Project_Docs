@@ -1,0 +1,66 @@
+\doxysection{Level\+Manager.\+h}
+\hypertarget{_level_manager_8h_source}{}\label{_level_manager_8h_source}\index{Celeste/LevelManager.h@{Celeste/LevelManager.h}}
+\mbox{\hyperlink{_level_manager_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{utils_8h}{utils.h}}"{}}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_character_8h}{Character.h}}"{}}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_chapter_loader_8h}{ChapterLoader.h}}"{}}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_save_file_i_o_8h}{SaveFileIO.h}}"{}}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_interactable_item}{InteractableItem}};}
+\DoxyCodeLine{00009\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_texture}{Texture}};}
+\DoxyCodeLine{00010\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_level}{Level}};}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00012\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_level_manager_a38dbd125a5877cd9b7dac9bbfa16e7fd}{LevelManager}}}
+\DoxyCodeLine{00013\ \{}
+\DoxyCodeLine{00014\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00015\ \ \ \ \ \textcolor{comment}{//\ CONTRUCTOR}}
+\DoxyCodeLine{00016\ \ \ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{class_level_manager_a38dbd125a5877cd9b7dac9bbfa16e7fd}{LevelManager}}(\textcolor{keywordtype}{float}\ scale,\ \textcolor{keyword}{const}\ std::string\&\ chapter\ =\ \textcolor{stringliteral}{"{}1"{}});}
+\DoxyCodeLine{00017\ }
+\DoxyCodeLine{00018\ \ \ \ \ \textcolor{comment}{//\ FUNCTIONS}}
+\DoxyCodeLine{00019\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_level_manager_af92436916c12b8aef91b1525a30f66d7}{Draw}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00020\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_level_manager_a16fd0d42381f73cfc7fb3717dc3a6d8d}{Update}}(\textcolor{keywordtype}{float}\ elapsedSec,\ \mbox{\hyperlink{class_character}{Character}}\&\ character);}
+\DoxyCodeLine{00021\ }
+\DoxyCodeLine{00022\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_level_manager_a63376e93bf312adc673dd93d5496ede4}{Reset}}(\textcolor{keyword}{const}\ std::string\&\ chapter\ =\ \textcolor{stringliteral}{"{}1"{}});}
+\DoxyCodeLine{00023\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_level_manager_ab6b8833b6e29154c3ad6b08a2e5b4aac}{Restart}}(\textcolor{keyword}{const}\ std::string\&\ chapter\ =\ \textcolor{stringliteral}{"{}1"{}});}
+\DoxyCodeLine{00024\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_level_manager_abf0e37bef114c237d13ad57136f74812}{SetDeadCount}}(\textcolor{keywordtype}{int}\ deadCount);}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00026\ \ \ \ \ \textcolor{comment}{//\ GETTERS}}
+\DoxyCodeLine{00027\ \ \ \ \ \mbox{\hyperlink{struct_rectf}{Rectf}}\ \mbox{\hyperlink{class_level_manager_a2b28fefadd563e3fa3baa8973842c989}{GetCurrentBounds}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_character}{Character}}\&\ character)\ \textcolor{keyword}{const}\ \textcolor{keyword}{noexcept};}
+\DoxyCodeLine{00028\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_level_manager_a2cccefd2739479dff6bf9f5b5801dc9e}{IsOutOfBounds}}(\mbox{\hyperlink{class_character}{Character}}\&\ character)\ \textcolor{keyword}{const}\ \textcolor{keyword}{noexcept};}
+\DoxyCodeLine{00029\ \ \ \ \ std::vector<\ std::vector<Vector2f>>\ \mbox{\hyperlink{class_level_manager_aef755789c6123b05ce85fbfb58872ebc}{GetCollisionBounds}}()\ \textcolor{keyword}{const}\ \textcolor{keyword}{noexcept};}
+\DoxyCodeLine{00030\ \ \ \ \ \mbox{\hyperlink{struct_vector2f}{Vector2f}}\ \mbox{\hyperlink{class_level_manager_a5a982c2f1bac322df4e8232fbc3d4cf2}{GetRespawnPos}}()\ \textcolor{keyword}{const}\ \textcolor{keyword}{noexcept};}
+\DoxyCodeLine{00031\ \ \ \ \ \mbox{\hyperlink{struct_chapter_info}{ChapterInfo}}*\ \mbox{\hyperlink{class_level_manager_a39287c617e9b1a3ee592c9b4a514e82e}{GetChapterInfo}}()\ \textcolor{keyword}{const}\ \textcolor{keyword}{noexcept};}
+\DoxyCodeLine{00032\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_level_manager_a36e34ddbbb93cd3f347e0cca01762fe7}{GetDeadCount}}()\ \textcolor{keyword}{const}\ \textcolor{keyword}{noexcept};}
+\DoxyCodeLine{00033\ }
+\DoxyCodeLine{00034\ }
+\DoxyCodeLine{00035\ \ \ \ \ \textcolor{comment}{//\ COPY\ CONSTRUCTOR}}
+\DoxyCodeLine{00036\ \ \ \ \ \mbox{\hyperlink{class_level_manager_a607602dd7cb4d95eed181512b00e9eaf}{LevelManager}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_level_manager_a38dbd125a5877cd9b7dac9bbfa16e7fd}{LevelManager}}\&\ other)\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00037\ \ \ \ \ \mbox{\hyperlink{class_level_manager_acfdcb27856194a4682a162ebf6969c7d}{LevelManager}}(\mbox{\hyperlink{class_level_manager_a38dbd125a5877cd9b7dac9bbfa16e7fd}{LevelManager}}\&\&\ other)\ \textcolor{keyword}{noexcept}\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00038\ }
+\DoxyCodeLine{00039\ \ \ \ \ \textcolor{comment}{//\ ASSIGNMENT\ OPPERATOR}}
+\DoxyCodeLine{00040\ \ \ \ \ \mbox{\hyperlink{class_level_manager_a38dbd125a5877cd9b7dac9bbfa16e7fd}{LevelManager}}\&\ \mbox{\hyperlink{class_level_manager_ad1cbb8c0cc1e2e6094164190be4b1d02}{operator=}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_level_manager_a38dbd125a5877cd9b7dac9bbfa16e7fd}{LevelManager}}\&\ other)\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00041\ \ \ \ \ \mbox{\hyperlink{class_level_manager_a38dbd125a5877cd9b7dac9bbfa16e7fd}{LevelManager}}\&\ \mbox{\hyperlink{class_level_manager_a92a96cb8cbc688cc750dc6ad004fe933}{operator=}}(\mbox{\hyperlink{class_level_manager_a38dbd125a5877cd9b7dac9bbfa16e7fd}{LevelManager}}\&\&\ other)\ \textcolor{keyword}{noexcept}\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00042\ }
+\DoxyCodeLine{00043\ \ \ \ \ \textcolor{comment}{//DESTRUCTOR}}
+\DoxyCodeLine{00044\ \ \ \ \ \mbox{\hyperlink{class_level_manager_a6f1c66b6d359da063c751c46cde2b065}{\string~LevelManager}}()\ noexcept;}
+\DoxyCodeLine{00045\ private:}
+\DoxyCodeLine{00046\ \ \ \ \ \textcolor{comment}{//\ MEMBERS}}
+\DoxyCodeLine{00047\ \ \ \ \ \mbox{\hyperlink{class_save_file_i_o}{SaveFileIO}}\ m\_SaveFile;}
+\DoxyCodeLine{00048\ \ \ \ \ \mbox{\hyperlink{class_level}{Level}}*\ m\_CurrentLevel;}
+\DoxyCodeLine{00049\ \ \ \ \ \mbox{\hyperlink{class_chapter}{Chapter}}\ m\_Chapter;}
+\DoxyCodeLine{00050\ \ \ \ \ \mbox{\hyperlink{struct_vector2f}{Vector2f}}\ m\_respawnPos;}
+\DoxyCodeLine{00051\ }
+\DoxyCodeLine{00052\ \ \ \ \ \textcolor{comment}{//\ TERRAIN}}
+\DoxyCodeLine{00053\ \ \ \ \ \textcolor{keywordtype}{float}\ m\_Scale;}
+\DoxyCodeLine{00054\ \ \ \ \ \mbox{\hyperlink{class_texture}{Texture}}*\ m\_Map;}
+\DoxyCodeLine{00055\ }
+\DoxyCodeLine{00056\ \ \ \ \ \textcolor{comment}{//\ FUNCTIONS}}
+\DoxyCodeLine{00057\ \ \ \ \ \textcolor{keywordtype}{void}\ Save();}
+\DoxyCodeLine{00058\ \ \ \ \ }
+\DoxyCodeLine{00059\ \};}
+\DoxyCodeLine{00060\ }
+
+\end{DoxyCode}

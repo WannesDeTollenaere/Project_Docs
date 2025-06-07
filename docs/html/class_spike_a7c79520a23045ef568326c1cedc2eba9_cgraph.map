@@ -1,0 +1,22 @@
+<map id="Spike::PlayerInteraction" name="Spike::PlayerInteraction">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,56,166,83"/>
+<area shape="rect" id="Node000002" href="$class_character.html#ad4cf75aee602249dff4bdb61f20eb5f2" title=" " alt="" coords="234,5,340,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="141,53,218,33,220,38,142,58"/>
+<area shape="rect" id="Node000003" href="$class_character.html#a0b790800d6ff90eebee18bce25177fce" title=" " alt="" coords="214,56,361,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="166,67,198,67,198,72,166,72"/>
+<area shape="rect" id="Node000004" href="$namespaceutils.html#a11a0eb68e467a22aed74f507057c39ed" title=" " alt="" coords="221,107,354,133"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="142,81,217,100,216,105,141,86"/>
+<area shape="rect" id="Node000005" href="$namespaceutils.html#a760075559e6ab59c1daec763fab2b488" title=" " alt="" coords="409,107,592,133"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="354,117,393,117,393,123,354,123"/>
+<area shape="rect" id="Node000006" href="$struct_vector2f.html#af8ceb9310d7065eb485e47b072a5b143" title=" " alt="" coords="640,56,784,83"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="559,103,638,84,639,89,560,109"/>
+<area shape="rect" id="Node000008" href="$struct_vector2f.html#acedb20d25ccc3009546e120eda010bf5" title=" " alt="" coords="836,144,952,171"/>
+<area shape="poly" id="edge8_Node000005_Node000008" title=" " alt="" coords="569,131,641,143,734,150,821,154,820,159,734,156,640,148,568,137"/>
+<area shape="rect" id="Node000009" href="$struct_vector2f.html#aba5dd756c385551a19d36b57d8cbf629" title=" " alt="" coords="640,107,784,133"/>
+<area shape="poly" id="edge9_Node000005_Node000009" title=" " alt="" coords="593,117,625,117,625,123,593,123"/>
+<area shape="rect" id="Node000007" href="$struct_vector2f.html#a3db9a868c58bc809e5e09a88d65a77ec" title=" " alt="" coords="832,81,957,108"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="784,77,817,81,816,87,783,82"/>
+<area shape="poly" id="edge7_Node000007_Node000007" title=" " alt="" coords="863,82,858,73,861,63,874,57,894,55,916,57,928,64,925,68,915,62,894,60,875,62,865,67,863,72,868,80"/>
+<area shape="poly" id="edge11_Node000009_Node000007" title=" " alt="" coords="783,107,816,103,817,108,784,113"/>
+<area shape="poly" id="edge10_Node000009_Node000008" title=" " alt="" coords="781,131,822,140,821,145,780,137"/>
+</map>

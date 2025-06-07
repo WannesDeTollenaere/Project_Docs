@@ -1,0 +1,33 @@
+<map id="Celeste/CharacterTextureManager.h" name="Celeste/CharacterTextureManager.h">
+<area shape="rect" id="Node000001" title=" " alt="" coords="360,5,530,48"/>
+<area shape="rect" id="Node000002" href="$_animation_manager_a_n_d_hair_8h.html" title=" " alt="" coords="214,96,407,123"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="412,51,346,90,343,85,409,46"/>
+<area shape="rect" id="Node000014" title=" " alt="" coords="410,171,467,197"/>
+<area shape="poly" id="edge16_Node000001_Node000014" title=" " alt="" coords="447,48,442,155,437,155,442,48"/>
+<area shape="rect" id="Node000015" href="$_character_state_8h.html" title=" " alt="" coords="482,96,603,123"/>
+<area shape="poly" id="edge15_Node000001_Node000015" title=" " alt="" coords="472,47,517,84,514,88,469,51"/>
+<area shape="rect" id="Node000003" href="$_animation_manager_8h.html" title=" " alt="" coords="240,171,381,197"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="313,123,313,155,308,155,308,123"/>
+<area shape="poly" id="edge14_Node000002_Node000014" title=" " alt="" coords="334,121,404,160,402,165,331,126"/>
+<area shape="rect" id="Node000004" href="$_texture_8h.html" title=" " alt="" coords="273,245,348,272"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="313,198,313,230,308,230,308,198"/>
+<area shape="rect" id="Node000005" href="$base_8h.html" title=" " alt="" coords="280,320,341,347"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="313,273,313,304,308,304,308,273"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="5,395,64,421"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="281,345,79,397,78,391,279,340"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="88,395,192,421"/>
+<area shape="poly" id="edge6_Node000005_Node000007" title=" " alt="" coords="282,350,185,391,183,386,280,345"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="216,395,293,421"/>
+<area shape="poly" id="edge7_Node000005_Node000008" title=" " alt="" coords="303,349,275,384,271,381,299,346"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="318,395,415,421"/>
+<area shape="poly" id="edge8_Node000005_Node000009" title=" " alt="" coords="322,346,350,381,346,384,318,349"/>
+<area shape="rect" id="Node000010" title=" " alt="" coords="439,395,539,421"/>
+<area shape="poly" id="edge9_Node000005_Node000010" title=" " alt="" coords="342,345,445,386,443,391,340,350"/>
+<area shape="rect" id="Node000011" href="$structs_8h.html" title=" " alt="" coords="564,395,636,421"/>
+<area shape="poly" id="edge10_Node000005_Node000011" title=" " alt="" coords="342,340,549,391,548,396,340,345"/>
+<area shape="rect" id="Node000012" title=" " alt="" coords="482,469,536,496"/>
+<area shape="poly" id="edge11_Node000011_Node000012" title=" " alt="" coords="586,424,538,462,535,458,582,420"/>
+<area shape="rect" id="Node000013" href="$_vector2f_8h.html" title=" " alt="" coords="560,469,640,496"/>
+<area shape="poly" id="edge12_Node000011_Node000013" title=" " alt="" coords="595,422,594,454,588,454,590,422"/>
+<area shape="poly" id="edge13_Node000013_Node000011" title=" " alt="" coords="604,469,606,437,611,437,609,469"/>
+</map>

@@ -1,0 +1,42 @@
+\doxysection{base.\+h}
+\hypertarget{base_8h_source}{}\label{base_8h_source}\index{Engine/base.h@{Engine/base.h}}
+\mbox{\hyperlink{base_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ }
+\DoxyCodeLine{00003\ \textcolor{comment}{//ML\ Detection\ Extension}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#ifdef\ \_DEBUG}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#define\ \_CRTDBG\_MAP\_ALLOC}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ <cstdlib>}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ <crtdbg.h>}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#define\ DEBUG\_NEW\ new(\_NORMAL\_BLOCK,\ \_\_FILE\_\_,\ \_\_LINE\_\_)}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#define\ new\ DEBUG\_NEW}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00012\ \textcolor{comment}{//\ SDL\ libs}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#pragma\ comment(lib,\ "{}SDL2.lib"{})}}
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#pragma\ comment(lib,\ "{}SDL2main.lib"{})}}
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00016\ \textcolor{comment}{//\ OpenGL\ libs}}
+\DoxyCodeLine{00017\ \textcolor{preprocessor}{\#pragma\ comment\ (lib,"{}opengl32.lib"{})}}
+\DoxyCodeLine{00018\ \textcolor{preprocessor}{\#pragma\ comment\ (lib,"{}Glu32.lib"{})}}
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00020\ \textcolor{comment}{//\ SDL\ extension\ libs\ }}
+\DoxyCodeLine{00021\ \textcolor{preprocessor}{\#pragma\ comment(lib,\ "{}SDL2\_image.lib"{})\ \ }}
+\DoxyCodeLine{00022\ \textcolor{preprocessor}{\#pragma\ comment(lib,\ "{}SDL2\_ttf.lib"{})\ }}
+\DoxyCodeLine{00023\ \textcolor{preprocessor}{\#pragma\ comment(lib,\ "{}SDL2\_mixer.lib"{})\ \ }}
+\DoxyCodeLine{00024\ }
+\DoxyCodeLine{00025\ \textcolor{comment}{//\ SDL\ and\ OpenGL\ Includes}}
+\DoxyCodeLine{00026\ \textcolor{preprocessor}{\#pragma\ warning(disable\ :\ 26812)}}
+\DoxyCodeLine{00027\ \textcolor{preprocessor}{\#pragma\ warning(disable\ :\ 4820)}}
+\DoxyCodeLine{00028\ \textcolor{preprocessor}{\#include\ <SDL.h>}}
+\DoxyCodeLine{00029\ \textcolor{preprocessor}{\#include\ <SDL\_opengl.h>}}
+\DoxyCodeLine{00030\ \textcolor{preprocessor}{\#include\ <SDL\_ttf.h>}\ }
+\DoxyCodeLine{00031\ \textcolor{preprocessor}{\#include\ <SDL\_mixer.h>}\ }
+\DoxyCodeLine{00032\ \textcolor{preprocessor}{\#include\ <SDL\_image.h>}}
+\DoxyCodeLine{00033\ }
+\DoxyCodeLine{00034\ \textcolor{preprocessor}{\#pragma\ warning(default\ :\ 26812)}}
+\DoxyCodeLine{00035\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{structs_8h}{structs.h}}"{}}}
+\DoxyCodeLine{00036\ }
+
+\end{DoxyCode}

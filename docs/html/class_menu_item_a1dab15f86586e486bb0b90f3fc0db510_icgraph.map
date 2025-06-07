@@ -1,0 +1,15 @@
+<map id="MenuItem::MenuItem" name="MenuItem::MenuItem">
+<area shape="rect" id="Node000001" title=" " alt="" coords="265,132,410,159"/>
+<area shape="rect" id="Node000002" href="$class_menu_item.html#a58ed9fd57ae28569d4ece70c6ab97ff5" title=" " alt="" coords="38,5,184,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="312,122,269,83,215,46,183,34,185,29,218,42,273,79,315,119"/>
+<area shape="rect" id="Node000003" href="$class_menu_item.html#a21dc4f56a813a25af9be986f61cc5993" title=" " alt="" coords="38,56,184,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="292,128,216,97,176,86,178,81,218,92,294,123"/>
+<area shape="rect" id="Node000004" href="$class_menu_item.html#a01018f8bda54da2c74445cfbf41fc6a1" title=" " alt="" coords="40,107,182,133"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="249,138,182,131,183,125,250,133"/>
+<area shape="rect" id="Node000005" href="$class_menu_item.html#ad6eaa7d8a1df9a14cf1f2c055a9ca2b7" title=" " alt="" coords="40,157,182,184"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="250,158,183,165,182,160,249,152"/>
+<area shape="rect" id="Node000006" href="$class_selectable_menu_item.html#ac08d8f73811f3e2103533dd45421e181" title=" " alt="" coords="37,208,185,251"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="293,168,218,198,185,210,183,205,216,194,291,163"/>
+<area shape="rect" id="Node000007" href="$class_slider_menu_item.html#a5d9730a9d054c905745640f023718675" title=" " alt="" coords="5,275,217,301"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="319,173,276,220,249,244,218,265,191,277,189,272,215,260,245,240,273,216,315,169"/>
+</map>

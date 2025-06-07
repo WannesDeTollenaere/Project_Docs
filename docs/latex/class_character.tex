@@ -1,0 +1,414 @@
+\doxysection{Character Class Reference}
+\hypertarget{class_character}{}\label{class_character}\index{Character@{Character}}
+
+
+{\ttfamily \#include $<$Character.\+h$>$}
+
+
+
+Inheritance diagram for Character\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=151pt]{class_character__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Character\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=200pt]{class_character__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_character_a36862a88801d72865f97525a766db2c5}{Character}} (const \mbox{\hyperlink{struct_vector2f}{Vector2f}} \&start\+Pos, float scale=1.f)
+\item 
+void \mbox{\hyperlink{class_character_a99d70b0a46f7d3086157ff388ab497ba}{Update}} (float elapsed\+Sec) override
+\item 
+void \mbox{\hyperlink{class_character_aaebd94374341315365dfae0e607baac5}{Draw}} () const override
+\item 
+void \mbox{\hyperlink{class_character_a0fbbde82ed8335a9c942fc939cdc6020}{Update}} (float elapsed\+Sec, const std\+::vector$<$ std\+::vector$<$ \mbox{\hyperlink{struct_vector2f}{Vector2f}} $>$ $>$ \&world\+Vertex\+Table)
+\item 
+void \mbox{\hyperlink{class_character_a1180964c284e7c7d12b1afed321669b2}{Move}} (float elapsed\+Sec, const \mbox{\hyperlink{struct_vector2f}{Vector2f}} \&direction)
+\item 
+void \mbox{\hyperlink{class_character_a7622bdde334c8d37358218e64dd6850a}{Jump}} ()
+\item 
+void \mbox{\hyperlink{class_character_a0854e7e066d305ed871658460b3c68d6}{Cog\+Jump}} (const \mbox{\hyperlink{struct_vector2f}{Vector2f}} \&momentum)
+\item 
+void \mbox{\hyperlink{class_character_acc84d340218561166bfb16592c5c23b4}{Walljump}} (const \mbox{\hyperlink{struct_vector2f}{Vector2f}} \&face\+Direction)
+\item 
+void \mbox{\hyperlink{class_character_ae8854087590df625de84d5dd47ac9cd8}{Dash}} (const \mbox{\hyperlink{struct_vector2f}{Vector2f}} \&direction)
+\item 
+void \mbox{\hyperlink{class_character_aec011c2511a78fc3e07ce424a640d633}{Apply\+Force}} (const \mbox{\hyperlink{struct_vector2f}{Vector2f}} \&force)
+\item 
+void \mbox{\hyperlink{class_character_ad4cf75aee602249dff4bdb61f20eb5f2}{Die}} ()
+\item 
+void \mbox{\hyperlink{class_character_ad86bc482bf4f17bff08a76d3ff54749e}{Reset\+Dash}} ()
+\item 
+void \mbox{\hyperlink{class_character_a22d6a0cccfa84d822d2a75d4e2d37504}{Climb}} ()
+\item 
+void \mbox{\hyperlink{class_character_aab81f214093de3f3c3fc33b3ef6c5051}{Release\+Climb}} ()
+\item 
+void \mbox{\hyperlink{class_character_ac2f3adcfb01ee1f08b396547d55f7bd0}{Apply\+Offset\+To\+Position}} (const \mbox{\hyperlink{struct_vector2f}{Vector2f}} \&offset)
+\item 
+bool \mbox{\hyperlink{class_character_a9ccad0ccca398eed8e4e2b101f47a883}{Is\+Respawning}} () const noexcept
+\item 
+bool \mbox{\hyperlink{class_character_a51c025cc2193ef3fe81395d5e85dd017}{Is\+Touching\+Floor}} () const noexcept
+\item 
+bool \mbox{\hyperlink{class_character_a25cf3eec20126e9e07d1e6338a18dc6a}{Is\+Grabing}} () const noexcept
+\item 
+bool \mbox{\hyperlink{class_character_ace9d5794172f5872f7af6180b7b55245}{Is\+Jumping}} () const noexcept
+\item 
+\mbox{\hyperlink{struct_rectf}{Rectf}} \mbox{\hyperlink{class_character_a0b790800d6ff90eebee18bce25177fce}{Get\+Hit\+Box}} () const noexcept
+\item 
+\mbox{\hyperlink{struct_vector2f}{Vector2f}} \mbox{\hyperlink{class_character_ae2fcc8b65bc48e674dc95ad04f194783}{Get\+Velocity}} () const noexcept
+\item 
+\mbox{\hyperlink{struct_vector2f}{Vector2f}} \mbox{\hyperlink{class_character_a2c5de11393f3b4b19340f0d75c6f64f5}{Get\+Respawn\+Point}} () const noexcept
+\item 
+bool \mbox{\hyperlink{class_character_a5f03513497f6766307128980a7c641ce}{Has\+Character\+Dashed}} () const noexcept
+\item 
+int \mbox{\hyperlink{class_character_a0d0dad012847441fd642610cc6592e6d}{Get\+Death\+Count}} () const noexcept
+\item 
+void \mbox{\hyperlink{class_character_ad251a2e58a761708dfc8a19a7c8f4074}{Set\+Respawn\+Point}} (const \mbox{\hyperlink{struct_vector2f}{Vector2f}} \&location)
+\item 
+void \mbox{\hyperlink{class_character_a5ae2f15014c73b60487f587631a924a4}{Set\+Position}} (const \mbox{\hyperlink{struct_vector2f}{Vector2f}} \&location)
+\item 
+void \mbox{\hyperlink{class_character_ac6ad2e65a047083d437bbe36c42972ca}{Set\+Dead\+Count}} (int dead\+Count)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_game_object}{Game\+Object}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_game_object_a3e9a5668734f19ec906d3f7504766440}{Game\+Object}} (const \mbox{\hyperlink{struct_transform}{Transform}} \&t)
+\item 
+\mbox{\hyperlink{class_game_object_a1082b8c7009867cbe93b8e286c615445}{Game\+Object}} (const \mbox{\hyperlink{struct_vector2f}{Vector2f}} \&pos, float rotation, const \mbox{\hyperlink{struct_vector2f}{Vector2f}} \&scale)
+\item 
+\mbox{\hyperlink{class_game_object_adec58543d6788c6d6f9995cec8db8677}{Game\+Object}} (const \mbox{\hyperlink{struct_vector2f}{Vector2f}} \&pos, float rotation=0.f, float scale=1.f)
+\item 
+\mbox{\hyperlink{class_game_object_a5812fb39eeeded453c04aab7c32dfc94}{Game\+Object}} (const \mbox{\hyperlink{class_game_object}{Game\+Object}} \&other)=default
+\item 
+\mbox{\hyperlink{class_game_object}{Game\+Object}} \& \mbox{\hyperlink{class_game_object_a009590d8feb5bbcb63363cd0acd5ef8c}{operator=}} (const \mbox{\hyperlink{class_game_object}{Game\+Object}} \&other)=default
+\item 
+\mbox{\hyperlink{class_game_object_a1ea3c05884054770101bb74b23ac38f5}{Game\+Object}} (\mbox{\hyperlink{class_game_object}{Game\+Object}} \&\&other) noexcept=default
+\item 
+\mbox{\hyperlink{class_game_object}{Game\+Object}} \& \mbox{\hyperlink{class_game_object_a142ed3d978707c08b2ff348753a11bcb}{operator=}} (\mbox{\hyperlink{class_game_object}{Game\+Object}} \&\&other) noexcept=default
+\item 
+virtual \mbox{\hyperlink{class_game_object_aaea6b7e6220bbcb81311a24b07abddae}{\texorpdfstring{$\sim$}{\string~}\+Game\+Object}} () noexcept=default
+\item 
+\mbox{\hyperlink{struct_transform}{Transform}} \mbox{\hyperlink{class_game_object_af379d997393035dd50549cc13fa0e807}{Get\+Transform}} () const noexcept
+\item 
+float \mbox{\hyperlink{class_game_object_a3c1f2f4d5a1e04e69f3dc22d4c573b35}{Get\+Rotation}} () const noexcept
+\item 
+\mbox{\hyperlink{struct_vector2f}{Vector2f}} \mbox{\hyperlink{class_game_object_ac3bd47953a5614e49e3739955fb5d669}{Get\+Position}} () const noexcept
+\item 
+\mbox{\hyperlink{struct_vector2f}{Vector2f}} \mbox{\hyperlink{class_game_object_af9f7c9015a36e47eaa60e2968e6b7279}{Get\+Scale}} () const noexcept
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_game_object}{Game\+Object}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_transform}{Transform}} \mbox{\hyperlink{class_game_object_a0eb7f41b5cd0a1c074a378e86a443696}{m\+\_\+\+Transformation}}
+\end{DoxyCompactItemize}
+
+
+\label{doc-constructors}
+\Hypertarget{class_character_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_character_a36862a88801d72865f97525a766db2c5}\index{Character@{Character}!Character@{Character}}
+\index{Character@{Character}!Character@{Character}}
+\doxysubsubsection{\texorpdfstring{Character()}{Character()}}
+{\footnotesize\ttfamily \label{class_character_a36862a88801d72865f97525a766db2c5} 
+Character\+::\+Character (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_vector2f}{Vector2f}} \&}]{start\+Pos}{, }\item[{float}]{scale}{ = {\ttfamily 1.f}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_character_a36862a88801d72865f97525a766db2c5_cgraph}
+\end{center}
+\end{figure}
+
+
+\label{doc-func-members}
+\Hypertarget{class_character_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_character_aec011c2511a78fc3e07ce424a640d633}\index{Character@{Character}!ApplyForce@{ApplyForce}}
+\index{ApplyForce@{ApplyForce}!Character@{Character}}
+\doxysubsubsection{\texorpdfstring{ApplyForce()}{ApplyForce()}}
+{\footnotesize\ttfamily \label{class_character_aec011c2511a78fc3e07ce424a640d633} 
+void Character\+::\+Apply\+Force (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_vector2f}{Vector2f}} \&}]{force}{}\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_character_aec011c2511a78fc3e07ce424a640d633_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_character_ac2f3adcfb01ee1f08b396547d55f7bd0}\index{Character@{Character}!ApplyOffsetToPosition@{ApplyOffsetToPosition}}
+\index{ApplyOffsetToPosition@{ApplyOffsetToPosition}!Character@{Character}}
+\doxysubsubsection{\texorpdfstring{ApplyOffsetToPosition()}{ApplyOffsetToPosition()}}
+{\footnotesize\ttfamily \label{class_character_ac2f3adcfb01ee1f08b396547d55f7bd0} 
+void Character\+::\+Apply\+Offset\+To\+Position (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_vector2f}{Vector2f}} \&}]{offset}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_character_a22d6a0cccfa84d822d2a75d4e2d37504}\index{Character@{Character}!Climb@{Climb}}
+\index{Climb@{Climb}!Character@{Character}}
+\doxysubsubsection{\texorpdfstring{Climb()}{Climb()}}
+{\footnotesize\ttfamily \label{class_character_a22d6a0cccfa84d822d2a75d4e2d37504} 
+void Character\+::\+Climb (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_character_a0854e7e066d305ed871658460b3c68d6}\index{Character@{Character}!CogJump@{CogJump}}
+\index{CogJump@{CogJump}!Character@{Character}}
+\doxysubsubsection{\texorpdfstring{CogJump()}{CogJump()}}
+{\footnotesize\ttfamily \label{class_character_a0854e7e066d305ed871658460b3c68d6} 
+void Character\+::\+Cog\+Jump (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_vector2f}{Vector2f}} \&}]{momentum}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_character_ae8854087590df625de84d5dd47ac9cd8}\index{Character@{Character}!Dash@{Dash}}
+\index{Dash@{Dash}!Character@{Character}}
+\doxysubsubsection{\texorpdfstring{Dash()}{Dash()}}
+{\footnotesize\ttfamily \label{class_character_ae8854087590df625de84d5dd47ac9cd8} 
+void Character\+::\+Dash (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_vector2f}{Vector2f}} \&}]{direction}{}\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_character_ae8854087590df625de84d5dd47ac9cd8_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_character_ad4cf75aee602249dff4bdb61f20eb5f2}\index{Character@{Character}!Die@{Die}}
+\index{Die@{Die}!Character@{Character}}
+\doxysubsubsection{\texorpdfstring{Die()}{Die()}}
+{\footnotesize\ttfamily \label{class_character_ad4cf75aee602249dff4bdb61f20eb5f2} 
+void Character\+::\+Die (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=346pt]{class_character_ad4cf75aee602249dff4bdb61f20eb5f2_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_character_aaebd94374341315365dfae0e607baac5}\index{Character@{Character}!Draw@{Draw}}
+\index{Draw@{Draw}!Character@{Character}}
+\doxysubsubsection{\texorpdfstring{Draw()}{Draw()}}
+{\footnotesize\ttfamily \label{class_character_aaebd94374341315365dfae0e607baac5} 
+void Character\+::\+Draw (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_game_object_a45171beb4d4ac8158a754fe41e735129}{Game\+Object}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=282pt]{class_character_aaebd94374341315365dfae0e607baac5_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_character_a0d0dad012847441fd642610cc6592e6d}\index{Character@{Character}!GetDeathCount@{GetDeathCount}}
+\index{GetDeathCount@{GetDeathCount}!Character@{Character}}
+\doxysubsubsection{\texorpdfstring{GetDeathCount()}{GetDeathCount()}}
+{\footnotesize\ttfamily \label{class_character_a0d0dad012847441fd642610cc6592e6d} 
+int Character\+::\+Get\+Death\+Count (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+\Hypertarget{class_character_a0b790800d6ff90eebee18bce25177fce}\index{Character@{Character}!GetHitBox@{GetHitBox}}
+\index{GetHitBox@{GetHitBox}!Character@{Character}}
+\doxysubsubsection{\texorpdfstring{GetHitBox()}{GetHitBox()}}
+{\footnotesize\ttfamily \label{class_character_a0b790800d6ff90eebee18bce25177fce} 
+\mbox{\hyperlink{struct_rectf}{Rectf}} Character\+::\+Get\+Hit\+Box (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_character_a0b790800d6ff90eebee18bce25177fce_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_character_a2c5de11393f3b4b19340f0d75c6f64f5}\index{Character@{Character}!GetRespawnPoint@{GetRespawnPoint}}
+\index{GetRespawnPoint@{GetRespawnPoint}!Character@{Character}}
+\doxysubsubsection{\texorpdfstring{GetRespawnPoint()}{GetRespawnPoint()}}
+{\footnotesize\ttfamily \label{class_character_a2c5de11393f3b4b19340f0d75c6f64f5} 
+\mbox{\hyperlink{struct_vector2f}{Vector2f}} Character\+::\+Get\+Respawn\+Point (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_character_a2c5de11393f3b4b19340f0d75c6f64f5_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_character_ae2fcc8b65bc48e674dc95ad04f194783}\index{Character@{Character}!GetVelocity@{GetVelocity}}
+\index{GetVelocity@{GetVelocity}!Character@{Character}}
+\doxysubsubsection{\texorpdfstring{GetVelocity()}{GetVelocity()}}
+{\footnotesize\ttfamily \label{class_character_ae2fcc8b65bc48e674dc95ad04f194783} 
+\mbox{\hyperlink{struct_vector2f}{Vector2f}} Character\+::\+Get\+Velocity (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+\Hypertarget{class_character_a5f03513497f6766307128980a7c641ce}\index{Character@{Character}!HasCharacterDashed@{HasCharacterDashed}}
+\index{HasCharacterDashed@{HasCharacterDashed}!Character@{Character}}
+\doxysubsubsection{\texorpdfstring{HasCharacterDashed()}{HasCharacterDashed()}}
+{\footnotesize\ttfamily \label{class_character_a5f03513497f6766307128980a7c641ce} 
+bool Character\+::\+Has\+Character\+Dashed (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_character_a5f03513497f6766307128980a7c641ce_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_character_a25cf3eec20126e9e07d1e6338a18dc6a}\index{Character@{Character}!IsGrabing@{IsGrabing}}
+\index{IsGrabing@{IsGrabing}!Character@{Character}}
+\doxysubsubsection{\texorpdfstring{IsGrabing()}{IsGrabing()}}
+{\footnotesize\ttfamily \label{class_character_a25cf3eec20126e9e07d1e6338a18dc6a} 
+bool Character\+::\+Is\+Grabing (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+\Hypertarget{class_character_ace9d5794172f5872f7af6180b7b55245}\index{Character@{Character}!IsJumping@{IsJumping}}
+\index{IsJumping@{IsJumping}!Character@{Character}}
+\doxysubsubsection{\texorpdfstring{IsJumping()}{IsJumping()}}
+{\footnotesize\ttfamily \label{class_character_ace9d5794172f5872f7af6180b7b55245} 
+bool Character\+::\+Is\+Jumping (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+\Hypertarget{class_character_a9ccad0ccca398eed8e4e2b101f47a883}\index{Character@{Character}!IsRespawning@{IsRespawning}}
+\index{IsRespawning@{IsRespawning}!Character@{Character}}
+\doxysubsubsection{\texorpdfstring{IsRespawning()}{IsRespawning()}}
+{\footnotesize\ttfamily \label{class_character_a9ccad0ccca398eed8e4e2b101f47a883} 
+bool Character\+::\+Is\+Respawning (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_character_a9ccad0ccca398eed8e4e2b101f47a883_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_character_a51c025cc2193ef3fe81395d5e85dd017}\index{Character@{Character}!IsTouchingFloor@{IsTouchingFloor}}
+\index{IsTouchingFloor@{IsTouchingFloor}!Character@{Character}}
+\doxysubsubsection{\texorpdfstring{IsTouchingFloor()}{IsTouchingFloor()}}
+{\footnotesize\ttfamily \label{class_character_a51c025cc2193ef3fe81395d5e85dd017} 
+bool Character\+::\+Is\+Touching\+Floor (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_character_a51c025cc2193ef3fe81395d5e85dd017_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_character_a7622bdde334c8d37358218e64dd6850a}\index{Character@{Character}!Jump@{Jump}}
+\index{Jump@{Jump}!Character@{Character}}
+\doxysubsubsection{\texorpdfstring{Jump()}{Jump()}}
+{\footnotesize\ttfamily \label{class_character_a7622bdde334c8d37358218e64dd6850a} 
+void Character\+::\+Jump (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_character_a1180964c284e7c7d12b1afed321669b2}\index{Character@{Character}!Move@{Move}}
+\index{Move@{Move}!Character@{Character}}
+\doxysubsubsection{\texorpdfstring{Move()}{Move()}}
+{\footnotesize\ttfamily \label{class_character_a1180964c284e7c7d12b1afed321669b2} 
+void Character\+::\+Move (\begin{DoxyParamCaption}\item[{float}]{elapsed\+Sec}{, }\item[{const \mbox{\hyperlink{struct_vector2f}{Vector2f}} \&}]{direction}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_character_aab81f214093de3f3c3fc33b3ef6c5051}\index{Character@{Character}!ReleaseClimb@{ReleaseClimb}}
+\index{ReleaseClimb@{ReleaseClimb}!Character@{Character}}
+\doxysubsubsection{\texorpdfstring{ReleaseClimb()}{ReleaseClimb()}}
+{\footnotesize\ttfamily \label{class_character_aab81f214093de3f3c3fc33b3ef6c5051} 
+void Character\+::\+Release\+Climb (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_character_ad86bc482bf4f17bff08a76d3ff54749e}\index{Character@{Character}!ResetDash@{ResetDash}}
+\index{ResetDash@{ResetDash}!Character@{Character}}
+\doxysubsubsection{\texorpdfstring{ResetDash()}{ResetDash()}}
+{\footnotesize\ttfamily \label{class_character_ad86bc482bf4f17bff08a76d3ff54749e} 
+void Character\+::\+Reset\+Dash (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_character_ad86bc482bf4f17bff08a76d3ff54749e_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_character_ac6ad2e65a047083d437bbe36c42972ca}\index{Character@{Character}!SetDeadCount@{SetDeadCount}}
+\index{SetDeadCount@{SetDeadCount}!Character@{Character}}
+\doxysubsubsection{\texorpdfstring{SetDeadCount()}{SetDeadCount()}}
+{\footnotesize\ttfamily \label{class_character_ac6ad2e65a047083d437bbe36c42972ca} 
+void Character\+::\+Set\+Dead\+Count (\begin{DoxyParamCaption}\item[{int}]{dead\+Count}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_character_a5ae2f15014c73b60487f587631a924a4}\index{Character@{Character}!SetPosition@{SetPosition}}
+\index{SetPosition@{SetPosition}!Character@{Character}}
+\doxysubsubsection{\texorpdfstring{SetPosition()}{SetPosition()}}
+{\footnotesize\ttfamily \label{class_character_a5ae2f15014c73b60487f587631a924a4} 
+void Character\+::\+Set\+Position (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_vector2f}{Vector2f}} \&}]{location}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_character_ad251a2e58a761708dfc8a19a7c8f4074}\index{Character@{Character}!SetRespawnPoint@{SetRespawnPoint}}
+\index{SetRespawnPoint@{SetRespawnPoint}!Character@{Character}}
+\doxysubsubsection{\texorpdfstring{SetRespawnPoint()}{SetRespawnPoint()}}
+{\footnotesize\ttfamily \label{class_character_ad251a2e58a761708dfc8a19a7c8f4074} 
+void Character\+::\+Set\+Respawn\+Point (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_vector2f}{Vector2f}} \&}]{location}{}\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_character_ad251a2e58a761708dfc8a19a7c8f4074_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_character_a99d70b0a46f7d3086157ff388ab497ba}\index{Character@{Character}!Update@{Update}}
+\index{Update@{Update}!Character@{Character}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_character_a99d70b0a46f7d3086157ff388ab497ba} 
+void Character\+::\+Update (\begin{DoxyParamCaption}\item[{float}]{elapsed\+Sec}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_game_object_a8e2a7d733be04515a3a8fd12d4182648}{Game\+Object}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=176pt]{class_character_a99d70b0a46f7d3086157ff388ab497ba_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=176pt]{class_character_a99d70b0a46f7d3086157ff388ab497ba_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_character_a0fbbde82ed8335a9c942fc939cdc6020}\index{Character@{Character}!Update@{Update}}
+\index{Update@{Update}!Character@{Character}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_character_a0fbbde82ed8335a9c942fc939cdc6020} 
+void Character\+::\+Update (\begin{DoxyParamCaption}\item[{float}]{elapsed\+Sec}{, }\item[{const std\+::vector$<$ std\+::vector$<$ \mbox{\hyperlink{struct_vector2f}{Vector2f}} $>$ $>$ \&}]{world\+Vertex\+Table}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_character_acc84d340218561166bfb16592c5c23b4}\index{Character@{Character}!Walljump@{Walljump}}
+\index{Walljump@{Walljump}!Character@{Character}}
+\doxysubsubsection{\texorpdfstring{Walljump()}{Walljump()}}
+{\footnotesize\ttfamily \label{class_character_acc84d340218561166bfb16592c5c23b4} 
+void Character\+::\+Walljump (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_vector2f}{Vector2f}} \&}]{face\+Direction}{}\end{DoxyParamCaption})}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Celeste/\mbox{\hyperlink{_character_8h}{Character.\+h}}\item 
+Celeste/\mbox{\hyperlink{_character_8cpp}{Character.\+cpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,309 @@
+\doxysection{Game\+Object Class Reference}
+\hypertarget{class_game_object}{}\label{class_game_object}\index{GameObject@{GameObject}}
+
+
+{\ttfamily \#include $<$Game\+Object.\+h$>$}
+
+
+
+Inheritance diagram for Game\+Object\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=260pt]{class_game_object__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Game\+Object\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=200pt]{class_game_object__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_game_object_a3e9a5668734f19ec906d3f7504766440}{Game\+Object}} (const \mbox{\hyperlink{struct_transform}{Transform}} \&t)
+\item 
+\mbox{\hyperlink{class_game_object_a1082b8c7009867cbe93b8e286c615445}{Game\+Object}} (const \mbox{\hyperlink{struct_vector2f}{Vector2f}} \&pos, float rotation, const \mbox{\hyperlink{struct_vector2f}{Vector2f}} \&scale)
+\item 
+\mbox{\hyperlink{class_game_object_adec58543d6788c6d6f9995cec8db8677}{Game\+Object}} (const \mbox{\hyperlink{struct_vector2f}{Vector2f}} \&pos, float rotation=0.f, float scale=1.f)
+\item 
+\mbox{\hyperlink{class_game_object_a5812fb39eeeded453c04aab7c32dfc94}{Game\+Object}} (const \mbox{\hyperlink{class_game_object}{Game\+Object}} \&other)=default
+\item 
+\mbox{\hyperlink{class_game_object}{Game\+Object}} \& \mbox{\hyperlink{class_game_object_a009590d8feb5bbcb63363cd0acd5ef8c}{operator=}} (const \mbox{\hyperlink{class_game_object}{Game\+Object}} \&other)=default
+\item 
+\mbox{\hyperlink{class_game_object_a1ea3c05884054770101bb74b23ac38f5}{Game\+Object}} (\mbox{\hyperlink{class_game_object}{Game\+Object}} \&\&other) noexcept=default
+\item 
+\mbox{\hyperlink{class_game_object}{Game\+Object}} \& \mbox{\hyperlink{class_game_object_a142ed3d978707c08b2ff348753a11bcb}{operator=}} (\mbox{\hyperlink{class_game_object}{Game\+Object}} \&\&other) noexcept=default
+\item 
+virtual \mbox{\hyperlink{class_game_object_aaea6b7e6220bbcb81311a24b07abddae}{\texorpdfstring{$\sim$}{\string~}\+Game\+Object}} () noexcept=default
+\item 
+\mbox{\hyperlink{struct_transform}{Transform}} \mbox{\hyperlink{class_game_object_af379d997393035dd50549cc13fa0e807}{Get\+Transform}} () const noexcept
+\item 
+float \mbox{\hyperlink{class_game_object_a3c1f2f4d5a1e04e69f3dc22d4c573b35}{Get\+Rotation}} () const noexcept
+\item 
+\mbox{\hyperlink{struct_vector2f}{Vector2f}} \mbox{\hyperlink{class_game_object_ac3bd47953a5614e49e3739955fb5d669}{Get\+Position}} () const noexcept
+\item 
+\mbox{\hyperlink{struct_vector2f}{Vector2f}} \mbox{\hyperlink{class_game_object_af9f7c9015a36e47eaa60e2968e6b7279}{Get\+Scale}} () const noexcept
+\item 
+virtual void \mbox{\hyperlink{class_game_object_a8e2a7d733be04515a3a8fd12d4182648}{Update}} (float elapsed\+Sec)=0
+\item 
+virtual void \mbox{\hyperlink{class_game_object_a45171beb4d4ac8158a754fe41e735129}{Draw}} () const =0
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_transform}{Transform}} \mbox{\hyperlink{class_game_object_a0eb7f41b5cd0a1c074a378e86a443696}{m\+\_\+\+Transformation}}
+\end{DoxyCompactItemize}
+
+
+\label{doc-constructors}
+\Hypertarget{class_game_object_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_game_object_a3e9a5668734f19ec906d3f7504766440}\index{GameObject@{GameObject}!GameObject@{GameObject}}
+\index{GameObject@{GameObject}!GameObject@{GameObject}}
+\doxysubsubsection{\texorpdfstring{GameObject()}{GameObject()}\hspace{0.1cm}{\footnotesize\ttfamily [1/5]}}
+{\footnotesize\ttfamily \label{class_game_object_a3e9a5668734f19ec906d3f7504766440} 
+Game\+Object\+::\+Game\+Object (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_transform}{Transform}} \&}]{t}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_game_object_a3e9a5668734f19ec906d3f7504766440_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_game_object_a1082b8c7009867cbe93b8e286c615445}\index{GameObject@{GameObject}!GameObject@{GameObject}}
+\index{GameObject@{GameObject}!GameObject@{GameObject}}
+\doxysubsubsection{\texorpdfstring{GameObject()}{GameObject()}\hspace{0.1cm}{\footnotesize\ttfamily [2/5]}}
+{\footnotesize\ttfamily \label{class_game_object_a1082b8c7009867cbe93b8e286c615445} 
+Game\+Object\+::\+Game\+Object (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_vector2f}{Vector2f}} \&}]{pos}{, }\item[{float}]{rotation}{, }\item[{const \mbox{\hyperlink{struct_vector2f}{Vector2f}} \&}]{scale}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_game_object_a1082b8c7009867cbe93b8e286c615445_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_game_object_adec58543d6788c6d6f9995cec8db8677}\index{GameObject@{GameObject}!GameObject@{GameObject}}
+\index{GameObject@{GameObject}!GameObject@{GameObject}}
+\doxysubsubsection{\texorpdfstring{GameObject()}{GameObject()}\hspace{0.1cm}{\footnotesize\ttfamily [3/5]}}
+{\footnotesize\ttfamily \label{class_game_object_adec58543d6788c6d6f9995cec8db8677} 
+Game\+Object\+::\+Game\+Object (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_vector2f}{Vector2f}} \&}]{pos}{, }\item[{float}]{rotation}{ = {\ttfamily 0.f}, }\item[{float}]{scale}{ = {\ttfamily 1.f}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_game_object_adec58543d6788c6d6f9995cec8db8677_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_game_object_a5812fb39eeeded453c04aab7c32dfc94}\index{GameObject@{GameObject}!GameObject@{GameObject}}
+\index{GameObject@{GameObject}!GameObject@{GameObject}}
+\doxysubsubsection{\texorpdfstring{GameObject()}{GameObject()}\hspace{0.1cm}{\footnotesize\ttfamily [4/5]}}
+{\footnotesize\ttfamily \label{class_game_object_a5812fb39eeeded453c04aab7c32dfc94} 
+Game\+Object\+::\+Game\+Object (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_game_object}{Game\+Object}} \&}]{other}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_game_object_a5812fb39eeeded453c04aab7c32dfc94_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_game_object_a1ea3c05884054770101bb74b23ac38f5}\index{GameObject@{GameObject}!GameObject@{GameObject}}
+\index{GameObject@{GameObject}!GameObject@{GameObject}}
+\doxysubsubsection{\texorpdfstring{GameObject()}{GameObject()}\hspace{0.1cm}{\footnotesize\ttfamily [5/5]}}
+{\footnotesize\ttfamily \label{class_game_object_a1ea3c05884054770101bb74b23ac38f5} 
+Game\+Object\+::\+Game\+Object (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_game_object}{Game\+Object}} \&\&}]{other}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}, {\ttfamily [noexcept]}}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_game_object_a1ea3c05884054770101bb74b23ac38f5_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_game_object_aaea6b7e6220bbcb81311a24b07abddae}\index{GameObject@{GameObject}!````~GameObject@{\texorpdfstring{$\sim$}{\string~}GameObject}}
+\index{````~GameObject@{\texorpdfstring{$\sim$}{\string~}GameObject}!GameObject@{GameObject}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}GameObject()}{\string~GameObject()}}
+{\footnotesize\ttfamily \label{class_game_object_aaea6b7e6220bbcb81311a24b07abddae} 
+virtual Game\+Object\+::\texorpdfstring{$\sim$}{\string~}\+Game\+Object (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [default]}, {\ttfamily [noexcept]}}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_game_object_aaea6b7e6220bbcb81311a24b07abddae_cgraph}
+\end{center}
+\end{figure}
+
+
+\label{doc-func-members}
+\Hypertarget{class_game_object_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_game_object_a45171beb4d4ac8158a754fe41e735129}\index{GameObject@{GameObject}!Draw@{Draw}}
+\index{Draw@{Draw}!GameObject@{GameObject}}
+\doxysubsubsection{\texorpdfstring{Draw()}{Draw()}}
+{\footnotesize\ttfamily \label{class_game_object_a45171beb4d4ac8158a754fe41e735129} 
+virtual void Game\+Object\+::\+Draw (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{class_character_aaebd94374341315365dfae0e607baac5}{Character}}, and \mbox{\hyperlink{class_snow_flake_manager_ac970433acd611cefd4db963e0b2c2fe6}{Snow\+Flake\+Manager}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=180pt]{class_game_object_a45171beb4d4ac8158a754fe41e735129_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=180pt]{class_game_object_a45171beb4d4ac8158a754fe41e735129_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_game_object_ac3bd47953a5614e49e3739955fb5d669}\index{GameObject@{GameObject}!GetPosition@{GetPosition}}
+\index{GetPosition@{GetPosition}!GameObject@{GameObject}}
+\doxysubsubsection{\texorpdfstring{GetPosition()}{GetPosition()}}
+{\footnotesize\ttfamily \label{class_game_object_ac3bd47953a5614e49e3739955fb5d669} 
+\mbox{\hyperlink{struct_vector2f}{Vector2f}} Game\+Object\+::\+Get\+Position (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_game_object_ac3bd47953a5614e49e3739955fb5d669_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_game_object_a3c1f2f4d5a1e04e69f3dc22d4c573b35}\index{GameObject@{GameObject}!GetRotation@{GetRotation}}
+\index{GetRotation@{GetRotation}!GameObject@{GameObject}}
+\doxysubsubsection{\texorpdfstring{GetRotation()}{GetRotation()}}
+{\footnotesize\ttfamily \label{class_game_object_a3c1f2f4d5a1e04e69f3dc22d4c573b35} 
+float Game\+Object\+::\+Get\+Rotation (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_game_object_a3c1f2f4d5a1e04e69f3dc22d4c573b35_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_game_object_af9f7c9015a36e47eaa60e2968e6b7279}\index{GameObject@{GameObject}!GetScale@{GetScale}}
+\index{GetScale@{GetScale}!GameObject@{GameObject}}
+\doxysubsubsection{\texorpdfstring{GetScale()}{GetScale()}}
+{\footnotesize\ttfamily \label{class_game_object_af9f7c9015a36e47eaa60e2968e6b7279} 
+\mbox{\hyperlink{struct_vector2f}{Vector2f}} Game\+Object\+::\+Get\+Scale (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_game_object_af9f7c9015a36e47eaa60e2968e6b7279_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_game_object_af379d997393035dd50549cc13fa0e807}\index{GameObject@{GameObject}!GetTransform@{GetTransform}}
+\index{GetTransform@{GetTransform}!GameObject@{GameObject}}
+\doxysubsubsection{\texorpdfstring{GetTransform()}{GetTransform()}}
+{\footnotesize\ttfamily \label{class_game_object_af379d997393035dd50549cc13fa0e807} 
+\mbox{\hyperlink{struct_transform}{Transform}} Game\+Object\+::\+Get\+Transform (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_game_object_af379d997393035dd50549cc13fa0e807_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_game_object_a009590d8feb5bbcb63363cd0acd5ef8c}\index{GameObject@{GameObject}!operator=@{operator=}}
+\index{operator=@{operator=}!GameObject@{GameObject}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_game_object_a009590d8feb5bbcb63363cd0acd5ef8c} 
+\mbox{\hyperlink{class_game_object}{Game\+Object}} \& Game\+Object\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_game_object}{Game\+Object}} \&}]{other}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_game_object_a009590d8feb5bbcb63363cd0acd5ef8c_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_game_object_a142ed3d978707c08b2ff348753a11bcb}\index{GameObject@{GameObject}!operator=@{operator=}}
+\index{operator=@{operator=}!GameObject@{GameObject}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_game_object_a142ed3d978707c08b2ff348753a11bcb} 
+\mbox{\hyperlink{class_game_object}{Game\+Object}} \& Game\+Object\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_game_object}{Game\+Object}} \&\&}]{other}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}, {\ttfamily [noexcept]}}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_game_object_a142ed3d978707c08b2ff348753a11bcb_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_game_object_a8e2a7d733be04515a3a8fd12d4182648}\index{GameObject@{GameObject}!Update@{Update}}
+\index{Update@{Update}!GameObject@{GameObject}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily \label{class_game_object_a8e2a7d733be04515a3a8fd12d4182648} 
+virtual void Game\+Object\+::\+Update (\begin{DoxyParamCaption}\item[{float}]{elapsed\+Sec}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{class_character_a99d70b0a46f7d3086157ff388ab497ba}{Character}}, and \mbox{\hyperlink{class_snow_flake_manager_a949dbbdbd107a06ef9926faa4201fcd6}{Snow\+Flake\+Manager}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=188pt]{class_game_object_a8e2a7d733be04515a3a8fd12d4182648_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=188pt]{class_game_object_a8e2a7d733be04515a3a8fd12d4182648_icgraph}
+\end{center}
+\end{figure}
+
+
+\label{doc-variable-members}
+\Hypertarget{class_game_object_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_game_object_a0eb7f41b5cd0a1c074a378e86a443696}\index{GameObject@{GameObject}!m\_Transformation@{m\_Transformation}}
+\index{m\_Transformation@{m\_Transformation}!GameObject@{GameObject}}
+\doxysubsubsection{\texorpdfstring{m\_Transformation}{m\_Transformation}}
+{\footnotesize\ttfamily \label{class_game_object_a0eb7f41b5cd0a1c074a378e86a443696} 
+\mbox{\hyperlink{struct_transform}{Transform}} Game\+Object\+::m\+\_\+\+Transformation\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Celeste/\mbox{\hyperlink{_game_object_8h}{Game\+Object.\+h}}\item 
+Celeste/\mbox{\hyperlink{_game_object_8cpp}{Game\+Object.\+cpp}}\end{DoxyCompactItemize}

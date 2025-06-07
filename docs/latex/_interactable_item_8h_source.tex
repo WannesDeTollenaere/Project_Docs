@@ -1,0 +1,44 @@
+\doxysection{Interactable\+Item.\+h}
+\hypertarget{_interactable_item_8h_source}{}\label{_interactable_item_8h_source}\index{Celeste/InteractableItem.h@{Celeste/InteractableItem.h}}
+\mbox{\hyperlink{_interactable_item_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_character_8h}{Character.h}}"{}}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{comment}{//\ PURE\ VIRTUAL}}
+\DoxyCodeLine{00005\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_interactable_item_a5e5b9c459514e29098aaff5e62761569}{InteractableItem}}}
+\DoxyCodeLine{00006\ \{}
+\DoxyCodeLine{00007\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00008\ \ \ \ \ \textcolor{comment}{//\ CONSTRUCTORS}}
+\DoxyCodeLine{00009\ \ \ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{class_interactable_item_a5e5b9c459514e29098aaff5e62761569}{InteractableItem}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{struct_rectf}{Rectf}}\&\ bounds);}
+\DoxyCodeLine{00010\ \ \ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{class_interactable_item_a5e5b9c459514e29098aaff5e62761569}{InteractableItem}}(\textcolor{keywordtype}{float}\ x,\ \textcolor{keywordtype}{float}\ y,\ \textcolor{keywordtype}{float}\ width,\ \textcolor{keywordtype}{float}\ height);}
+\DoxyCodeLine{00011\ \ \ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{class_interactable_item_a5e5b9c459514e29098aaff5e62761569}{InteractableItem}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{struct_vector2f}{Vector2f}}\&\ position,\ \textcolor{keywordtype}{float}\ width,\ \textcolor{keywordtype}{float}\ height);}
+\DoxyCodeLine{00012\ \ \ \ \ }
+\DoxyCodeLine{00013\ \ \ \ \ \textcolor{comment}{//\ FUNCTIONS}}
+\DoxyCodeLine{00014\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_interactable_item_af87c8f5b507f809c6eb2ea5b43d83c25}{Draw}}()\ \textcolor{keyword}{const}\ =\ 0;}
+\DoxyCodeLine{00015\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_interactable_item_a18b200bb2e7fc662ea1c2d1a11e483d2}{PlayerInteraction}}(\mbox{\hyperlink{class_character}{Character}}\&\ character,\ \textcolor{keywordtype}{float}\ elapsedSec)\ =\ 0;}
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00017\ \ \ \ \ \textcolor{comment}{//\ GETTERS}}
+\DoxyCodeLine{00018\ \ \ \ \ \mbox{\hyperlink{struct_rectf}{Rectf}}\ \mbox{\hyperlink{class_interactable_item_a446bdb0ccbff7de5951c0a3175bab008}{GetBounds}}()\ const\ noexcept;}
+\DoxyCodeLine{00019\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_interactable_item_aca9a06af6a60be1d7cc2e61ea6a18893}{HasCollisionBounds}}()\ const\ noexcept;}
+\DoxyCodeLine{00020\ \ \ \ \ virtual\ std::vector<\mbox{\hyperlink{struct_vector2f}{Vector2f}}>\ \mbox{\hyperlink{class_interactable_item_a4f4343a4b509fdf7253038f67238c5ae}{GetCollisionBounds}}()\ const\ noexcept;}
+\DoxyCodeLine{00021\ }
+\DoxyCodeLine{00022\ \ \ \ \ \textcolor{comment}{//\ COPY\ CONSTRUCTOR}}
+\DoxyCodeLine{00023\ \ \ \ \ \mbox{\hyperlink{class_interactable_item_a5e5b9c459514e29098aaff5e62761569}{InteractableItem}}(const\ \mbox{\hyperlink{class_interactable_item_a5e5b9c459514e29098aaff5e62761569}{InteractableItem}}\&\ other)\ =\ default;}
+\DoxyCodeLine{00024\ \ \ \ \ \mbox{\hyperlink{class_interactable_item_a5e5b9c459514e29098aaff5e62761569}{InteractableItem}}(\mbox{\hyperlink{class_interactable_item_a5e5b9c459514e29098aaff5e62761569}{InteractableItem}}\&\&\ other)\ noexcept\ =\ default;}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00026\ \ \ \ \ \textcolor{comment}{//\ ASSIGNMENT\ OPPERATOR}}
+\DoxyCodeLine{00027\ \ \ \ \ \mbox{\hyperlink{class_interactable_item_a5e5b9c459514e29098aaff5e62761569}{InteractableItem}}\&\ operator=(const\ \mbox{\hyperlink{class_interactable_item_a5e5b9c459514e29098aaff5e62761569}{InteractableItem}}\&\ other)\ =\ default;}
+\DoxyCodeLine{00028\ \ \ \ \ \mbox{\hyperlink{class_interactable_item_a5e5b9c459514e29098aaff5e62761569}{InteractableItem}}\&\ operator=(\mbox{\hyperlink{class_interactable_item_a5e5b9c459514e29098aaff5e62761569}{InteractableItem}}\&\&\ other)\ noexcept\ =\ default;}
+\DoxyCodeLine{00029\ }
+\DoxyCodeLine{00030\ \ \ \ \ \textcolor{comment}{//DESTRUCTOR}}
+\DoxyCodeLine{00031\ \ \ \ \ virtual\ \string~\mbox{\hyperlink{class_interactable_item_a5e5b9c459514e29098aaff5e62761569}{InteractableItem}}()\ noexcept\ =\ default;}
+\DoxyCodeLine{00032\ }
+\DoxyCodeLine{00033\ protected:}
+\DoxyCodeLine{00034\ \ \ \ \ \textcolor{comment}{//\ MEMBERS}}
+\DoxyCodeLine{00035\ \ \ \ \ \mbox{\hyperlink{struct_rectf}{Rectf}}\ \mbox{\hyperlink{class_interactable_item_afddb710738697e6bbbd141c154d50335}{m\_Bounds}};}
+\DoxyCodeLine{00036\ \ \ \ \ std::vector<\mbox{\hyperlink{struct_vector2f}{Vector2f}}>\ \mbox{\hyperlink{class_interactable_item_aa38359a5d89f9690f9b8cddc4de3458e}{m\_CollisionBounds}};}
+\DoxyCodeLine{00037\ \};}
+\DoxyCodeLine{00038\ }
+
+\end{DoxyCode}

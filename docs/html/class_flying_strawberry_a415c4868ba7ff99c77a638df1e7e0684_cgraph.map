@@ -1,0 +1,10 @@
+<map id="FlyingStrawberry::operator=" name="FlyingStrawberry::operator=">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,43,188,69"/>
+<area shape="rect" id="Node000002" href="$class_flying_strawberry.html#a3603795cd3a0c20e776eafe4138f59b4" title=" " alt="" coords="236,35,398,77"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="188,53,220,53,220,59,188,59"/>
+<area shape="rect" id="Node000003" href="$class_counted_item.html#a7a4f3ec5e121b459d51a818c9ed0e269" title=" " alt="" coords="446,5,606,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="398,39,432,33,433,38,399,44"/>
+<area shape="rect" id="Node000004" href="$class_strawberry.html#ab4dff64037a1d41eb23ef267eeda6510" title=" " alt="" coords="448,80,604,107"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="399,68,434,74,433,79,398,73"/>
+<area shape="poly" id="edge4_Node000004_Node000004" title=" " alt="" coords="491,81,484,71,489,62,503,55,526,53,551,56,564,62,562,67,550,61,526,59,504,61,492,65,490,71,495,78"/>
+</map>

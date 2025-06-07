@@ -1,0 +1,142 @@
+\doxysection{Spike Class Reference}
+\hypertarget{class_spike}{}\label{class_spike}\index{Spike@{Spike}}
+
+
+{\ttfamily \#include $<$Spike.\+h$>$}
+
+
+
+Inheritance diagram for Spike\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=167pt]{class_spike__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Spike\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=176pt]{class_spike__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_spike_abf50144f8f5f44e5ebf2c4fb77a55c3e}{Spike}} (float x, float y, float width, float height)
+\item 
+\mbox{\hyperlink{class_spike_ac71500ab002ac549b53af7c86cc51a7f}{Spike}} (const \mbox{\hyperlink{struct_rectf}{Rectf}} \&bounds)
+\item 
+void \mbox{\hyperlink{class_spike_a6ea9291299e83638d95081ab5b16a05c}{Draw}} () const override
+\item 
+void \mbox{\hyperlink{class_spike_a7c79520a23045ef568326c1cedc2eba9}{Player\+Interaction}} (\mbox{\hyperlink{class_character}{Character}} \&character, float elapsed\+Sec) override
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_interactable_item}{Interactable\+Item}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_interactable_item_a5e5b9c459514e29098aaff5e62761569}{Interactable\+Item}} (const \mbox{\hyperlink{struct_rectf}{Rectf}} \&bounds)
+\item 
+\mbox{\hyperlink{class_interactable_item_a6bdd4d54f5965b13c2e68617c7321eb7}{Interactable\+Item}} (float x, float y, float width, float height)
+\item 
+\mbox{\hyperlink{class_interactable_item_a5a6b7071c26aea54f770dcddea4d4673}{Interactable\+Item}} (const \mbox{\hyperlink{struct_vector2f}{Vector2f}} \&position, float width, float height)
+\item 
+\mbox{\hyperlink{struct_rectf}{Rectf}} \mbox{\hyperlink{class_interactable_item_a446bdb0ccbff7de5951c0a3175bab008}{Get\+Bounds}} () const noexcept
+\item 
+bool \mbox{\hyperlink{class_interactable_item_aca9a06af6a60be1d7cc2e61ea6a18893}{Has\+Collision\+Bounds}} () const noexcept
+\item 
+virtual std\+::vector$<$ \mbox{\hyperlink{struct_vector2f}{Vector2f}} $>$ \mbox{\hyperlink{class_interactable_item_a4f4343a4b509fdf7253038f67238c5ae}{Get\+Collision\+Bounds}} () const noexcept
+\item 
+\mbox{\hyperlink{class_interactable_item_a9124be31fe21f1cbe122579dde8f9252}{Interactable\+Item}} (const \mbox{\hyperlink{class_interactable_item}{Interactable\+Item}} \&other)=default
+\item 
+\mbox{\hyperlink{class_interactable_item_ae94edc84b2ceb14edb952a3edb676772}{Interactable\+Item}} (\mbox{\hyperlink{class_interactable_item}{Interactable\+Item}} \&\&other) noexcept=default
+\item 
+\mbox{\hyperlink{class_interactable_item}{Interactable\+Item}} \& \mbox{\hyperlink{class_interactable_item_a67139551064d009752d97e2e77ef865f}{operator=}} (const \mbox{\hyperlink{class_interactable_item}{Interactable\+Item}} \&other)=default
+\item 
+\mbox{\hyperlink{class_interactable_item}{Interactable\+Item}} \& \mbox{\hyperlink{class_interactable_item_a4d5baa6774ebb9137c08921d3c421d09}{operator=}} (\mbox{\hyperlink{class_interactable_item}{Interactable\+Item}} \&\&other) noexcept=default
+\item 
+virtual \mbox{\hyperlink{class_interactable_item_aa3d008d77d5f29c2673a991e24ed9301}{\texorpdfstring{$\sim$}{\string~}\+Interactable\+Item}} () noexcept=default
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_interactable_item}{Interactable\+Item}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_rectf}{Rectf}} \mbox{\hyperlink{class_interactable_item_afddb710738697e6bbbd141c154d50335}{m\+\_\+\+Bounds}}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{struct_vector2f}{Vector2f}} $>$ \mbox{\hyperlink{class_interactable_item_aa38359a5d89f9690f9b8cddc4de3458e}{m\+\_\+\+Collision\+Bounds}}
+\end{DoxyCompactItemize}
+
+
+\label{doc-constructors}
+\Hypertarget{class_spike_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_spike_abf50144f8f5f44e5ebf2c4fb77a55c3e}\index{Spike@{Spike}!Spike@{Spike}}
+\index{Spike@{Spike}!Spike@{Spike}}
+\doxysubsubsection{\texorpdfstring{Spike()}{Spike()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_spike_abf50144f8f5f44e5ebf2c4fb77a55c3e} 
+Spike\+::\+Spike (\begin{DoxyParamCaption}\item[{float}]{x}{, }\item[{float}]{y}{, }\item[{float}]{width}{, }\item[{float}]{height}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_spike_abf50144f8f5f44e5ebf2c4fb77a55c3e_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_spike_ac71500ab002ac549b53af7c86cc51a7f}\index{Spike@{Spike}!Spike@{Spike}}
+\index{Spike@{Spike}!Spike@{Spike}}
+\doxysubsubsection{\texorpdfstring{Spike()}{Spike()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_spike_ac71500ab002ac549b53af7c86cc51a7f} 
+Spike\+::\+Spike (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_rectf}{Rectf}} \&}]{bounds}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_spike_ac71500ab002ac549b53af7c86cc51a7f_cgraph}
+\end{center}
+\end{figure}
+
+
+\label{doc-func-members}
+\Hypertarget{class_spike_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_spike_a6ea9291299e83638d95081ab5b16a05c}\index{Spike@{Spike}!Draw@{Draw}}
+\index{Draw@{Draw}!Spike@{Spike}}
+\doxysubsubsection{\texorpdfstring{Draw()}{Draw()}}
+{\footnotesize\ttfamily \label{class_spike_a6ea9291299e83638d95081ab5b16a05c} 
+void Spike\+::\+Draw (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_interactable_item_af87c8f5b507f809c6eb2ea5b43d83c25}{Interactable\+Item}}.
+
+\Hypertarget{class_spike_a7c79520a23045ef568326c1cedc2eba9}\index{Spike@{Spike}!PlayerInteraction@{PlayerInteraction}}
+\index{PlayerInteraction@{PlayerInteraction}!Spike@{Spike}}
+\doxysubsubsection{\texorpdfstring{PlayerInteraction()}{PlayerInteraction()}}
+{\footnotesize\ttfamily \label{class_spike_a7c79520a23045ef568326c1cedc2eba9} 
+void Spike\+::\+Player\+Interaction (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_character}{Character}} \&}]{character}{, }\item[{float}]{elapsed\+Sec}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_interactable_item_a18b200bb2e7fc662ea1c2d1a11e483d2}{Interactable\+Item}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_spike_a7c79520a23045ef568326c1cedc2eba9_cgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Celeste/\mbox{\hyperlink{_spike_8h}{Spike.\+h}}\item 
+Celeste/\mbox{\hyperlink{_spike_8cpp}{Spike.\+cpp}}\end{DoxyCompactItemize}

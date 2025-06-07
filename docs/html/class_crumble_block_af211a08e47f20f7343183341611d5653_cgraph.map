@@ -1,0 +1,20 @@
+<map id="CrumbleBlock::PlayerInteraction" name="CrumbleBlock::PlayerInteraction">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,31,215,57"/>
+<area shape="rect" id="Node000002" href="$class_character.html#a0b790800d6ff90eebee18bce25177fce" title=" " alt="" coords="263,5,410,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="215,30,247,26,248,31,216,35"/>
+<area shape="rect" id="Node000003" href="$namespaceutils.html#a11a0eb68e467a22aed74f507057c39ed" title=" " alt="" coords="270,56,403,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="216,53,255,58,254,63,215,58"/>
+<area shape="rect" id="Node000004" href="$namespaceutils.html#a760075559e6ab59c1daec763fab2b488" title=" " alt="" coords="458,56,641,83"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="403,67,442,67,442,72,403,72"/>
+<area shape="rect" id="Node000005" href="$struct_vector2f.html#af8ceb9310d7065eb485e47b072a5b143" title=" " alt="" coords="689,5,833,32"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="608,53,687,34,688,39,609,58"/>
+<area shape="rect" id="Node000007" href="$struct_vector2f.html#acedb20d25ccc3009546e120eda010bf5" title=" " alt="" coords="885,93,1002,120"/>
+<area shape="poly" id="edge7_Node000004_Node000007" title=" " alt="" coords="618,81,690,92,783,100,870,103,869,108,783,105,689,97,617,86"/>
+<area shape="rect" id="Node000008" href="$struct_vector2f.html#aba5dd756c385551a19d36b57d8cbf629" title=" " alt="" coords="689,56,833,83"/>
+<area shape="poly" id="edge8_Node000004_Node000008" title=" " alt="" coords="642,67,674,67,674,72,642,72"/>
+<area shape="rect" id="Node000006" href="$struct_vector2f.html#a3db9a868c58bc809e5e09a88d65a77ec" title=" " alt="" coords="881,31,1006,57"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="833,26,866,31,865,36,832,31"/>
+<area shape="poly" id="edge6_Node000006_Node000006" title=" " alt="" coords="912,32,907,22,910,12,923,6,943,4,965,7,977,13,974,18,964,12,943,9,924,11,914,16,912,21,917,29"/>
+<area shape="poly" id="edge10_Node000008_Node000006" title=" " alt="" coords="832,57,865,52,866,57,833,62"/>
+<area shape="poly" id="edge9_Node000008_Node000007" title=" " alt="" coords="830,81,871,89,870,94,829,86"/>
+</map>

@@ -1,0 +1,56 @@
+\doxysection{Game.\+h}
+\hypertarget{_game_8h_source}{}\label{_game_8h_source}\index{Celeste/Game.h@{Celeste/Game.h}}
+\mbox{\hyperlink{_game_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_base_game_8h}{BaseGame.h}}"{}}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_character_8h}{Character.h}}"{}}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_snow_flake_manager_8h}{SnowFlakeManager.h}}"{}}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_camera_8h}{Camera.h}}"{}}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_level_manager_8h}{LevelManager.h}}"{}}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_pause_menu_8h}{PauseMenu.h}}"{}}}
+\DoxyCodeLine{00008\ \textcolor{comment}{//TODO:\ Remove}}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00010\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_game_ab9772b8187c0f78289a13d1c6929873c}{Game}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_base_game_a76b8f6a3eac263f5007d9851c54a6e28}{BaseGame}}}
+\DoxyCodeLine{00011\ \{}
+\DoxyCodeLine{00012\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00013\ \ \ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{class_game_ab9772b8187c0f78289a13d1c6929873c}{Game}}(\ \textcolor{keyword}{const}\ \mbox{\hyperlink{struct_window}{Window}}\&\ window\ );}
+\DoxyCodeLine{00014\ \ \ \ \ \mbox{\hyperlink{class_game_a84389b59f971371e667202ae2dd33bc6}{Game}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_game_ab9772b8187c0f78289a13d1c6929873c}{Game}}\&\ other)\ =\ \textcolor{keyword}{delete};}
+\DoxyCodeLine{00015\ \ \ \ \ \mbox{\hyperlink{class_game_ab9772b8187c0f78289a13d1c6929873c}{Game}}\&\ \mbox{\hyperlink{class_game_a43ef27a6649924079dda61d40bbbcad3}{operator=}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_game_ab9772b8187c0f78289a13d1c6929873c}{Game}}\&\ other)\ =\ \textcolor{keyword}{delete};}
+\DoxyCodeLine{00016\ \ \ \ \ \mbox{\hyperlink{class_game_af6029629f9ebfc665b355daa0ba5702b}{Game}}(\ \mbox{\hyperlink{class_game_ab9772b8187c0f78289a13d1c6929873c}{Game}}\&\&\ other)\ =\ \textcolor{keyword}{delete};}
+\DoxyCodeLine{00017\ \ \ \ \ \mbox{\hyperlink{class_game_ab9772b8187c0f78289a13d1c6929873c}{Game}}\&\ \mbox{\hyperlink{class_game_a3b460473049099c7d2020e82059f24e1}{operator=}}(\mbox{\hyperlink{class_game_ab9772b8187c0f78289a13d1c6929873c}{Game}}\&\&\ other)\ =\ \textcolor{keyword}{delete};}
+\DoxyCodeLine{00018\ \ \ \ \ \textcolor{comment}{//\ http://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines\#Rh-\/override}}
+\DoxyCodeLine{00019\ \ \ \ \ \mbox{\hyperlink{class_game_a125ebc68188418cfb36141db7b89fd3d}{\string~Game}}()\ noexcept;}
+\DoxyCodeLine{00020\ }
+\DoxyCodeLine{00021\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_game_a91d3d1e8e954a25bc32d60bab0cb1514}{Update}}(\ \textcolor{keywordtype}{float}\ elapsedSec\ )\ override;}
+\DoxyCodeLine{00022\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_game_a7100350e3197ebe04536c3e7954228d6}{Draw}}(\ )\ const\ override;}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00024\ \ \ \ \ \textcolor{comment}{//\ Event\ handling}}
+\DoxyCodeLine{00025\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_game_a8f7f1556bde5fa05c4f8711366596a0a}{ProcessKeyDownEvent}}(\ const\ SDL\_KeyboardEvent\&\ e\ )\ override;}
+\DoxyCodeLine{00026\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_game_a56af5c3e1d8d8165a74e425c35a5d025}{ProcessKeyUpEvent}}(\ const\ SDL\_KeyboardEvent\&\ e\ )\ override;}
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_game_a2754d48c970dbf0cdf90d8999adc61b6}{ProcessMouseMotionEvent}}(\ const\ SDL\_MouseMotionEvent\&\ e\ )\ override;}
+\DoxyCodeLine{00028\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_game_a76415edf29756d3ed6b11a1db6741935}{ProcessMouseDownEvent}}(\ const\ SDL\_MouseButtonEvent\&\ e\ )\ override;}
+\DoxyCodeLine{00029\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_game_a10b44b91ebf7fafab02c0ac86489b9f9}{ProcessMouseUpEvent}}(\ const\ SDL\_MouseButtonEvent\&\ e\ )\ override;}
+\DoxyCodeLine{00030\ }
+\DoxyCodeLine{00031\ private:}
+\DoxyCodeLine{00032\ \ \ \ \ enum\ class\ State\ \{}
+\DoxyCodeLine{00033\ \ \ \ \ \ \ \ \ playing,}
+\DoxyCodeLine{00034\ \ \ \ \ \ \ \ \ pause}
+\DoxyCodeLine{00035\ \ \ \ \ \};}
+\DoxyCodeLine{00036\ }
+\DoxyCodeLine{00037\ \ \ \ \ \textcolor{comment}{//\ FUNCTIONS}}
+\DoxyCodeLine{00038\ \ \ \ \ \textcolor{keywordtype}{void}\ Initialize();}
+\DoxyCodeLine{00039\ \ \ \ \ \textcolor{keywordtype}{void}\ Cleanup(\ );}
+\DoxyCodeLine{00040\ \ \ \ \ \textcolor{keywordtype}{void}\ ClearBackground(\ )\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00041\ }
+\DoxyCodeLine{00042\ \ \ \ \ \textcolor{comment}{//\ MEMBERS}}
+\DoxyCodeLine{00043\ \ \ \ \ \mbox{\hyperlink{class_level_manager}{LevelManager}}\ m\_Levels;}
+\DoxyCodeLine{00044\ \ \ \ \ \mbox{\hyperlink{class_character}{Character}}\ m\_Character;}
+\DoxyCodeLine{00045\ \ \ \ \ \mbox{\hyperlink{class_snow_flake_manager}{SnowFlakeManager}}\ m\_Snowflakes;}
+\DoxyCodeLine{00046\ \ \ \ \ \mbox{\hyperlink{class_camera}{Camera}}\ m\_Camera;}
+\DoxyCodeLine{00047\ \ \ \ \ \mbox{\hyperlink{struct_vector2f}{Vector2f}}\ m\_faceDirection\{\ 0.f,\ 0.f\ \};}
+\DoxyCodeLine{00048\ \ \ \ \ State\ m\_GameState;}
+\DoxyCodeLine{00049\ \ \ \ \ PauseMenu\ m\_PauseMenu;}
+\DoxyCodeLine{00050\ \};}
+
+\end{DoxyCode}

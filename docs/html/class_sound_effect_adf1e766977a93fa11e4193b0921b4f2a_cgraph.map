@@ -1,0 +1,7 @@
+<map id="SoundEffect::Play" name="SoundEffect::Play">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,132,32"/>
+<area shape="rect" id="Node000002" href="$class_sound_effect.html#a53dee3a0c954a9ad95dbc02e010ee111" title=" " alt="" coords="180,5,307,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="132,16,164,16,164,21,132,21"/>
+<area shape="rect" id="Node000003" href="$class_sound_effect.html#aa21809e43079964bb5588a322f45ff45" title=" " alt="" coords="355,5,509,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="307,16,339,16,339,21,307,21"/>
+</map>

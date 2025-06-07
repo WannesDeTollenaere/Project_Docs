@@ -1,0 +1,11 @@
+<map id="CrumbleBlock::CrumbleBlock" name="CrumbleBlock::CrumbleBlock">
+<area shape="rect" id="Node000001" title=" " alt="" coords="247,81,440,108"/>
+<area shape="rect" id="Node000002" href="$class_crumble_block.html#a20b24ad8d5184de47efe80f01ba15c86" title=" " alt="" coords="5,5,199,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="290,78,198,47,158,35,160,30,199,41,292,73"/>
+<area shape="rect" id="Node000003" href="$class_crumble_block.html#a0d59c8868da1bed798c4a4b9ac52c111" title=" " alt="" coords="5,56,199,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="231,86,199,82,199,77,231,80"/>
+<area shape="rect" id="Node000004" href="$class_crumble_block.html#ae2010e4176ee45a228c18c9911b800cd" title=" " alt="" coords="19,107,185,133"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="231,109,186,114,185,109,231,104"/>
+<area shape="rect" id="Node000005" href="$class_crumble_block.html#ab7d71c39b2f8baf75ec72bddc2f45b41" title=" " alt="" coords="19,157,185,184"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="292,116,199,148,160,159,158,154,198,143,290,111"/>
+</map>

@@ -1,0 +1,188 @@
+\doxysection{Sound\+Stream Class Reference}
+\hypertarget{class_sound_stream}{}\label{class_sound_stream}\index{SoundStream@{SoundStream}}
+
+
+{\ttfamily \#include $<$Sound\+Stream.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_sound_stream_ad0d38073871e144726a9d4d174c63c9b}{Sound\+Stream}} (const std\+::string \&path)
+\item 
+\mbox{\hyperlink{class_sound_stream_ac3f6f7413d56d4976c793bb77406570f}{\texorpdfstring{$\sim$}{\string~}\+Sound\+Stream}} ()
+\item 
+\mbox{\hyperlink{class_sound_stream_a966f2536fc64b1ca015c985c3f546984}{Sound\+Stream}} (const \mbox{\hyperlink{class_sound_stream}{Sound\+Stream}} \&other)=delete
+\item 
+\mbox{\hyperlink{class_sound_stream}{Sound\+Stream}} \& \mbox{\hyperlink{class_sound_stream_abd3ae4811decd035fb5a7651c315ac9b}{operator=}} (const \mbox{\hyperlink{class_sound_stream}{Sound\+Stream}} \&rhs)=delete
+\item 
+\mbox{\hyperlink{class_sound_stream_af98d37be458634f8dc69e3f8e8936cd3}{Sound\+Stream}} (\mbox{\hyperlink{class_sound_stream}{Sound\+Stream}} \&\&other)=delete
+\item 
+\mbox{\hyperlink{class_sound_stream}{Sound\+Stream}} \& \mbox{\hyperlink{class_sound_stream_a537cd2129fd3cc7df09f625145c3465a}{operator=}} (\mbox{\hyperlink{class_sound_stream}{Sound\+Stream}} \&\&other)=delete
+\item 
+bool \mbox{\hyperlink{class_sound_stream_a02ddea157bda90e4b401c3263bf8ff02}{Is\+Loaded}} () const
+\item 
+bool \mbox{\hyperlink{class_sound_stream_a944f43b36234dbb014aa3c1f358095ad}{Play}} (bool repeat) const
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{class_sound_stream_ab68727164c3114164de66f4964a3b462}{Stop}} ()
+\item 
+static void \mbox{\hyperlink{class_sound_stream_a885a0589beb4994fd8255a54f43bb0be}{Pause}} ()
+\item 
+static void \mbox{\hyperlink{class_sound_stream_a540d33ffc9a23adaa82f472ef4f43f30}{Resume}} ()
+\item 
+static void \mbox{\hyperlink{class_sound_stream_a44ff03f08368c7e2954f59156df30105}{Set\+Volume}} (int value)
+\item 
+static int \mbox{\hyperlink{class_sound_stream_a9b29cc7d7e7963378068f02460c2aa2c}{Get\+Volume}} ()
+\item 
+static bool \mbox{\hyperlink{class_sound_stream_aeb843bbcd1dde8e95eabeab0fb96d94e}{Is\+Playing}} ()
+\end{DoxyCompactItemize}
+
+
+\label{doc-constructors}
+\Hypertarget{class_sound_stream_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_sound_stream_ad0d38073871e144726a9d4d174c63c9b}\index{SoundStream@{SoundStream}!SoundStream@{SoundStream}}
+\index{SoundStream@{SoundStream}!SoundStream@{SoundStream}}
+\doxysubsubsection{\texorpdfstring{SoundStream()}{SoundStream()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \label{class_sound_stream_ad0d38073871e144726a9d4d174c63c9b} 
+Sound\+Stream\+::\+Sound\+Stream (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{path}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sound_stream_ad0d38073871e144726a9d4d174c63c9b_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_sound_stream_ac3f6f7413d56d4976c793bb77406570f}\index{SoundStream@{SoundStream}!````~SoundStream@{\texorpdfstring{$\sim$}{\string~}SoundStream}}
+\index{````~SoundStream@{\texorpdfstring{$\sim$}{\string~}SoundStream}!SoundStream@{SoundStream}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}SoundStream()}{\string~SoundStream()}}
+{\footnotesize\ttfamily \label{class_sound_stream_ac3f6f7413d56d4976c793bb77406570f} 
+Sound\+Stream\+::\texorpdfstring{$\sim$}{\string~}\+Sound\+Stream (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_sound_stream_a966f2536fc64b1ca015c985c3f546984}\index{SoundStream@{SoundStream}!SoundStream@{SoundStream}}
+\index{SoundStream@{SoundStream}!SoundStream@{SoundStream}}
+\doxysubsubsection{\texorpdfstring{SoundStream()}{SoundStream()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \label{class_sound_stream_a966f2536fc64b1ca015c985c3f546984} 
+Sound\+Stream\+::\+Sound\+Stream (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_sound_stream}{Sound\+Stream}} \&}]{other}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sound_stream_a966f2536fc64b1ca015c985c3f546984_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_sound_stream_af98d37be458634f8dc69e3f8e8936cd3}\index{SoundStream@{SoundStream}!SoundStream@{SoundStream}}
+\index{SoundStream@{SoundStream}!SoundStream@{SoundStream}}
+\doxysubsubsection{\texorpdfstring{SoundStream()}{SoundStream()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily \label{class_sound_stream_af98d37be458634f8dc69e3f8e8936cd3} 
+Sound\+Stream\+::\+Sound\+Stream (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_sound_stream}{Sound\+Stream}} \&\&}]{other}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sound_stream_af98d37be458634f8dc69e3f8e8936cd3_cgraph}
+\end{center}
+\end{figure}
+
+
+\label{doc-func-members}
+\Hypertarget{class_sound_stream_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_sound_stream_a9b29cc7d7e7963378068f02460c2aa2c}\index{SoundStream@{SoundStream}!GetVolume@{GetVolume}}
+\index{GetVolume@{GetVolume}!SoundStream@{SoundStream}}
+\doxysubsubsection{\texorpdfstring{GetVolume()}{GetVolume()}}
+{\footnotesize\ttfamily \label{class_sound_stream_a9b29cc7d7e7963378068f02460c2aa2c} 
+int Sound\+Stream\+::\+Get\+Volume (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{class_sound_stream_a02ddea157bda90e4b401c3263bf8ff02}\index{SoundStream@{SoundStream}!IsLoaded@{IsLoaded}}
+\index{IsLoaded@{IsLoaded}!SoundStream@{SoundStream}}
+\doxysubsubsection{\texorpdfstring{IsLoaded()}{IsLoaded()}}
+{\footnotesize\ttfamily \label{class_sound_stream_a02ddea157bda90e4b401c3263bf8ff02} 
+bool Sound\+Stream\+::\+Is\+Loaded (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+\Hypertarget{class_sound_stream_aeb843bbcd1dde8e95eabeab0fb96d94e}\index{SoundStream@{SoundStream}!IsPlaying@{IsPlaying}}
+\index{IsPlaying@{IsPlaying}!SoundStream@{SoundStream}}
+\doxysubsubsection{\texorpdfstring{IsPlaying()}{IsPlaying()}}
+{\footnotesize\ttfamily \label{class_sound_stream_aeb843bbcd1dde8e95eabeab0fb96d94e} 
+bool Sound\+Stream\+::\+Is\+Playing (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{class_sound_stream_abd3ae4811decd035fb5a7651c315ac9b}\index{SoundStream@{SoundStream}!operator=@{operator=}}
+\index{operator=@{operator=}!SoundStream@{SoundStream}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_sound_stream_abd3ae4811decd035fb5a7651c315ac9b} 
+\mbox{\hyperlink{class_sound_stream}{Sound\+Stream}} \& Sound\+Stream\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_sound_stream}{Sound\+Stream}} \&}]{rhs}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sound_stream_abd3ae4811decd035fb5a7651c315ac9b_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_sound_stream_a537cd2129fd3cc7df09f625145c3465a}\index{SoundStream@{SoundStream}!operator=@{operator=}}
+\index{operator=@{operator=}!SoundStream@{SoundStream}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_sound_stream_a537cd2129fd3cc7df09f625145c3465a} 
+\mbox{\hyperlink{class_sound_stream}{Sound\+Stream}} \& Sound\+Stream\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_sound_stream}{Sound\+Stream}} \&\&}]{other}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sound_stream_a537cd2129fd3cc7df09f625145c3465a_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_sound_stream_a885a0589beb4994fd8255a54f43bb0be}\index{SoundStream@{SoundStream}!Pause@{Pause}}
+\index{Pause@{Pause}!SoundStream@{SoundStream}}
+\doxysubsubsection{\texorpdfstring{Pause()}{Pause()}}
+{\footnotesize\ttfamily \label{class_sound_stream_a885a0589beb4994fd8255a54f43bb0be} 
+void Sound\+Stream\+::\+Pause (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{class_sound_stream_a944f43b36234dbb014aa3c1f358095ad}\index{SoundStream@{SoundStream}!Play@{Play}}
+\index{Play@{Play}!SoundStream@{SoundStream}}
+\doxysubsubsection{\texorpdfstring{Play()}{Play()}}
+{\footnotesize\ttfamily \label{class_sound_stream_a944f43b36234dbb014aa3c1f358095ad} 
+bool Sound\+Stream\+::\+Play (\begin{DoxyParamCaption}\item[{bool}]{repeat}{}\end{DoxyParamCaption}) const}
+
+\Hypertarget{class_sound_stream_a540d33ffc9a23adaa82f472ef4f43f30}\index{SoundStream@{SoundStream}!Resume@{Resume}}
+\index{Resume@{Resume}!SoundStream@{SoundStream}}
+\doxysubsubsection{\texorpdfstring{Resume()}{Resume()}}
+{\footnotesize\ttfamily \label{class_sound_stream_a540d33ffc9a23adaa82f472ef4f43f30} 
+void Sound\+Stream\+::\+Resume (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{class_sound_stream_a44ff03f08368c7e2954f59156df30105}\index{SoundStream@{SoundStream}!SetVolume@{SetVolume}}
+\index{SetVolume@{SetVolume}!SoundStream@{SoundStream}}
+\doxysubsubsection{\texorpdfstring{SetVolume()}{SetVolume()}}
+{\footnotesize\ttfamily \label{class_sound_stream_a44ff03f08368c7e2954f59156df30105} 
+void Sound\+Stream\+::\+Set\+Volume (\begin{DoxyParamCaption}\item[{int}]{value}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sound_stream_a44ff03f08368c7e2954f59156df30105_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_sound_stream_ab68727164c3114164de66f4964a3b462}\index{SoundStream@{SoundStream}!Stop@{Stop}}
+\index{Stop@{Stop}!SoundStream@{SoundStream}}
+\doxysubsubsection{\texorpdfstring{Stop()}{Stop()}}
+{\footnotesize\ttfamily \label{class_sound_stream_ab68727164c3114164de66f4964a3b462} 
+void Sound\+Stream\+::\+Stop (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Engine/\mbox{\hyperlink{_sound_stream_8h}{Sound\+Stream.\+h}}\item 
+Engine/\mbox{\hyperlink{_sound_stream_8cpp}{Sound\+Stream.\+cpp}}\end{DoxyCompactItemize}

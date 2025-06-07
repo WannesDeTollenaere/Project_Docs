@@ -1,0 +1,166 @@
+\doxysection{Snow\+Flake\+Manager Class Reference}
+\hypertarget{class_snow_flake_manager}{}\label{class_snow_flake_manager}\index{SnowFlakeManager@{SnowFlakeManager}}
+
+
+{\ttfamily \#include $<$Snow\+Flake\+Manager.\+h$>$}
+
+
+
+Inheritance diagram for Snow\+Flake\+Manager\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=182pt]{class_snow_flake_manager__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Snow\+Flake\+Manager\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=216pt]{class_snow_flake_manager__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_snow_flake_manager_a36a3785dc83ac5a2c77cc94e3ca15fbc}{Snow\+Flake\+Manager}} (const \mbox{\hyperlink{struct_rectf}{Rectf}} \&window\+Bounds)
+\item 
+void \mbox{\hyperlink{class_snow_flake_manager_ac970433acd611cefd4db963e0b2c2fe6}{Draw}} () const override
+\item 
+void \mbox{\hyperlink{class_snow_flake_manager_a949dbbdbd107a06ef9926faa4201fcd6}{Update}} (float elapsed\+Sec) override
+\item 
+void \mbox{\hyperlink{class_snow_flake_manager_a0b7c3366d1f89094fd93031bff36fe00}{Move\+Canvas}} (const \mbox{\hyperlink{struct_rectf}{Rectf}} \&canvas)
+\item 
+void \mbox{\hyperlink{class_snow_flake_manager_a295be81d4aedc787a7a1f6aad01a1600}{Set\+Boundries}} (float width, float height)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_game_object}{Game\+Object}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_game_object_a3e9a5668734f19ec906d3f7504766440}{Game\+Object}} (const \mbox{\hyperlink{struct_transform}{Transform}} \&t)
+\item 
+\mbox{\hyperlink{class_game_object_a1082b8c7009867cbe93b8e286c615445}{Game\+Object}} (const \mbox{\hyperlink{struct_vector2f}{Vector2f}} \&pos, float rotation, const \mbox{\hyperlink{struct_vector2f}{Vector2f}} \&scale)
+\item 
+\mbox{\hyperlink{class_game_object_adec58543d6788c6d6f9995cec8db8677}{Game\+Object}} (const \mbox{\hyperlink{struct_vector2f}{Vector2f}} \&pos, float rotation=0.f, float scale=1.f)
+\item 
+\mbox{\hyperlink{class_game_object_a5812fb39eeeded453c04aab7c32dfc94}{Game\+Object}} (const \mbox{\hyperlink{class_game_object}{Game\+Object}} \&other)=default
+\item 
+\mbox{\hyperlink{class_game_object}{Game\+Object}} \& \mbox{\hyperlink{class_game_object_a009590d8feb5bbcb63363cd0acd5ef8c}{operator=}} (const \mbox{\hyperlink{class_game_object}{Game\+Object}} \&other)=default
+\item 
+\mbox{\hyperlink{class_game_object_a1ea3c05884054770101bb74b23ac38f5}{Game\+Object}} (\mbox{\hyperlink{class_game_object}{Game\+Object}} \&\&other) noexcept=default
+\item 
+\mbox{\hyperlink{class_game_object}{Game\+Object}} \& \mbox{\hyperlink{class_game_object_a142ed3d978707c08b2ff348753a11bcb}{operator=}} (\mbox{\hyperlink{class_game_object}{Game\+Object}} \&\&other) noexcept=default
+\item 
+virtual \mbox{\hyperlink{class_game_object_aaea6b7e6220bbcb81311a24b07abddae}{\texorpdfstring{$\sim$}{\string~}\+Game\+Object}} () noexcept=default
+\item 
+\mbox{\hyperlink{struct_transform}{Transform}} \mbox{\hyperlink{class_game_object_af379d997393035dd50549cc13fa0e807}{Get\+Transform}} () const noexcept
+\item 
+float \mbox{\hyperlink{class_game_object_a3c1f2f4d5a1e04e69f3dc22d4c573b35}{Get\+Rotation}} () const noexcept
+\item 
+\mbox{\hyperlink{struct_vector2f}{Vector2f}} \mbox{\hyperlink{class_game_object_ac3bd47953a5614e49e3739955fb5d669}{Get\+Position}} () const noexcept
+\item 
+\mbox{\hyperlink{struct_vector2f}{Vector2f}} \mbox{\hyperlink{class_game_object_af9f7c9015a36e47eaa60e2968e6b7279}{Get\+Scale}} () const noexcept
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_game_object}{Game\+Object}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_transform}{Transform}} \mbox{\hyperlink{class_game_object_a0eb7f41b5cd0a1c074a378e86a443696}{m\+\_\+\+Transformation}}
+\end{DoxyCompactItemize}
+
+
+\label{doc-constructors}
+\Hypertarget{class_snow_flake_manager_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_snow_flake_manager_a36a3785dc83ac5a2c77cc94e3ca15fbc}\index{SnowFlakeManager@{SnowFlakeManager}!SnowFlakeManager@{SnowFlakeManager}}
+\index{SnowFlakeManager@{SnowFlakeManager}!SnowFlakeManager@{SnowFlakeManager}}
+\doxysubsubsection{\texorpdfstring{SnowFlakeManager()}{SnowFlakeManager()}}
+{\footnotesize\ttfamily \label{class_snow_flake_manager_a36a3785dc83ac5a2c77cc94e3ca15fbc} 
+Snow\+Flake\+Manager\+::\+Snow\+Flake\+Manager (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_rectf}{Rectf}} \&}]{window\+Bounds}{}\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_snow_flake_manager_a36a3785dc83ac5a2c77cc94e3ca15fbc_cgraph}
+\end{center}
+\end{figure}
+
+
+\label{doc-func-members}
+\Hypertarget{class_snow_flake_manager_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_snow_flake_manager_ac970433acd611cefd4db963e0b2c2fe6}\index{SnowFlakeManager@{SnowFlakeManager}!Draw@{Draw}}
+\index{Draw@{Draw}!SnowFlakeManager@{SnowFlakeManager}}
+\doxysubsubsection{\texorpdfstring{Draw()}{Draw()}}
+{\footnotesize\ttfamily \label{class_snow_flake_manager_ac970433acd611cefd4db963e0b2c2fe6} 
+void Snow\+Flake\+Manager\+::\+Draw (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_game_object_a45171beb4d4ac8158a754fe41e735129}{Game\+Object}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=326pt]{class_snow_flake_manager_ac970433acd611cefd4db963e0b2c2fe6_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_snow_flake_manager_a0b7c3366d1f89094fd93031bff36fe00}\index{SnowFlakeManager@{SnowFlakeManager}!MoveCanvas@{MoveCanvas}}
+\index{MoveCanvas@{MoveCanvas}!SnowFlakeManager@{SnowFlakeManager}}
+\doxysubsubsection{\texorpdfstring{MoveCanvas()}{MoveCanvas()}}
+{\footnotesize\ttfamily \label{class_snow_flake_manager_a0b7c3366d1f89094fd93031bff36fe00} 
+void Snow\+Flake\+Manager\+::\+Move\+Canvas (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_rectf}{Rectf}} \&}]{canvas}{}\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_snow_flake_manager_a0b7c3366d1f89094fd93031bff36fe00_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_snow_flake_manager_a295be81d4aedc787a7a1f6aad01a1600}\index{SnowFlakeManager@{SnowFlakeManager}!SetBoundries@{SetBoundries}}
+\index{SetBoundries@{SetBoundries}!SnowFlakeManager@{SnowFlakeManager}}
+\doxysubsubsection{\texorpdfstring{SetBoundries()}{SetBoundries()}}
+{\footnotesize\ttfamily \label{class_snow_flake_manager_a295be81d4aedc787a7a1f6aad01a1600} 
+void Snow\+Flake\+Manager\+::\+Set\+Boundries (\begin{DoxyParamCaption}\item[{float}]{width}{, }\item[{float}]{height}{}\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_snow_flake_manager_a295be81d4aedc787a7a1f6aad01a1600_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_snow_flake_manager_a949dbbdbd107a06ef9926faa4201fcd6}\index{SnowFlakeManager@{SnowFlakeManager}!Update@{Update}}
+\index{Update@{Update}!SnowFlakeManager@{SnowFlakeManager}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily \label{class_snow_flake_manager_a949dbbdbd107a06ef9926faa4201fcd6} 
+void Snow\+Flake\+Manager\+::\+Update (\begin{DoxyParamCaption}\item[{float}]{elapsed\+Sec}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_game_object_a8e2a7d733be04515a3a8fd12d4182648}{Game\+Object}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_snow_flake_manager_a949dbbdbd107a06ef9926faa4201fcd6_cgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Celeste/\mbox{\hyperlink{_snow_flake_manager_8h}{Snow\+Flake\+Manager.\+h}}\item 
+Celeste/\mbox{\hyperlink{_snow_flake_manager_8cpp}{Snow\+Flake\+Manager.\+cpp}}\end{DoxyCompactItemize}

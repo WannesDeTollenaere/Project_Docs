@@ -1,0 +1,9 @@
+<map id="SliderMenuItem::DrawSlider" name="SliderMenuItem::DrawSlider">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,56,190,83"/>
+<area shape="rect" id="Node000002" href="$namespaceutils.html#a4580e5c28f2812f929cdbd60059b2635" title=" " alt="" coords="238,5,402,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="159,53,243,33,244,39,160,58"/>
+<area shape="rect" id="Node000003" href="$namespaceutils.html#aa8fda4c292a496aeb53a87e7b6dc32f1" title=" " alt="" coords="265,56,374,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="190,67,250,67,250,72,190,72"/>
+<area shape="rect" id="Node000004" href="$namespaceutils.html#abc8380a69410c7b193d9d36474ae211f" title=" " alt="" coords="268,107,372,133"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="160,81,253,102,252,107,159,86"/>
+</map>

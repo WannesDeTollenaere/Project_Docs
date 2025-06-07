@@ -1,0 +1,11 @@
+<map id="Hair::SetPartOffset" name="Hair::SetPartOffset">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,31,138,57"/>
+<area shape="rect" id="Node000002" href="$struct_vector2f.html#acedb20d25ccc3009546e120eda010bf5" title=" " alt="" coords="382,5,498,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="138,37,366,21,367,26,138,42"/>
+<area shape="rect" id="Node000003" href="$struct_vector2f.html#aba5dd756c385551a19d36b57d8cbf629" title=" " alt="" coords="186,56,329,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="138,50,171,55,170,60,138,56"/>
+<area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="308,53,374,34,375,39,309,58"/>
+<area shape="rect" id="Node000004" href="$struct_vector2f.html#a3db9a868c58bc809e5e09a88d65a77ec" title=" " alt="" coords="377,80,502,107"/>
+<area shape="poly" id="edge4_Node000003_Node000004" title=" " alt="" coords="330,76,362,80,361,86,329,81"/>
+<area shape="poly" id="edge5_Node000004_Node000004" title=" " alt="" coords="408,81,403,71,407,62,419,55,440,53,462,56,473,62,471,67,460,61,440,59,421,61,411,65,408,71,413,78"/>
+</map>

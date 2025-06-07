@@ -1,0 +1,8 @@
+<map id="Engine/structs.h" name="Engine/structs.h">
+<area shape="rect" id="Node000001" title=" " alt="" coords="64,5,181,32"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,80,59,107"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="109,35,61,72,58,68,105,30"/>
+<area shape="rect" id="Node000003" href="$_vector2f_8h.html" title=" " alt="" coords="82,80,163,107"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="118,33,117,65,111,64,113,32"/>
+<area shape="poly" id="edge3_Node000003_Node000001" title=" " alt="" coords="127,79,129,47,134,48,132,80"/>
+</map>

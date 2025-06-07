@@ -1,0 +1,9 @@
+<map id="CrumbleBlock::CrumbleBlock" name="CrumbleBlock::CrumbleBlock">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,43,199,69"/>
+<area shape="rect" id="Node000002" href="$class_crumble_block.html#aaebd22fd4ac1c8821cfb74f7461edb4d" title=" " alt="" coords="247,43,440,69"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="199,53,231,53,231,59,199,59"/>
+<area shape="rect" id="Node000003" href="$class_counted_item.html#a7a4f3ec5e121b459d51a818c9ed0e269" title=" " alt="" coords="502,5,692,48"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="440,42,486,37,486,42,441,47"/>
+<area shape="rect" id="Node000004" href="$class_interactable_item.html#a5e5b9c459514e29098aaff5e62761569" title=" " alt="" coords="488,72,705,99"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="441,65,473,68,472,74,440,70"/>
+</map>

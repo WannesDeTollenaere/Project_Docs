@@ -1,0 +1,26 @@
+<map id="Celeste/SliderMenuItem.h" name="Celeste/SliderMenuItem.h">
+<area shape="rect" id="Node000001" title=" " alt="" coords="224,5,397,32"/>
+<area shape="rect" id="Node000002" href="$_menu_item_8h.html" title=" " alt="" coords="265,80,356,107"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="313,33,313,64,308,64,308,33"/>
+<area shape="rect" id="Node000003" href="$_texture_8h.html" title=" " alt="" coords="273,155,348,181"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="313,107,313,139,308,139,308,107"/>
+<area shape="rect" id="Node000004" href="$base_8h.html" title=" " alt="" coords="280,229,341,256"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="313,182,313,214,308,214,308,182"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="5,304,64,331"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="281,254,79,306,78,301,279,249"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="88,304,192,331"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="282,259,185,300,183,295,280,254"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="216,304,293,331"/>
+<area shape="poly" id="edge6_Node000004_Node000007" title=" " alt="" coords="303,258,275,293,271,290,299,255"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="318,304,415,331"/>
+<area shape="poly" id="edge7_Node000004_Node000008" title=" " alt="" coords="322,255,350,290,346,293,318,258"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="439,304,539,331"/>
+<area shape="poly" id="edge8_Node000004_Node000009" title=" " alt="" coords="342,254,445,295,443,300,340,259"/>
+<area shape="rect" id="Node000010" href="$structs_8h.html" title=" " alt="" coords="564,304,636,331"/>
+<area shape="poly" id="edge9_Node000004_Node000010" title=" " alt="" coords="342,249,549,301,548,306,340,254"/>
+<area shape="rect" id="Node000011" title=" " alt="" coords="482,379,536,405"/>
+<area shape="poly" id="edge10_Node000010_Node000011" title=" " alt="" coords="586,333,538,371,535,367,582,329"/>
+<area shape="rect" id="Node000012" href="$_vector2f_8h.html" title=" " alt="" coords="560,379,640,405"/>
+<area shape="poly" id="edge11_Node000010_Node000012" title=" " alt="" coords="595,331,594,363,588,363,590,331"/>
+<area shape="poly" id="edge12_Node000012_Node000010" title=" " alt="" coords="604,378,606,346,611,346,609,378"/>
+</map>

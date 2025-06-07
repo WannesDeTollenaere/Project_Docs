@@ -1,0 +1,40 @@
+\doxysection{Game\+Object.\+h}
+\hypertarget{_game_object_8h_source}{}\label{_game_object_8h_source}\index{Celeste/GameObject.h@{Celeste/GameObject.h}}
+\mbox{\hyperlink{_game_object_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_transform_8h}{Transform.h}}"{}}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_game_object_a3e9a5668734f19ec906d3f7504766440}{GameObject}}}
+\DoxyCodeLine{00005\ \{}
+\DoxyCodeLine{00006\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00007\ \ \ \ \ \textcolor{comment}{//\ CONSTRUCTORS}}
+\DoxyCodeLine{00008\ \ \ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{class_game_object_a3e9a5668734f19ec906d3f7504766440}{GameObject}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{struct_transform}{Transform}}\&\ t);}
+\DoxyCodeLine{00009\ \ \ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{class_game_object_a3e9a5668734f19ec906d3f7504766440}{GameObject}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{struct_vector2f}{Vector2f}}\&\ pos,\ \textcolor{keywordtype}{float}\ rotation,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{struct_vector2f}{Vector2f}}\&\ scale);}
+\DoxyCodeLine{00010\ \ \ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{class_game_object_a3e9a5668734f19ec906d3f7504766440}{GameObject}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{struct_vector2f}{Vector2f}}\&\ pos,\ \textcolor{keywordtype}{float}\ rotation\ =\ 0.f,\ \textcolor{keywordtype}{float}\ scale\ =\ 1.f);}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00012\ \ \ \ \ \textcolor{comment}{//\ RULE\ OF\ 5}}
+\DoxyCodeLine{00013\ \ \ \ \ \mbox{\hyperlink{class_game_object_a5812fb39eeeded453c04aab7c32dfc94}{GameObject}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_game_object_a3e9a5668734f19ec906d3f7504766440}{GameObject}}\&\ other)\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00014\ \ \ \ \ \mbox{\hyperlink{class_game_object_a3e9a5668734f19ec906d3f7504766440}{GameObject}}\&\ \mbox{\hyperlink{class_game_object_a009590d8feb5bbcb63363cd0acd5ef8c}{operator=}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_game_object_a3e9a5668734f19ec906d3f7504766440}{GameObject}}\&\ other)\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00015\ \ \ \ \ \mbox{\hyperlink{class_game_object_a1ea3c05884054770101bb74b23ac38f5}{GameObject}}(\mbox{\hyperlink{class_game_object_a3e9a5668734f19ec906d3f7504766440}{GameObject}}\&\&\ other)\ \textcolor{keyword}{noexcept}\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00016\ \ \ \ \ \mbox{\hyperlink{class_game_object_a3e9a5668734f19ec906d3f7504766440}{GameObject}}\&\ \mbox{\hyperlink{class_game_object_a142ed3d978707c08b2ff348753a11bcb}{operator=}}(\mbox{\hyperlink{class_game_object_a3e9a5668734f19ec906d3f7504766440}{GameObject}}\&\&\ other)\ \textcolor{keyword}{noexcept}\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00017\ }
+\DoxyCodeLine{00018\ \ \ \ \ \textcolor{comment}{//\ DESTRUCTOR}}
+\DoxyCodeLine{00019\ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{class_game_object_aaea6b7e6220bbcb81311a24b07abddae}{\string~GameObject}}()\ noexcept\ =\ default;}
+\DoxyCodeLine{00020\ }
+\DoxyCodeLine{00021\ \ \ \ \ \textcolor{comment}{//\ FUNCTIONS}}
+\DoxyCodeLine{00022\ \ \ \ \ \mbox{\hyperlink{struct_transform}{Transform}}\ \mbox{\hyperlink{class_game_object_af379d997393035dd50549cc13fa0e807}{GetTransform}}()\ const\ noexcept;}
+\DoxyCodeLine{00023\ \ \ \ \ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{class_game_object_a3c1f2f4d5a1e04e69f3dc22d4c573b35}{GetRotation}}()\ const\ noexcept;}
+\DoxyCodeLine{00024\ \ \ \ \ \mbox{\hyperlink{struct_vector2f}{Vector2f}}\ \mbox{\hyperlink{class_game_object_ac3bd47953a5614e49e3739955fb5d669}{GetPosition}}()\ const\ noexcept;}
+\DoxyCodeLine{00025\ \ \ \ \ \mbox{\hyperlink{struct_vector2f}{Vector2f}}\ \mbox{\hyperlink{class_game_object_af9f7c9015a36e47eaa60e2968e6b7279}{GetScale}}()\ const\ noexcept;}
+\DoxyCodeLine{00026\ }
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{comment}{//\ PURE\ VIRTUAL\ FUNCTIONS}}
+\DoxyCodeLine{00028\ \ \ \ \ virtual\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_game_object_a8e2a7d733be04515a3a8fd12d4182648}{Update}}(\textcolor{keywordtype}{float}\ elapsedSec)\ =\ 0;}
+\DoxyCodeLine{00029\ \ \ \ \ virtual\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_game_object_a45171beb4d4ac8158a754fe41e735129}{Draw}}()\ const\ =\ 0;}
+\DoxyCodeLine{00030\ protected:}
+\DoxyCodeLine{00031\ \ \ \ \ \textcolor{comment}{//\ MEMBERS}}
+\DoxyCodeLine{00032\ \ \ \ \ \mbox{\hyperlink{struct_transform}{Transform}}\ \mbox{\hyperlink{class_game_object_a0eb7f41b5cd0a1c074a378e86a443696}{m\_Transformation}};}
+\DoxyCodeLine{00033\ \};}
+\DoxyCodeLine{00034\ }
+
+\end{DoxyCode}

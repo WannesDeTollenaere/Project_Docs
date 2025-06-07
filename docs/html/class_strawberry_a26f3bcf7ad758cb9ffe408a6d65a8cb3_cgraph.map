@@ -1,0 +1,7 @@
+<map id="Strawberry::Strawberry" name="Strawberry::Strawberry">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,43,161,69"/>
+<area shape="rect" id="Node000002" href="$class_counted_item.html#a7a4f3ec5e121b459d51a818c9ed0e269" title=" " alt="" coords="232,5,403,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="160,44,216,37,217,42,161,49"/>
+<area shape="rect" id="Node000003" href="$class_interactable_item.html#a5e5b9c459514e29098aaff5e62761569" title=" " alt="" coords="209,72,426,99"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="161,63,193,67,193,72,160,68"/>
+</map>

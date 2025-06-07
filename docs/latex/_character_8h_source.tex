@@ -1,0 +1,90 @@
+\doxysection{Character.\+h}
+\hypertarget{_character_8h_source}{}\label{_character_8h_source}\index{Celeste/Character.h@{Celeste/Character.h}}
+\mbox{\hyperlink{_character_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_character_controller_8h}{CharacterController.h}}"{}}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_hair_8h}{Hair.h}}"{}}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_character_texture_manager_8h}{CharacterTextureManager.h}}"{}}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_character_state_8h}{CharacterState.h}}"{}}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_character_sound_manager_8h}{CharacterSoundManager.h}}"{}}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_character_a36862a88801d72865f97525a766db2c5}{Character}}\ final\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_game_object_a3e9a5668734f19ec906d3f7504766440}{GameObject}}}
+\DoxyCodeLine{00009\ \{}
+\DoxyCodeLine{00010\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00011\ \ \ \ \ \textcolor{comment}{//\ CONSTRUCTOR}}
+\DoxyCodeLine{00012\ \ \ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{class_character_a36862a88801d72865f97525a766db2c5}{Character}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{struct_vector2f}{Vector2f}}\&\ startPos,\ \textcolor{keywordtype}{float}\ scale\ =\ 1.f);}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00014\ \ \ \ \ \textcolor{comment}{//\ FUNCTIONS\ (inherited)}}
+\DoxyCodeLine{00015\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_character_a99d70b0a46f7d3086157ff388ab497ba}{Update}}(\textcolor{keywordtype}{float}\ elapsedSec)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00016\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_character_aaebd94374341315365dfae0e607baac5}{Draw}}()\ \textcolor{keyword}{const\ override};}
+\DoxyCodeLine{00017\ \ \ \ \ }
+\DoxyCodeLine{00018\ \ \ \ \ \textcolor{comment}{//\ FUNCTIONS}}
+\DoxyCodeLine{00019\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_character_a99d70b0a46f7d3086157ff388ab497ba}{Update}}(\textcolor{keywordtype}{float}\ elapsedSec,\ \textcolor{keyword}{const}\ std::vector<std::vector<Vector2f>>\&\ worldVertexTable);}
+\DoxyCodeLine{00020\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_character_a1180964c284e7c7d12b1afed321669b2}{Move}}(\textcolor{keywordtype}{float}\ elapsedSec,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{struct_vector2f}{Vector2f}}\&\ direction);}
+\DoxyCodeLine{00021\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_character_a7622bdde334c8d37358218e64dd6850a}{Jump}}();}
+\DoxyCodeLine{00022\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_character_a0854e7e066d305ed871658460b3c68d6}{CogJump}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{struct_vector2f}{Vector2f}}\&\ momentum);}
+\DoxyCodeLine{00023\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_character_acc84d340218561166bfb16592c5c23b4}{Walljump}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{struct_vector2f}{Vector2f}}\&\ faceDirection);}
+\DoxyCodeLine{00024\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_character_ae8854087590df625de84d5dd47ac9cd8}{Dash}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{struct_vector2f}{Vector2f}}\&\ direction);}
+\DoxyCodeLine{00025\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_character_aec011c2511a78fc3e07ce424a640d633}{ApplyForce}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{struct_vector2f}{Vector2f}}\&\ force)\ ;}
+\DoxyCodeLine{00026\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_character_ad4cf75aee602249dff4bdb61f20eb5f2}{Die}}();}
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_character_ad86bc482bf4f17bff08a76d3ff54749e}{ResetDash}}();}
+\DoxyCodeLine{00028\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_character_a22d6a0cccfa84d822d2a75d4e2d37504}{Climb}}();}
+\DoxyCodeLine{00029\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_character_aab81f214093de3f3c3fc33b3ef6c5051}{ReleaseClimb}}();}
+\DoxyCodeLine{00030\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_character_ac2f3adcfb01ee1f08b396547d55f7bd0}{ApplyOffsetToPosition}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{struct_vector2f}{Vector2f}}\&\ offset);}
+\DoxyCodeLine{00031\ \ \ \ \ }
+\DoxyCodeLine{00032\ \ \ \ \ \textcolor{comment}{//\ ACCESORS}}
+\DoxyCodeLine{00033\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_character_a9ccad0ccca398eed8e4e2b101f47a883}{IsRespawning}}()\ \textcolor{keyword}{const}\ \textcolor{keyword}{noexcept};}
+\DoxyCodeLine{00034\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_character_a51c025cc2193ef3fe81395d5e85dd017}{IsTouchingFloor}}()\ \textcolor{keyword}{const}\ \textcolor{keyword}{noexcept};}
+\DoxyCodeLine{00035\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_character_a25cf3eec20126e9e07d1e6338a18dc6a}{IsGrabing}}()\ \textcolor{keyword}{const}\ \textcolor{keyword}{noexcept};}
+\DoxyCodeLine{00036\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_character_ace9d5794172f5872f7af6180b7b55245}{IsJumping}}()\ \textcolor{keyword}{const}\ \textcolor{keyword}{noexcept};}
+\DoxyCodeLine{00037\ \ \ \ \ \mbox{\hyperlink{struct_rectf}{Rectf}}\ \mbox{\hyperlink{class_character_a0b790800d6ff90eebee18bce25177fce}{GetHitBox}}()\ \textcolor{keyword}{const}\ \textcolor{keyword}{noexcept};}
+\DoxyCodeLine{00038\ \ \ \ \ \mbox{\hyperlink{struct_vector2f}{Vector2f}}\ \mbox{\hyperlink{class_character_ae2fcc8b65bc48e674dc95ad04f194783}{GetVelocity}}()\ \textcolor{keyword}{const}\ \textcolor{keyword}{noexcept};}
+\DoxyCodeLine{00039\ \ \ \ \ \mbox{\hyperlink{struct_vector2f}{Vector2f}}\ \mbox{\hyperlink{class_character_a2c5de11393f3b4b19340f0d75c6f64f5}{GetRespawnPoint}}()\ \textcolor{keyword}{const}\ \textcolor{keyword}{noexcept};}
+\DoxyCodeLine{00040\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_character_a5f03513497f6766307128980a7c641ce}{HasCharacterDashed}}()\ \textcolor{keyword}{const}\ \textcolor{keyword}{noexcept};}
+\DoxyCodeLine{00041\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_character_a0d0dad012847441fd642610cc6592e6d}{GetDeathCount}}()\ \textcolor{keyword}{const}\ \textcolor{keyword}{noexcept};}
+\DoxyCodeLine{00042\ }
+\DoxyCodeLine{00043\ \ \ \ \ \textcolor{comment}{//\ SETTERS}}
+\DoxyCodeLine{00044\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_character_ad251a2e58a761708dfc8a19a7c8f4074}{SetRespawnPoint}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{struct_vector2f}{Vector2f}}\&\ location);}
+\DoxyCodeLine{00045\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_character_a5ae2f15014c73b60487f587631a924a4}{SetPosition}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{struct_vector2f}{Vector2f}}\&\ location);}
+\DoxyCodeLine{00046\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_character_ac6ad2e65a047083d437bbe36c42972ca}{SetDeadCount}}(\textcolor{keywordtype}{int}\ deadCount);}
+\DoxyCodeLine{00047\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00048\ \ \ \ \ \textcolor{comment}{//\ MEMBERS}}
+\DoxyCodeLine{00049\ \ \ \ \ \mbox{\hyperlink{class_character_controller}{CharacterController}}\ m\_Controller;}
+\DoxyCodeLine{00050\ \ \ \ \ \mbox{\hyperlink{class_character_texture_manager}{CharacterTextureManager}}\ m\_TextureManager;}
+\DoxyCodeLine{00051\ \ \ \ \ \mbox{\hyperlink{class_character_sound_manager}{CharacterSoundManager}}\ m\_SoundManager;}
+\DoxyCodeLine{00052\ \ \ \ \ \mbox{\hyperlink{class_hair}{Hair}}\ m\_Hair;}
+\DoxyCodeLine{00053\ \ \ \ \ \mbox{\hyperlink{struct_vector2f}{Vector2f}}\ m\_Velocity;}
+\DoxyCodeLine{00054\ \ \ \ \ \mbox{\hyperlink{struct_vector2f}{Vector2f}}\ m\_RespawnPoint;}
+\DoxyCodeLine{00055\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{float}\ m\_Gravity;}
+\DoxyCodeLine{00056\ \ \ \ \ \textcolor{keywordtype}{int}\ m\_DeadCount;}
+\DoxyCodeLine{00057\ \ \ \ \ \textcolor{keywordtype}{float}\ m\_DashSecondsCounter;}
+\DoxyCodeLine{00058\ \ \ \ \ \textcolor{keywordtype}{float}\ m\_WallJumpSecondsCounter;}
+\DoxyCodeLine{00059\ \ \ \ \ \textcolor{keywordtype}{float}\ m\_AirTime;}
+\DoxyCodeLine{00060\ \ \ \ \ \textcolor{keywordtype}{bool}\ m\_IsDashing;}
+\DoxyCodeLine{00061\ \ \ \ \ \textcolor{keywordtype}{bool}\ m\_HasDashed;}
+\DoxyCodeLine{00062\ \ \ \ \ \textcolor{keywordtype}{bool}\ m\_HasJumped;}
+\DoxyCodeLine{00063\ \ \ \ \ \textcolor{keywordtype}{bool}\ m\_IsFlying;}
+\DoxyCodeLine{00064\ \ \ \ \ \textcolor{keywordtype}{bool}\ m\_IsWallJumping\{\ \textcolor{keyword}{false}\ \};}
+\DoxyCodeLine{00065\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{float}\ m\_dashAnimationTime\{\ 0.15f\ \};}
+\DoxyCodeLine{00066\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{float}\ m\_DashDistance;}
+\DoxyCodeLine{00067\ \ \ \ \ \textcolor{keywordtype}{bool}\ m\_IsFacingRight;}
+\DoxyCodeLine{00068\ \ \ \ \ \textcolor{keywordtype}{bool}\ m\_DashResetTriggered;}
+\DoxyCodeLine{00069\ \ \ \ \ \textcolor{keywordtype}{bool}\ m\_IsClimbing;}
+\DoxyCodeLine{00070\ \ \ \ \ \mbox{\hyperlink{_character_state_8h_aacbb008a93d24b04a8779bbdbd8880b5}{CharacterState}}\ m\_State;}
+\DoxyCodeLine{00071\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{float}\ m\_Speed\{10000.f\};}
+\DoxyCodeLine{00072\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{float}\ m\_MaxSpeed\{\ 400.f\ \};}
+\DoxyCodeLine{00073\ }
+\DoxyCodeLine{00074\ \ \ \ \ \textcolor{comment}{//\ FUNCTIONS}}
+\DoxyCodeLine{00075\ \ \ \ \ \textcolor{keywordtype}{bool}\ UpdateStateDead(\textcolor{keywordtype}{float}\ elapsedSec);}
+\DoxyCodeLine{00076\ \ \ \ \ \textcolor{keywordtype}{void}\ UpdateWallJumping(\textcolor{keywordtype}{float}\ elapsedSec);}
+\DoxyCodeLine{00077\ \ \ \ \ \textcolor{keywordtype}{bool}\ UpdateStateDash(\textcolor{keywordtype}{float}\ elapsedSec);}
+\DoxyCodeLine{00078\ \ \ \ \ \textcolor{keywordtype}{void}\ ApplyFriction(\textcolor{keywordtype}{float}\ elapsedSec);}
+\DoxyCodeLine{00079\ \ \ \ \ \textcolor{keywordtype}{void}\ ApplyGravity(\textcolor{keywordtype}{float}\ elapsedSec);}
+\DoxyCodeLine{00080\ \ \ \ \ \textcolor{keywordtype}{void}\ ManageState(\textcolor{keywordtype}{float}\ elapsedSec);}
+\DoxyCodeLine{00081\ \ \ \ \ \textcolor{keywordtype}{void}\ HandleCharacterAirState(\textcolor{keywordtype}{float}\ elapsedSec);}
+\DoxyCodeLine{00082\ \ \ \ \ \textcolor{keywordtype}{void}\ ResetDashProps();}
+\DoxyCodeLine{00083\ \};}
+\DoxyCodeLine{00084\ }
+
+\end{DoxyCode}

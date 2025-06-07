@@ -1,0 +1,228 @@
+\doxysection{Cog\+Platform Class Reference}
+\hypertarget{class_cog_platform}{}\label{class_cog_platform}\index{CogPlatform@{CogPlatform}}
+
+
+{\ttfamily \#include $<$Cog\+Platform.\+h$>$}
+
+
+
+Inheritance diagram for Cog\+Platform\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=330pt]{class_cog_platform__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Cog\+Platform\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=330pt]{class_cog_platform__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_cog_platform_aa8ddb28be91c8e5887864a9a7df629e1}{Cog\+Platform}} (const \mbox{\hyperlink{struct_rectf}{Rectf}} \&bounds, const \mbox{\hyperlink{struct_vector2f}{Vector2f}} \&start\+Pos, const \mbox{\hyperlink{struct_vector2f}{Vector2f}} \&end\+Pos)
+\item 
+void \mbox{\hyperlink{class_cog_platform_aeef0da62f2ae9b037694af27c427272c}{Draw}} () const override
+\item 
+void \mbox{\hyperlink{class_cog_platform_afd4a86f749690313b5bd2587f15c6ce8}{Player\+Interaction}} (\mbox{\hyperlink{class_character}{Character}} \&character, float elapsed\+Sec) override
+\item 
+\mbox{\hyperlink{class_cog_platform_ae87052d2e9b8be5ef36272841790684a}{Cog\+Platform}} (const \mbox{\hyperlink{class_cog_platform}{Cog\+Platform}} \&other)=default
+\item 
+\mbox{\hyperlink{class_cog_platform_a538bda666c9623304ddb39fc9afc843c}{Cog\+Platform}} (\mbox{\hyperlink{class_cog_platform}{Cog\+Platform}} \&\&other) noexcept=default
+\item 
+\mbox{\hyperlink{class_cog_platform}{Cog\+Platform}} \& \mbox{\hyperlink{class_cog_platform_aa123b1f6fee96a0202700f7f5685b1a7}{operator=}} (const \mbox{\hyperlink{class_cog_platform}{Cog\+Platform}} \&other)=default
+\item 
+\mbox{\hyperlink{class_cog_platform}{Cog\+Platform}} \& \mbox{\hyperlink{class_cog_platform_a2232e46890ae94b60060e8200000fdef}{operator=}} (\mbox{\hyperlink{class_cog_platform}{Cog\+Platform}} \&\&other) noexcept=default
+\item 
+\mbox{\hyperlink{class_cog_platform_a675fe5d55d9d8698c600b9b36e1cad66}{\texorpdfstring{$\sim$}{\string~}\+Cog\+Platform}} () noexcept override
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_interactable_item}{Interactable\+Item}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_interactable_item_a5e5b9c459514e29098aaff5e62761569}{Interactable\+Item}} (const \mbox{\hyperlink{struct_rectf}{Rectf}} \&bounds)
+\item 
+\mbox{\hyperlink{class_interactable_item_a6bdd4d54f5965b13c2e68617c7321eb7}{Interactable\+Item}} (float x, float y, float width, float height)
+\item 
+\mbox{\hyperlink{class_interactable_item_a5a6b7071c26aea54f770dcddea4d4673}{Interactable\+Item}} (const \mbox{\hyperlink{struct_vector2f}{Vector2f}} \&position, float width, float height)
+\item 
+\mbox{\hyperlink{struct_rectf}{Rectf}} \mbox{\hyperlink{class_interactable_item_a446bdb0ccbff7de5951c0a3175bab008}{Get\+Bounds}} () const noexcept
+\item 
+bool \mbox{\hyperlink{class_interactable_item_aca9a06af6a60be1d7cc2e61ea6a18893}{Has\+Collision\+Bounds}} () const noexcept
+\item 
+virtual std\+::vector$<$ \mbox{\hyperlink{struct_vector2f}{Vector2f}} $>$ \mbox{\hyperlink{class_interactable_item_a4f4343a4b509fdf7253038f67238c5ae}{Get\+Collision\+Bounds}} () const noexcept
+\item 
+\mbox{\hyperlink{class_interactable_item_a9124be31fe21f1cbe122579dde8f9252}{Interactable\+Item}} (const \mbox{\hyperlink{class_interactable_item}{Interactable\+Item}} \&other)=default
+\item 
+\mbox{\hyperlink{class_interactable_item_ae94edc84b2ceb14edb952a3edb676772}{Interactable\+Item}} (\mbox{\hyperlink{class_interactable_item}{Interactable\+Item}} \&\&other) noexcept=default
+\item 
+\mbox{\hyperlink{class_interactable_item}{Interactable\+Item}} \& \mbox{\hyperlink{class_interactable_item_a67139551064d009752d97e2e77ef865f}{operator=}} (const \mbox{\hyperlink{class_interactable_item}{Interactable\+Item}} \&other)=default
+\item 
+\mbox{\hyperlink{class_interactable_item}{Interactable\+Item}} \& \mbox{\hyperlink{class_interactable_item_a4d5baa6774ebb9137c08921d3c421d09}{operator=}} (\mbox{\hyperlink{class_interactable_item}{Interactable\+Item}} \&\&other) noexcept=default
+\item 
+virtual \mbox{\hyperlink{class_interactable_item_aa3d008d77d5f29c2673a991e24ed9301}{\texorpdfstring{$\sim$}{\string~}\+Interactable\+Item}} () noexcept=default
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{class_counted_item}{Counted\+Item$<$ Cog\+Platform $>$}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_counted_item_a379818e68b8231fbfad8c51cbf2add57}{Counted\+Item}} ()
+\item 
+\mbox{\hyperlink{class_counted_item}{Counted\+Item}} \& \mbox{\hyperlink{class_counted_item_aa782288d34bfef1fbb3e7660f203aac5}{operator=}} (const \mbox{\hyperlink{class_counted_item}{Counted\+Item}} \&other)=default
+\item 
+virtual \mbox{\hyperlink{class_counted_item_aea020fda431fdcb47017df22721022c7}{\texorpdfstring{$\sim$}{\string~}\+Counted\+Item}} () noexcept
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Protected Member Functions inherited from \mbox{\hyperlink{class_counted_item}{Counted\+Item$<$ Cog\+Platform $>$}}}
+\begin{DoxyCompactItemize}
+\item 
+static size\+\_\+t \mbox{\hyperlink{class_counted_item_a7a4f3ec5e121b459d51a818c9ed0e269}{Get\+Count}} () noexcept
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_interactable_item}{Interactable\+Item}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_rectf}{Rectf}} \mbox{\hyperlink{class_interactable_item_afddb710738697e6bbbd141c154d50335}{m\+\_\+\+Bounds}}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{struct_vector2f}{Vector2f}} $>$ \mbox{\hyperlink{class_interactable_item_aa38359a5d89f9690f9b8cddc4de3458e}{m\+\_\+\+Collision\+Bounds}}
+\end{DoxyCompactItemize}
+
+
+\label{doc-constructors}
+\Hypertarget{class_cog_platform_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_cog_platform_aa8ddb28be91c8e5887864a9a7df629e1}\index{CogPlatform@{CogPlatform}!CogPlatform@{CogPlatform}}
+\index{CogPlatform@{CogPlatform}!CogPlatform@{CogPlatform}}
+\doxysubsubsection{\texorpdfstring{CogPlatform()}{CogPlatform()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \label{class_cog_platform_aa8ddb28be91c8e5887864a9a7df629e1} 
+Cog\+Platform\+::\+Cog\+Platform (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_rectf}{Rectf}} \&}]{bounds}{, }\item[{const \mbox{\hyperlink{struct_vector2f}{Vector2f}} \&}]{start\+Pos}{, }\item[{const \mbox{\hyperlink{struct_vector2f}{Vector2f}} \&}]{end\+Pos}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_cog_platform_aa8ddb28be91c8e5887864a9a7df629e1_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_cog_platform_aa8ddb28be91c8e5887864a9a7df629e1_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_cog_platform_ae87052d2e9b8be5ef36272841790684a}\index{CogPlatform@{CogPlatform}!CogPlatform@{CogPlatform}}
+\index{CogPlatform@{CogPlatform}!CogPlatform@{CogPlatform}}
+\doxysubsubsection{\texorpdfstring{CogPlatform()}{CogPlatform()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \label{class_cog_platform_ae87052d2e9b8be5ef36272841790684a} 
+Cog\+Platform\+::\+Cog\+Platform (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_cog_platform}{Cog\+Platform}} \&}]{other}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_cog_platform_ae87052d2e9b8be5ef36272841790684a_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_cog_platform_a538bda666c9623304ddb39fc9afc843c}\index{CogPlatform@{CogPlatform}!CogPlatform@{CogPlatform}}
+\index{CogPlatform@{CogPlatform}!CogPlatform@{CogPlatform}}
+\doxysubsubsection{\texorpdfstring{CogPlatform()}{CogPlatform()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily \label{class_cog_platform_a538bda666c9623304ddb39fc9afc843c} 
+Cog\+Platform\+::\+Cog\+Platform (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_cog_platform}{Cog\+Platform}} \&\&}]{other}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}, {\ttfamily [noexcept]}}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_cog_platform_a538bda666c9623304ddb39fc9afc843c_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_cog_platform_a675fe5d55d9d8698c600b9b36e1cad66}\index{CogPlatform@{CogPlatform}!````~CogPlatform@{\texorpdfstring{$\sim$}{\string~}CogPlatform}}
+\index{````~CogPlatform@{\texorpdfstring{$\sim$}{\string~}CogPlatform}!CogPlatform@{CogPlatform}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}CogPlatform()}{\string~CogPlatform()}}
+{\footnotesize\ttfamily \label{class_cog_platform_a675fe5d55d9d8698c600b9b36e1cad66} 
+Cog\+Platform\+::\texorpdfstring{$\sim$}{\string~}\+Cog\+Platform (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [noexcept]}}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_cog_platform_a675fe5d55d9d8698c600b9b36e1cad66_cgraph}
+\end{center}
+\end{figure}
+
+
+\label{doc-func-members}
+\Hypertarget{class_cog_platform_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_cog_platform_aeef0da62f2ae9b037694af27c427272c}\index{CogPlatform@{CogPlatform}!Draw@{Draw}}
+\index{Draw@{Draw}!CogPlatform@{CogPlatform}}
+\doxysubsubsection{\texorpdfstring{Draw()}{Draw()}}
+{\footnotesize\ttfamily \label{class_cog_platform_aeef0da62f2ae9b037694af27c427272c} 
+void Cog\+Platform\+::\+Draw (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_interactable_item_af87c8f5b507f809c6eb2ea5b43d83c25}{Interactable\+Item}}.
+
+\Hypertarget{class_cog_platform_a2232e46890ae94b60060e8200000fdef}\index{CogPlatform@{CogPlatform}!operator=@{operator=}}
+\index{operator=@{operator=}!CogPlatform@{CogPlatform}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_cog_platform_a2232e46890ae94b60060e8200000fdef} 
+\mbox{\hyperlink{class_cog_platform}{Cog\+Platform}} \& Cog\+Platform\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_cog_platform}{Cog\+Platform}} \&\&}]{other}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}, {\ttfamily [noexcept]}}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_cog_platform_a2232e46890ae94b60060e8200000fdef_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_cog_platform_aa123b1f6fee96a0202700f7f5685b1a7}\index{CogPlatform@{CogPlatform}!operator=@{operator=}}
+\index{operator=@{operator=}!CogPlatform@{CogPlatform}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_cog_platform_aa123b1f6fee96a0202700f7f5685b1a7} 
+\mbox{\hyperlink{class_cog_platform}{Cog\+Platform}} \& Cog\+Platform\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_cog_platform}{Cog\+Platform}} \&}]{other}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_cog_platform_aa123b1f6fee96a0202700f7f5685b1a7_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_cog_platform_afd4a86f749690313b5bd2587f15c6ce8}\index{CogPlatform@{CogPlatform}!PlayerInteraction@{PlayerInteraction}}
+\index{PlayerInteraction@{PlayerInteraction}!CogPlatform@{CogPlatform}}
+\doxysubsubsection{\texorpdfstring{PlayerInteraction()}{PlayerInteraction()}}
+{\footnotesize\ttfamily \label{class_cog_platform_afd4a86f749690313b5bd2587f15c6ce8} 
+void Cog\+Platform\+::\+Player\+Interaction (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_character}{Character}} \&}]{character}{, }\item[{float}]{elapsed\+Sec}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_interactable_item_a18b200bb2e7fc662ea1c2d1a11e483d2}{Interactable\+Item}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_cog_platform_afd4a86f749690313b5bd2587f15c6ce8_cgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Celeste/\mbox{\hyperlink{_cog_platform_8h}{Cog\+Platform.\+h}}\item 
+Celeste/\mbox{\hyperlink{_cog_platform_8cpp}{Cog\+Platform.\+cpp}}\end{DoxyCompactItemize}

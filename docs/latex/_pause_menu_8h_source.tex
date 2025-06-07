@@ -1,0 +1,91 @@
+\doxysection{Pause\+Menu.\+h}
+\hypertarget{_pause_menu_8h_source}{}\label{_pause_menu_8h_source}\index{Celeste/PauseMenu.h@{Celeste/PauseMenu.h}}
+\mbox{\hyperlink{_pause_menu_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_texture_8h}{Texture.h}}"{}}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_selectable_menu_item_8h}{SelectableMenuItem.h}}"{}}}
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00006\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_chapter_info}{ChapterInfo}};}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_pause_menu_a264a6e18735ed7514b2e07f8e6e3c428}{PauseMenu}}\ final}
+\DoxyCodeLine{00009\ \{}
+\DoxyCodeLine{00010\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00011\ \ \ \ \ \textcolor{keyword}{enum\ class}\ \mbox{\hyperlink{class_pause_menu_aef15fa64444bcfa77cba4a13576d6dd2}{State}}\ \{}
+\DoxyCodeLine{00012\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_pause_menu_aef15fa64444bcfa77cba4a13576d6dd2af4f70727dc34561dfde1a3c529b6205c}{Settings}},}
+\DoxyCodeLine{00013\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_pause_menu_aef15fa64444bcfa77cba4a13576d6dd2a36d1303acad5b2e1264c4774e4164390}{Keybounds}},}
+\DoxyCodeLine{00014\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_pause_menu_aef15fa64444bcfa77cba4a13576d6dd2a0db377921f4ce762c62526131097968f}{General}}}
+\DoxyCodeLine{00015\ \ \ \ \ \};}
+\DoxyCodeLine{00016\ \ \ \ \ }
+\DoxyCodeLine{00017\ \ \ \ \ \textcolor{comment}{//\ CONSTRUCTOR}}
+\DoxyCodeLine{00018\ \ \ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{class_pause_menu_a264a6e18735ed7514b2e07f8e6e3c428}{PauseMenu}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{struct_rectf}{Rectf}}\&\ windowBounds,\ \mbox{\hyperlink{struct_chapter_info}{ChapterInfo}}*\ chapterInfo);}
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00020\ \ \ \ \ \textcolor{comment}{//\ DESTRUCTOR}}
+\DoxyCodeLine{00021\ \ \ \ \ \mbox{\hyperlink{class_pause_menu_a191e4fd7466e91e6a2588df1a5eb80ef}{\string~PauseMenu}}()\ noexcept;}
+\DoxyCodeLine{00022\ }
+\DoxyCodeLine{00023\ \ \ \ \ \textcolor{comment}{//\ COPY\ CONSTRUCTOR}}
+\DoxyCodeLine{00024\ \ \ \ \ \mbox{\hyperlink{class_pause_menu_a264a6e18735ed7514b2e07f8e6e3c428}{PauseMenu}}(const\ \mbox{\hyperlink{class_pause_menu_a264a6e18735ed7514b2e07f8e6e3c428}{PauseMenu}}\&\ other)\ =\ default;}
+\DoxyCodeLine{00025\ \ \ \ \ \mbox{\hyperlink{class_pause_menu_a264a6e18735ed7514b2e07f8e6e3c428}{PauseMenu}}(\mbox{\hyperlink{class_pause_menu_a264a6e18735ed7514b2e07f8e6e3c428}{PauseMenu}}\&\&\ other)\ noexcept\ =\ default;}
+\DoxyCodeLine{00026\ }
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{comment}{//\ ASSIGNMENT\ OPPERATOR}}
+\DoxyCodeLine{00028\ \ \ \ \ \mbox{\hyperlink{class_pause_menu_a264a6e18735ed7514b2e07f8e6e3c428}{PauseMenu}}\&\ operator=(const\ \mbox{\hyperlink{class_pause_menu_a264a6e18735ed7514b2e07f8e6e3c428}{PauseMenu}}\&\ other)\ =\ default;}
+\DoxyCodeLine{00029\ \ \ \ \ \mbox{\hyperlink{class_pause_menu_a264a6e18735ed7514b2e07f8e6e3c428}{PauseMenu}}\&\ operator=(\mbox{\hyperlink{class_pause_menu_a264a6e18735ed7514b2e07f8e6e3c428}{PauseMenu}}\&\&\ other)\ noexcept\ =\ default;}
+\DoxyCodeLine{00030\ }
+\DoxyCodeLine{00031\ \ \ \ \ \textcolor{comment}{//\ FUNCTIONS}}
+\DoxyCodeLine{00032\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_pause_menu_a9fe31b3d32070e101c07aac9e716cbf8}{SetChapterInfo}}(\mbox{\hyperlink{struct_chapter_info}{ChapterInfo}}*\ chapterInfo);}
+\DoxyCodeLine{00033\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_pause_menu_a409928f2d75d3a7f865d75d23aeb50d6}{Draw}}()\ const;}
+\DoxyCodeLine{00034\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_pause_menu_a153eed04cb4c4e6f854fca05c92198a6}{GoUp}}();}
+\DoxyCodeLine{00035\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_pause_menu_a0bc9fae272e2c6c30c86e57e832d03be}{GoDown}}();}
+\DoxyCodeLine{00036\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_pause_menu_a4f66c4237bd32d4e733d4951177bfeb7}{GoLeft}}();}
+\DoxyCodeLine{00037\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_pause_menu_abf996bfbb0b25064223e89eae1b94bc0}{GoRight}}();}
+\DoxyCodeLine{00038\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_pause_menu_a9f1e31f2cd5250740956b82a7914c9bc}{Select}}();}
+\DoxyCodeLine{00039\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_pause_menu_a29cffdbd028cdd7a3110f3890d6c2f07}{IsContinuePolled}}();}
+\DoxyCodeLine{00040\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_pause_menu_a7b609e76c108730d29ed5b96ab5e1877}{Reset}}();}
+\DoxyCodeLine{00041\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_pause_menu_a19f89ed21075973c1d8b415ca1fbdec3}{IsRestartChapterPolled}}();}
+\DoxyCodeLine{00042\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_pause_menu_a9e7b8218edd4bb09e357289f756520a2}{IsResetSaveFilePolled}}();}
+\DoxyCodeLine{00043\ }
+\DoxyCodeLine{00044\ private:}
+\DoxyCodeLine{00045\ \ \ \ \ \textcolor{comment}{//\ MEMBERS}}
+\DoxyCodeLine{00046\ \ \ \ \ \mbox{\hyperlink{struct_rectf}{Rectf}}\ m\_WindowBounds;}
+\DoxyCodeLine{00047\ \ \ \ \ \mbox{\hyperlink{class_pause_menu_aef15fa64444bcfa77cba4a13576d6dd2}{State}}\ m\_State;}
+\DoxyCodeLine{00048\ \ \ \ \ \textcolor{keywordtype}{int}\ m\_Selection;}
+\DoxyCodeLine{00049\ \ \ \ \ const\ \textcolor{keywordtype}{int}\ m\_FontSize;}
+\DoxyCodeLine{00050\ \ \ \ \ const\ \mbox{\hyperlink{struct_color4f}{Color4f}}\ m\_TextColor;}
+\DoxyCodeLine{00051\ \ \ \ \ \textcolor{keywordtype}{bool}\ m\_ContinuePolled;}
+\DoxyCodeLine{00052\ \ \ \ \ \textcolor{keywordtype}{bool}\ m\_RestartChapterPolled;}
+\DoxyCodeLine{00053\ \ \ \ \ \textcolor{keywordtype}{bool}\ m\_ResetSavePolled;}
+\DoxyCodeLine{00054\ \ \ \ \ \mbox{\hyperlink{struct_chapter_info}{ChapterInfo}}*\ m\_ChapterInfo;}
+\DoxyCodeLine{00055\ }
+\DoxyCodeLine{00056\ \ \ \ \ \textcolor{comment}{//\ TEXTS}}
+\DoxyCodeLine{00057\ \ \ \ \ std::vector<\mbox{\hyperlink{class_menu_item}{MenuItem}}*>\ m\_SettingsMenuItems;}
+\DoxyCodeLine{00058\ \ \ \ \ std::vector<\mbox{\hyperlink{class_menu_item}{MenuItem}}*>\ m\_KeyBoundsMenuItems;}
+\DoxyCodeLine{00059\ \ \ \ \ std::vector<\mbox{\hyperlink{class_menu_item}{MenuItem}}*>\ m\_GeneralMenuItems;}
+\DoxyCodeLine{00060\ \ \ \ \ std::vector<\mbox{\hyperlink{class_menu_item}{MenuItem}}*>*\ m\_CurrentSelection;}
+\DoxyCodeLine{00061\ \ \ \ \ \mbox{\hyperlink{class_texture}{Texture}}\ m\_StrawberryText;}
+\DoxyCodeLine{00062\ \ \ \ \ \mbox{\hyperlink{class_texture}{Texture}}\ m\_DeadCountText;}
+\DoxyCodeLine{00063\ \ \ \ \ \mbox{\hyperlink{class_texture}{Texture}}\ m\_Skull;}
+\DoxyCodeLine{00064\ \ \ \ \ \mbox{\hyperlink{class_texture}{Texture}}\ m\_Strawberry;}
+\DoxyCodeLine{00065\ }
+\DoxyCodeLine{00066\ \ \ \ \ \textcolor{comment}{//\ FUNCTIONS}}
+\DoxyCodeLine{00067\ \ \ \ \ \textcolor{keywordtype}{void}\ LoadSettingsMenu();}
+\DoxyCodeLine{00068\ \ \ \ \ \textcolor{keywordtype}{void}\ LoadKeyBoundsMenu();}
+\DoxyCodeLine{00069\ \ \ \ \ \textcolor{keywordtype}{void}\ LoadGeneralMenu();}
+\DoxyCodeLine{00070\ \ \ \ \ \textcolor{keywordtype}{void}\ LoadText();}
+\DoxyCodeLine{00071\ }
+\DoxyCodeLine{00072\ \ \ \ \ \textcolor{comment}{//\ BUTTON\ FUNCTIONS}}
+\DoxyCodeLine{00073\ \ \ \ \ \textcolor{keywordtype}{void}\ SelectSettings();}
+\DoxyCodeLine{00074\ \ \ \ \ \textcolor{keywordtype}{void}\ SelectKeyBinds();}
+\DoxyCodeLine{00075\ \ \ \ \ \textcolor{keywordtype}{void}\ GoBck();}
+\DoxyCodeLine{00076\ \ \ \ \ \textcolor{keywordtype}{void}\ Exit();}
+\DoxyCodeLine{00077\ \ \ \ \ \textcolor{keywordtype}{void}\ Continue();}
+\DoxyCodeLine{00078\ \ \ \ \ \textcolor{keywordtype}{void}\ ApplyDstRects(std::vector<\mbox{\hyperlink{class_menu_item}{MenuItem}}*>\&\ m\_Items);}
+\DoxyCodeLine{00079\ \ \ \ \ \textcolor{keywordtype}{void}\ SetMusicVolume(\textcolor{keywordtype}{int}\ volume);}
+\DoxyCodeLine{00080\ \ \ \ \ \textcolor{keywordtype}{void}\ SetSoundEffectsVolume(\textcolor{keywordtype}{int}\ volume);}
+\DoxyCodeLine{00081\ \ \ \ \ \textcolor{keywordtype}{void}\ RestartChapter();}
+\DoxyCodeLine{00082\ \ \ \ \ \textcolor{keywordtype}{void}\ ResetSave();}
+\DoxyCodeLine{00083\ \};}
+\DoxyCodeLine{00084\ }
+\DoxyCodeLine{00085\ }
+
+\end{DoxyCode}

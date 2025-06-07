@@ -1,0 +1,54 @@
+\doxysection{Dash\+Crystal.\+h}
+\hypertarget{_dash_crystal_8h_source}{}\label{_dash_crystal_8h_source}\index{Celeste/DashCrystal.h@{Celeste/DashCrystal.h}}
+\mbox{\hyperlink{_dash_crystal_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_interactable_item_8h}{InteractableItem.h}}"{}}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_counted_item_8h}{CountedItem.h}}"{}}}
+\DoxyCodeLine{00004\ }
+\DoxyCodeLine{00005\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_texture}{Texture}};}
+\DoxyCodeLine{00006\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_animation_manager}{AnimationManager}};}
+\DoxyCodeLine{00007\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_sound_effect}{SoundEffect}};}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_dash_crystal_a374494580df528b1eed16b39dd79ff93}{DashCrystal}}\ final\ :}
+\DoxyCodeLine{00010\ \ \ \ \ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_interactable_item_a5e5b9c459514e29098aaff5e62761569}{InteractableItem}},}
+\DoxyCodeLine{00011\ \ \ \ \ \textcolor{keyword}{protected}\ \mbox{\hyperlink{class_counted_item_a379818e68b8231fbfad8c51cbf2add57}{CountedItem}}<DashCrystal>}
+\DoxyCodeLine{00012\ \{}
+\DoxyCodeLine{00013\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00014\ \ \ \ \ \textcolor{comment}{//\ CONSTRUCTORS}}
+\DoxyCodeLine{00015\ \ \ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{class_dash_crystal_a374494580df528b1eed16b39dd79ff93}{DashCrystal}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{struct_rectf}{Rectf}}\&\ bounds);}
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00017\ \ \ \ \ \textcolor{comment}{//\ FUNCTIONS}}
+\DoxyCodeLine{00018\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_dash_crystal_a38c87bd8df73b7cb6bab596ee5d55f33}{Draw}}()\ \textcolor{keyword}{const\ override};}
+\DoxyCodeLine{00019\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_dash_crystal_ae9d188a3998de0c2de1ee162ba5e1273}{PlayerInteraction}}(\mbox{\hyperlink{class_character}{Character}}\&\ character,\ \textcolor{keywordtype}{float}\ elapsedSec)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00020\ }
+\DoxyCodeLine{00021\ \ \ \ \ \textcolor{comment}{//\ COPY\ CONSTRUCTOR}}
+\DoxyCodeLine{00022\ \ \ \ \ \mbox{\hyperlink{class_dash_crystal_a843db39ea21e3a57415cab8b745996fa}{DashCrystal}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_dash_crystal_a374494580df528b1eed16b39dd79ff93}{DashCrystal}}\&\ other)\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00023\ \ \ \ \ \mbox{\hyperlink{class_dash_crystal_a7589462bb22d6a26b33dfd60c64b53c0}{DashCrystal}}(\mbox{\hyperlink{class_dash_crystal_a374494580df528b1eed16b39dd79ff93}{DashCrystal}}\&\&\ other)\ \textcolor{keyword}{noexcept}\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00024\ }
+\DoxyCodeLine{00025\ \ \ \ \ \textcolor{comment}{//\ ASSIGNMENT\ OPPERATOR}}
+\DoxyCodeLine{00026\ \ \ \ \ \mbox{\hyperlink{class_dash_crystal_a374494580df528b1eed16b39dd79ff93}{DashCrystal}}\&\ \mbox{\hyperlink{class_dash_crystal_af1e409144bb1cdc5f3973e9191ac81ef}{operator=}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_dash_crystal_a374494580df528b1eed16b39dd79ff93}{DashCrystal}}\&\ other)\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00027\ \ \ \ \ \mbox{\hyperlink{class_dash_crystal_a374494580df528b1eed16b39dd79ff93}{DashCrystal}}\&\ \mbox{\hyperlink{class_dash_crystal_ae59d4773b95458aa91591a0720905abe}{operator=}}(\mbox{\hyperlink{class_dash_crystal_a374494580df528b1eed16b39dd79ff93}{DashCrystal}}\&\&\ other)\ \textcolor{keyword}{noexcept}\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00029\ \ \ \ \ \textcolor{comment}{//DESTRUCTOR}}
+\DoxyCodeLine{00030\ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{class_dash_crystal_ae37888a2bcb94362f1aa2a6f2a7f2477}{\string~DashCrystal}}()\ noexcept\ override;}
+\DoxyCodeLine{00031\ private:}
+\DoxyCodeLine{00032\ \ \ \ \ \textcolor{comment}{//\ MEMBERS}}
+\DoxyCodeLine{00033\ \ \ \ \ \textcolor{keywordtype}{bool}\ m\_HasPickedUp;}
+\DoxyCodeLine{00034\ \ \ \ \ \textcolor{keywordtype}{float}\ m\_TotalElapsedSec;}
+\DoxyCodeLine{00035\ \ \ \ \ const\ \textcolor{keywordtype}{float}\ m\_RespawnTime;}
+\DoxyCodeLine{00036\ \ \ \ \ \textcolor{keywordtype}{float}\ m\_RespawnTimer;}
+\DoxyCodeLine{00037\ }
+\DoxyCodeLine{00038\ \ \ \ \ \textcolor{comment}{//\ ANIMATIONVARIABLES}}
+\DoxyCodeLine{00039\ \ \ \ \ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{int}\ m\_CystalID;}
+\DoxyCodeLine{00040\ \ \ \ \ static\ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{int}\ m\_LowestID;}
+\DoxyCodeLine{00041\ \ \ \ \ static\ \mbox{\hyperlink{class_animation_manager}{AnimationManager}}*\ m\_pAnimationManager;}
+\DoxyCodeLine{00042\ \ \ \ \ static\ \mbox{\hyperlink{class_texture}{Texture}}*\ m\_pOutline;}
+\DoxyCodeLine{00043\ }
+\DoxyCodeLine{00044\ \ \ \ \ \textcolor{comment}{//\ SOUND}}
+\DoxyCodeLine{00045\ \ \ \ \ static\ \mbox{\hyperlink{class_sound_effect}{SoundEffect}}*\ m\_pTouchSoundEffect;}
+\DoxyCodeLine{00046\ \ \ \ \ static\ \mbox{\hyperlink{class_sound_effect}{SoundEffect}}*\ m\_pRespawnSoundEffect;}
+\DoxyCodeLine{00047\ \};}
+\DoxyCodeLine{00048\ }
+
+\end{DoxyCode}

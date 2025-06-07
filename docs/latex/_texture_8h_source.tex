@@ -1,0 +1,43 @@
+\doxysection{Texture.\+h}
+\hypertarget{_texture_8h_source}{}\label{_texture_8h_source}\index{Engine/Texture.h@{Engine/Texture.h}}
+\mbox{\hyperlink{_texture_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{base_8h}{base.h}}"{}}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_texture_a71ede2b46099f7c975872b7f97f1ddad}{Texture}}\ final}
+\DoxyCodeLine{00005\ \{}
+\DoxyCodeLine{00006\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00007\ \ \ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{class_texture_a71ede2b46099f7c975872b7f97f1ddad}{Texture}}(\ \textcolor{keyword}{const}\ std::string\&\ imagePath\ );}
+\DoxyCodeLine{00008\ \ \ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{class_texture_a71ede2b46099f7c975872b7f97f1ddad}{Texture}}(\ \textcolor{keyword}{const}\ std::string\&\ text,\ TTF\_Font\ *pFont,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{struct_color4f}{Color4f}}\&\ textColor\ );}
+\DoxyCodeLine{00009\ \ \ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{class_texture_a71ede2b46099f7c975872b7f97f1ddad}{Texture}}(\ \textcolor{keyword}{const}\ std::string\&\ text,\ \textcolor{keyword}{const}\ std::string\&\ fontPath,\ \textcolor{keywordtype}{int}\ ptSize,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{struct_color4f}{Color4f}}\&\ textColor\ );}
+\DoxyCodeLine{00010\ \ \ \ \ \mbox{\hyperlink{class_texture_a0b3765fe5b1a6847db044b88613efeff}{Texture}}(\ \textcolor{keyword}{const}\ \mbox{\hyperlink{class_texture_a71ede2b46099f7c975872b7f97f1ddad}{Texture}}\&\ other\ )\ =\ \textcolor{keyword}{delete};}
+\DoxyCodeLine{00011\ \ \ \ \ \mbox{\hyperlink{class_texture_a71ede2b46099f7c975872b7f97f1ddad}{Texture}}\&\ \mbox{\hyperlink{class_texture_a8e209c709bfa2107baf790324f12ef53}{operator=}}(\ \textcolor{keyword}{const}\ \mbox{\hyperlink{class_texture_a71ede2b46099f7c975872b7f97f1ddad}{Texture}}\&\ other\ )\ =\ \textcolor{keyword}{delete};}
+\DoxyCodeLine{00012\ \ \ \ \ \mbox{\hyperlink{class_texture_a71ede2b46099f7c975872b7f97f1ddad}{Texture}}(\ \mbox{\hyperlink{class_texture_a71ede2b46099f7c975872b7f97f1ddad}{Texture}}\&\&\ other\ )\ \textcolor{keyword}{noexcept};}
+\DoxyCodeLine{00013\ \ \ \ \ \mbox{\hyperlink{class_texture_a71ede2b46099f7c975872b7f97f1ddad}{Texture}}\&\ \mbox{\hyperlink{class_texture_a8e209c709bfa2107baf790324f12ef53}{operator=}}(\ \mbox{\hyperlink{class_texture_a71ede2b46099f7c975872b7f97f1ddad}{Texture}}\&\&\ other\ )\ \textcolor{keyword}{noexcept};}
+\DoxyCodeLine{00014\ \ \ \ \ \mbox{\hyperlink{class_texture_a09c4bcb7462f64c1d20fa69dba3cee8a}{\string~Texture}}();}
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00016\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_texture_a7b647d8063384d6f94375245f6139ee9}{Draw}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{struct_vector2f}{Vector2f}}\&\ dstBottomLeft\ =\ \{\},\ \textcolor{keyword}{const}\ \mbox{\hyperlink{struct_rectf}{Rectf}}\&\ srcRect\ =\ \{\})\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00017\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_texture_a7b647d8063384d6f94375245f6139ee9}{Draw}}(\ \textcolor{keyword}{const}\ Rectf\&\ dstRect,\ \textcolor{keyword}{const}\ Rectf\&\ srcRect\ =\ \{\}\ )\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00018\ }
+\DoxyCodeLine{00019\ \ \ \ \ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{class_texture_a1ddf666c56410ecfd74d6a1f1927e9e4}{GetWidth}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00020\ \ \ \ \ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{class_texture_a76bea9b8ce1f75ce5add78c4ff086667}{GetHeight}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00021\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_texture_a61542511d0b33e405966007f60eaba5d}{IsCreationOk}}(\ )\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00022\ }
+\DoxyCodeLine{00023\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00024\ \ \ \ \ \textcolor{comment}{//DATA\ MEMBERS}}
+\DoxyCodeLine{00025\ \ \ \ \ GLuint\ m\_Id;}
+\DoxyCodeLine{00026\ \ \ \ \ \textcolor{keywordtype}{float}\ m\_Width;}
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{keywordtype}{float}\ m\_Height;}
+\DoxyCodeLine{00028\ \ \ \ \ \textcolor{keywordtype}{bool}\ m\_CreationOk;}
+\DoxyCodeLine{00029\ }
+\DoxyCodeLine{00030\ \ \ \ \ \textcolor{comment}{//\ FUNCTIONS}}
+\DoxyCodeLine{00031\ \ \ \ \ \textcolor{keywordtype}{void}\ CreateFromImage(\ \textcolor{keyword}{const}\ std::string\&\ path\ );}
+\DoxyCodeLine{00032\ \ \ \ \ \textcolor{keywordtype}{void}\ CreateFromString(\ \textcolor{keyword}{const}\ std::string\&\ text,\ TTF\_Font\ *pFont,\ \textcolor{keyword}{const}\ Color4f\&\ textColor\ );}
+\DoxyCodeLine{00033\ \ \ \ \ \textcolor{keywordtype}{void}\ CreateFromString(\ \textcolor{keyword}{const}\ std::string\&\ text,\ \textcolor{keyword}{const}\ std::string\&\ fontPath,\ \textcolor{keywordtype}{int}\ ptSize,\ \textcolor{keyword}{const}\ Color4f\&\ textColor\ );}
+\DoxyCodeLine{00034\ \ \ \ \ \textcolor{keywordtype}{void}\ CreateFromSurface(\ SDL\_Surface\ *pSurface\ );}
+\DoxyCodeLine{00035\ \ \ \ \ SDL\_Surface\ *\ STBImageLoad(\ \textcolor{keyword}{const}\ std::string\&\ path\ );}
+\DoxyCodeLine{00036\ \ \ \ \ \textcolor{keywordtype}{void}\ DrawFilledRect(\textcolor{keyword}{const}\ Rectf\&\ dstRect)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00037\ \};}
+
+\end{DoxyCode}

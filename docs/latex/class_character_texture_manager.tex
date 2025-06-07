@@ -1,0 +1,97 @@
+\doxysection{Character\+Texture\+Manager Class Reference}
+\hypertarget{class_character_texture_manager}{}\label{class_character_texture_manager}\index{CharacterTextureManager@{CharacterTextureManager}}
+
+
+{\ttfamily \#include $<$Character\+Texture\+Manager.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_character_texture_manager_a2c8ff2d120d33ed3dceb1d363a25a088}{Character\+Texture\+Manager}} (\mbox{\hyperlink{class_hair}{Hair}} \texorpdfstring{$\ast$}{*}hair, float scale=1.f, \mbox{\hyperlink{_character_state_8h_aacbb008a93d24b04a8779bbdbd8880b5}{Character\+State}} state=\mbox{\hyperlink{_character_state_8h_aacbb008a93d24b04a8779bbdbd8880b5aec2f993aec2c27fc750119ab17b16cdb}{Character\+State\+::idle}})
+\item 
+void \mbox{\hyperlink{class_character_texture_manager_a6c74475eef6fea12de8967fc435f74b1}{Update}} (float elapsed\+Sec)
+\item 
+void \mbox{\hyperlink{class_character_texture_manager_a9d595fd4517d4fa5db7757c5c609a36e}{Draw}} () const
+\item 
+void \mbox{\hyperlink{class_character_texture_manager_a1ef1555c29aba8bb755a2b35b6c8dc9b}{Reset\+Jump}} ()
+\item 
+bool \mbox{\hyperlink{class_character_texture_manager_aed6ab915214f97bf02a4643c8df2917c}{Animation\+Is\+Over}} ()
+\item 
+\mbox{\hyperlink{struct_rectf}{Rectf}} \mbox{\hyperlink{class_character_texture_manager_aa3a12b9dbeb392c3569880a698fa1fed}{Get\+Dst\+Rect}} () const noexcept
+\item 
+bool \mbox{\hyperlink{class_character_texture_manager_a30b2f5be7e65d4534be96cf5034e191b}{Is\+In\+Respawn\+Stage}} () const noexcept
+\item 
+void \mbox{\hyperlink{class_character_texture_manager_a9f7ba8cb5cd427e025b8d3b3c6e03c6f}{Set\+State}} (\mbox{\hyperlink{_character_state_8h_aacbb008a93d24b04a8779bbdbd8880b5}{Character\+State}} state)
+\end{DoxyCompactItemize}
+
+
+\label{doc-constructors}
+\Hypertarget{class_character_texture_manager_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_character_texture_manager_a2c8ff2d120d33ed3dceb1d363a25a088}\index{CharacterTextureManager@{CharacterTextureManager}!CharacterTextureManager@{CharacterTextureManager}}
+\index{CharacterTextureManager@{CharacterTextureManager}!CharacterTextureManager@{CharacterTextureManager}}
+\doxysubsubsection{\texorpdfstring{CharacterTextureManager()}{CharacterTextureManager()}}
+{\footnotesize\ttfamily \label{class_character_texture_manager_a2c8ff2d120d33ed3dceb1d363a25a088} 
+Character\+Texture\+Manager\+::\+Character\+Texture\+Manager (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_hair}{Hair}} \texorpdfstring{$\ast$}{*}}]{hair}{, }\item[{float}]{scale}{ = {\ttfamily 1.f}, }\item[{\mbox{\hyperlink{_character_state_8h_aacbb008a93d24b04a8779bbdbd8880b5}{Character\+State}}}]{state}{ = {\ttfamily \mbox{\hyperlink{_character_state_8h_aacbb008a93d24b04a8779bbdbd8880b5aec2f993aec2c27fc750119ab17b16cdb}{Character\+State\+::idle}}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+\label{doc-func-members}
+\Hypertarget{class_character_texture_manager_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_character_texture_manager_aed6ab915214f97bf02a4643c8df2917c}\index{CharacterTextureManager@{CharacterTextureManager}!AnimationIsOver@{AnimationIsOver}}
+\index{AnimationIsOver@{AnimationIsOver}!CharacterTextureManager@{CharacterTextureManager}}
+\doxysubsubsection{\texorpdfstring{AnimationIsOver()}{AnimationIsOver()}}
+{\footnotesize\ttfamily \label{class_character_texture_manager_aed6ab915214f97bf02a4643c8df2917c} 
+bool Character\+Texture\+Manager\+::\+Animation\+Is\+Over (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_character_texture_manager_a9d595fd4517d4fa5db7757c5c609a36e}\index{CharacterTextureManager@{CharacterTextureManager}!Draw@{Draw}}
+\index{Draw@{Draw}!CharacterTextureManager@{CharacterTextureManager}}
+\doxysubsubsection{\texorpdfstring{Draw()}{Draw()}}
+{\footnotesize\ttfamily \label{class_character_texture_manager_a9d595fd4517d4fa5db7757c5c609a36e} 
+void Character\+Texture\+Manager\+::\+Draw (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=327pt]{class_character_texture_manager_a9d595fd4517d4fa5db7757c5c609a36e_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_character_texture_manager_aa3a12b9dbeb392c3569880a698fa1fed}\index{CharacterTextureManager@{CharacterTextureManager}!GetDstRect@{GetDstRect}}
+\index{GetDstRect@{GetDstRect}!CharacterTextureManager@{CharacterTextureManager}}
+\doxysubsubsection{\texorpdfstring{GetDstRect()}{GetDstRect()}}
+{\footnotesize\ttfamily \label{class_character_texture_manager_aa3a12b9dbeb392c3569880a698fa1fed} 
+\mbox{\hyperlink{struct_rectf}{Rectf}} Character\+Texture\+Manager\+::\+Get\+Dst\+Rect (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+\Hypertarget{class_character_texture_manager_a30b2f5be7e65d4534be96cf5034e191b}\index{CharacterTextureManager@{CharacterTextureManager}!IsInRespawnStage@{IsInRespawnStage}}
+\index{IsInRespawnStage@{IsInRespawnStage}!CharacterTextureManager@{CharacterTextureManager}}
+\doxysubsubsection{\texorpdfstring{IsInRespawnStage()}{IsInRespawnStage()}}
+{\footnotesize\ttfamily \label{class_character_texture_manager_a30b2f5be7e65d4534be96cf5034e191b} 
+bool Character\+Texture\+Manager\+::\+Is\+In\+Respawn\+Stage (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+\Hypertarget{class_character_texture_manager_a1ef1555c29aba8bb755a2b35b6c8dc9b}\index{CharacterTextureManager@{CharacterTextureManager}!ResetJump@{ResetJump}}
+\index{ResetJump@{ResetJump}!CharacterTextureManager@{CharacterTextureManager}}
+\doxysubsubsection{\texorpdfstring{ResetJump()}{ResetJump()}}
+{\footnotesize\ttfamily \label{class_character_texture_manager_a1ef1555c29aba8bb755a2b35b6c8dc9b} 
+void Character\+Texture\+Manager\+::\+Reset\+Jump (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_character_texture_manager_a9f7ba8cb5cd427e025b8d3b3c6e03c6f}\index{CharacterTextureManager@{CharacterTextureManager}!SetState@{SetState}}
+\index{SetState@{SetState}!CharacterTextureManager@{CharacterTextureManager}}
+\doxysubsubsection{\texorpdfstring{SetState()}{SetState()}}
+{\footnotesize\ttfamily \label{class_character_texture_manager_a9f7ba8cb5cd427e025b8d3b3c6e03c6f} 
+void Character\+Texture\+Manager\+::\+Set\+State (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_character_state_8h_aacbb008a93d24b04a8779bbdbd8880b5}{Character\+State}}}]{state}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_character_texture_manager_a6c74475eef6fea12de8967fc435f74b1}\index{CharacterTextureManager@{CharacterTextureManager}!Update@{Update}}
+\index{Update@{Update}!CharacterTextureManager@{CharacterTextureManager}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily \label{class_character_texture_manager_a6c74475eef6fea12de8967fc435f74b1} 
+void Character\+Texture\+Manager\+::\+Update (\begin{DoxyParamCaption}\item[{float}]{elapsed\+Sec}{}\end{DoxyParamCaption})}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Celeste/\mbox{\hyperlink{_character_texture_manager_8h}{Character\+Texture\+Manager.\+h}}\item 
+Celeste/\mbox{\hyperlink{_character_texture_manager_8cpp}{Character\+Texture\+Manager.\+cpp}}\end{DoxyCompactItemize}

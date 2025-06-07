@@ -1,0 +1,7 @@
+<map id="PauseMenu::GoLeft" name="PauseMenu::GoLeft">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,143,32"/>
+<area shape="rect" id="Node000002" href="$class_slider_menu_item.html#a41abad7d2a083488f3c0d7b91cbd5bcc" title=" " alt="" coords="191,5,403,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="143,16,175,16,175,21,143,21"/>
+<area shape="rect" id="Node000003" href="$class_slider_menu_item.html#a14cdb721ca4a62dcdcc0d2ea9a925384" title=" " alt="" coords="451,5,657,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="404,16,435,16,435,21,404,21"/>
+</map>

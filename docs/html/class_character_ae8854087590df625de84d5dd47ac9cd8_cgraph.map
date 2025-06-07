@@ -1,0 +1,10 @@
+<map id="Character::Dash" name="Character::Dash">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,43,123,69"/>
+<area shape="rect" id="Node000002" href="$struct_vector2f.html#aba5dd756c385551a19d36b57d8cbf629" title=" " alt="" coords="171,43,314,69"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="123,53,155,53,155,59,123,59"/>
+<area shape="rect" id="Node000003" href="$struct_vector2f.html#acedb20d25ccc3009546e120eda010bf5" title=" " alt="" coords="366,5,483,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="310,39,351,31,352,36,311,45"/>
+<area shape="rect" id="Node000004" href="$struct_vector2f.html#a3db9a868c58bc809e5e09a88d65a77ec" title=" " alt="" coords="362,80,487,107"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="311,67,347,75,346,80,310,73"/>
+<area shape="poly" id="edge4_Node000004_Node000004" title=" " alt="" coords="393,81,388,71,392,62,404,55,425,53,447,56,458,62,456,67,445,61,425,59,406,61,396,65,393,71,398,78"/>
+</map>

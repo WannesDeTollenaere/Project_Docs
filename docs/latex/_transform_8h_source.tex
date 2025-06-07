@@ -1,0 +1,30 @@
+\doxysection{Transform.\+h}
+\hypertarget{_transform_8h_source}{}\label{_transform_8h_source}\index{Engine/Transform.h@{Engine/Transform.h}}
+\mbox{\hyperlink{_transform_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{base_8h}{base.h}}"{}}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_vector2f_8h}{Vector2f.h}}"{}}}
+\DoxyCodeLine{00004\ }
+\DoxyCodeLine{00005\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_transform}{Transform}}}
+\DoxyCodeLine{00006\ \{}
+\DoxyCodeLine{00007\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00008\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{struct_transform_ab8e1d9aa4721917dd7b355171f431c1c}{ApplyTransformation}}()\textcolor{keyword}{\ const}}
+\DoxyCodeLine{00009\ \textcolor{keyword}{\ \ \ \ }\{}
+\DoxyCodeLine{00010\ \ \ \ \ \ \ \ \ glPushMatrix();}
+\DoxyCodeLine{00011\ \ \ \ \ \ \ \ \ glTranslatef(\mbox{\hyperlink{struct_transform_a2847b6be583a37481ed10816efafb93d}{Position}}.x,\ \mbox{\hyperlink{struct_transform_a2847b6be583a37481ed10816efafb93d}{Position}}.y,\ 0);}
+\DoxyCodeLine{00012\ \ \ \ \ \ \ \ \ glRotatef(\mbox{\hyperlink{struct_transform_a71a6a4d39085257b7e7afe39d38f48ad}{Rotation}},\ 0,\ 0,\ 1);}
+\DoxyCodeLine{00013\ \ \ \ \ \ \ \ \ glScalef(\mbox{\hyperlink{struct_transform_ad049c91e6c6f9cac21514cc4bc399ed2}{Scale}}.x,\ \mbox{\hyperlink{struct_transform_ad049c91e6c6f9cac21514cc4bc399ed2}{Scale}}.y,\ 1);}
+\DoxyCodeLine{00014\ \ \ \ \ \}}
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00016\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{struct_transform_a241077edd3a92fba35e3c5694cf2cbea}{ResetTransformation}}()\textcolor{keyword}{\ const}}
+\DoxyCodeLine{00017\ \textcolor{keyword}{\ \ \ \ }\{}
+\DoxyCodeLine{00018\ \ \ \ \ \ \ \ \ glPopMatrix();}
+\DoxyCodeLine{00019\ \ \ \ \ \}}
+\DoxyCodeLine{00020\ }
+\DoxyCodeLine{00021\ \ \ \ \ \mbox{\hyperlink{struct_vector2f}{Vector2f}}\ \mbox{\hyperlink{struct_transform_a2847b6be583a37481ed10816efafb93d}{Position}}\{\};}
+\DoxyCodeLine{00022\ \ \ \ \ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{struct_transform_a71a6a4d39085257b7e7afe39d38f48ad}{Rotation}}\{\};}
+\DoxyCodeLine{00023\ \ \ \ \ \mbox{\hyperlink{struct_vector2f}{Vector2f}}\ \mbox{\hyperlink{struct_transform_ad049c91e6c6f9cac21514cc4bc399ed2}{Scale}}\{\ 1.f,\ 1.f\ \};}
+\DoxyCodeLine{00024\ \};}
+
+\end{DoxyCode}

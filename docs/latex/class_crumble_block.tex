@@ -1,0 +1,238 @@
+\doxysection{Crumble\+Block Class Reference}
+\hypertarget{class_crumble_block}{}\label{class_crumble_block}\index{CrumbleBlock@{CrumbleBlock}}
+
+
+{\ttfamily \#include $<$Crumble\+Block.\+h$>$}
+
+
+
+Inheritance diagram for Crumble\+Block\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=336pt]{class_crumble_block__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Crumble\+Block\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=336pt]{class_crumble_block__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_crumble_block_aaebd22fd4ac1c8821cfb74f7461edb4d}{Crumble\+Block}} (const \mbox{\hyperlink{struct_rectf}{Rectf}} \&bounds)
+\item 
+void \mbox{\hyperlink{class_crumble_block_a860ede5922b68420c0672b68bd53a226}{Draw}} () const override
+\item 
+void \mbox{\hyperlink{class_crumble_block_af211a08e47f20f7343183341611d5653}{Player\+Interaction}} (\mbox{\hyperlink{class_character}{Character}} \&character, float elapsed\+Sec) override
+\item 
+std\+::vector$<$ \mbox{\hyperlink{struct_vector2f}{Vector2f}} $>$ \mbox{\hyperlink{class_crumble_block_a08aa31eec30dae935aef94942a985b71}{Get\+Collision\+Bounds}} () const noexcept override
+\item 
+\mbox{\hyperlink{class_crumble_block_a20b24ad8d5184de47efe80f01ba15c86}{Crumble\+Block}} (const \mbox{\hyperlink{class_crumble_block}{Crumble\+Block}} \&other)=default
+\item 
+\mbox{\hyperlink{class_crumble_block_a0d59c8868da1bed798c4a4b9ac52c111}{Crumble\+Block}} (\mbox{\hyperlink{class_crumble_block}{Crumble\+Block}} \&\&other) noexcept=default
+\item 
+\mbox{\hyperlink{class_crumble_block}{Crumble\+Block}} \& \mbox{\hyperlink{class_crumble_block_ae2010e4176ee45a228c18c9911b800cd}{operator=}} (const \mbox{\hyperlink{class_crumble_block}{Crumble\+Block}} \&other)
+\item 
+\mbox{\hyperlink{class_crumble_block}{Crumble\+Block}} \& \mbox{\hyperlink{class_crumble_block_ab7d71c39b2f8baf75ec72bddc2f45b41}{operator=}} (\mbox{\hyperlink{class_crumble_block}{Crumble\+Block}} \&\&other) noexcept=default
+\item 
+\mbox{\hyperlink{class_crumble_block_af18e099a6bb3b1a02af3adefc6470040}{\texorpdfstring{$\sim$}{\string~}\+Crumble\+Block}} () noexcept override
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_interactable_item}{Interactable\+Item}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_interactable_item_a5e5b9c459514e29098aaff5e62761569}{Interactable\+Item}} (const \mbox{\hyperlink{struct_rectf}{Rectf}} \&bounds)
+\item 
+\mbox{\hyperlink{class_interactable_item_a6bdd4d54f5965b13c2e68617c7321eb7}{Interactable\+Item}} (float x, float y, float width, float height)
+\item 
+\mbox{\hyperlink{class_interactable_item_a5a6b7071c26aea54f770dcddea4d4673}{Interactable\+Item}} (const \mbox{\hyperlink{struct_vector2f}{Vector2f}} \&position, float width, float height)
+\item 
+\mbox{\hyperlink{struct_rectf}{Rectf}} \mbox{\hyperlink{class_interactable_item_a446bdb0ccbff7de5951c0a3175bab008}{Get\+Bounds}} () const noexcept
+\item 
+bool \mbox{\hyperlink{class_interactable_item_aca9a06af6a60be1d7cc2e61ea6a18893}{Has\+Collision\+Bounds}} () const noexcept
+\item 
+\mbox{\hyperlink{class_interactable_item_a9124be31fe21f1cbe122579dde8f9252}{Interactable\+Item}} (const \mbox{\hyperlink{class_interactable_item}{Interactable\+Item}} \&other)=default
+\item 
+\mbox{\hyperlink{class_interactable_item_ae94edc84b2ceb14edb952a3edb676772}{Interactable\+Item}} (\mbox{\hyperlink{class_interactable_item}{Interactable\+Item}} \&\&other) noexcept=default
+\item 
+\mbox{\hyperlink{class_interactable_item}{Interactable\+Item}} \& \mbox{\hyperlink{class_interactable_item_a67139551064d009752d97e2e77ef865f}{operator=}} (const \mbox{\hyperlink{class_interactable_item}{Interactable\+Item}} \&other)=default
+\item 
+\mbox{\hyperlink{class_interactable_item}{Interactable\+Item}} \& \mbox{\hyperlink{class_interactable_item_a4d5baa6774ebb9137c08921d3c421d09}{operator=}} (\mbox{\hyperlink{class_interactable_item}{Interactable\+Item}} \&\&other) noexcept=default
+\item 
+virtual \mbox{\hyperlink{class_interactable_item_aa3d008d77d5f29c2673a991e24ed9301}{\texorpdfstring{$\sim$}{\string~}\+Interactable\+Item}} () noexcept=default
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{class_counted_item}{Counted\+Item$<$ Crumble\+Block $>$}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_counted_item_a379818e68b8231fbfad8c51cbf2add57}{Counted\+Item}} ()
+\item 
+\mbox{\hyperlink{class_counted_item}{Counted\+Item}} \& \mbox{\hyperlink{class_counted_item_aa782288d34bfef1fbb3e7660f203aac5}{operator=}} (const \mbox{\hyperlink{class_counted_item}{Counted\+Item}} \&other)=default
+\item 
+virtual \mbox{\hyperlink{class_counted_item_aea020fda431fdcb47017df22721022c7}{\texorpdfstring{$\sim$}{\string~}\+Counted\+Item}} () noexcept
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Protected Member Functions inherited from \mbox{\hyperlink{class_counted_item}{Counted\+Item$<$ Crumble\+Block $>$}}}
+\begin{DoxyCompactItemize}
+\item 
+static size\+\_\+t \mbox{\hyperlink{class_counted_item_a7a4f3ec5e121b459d51a818c9ed0e269}{Get\+Count}} () noexcept
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_interactable_item}{Interactable\+Item}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_rectf}{Rectf}} \mbox{\hyperlink{class_interactable_item_afddb710738697e6bbbd141c154d50335}{m\+\_\+\+Bounds}}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{struct_vector2f}{Vector2f}} $>$ \mbox{\hyperlink{class_interactable_item_aa38359a5d89f9690f9b8cddc4de3458e}{m\+\_\+\+Collision\+Bounds}}
+\end{DoxyCompactItemize}
+
+
+\label{doc-constructors}
+\Hypertarget{class_crumble_block_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_crumble_block_aaebd22fd4ac1c8821cfb74f7461edb4d}\index{CrumbleBlock@{CrumbleBlock}!CrumbleBlock@{CrumbleBlock}}
+\index{CrumbleBlock@{CrumbleBlock}!CrumbleBlock@{CrumbleBlock}}
+\doxysubsubsection{\texorpdfstring{CrumbleBlock()}{CrumbleBlock()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \label{class_crumble_block_aaebd22fd4ac1c8821cfb74f7461edb4d} 
+Crumble\+Block\+::\+Crumble\+Block (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_rectf}{Rectf}} \&}]{bounds}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_crumble_block_aaebd22fd4ac1c8821cfb74f7461edb4d_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_crumble_block_aaebd22fd4ac1c8821cfb74f7461edb4d_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_crumble_block_a20b24ad8d5184de47efe80f01ba15c86}\index{CrumbleBlock@{CrumbleBlock}!CrumbleBlock@{CrumbleBlock}}
+\index{CrumbleBlock@{CrumbleBlock}!CrumbleBlock@{CrumbleBlock}}
+\doxysubsubsection{\texorpdfstring{CrumbleBlock()}{CrumbleBlock()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \label{class_crumble_block_a20b24ad8d5184de47efe80f01ba15c86} 
+Crumble\+Block\+::\+Crumble\+Block (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_crumble_block}{Crumble\+Block}} \&}]{other}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_crumble_block_a20b24ad8d5184de47efe80f01ba15c86_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_crumble_block_a0d59c8868da1bed798c4a4b9ac52c111}\index{CrumbleBlock@{CrumbleBlock}!CrumbleBlock@{CrumbleBlock}}
+\index{CrumbleBlock@{CrumbleBlock}!CrumbleBlock@{CrumbleBlock}}
+\doxysubsubsection{\texorpdfstring{CrumbleBlock()}{CrumbleBlock()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily \label{class_crumble_block_a0d59c8868da1bed798c4a4b9ac52c111} 
+Crumble\+Block\+::\+Crumble\+Block (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_crumble_block}{Crumble\+Block}} \&\&}]{other}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}, {\ttfamily [noexcept]}}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_crumble_block_a0d59c8868da1bed798c4a4b9ac52c111_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_crumble_block_af18e099a6bb3b1a02af3adefc6470040}\index{CrumbleBlock@{CrumbleBlock}!````~CrumbleBlock@{\texorpdfstring{$\sim$}{\string~}CrumbleBlock}}
+\index{````~CrumbleBlock@{\texorpdfstring{$\sim$}{\string~}CrumbleBlock}!CrumbleBlock@{CrumbleBlock}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}CrumbleBlock()}{\string~CrumbleBlock()}}
+{\footnotesize\ttfamily \label{class_crumble_block_af18e099a6bb3b1a02af3adefc6470040} 
+Crumble\+Block\+::\texorpdfstring{$\sim$}{\string~}\+Crumble\+Block (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [noexcept]}}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_crumble_block_af18e099a6bb3b1a02af3adefc6470040_cgraph}
+\end{center}
+\end{figure}
+
+
+\label{doc-func-members}
+\Hypertarget{class_crumble_block_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_crumble_block_a860ede5922b68420c0672b68bd53a226}\index{CrumbleBlock@{CrumbleBlock}!Draw@{Draw}}
+\index{Draw@{Draw}!CrumbleBlock@{CrumbleBlock}}
+\doxysubsubsection{\texorpdfstring{Draw()}{Draw()}}
+{\footnotesize\ttfamily \label{class_crumble_block_a860ede5922b68420c0672b68bd53a226} 
+void Crumble\+Block\+::\+Draw (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_interactable_item_af87c8f5b507f809c6eb2ea5b43d83c25}{Interactable\+Item}}.
+
+\Hypertarget{class_crumble_block_a08aa31eec30dae935aef94942a985b71}\index{CrumbleBlock@{CrumbleBlock}!GetCollisionBounds@{GetCollisionBounds}}
+\index{GetCollisionBounds@{GetCollisionBounds}!CrumbleBlock@{CrumbleBlock}}
+\doxysubsubsection{\texorpdfstring{GetCollisionBounds()}{GetCollisionBounds()}}
+{\footnotesize\ttfamily \label{class_crumble_block_a08aa31eec30dae935aef94942a985b71} 
+std\+::vector$<$ \mbox{\hyperlink{struct_vector2f}{Vector2f}} $>$ Crumble\+Block\+::\+Get\+Collision\+Bounds (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}, {\ttfamily [noexcept]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_interactable_item_a4f4343a4b509fdf7253038f67238c5ae}{Interactable\+Item}}.
+
+\Hypertarget{class_crumble_block_ae2010e4176ee45a228c18c9911b800cd}\index{CrumbleBlock@{CrumbleBlock}!operator=@{operator=}}
+\index{operator=@{operator=}!CrumbleBlock@{CrumbleBlock}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_crumble_block_ae2010e4176ee45a228c18c9911b800cd} 
+\mbox{\hyperlink{class_crumble_block}{Crumble\+Block}} \& Crumble\+Block\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_crumble_block}{Crumble\+Block}} \&}]{other}{}\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_crumble_block_ae2010e4176ee45a228c18c9911b800cd_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_crumble_block_ab7d71c39b2f8baf75ec72bddc2f45b41}\index{CrumbleBlock@{CrumbleBlock}!operator=@{operator=}}
+\index{operator=@{operator=}!CrumbleBlock@{CrumbleBlock}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_crumble_block_ab7d71c39b2f8baf75ec72bddc2f45b41} 
+\mbox{\hyperlink{class_crumble_block}{Crumble\+Block}} \& Crumble\+Block\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_crumble_block}{Crumble\+Block}} \&\&}]{other}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}, {\ttfamily [noexcept]}}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_crumble_block_ab7d71c39b2f8baf75ec72bddc2f45b41_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_crumble_block_af211a08e47f20f7343183341611d5653}\index{CrumbleBlock@{CrumbleBlock}!PlayerInteraction@{PlayerInteraction}}
+\index{PlayerInteraction@{PlayerInteraction}!CrumbleBlock@{CrumbleBlock}}
+\doxysubsubsection{\texorpdfstring{PlayerInteraction()}{PlayerInteraction()}}
+{\footnotesize\ttfamily \label{class_crumble_block_af211a08e47f20f7343183341611d5653} 
+void Crumble\+Block\+::\+Player\+Interaction (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_character}{Character}} \&}]{character}{, }\item[{float}]{elapsed\+Sec}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_interactable_item_a18b200bb2e7fc662ea1c2d1a11e483d2}{Interactable\+Item}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_crumble_block_af211a08e47f20f7343183341611d5653_cgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Celeste/\mbox{\hyperlink{_crumble_block_8h}{Crumble\+Block.\+h}}\item 
+Celeste/\mbox{\hyperlink{_crumble_block_8cpp}{Crumble\+Block.\+cpp}}\end{DoxyCompactItemize}

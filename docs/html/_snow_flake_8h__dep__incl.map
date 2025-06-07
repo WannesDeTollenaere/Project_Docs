@@ -1,0 +1,13 @@
+<map id="Celeste/SnowFlake.h" name="Celeste/SnowFlake.h">
+<area shape="rect" id="Node000001" title=" " alt="" coords="165,5,312,32"/>
+<area shape="rect" id="Node000002" href="$_snow_flake_manager_8h.html" title=" " alt="" coords="140,80,337,107"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="241,48,241,80,236,80,236,48"/>
+<area shape="rect" id="Node000003" href="$_game_8h.html" title=" " alt="" coords="87,155,203,181"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="212,119,163,156,160,152,209,114"/>
+<area shape="rect" id="Node000006" href="$_snow_flake_manager_8cpp.html" title=" " alt="" coords="228,155,438,181"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="269,114,318,152,315,156,265,119"/>
+<area shape="rect" id="Node000004" href="$_game_8cpp.html" title=" " alt="" coords="5,229,136,256"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="123,194,85,231,82,227,120,190"/>
+<area shape="rect" id="Node000005" href="$main_8cpp.html" title=" " alt="" coords="160,229,283,256"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="171,190,210,227,206,231,167,194"/>
+</map>

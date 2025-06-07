@@ -1,0 +1,55 @@
+\doxysection{SVGParser.\+h}
+\hypertarget{_s_v_g_parser_8h_source}{}\label{_s_v_g_parser_8h_source}\index{Engine/SVGParser.h@{Engine/SVGParser.h}}
+\mbox{\hyperlink{_s_v_g_parser_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <sstream>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{structs_8h}{structs.h}}"{}}}
+\DoxyCodeLine{00006\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_s_v_g_parser}{SVGParser}}\ final}
+\DoxyCodeLine{00007\ \{}
+\DoxyCodeLine{00008\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00009\ \ \ \ \ \textcolor{comment}{//\ The\ only\ function\ to\ be\ called}}
+\DoxyCodeLine{00010\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_s_v_g_parser_ac915e0da30034b44b38a0e9a85d5bc2a}{GetVerticesFromSvgFile}}(\textcolor{keyword}{const}\ std::string\&\ filePath,\ std::vector<std::vector<Vector2f>>\ \&vertices);}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00012\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00013\ \ \ \ \ \textcolor{comment}{//static\ bool\ LoadGeometryFromSvgStream(unsigned\ char*\ pBlob,\ int\ blobSize,\ std::vector<Vector2f>\ \&vertices);}}
+\DoxyCodeLine{00014\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{void}\ RemoveSpaces(\ std::string\&\ svgString\ );}
+\DoxyCodeLine{00015\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{bool}\ GetVerticesFromSvgString(std::string\&\ svgText,\ std::vector<std::vector<Vector2f>>\ \&vertices);}
+\DoxyCodeLine{00016\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{bool}\ GetVerticesFromPathData(\ \textcolor{keyword}{const}\ std::string\&\ pathData,\ std::vector<Vector2f>\ \&vertices\ );}
+\DoxyCodeLine{00017\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{bool}\ GetElementContent(\ \textcolor{keyword}{const}\ std::string\&\ svgText,\ \textcolor{keyword}{const}\ std::string\&\ elementName,\ std::string\&\ elementValue,\ \textcolor{keywordtype}{size\_t}\&\ startContentPos,\ \textcolor{keywordtype}{size\_t}\&\ endContentPos);}
+\DoxyCodeLine{00018\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{bool}\ GetAttributeValue(\ \textcolor{keyword}{const}\ std::string\&\ svgText,\ \textcolor{keyword}{const}\ std::string\&\ attributeName,\ std::string\&\ attributeValue\ );}
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00020\ }
+\DoxyCodeLine{00021\ \ \ \ \ \textcolor{comment}{//\ Skips\ any\ optional\ commas\ in\ the\ stream}}
+\DoxyCodeLine{00022\ \ \ \ \ \textcolor{comment}{//\ SVG\ has\ a\ really\ funky\ format,}}
+\DoxyCodeLine{00023\ \ \ \ \ \textcolor{comment}{//\ not\ sure\ this\ code\ works\ for\ all\ cases.}}
+\DoxyCodeLine{00024\ \ \ \ \ \textcolor{comment}{//\ TODO:\ Test\ cases!}}
+\DoxyCodeLine{00025\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{void}\ SkipSvgComma(std::stringstream\&\ stream,\ \textcolor{keywordtype}{bool}\ isRequired);}
+\DoxyCodeLine{00026\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{float}\ ReadSvgValue(std::stringstream\&\ stream,\ \textcolor{keywordtype}{float}\ defaultValue);}
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{float}\ ReadSvgValue(std::stringstream\&\ stream,\ \textcolor{keywordtype}{bool}\ separatorRequired);}
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00029\ \ \ \ \ \textcolor{comment}{//\ Reads\ a\ single\ point}}
+\DoxyCodeLine{00030\ \ \ \ \ \textcolor{keyword}{static}\ \mbox{\hyperlink{struct_vector2f}{Vector2f}}\ ReadSvgPoint(\ std::stringstream\&\ stream\ );}
+\DoxyCodeLine{00031\ \ \ \ \ }
+\DoxyCodeLine{00032\ \ \ \ \ \textcolor{comment}{//\ Read\ the\ first\ point,\ }}
+\DoxyCodeLine{00033\ \ \ \ \ \textcolor{comment}{//\ taking\ into\ account\ relative\ and\ absolute\ positioning.}}
+\DoxyCodeLine{00034\ \ \ \ \ \textcolor{comment}{//\ Stores\ this\ point,\ needed\ when\ path\ is\ closed}}
+\DoxyCodeLine{00035\ \ \ \ \ \textcolor{comment}{//\ Advances\ the\ cursor\ if\ requested.}}
+\DoxyCodeLine{00036\ \ \ \ \ \textcolor{keyword}{static}\ \mbox{\hyperlink{struct_vector2f}{Vector2f}}\ FirstSvgPoint(std::stringstream\&\ stream,\ \mbox{\hyperlink{struct_vector2f}{Vector2f}}\&\ cursor,\ \textcolor{keywordtype}{char}\ cmd,\ \textcolor{keywordtype}{bool}\ isOpen,\ \textcolor{keywordtype}{bool}\ advance);}
+\DoxyCodeLine{00037\ \ \ \ \ }
+\DoxyCodeLine{00038\ \ \ \ \ \textcolor{comment}{//\ Read\ the\ next\ point,\ }}
+\DoxyCodeLine{00039\ \ \ \ \ \textcolor{comment}{//\ taking\ into\ account\ relative\ and\ absolute\ positioning.}}
+\DoxyCodeLine{00040\ \ \ \ \ \textcolor{comment}{//\ Advances\ the\ cursor\ if\ requested.}}
+\DoxyCodeLine{00041\ \ \ \ \ \textcolor{comment}{//\ Throws\ an\ exception\ if\ the\ figure\ is\ not\ open}}
+\DoxyCodeLine{00042\ \ \ \ \ \textcolor{keyword}{static}\ \mbox{\hyperlink{struct_vector2f}{Vector2f}}\ NextSvgPoint(std::stringstream\&\ stream,\ \mbox{\hyperlink{struct_vector2f}{Vector2f}}\&\ cursor,\ \textcolor{keywordtype}{char}\ cmd,\ \textcolor{keywordtype}{bool}\ isOpen,\ \textcolor{keywordtype}{bool}\ advance);}
+\DoxyCodeLine{00043\ }
+\DoxyCodeLine{00044\ \ \ \ \ \textcolor{comment}{//\ Reads\ next\ point,\ given\ only\ the\ new\ x\ coordinate}}
+\DoxyCodeLine{00045\ \ \ \ \ \textcolor{keyword}{static}\ \mbox{\hyperlink{struct_vector2f}{Vector2f}}\ NextSvgCoordX(std::stringstream\&\ stream,\ \mbox{\hyperlink{struct_vector2f}{Vector2f}}\&\ cursor,\ \textcolor{keywordtype}{char}\ cmd,\ \textcolor{keywordtype}{bool}\ isOpen);\ \ }
+\DoxyCodeLine{00046\ }
+\DoxyCodeLine{00047\ \ \ \ \ \textcolor{comment}{//\ Reads\ next\ point,\ given\ only\ the\ new\ y\ coordinate\ }}
+\DoxyCodeLine{00048\ \ \ \ \ \textcolor{keyword}{static}\ \mbox{\hyperlink{struct_vector2f}{Vector2f}}\ NextSvgCoordY(std::stringstream\&\ ssRef,\ \mbox{\hyperlink{struct_vector2f}{Vector2f}}\&\ cursor,\ \textcolor{keywordtype}{char}\ cmd,\ \textcolor{keywordtype}{bool}\ isOpen);\ \ \ }
+\DoxyCodeLine{00049\ \};}
+
+\end{DoxyCode}

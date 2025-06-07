@@ -1,0 +1,228 @@
+\doxysection{Dash\+Crystal Class Reference}
+\hypertarget{class_dash_crystal}{}\label{class_dash_crystal}\index{DashCrystal@{DashCrystal}}
+
+
+{\ttfamily \#include $<$Dash\+Crystal.\+h$>$}
+
+
+
+Inheritance diagram for Dash\+Crystal\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=330pt]{class_dash_crystal__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Dash\+Crystal\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=330pt]{class_dash_crystal__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_dash_crystal_a374494580df528b1eed16b39dd79ff93}{Dash\+Crystal}} (const \mbox{\hyperlink{struct_rectf}{Rectf}} \&bounds)
+\item 
+void \mbox{\hyperlink{class_dash_crystal_a38c87bd8df73b7cb6bab596ee5d55f33}{Draw}} () const override
+\item 
+void \mbox{\hyperlink{class_dash_crystal_ae9d188a3998de0c2de1ee162ba5e1273}{Player\+Interaction}} (\mbox{\hyperlink{class_character}{Character}} \&character, float elapsed\+Sec) override
+\item 
+\mbox{\hyperlink{class_dash_crystal_a843db39ea21e3a57415cab8b745996fa}{Dash\+Crystal}} (const \mbox{\hyperlink{class_dash_crystal}{Dash\+Crystal}} \&other)=default
+\item 
+\mbox{\hyperlink{class_dash_crystal_a7589462bb22d6a26b33dfd60c64b53c0}{Dash\+Crystal}} (\mbox{\hyperlink{class_dash_crystal}{Dash\+Crystal}} \&\&other) noexcept=default
+\item 
+\mbox{\hyperlink{class_dash_crystal}{Dash\+Crystal}} \& \mbox{\hyperlink{class_dash_crystal_af1e409144bb1cdc5f3973e9191ac81ef}{operator=}} (const \mbox{\hyperlink{class_dash_crystal}{Dash\+Crystal}} \&other)=default
+\item 
+\mbox{\hyperlink{class_dash_crystal}{Dash\+Crystal}} \& \mbox{\hyperlink{class_dash_crystal_ae59d4773b95458aa91591a0720905abe}{operator=}} (\mbox{\hyperlink{class_dash_crystal}{Dash\+Crystal}} \&\&other) noexcept=default
+\item 
+virtual \mbox{\hyperlink{class_dash_crystal_ae37888a2bcb94362f1aa2a6f2a7f2477}{\texorpdfstring{$\sim$}{\string~}\+Dash\+Crystal}} () noexcept override
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_interactable_item}{Interactable\+Item}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_interactable_item_a5e5b9c459514e29098aaff5e62761569}{Interactable\+Item}} (const \mbox{\hyperlink{struct_rectf}{Rectf}} \&bounds)
+\item 
+\mbox{\hyperlink{class_interactable_item_a6bdd4d54f5965b13c2e68617c7321eb7}{Interactable\+Item}} (float x, float y, float width, float height)
+\item 
+\mbox{\hyperlink{class_interactable_item_a5a6b7071c26aea54f770dcddea4d4673}{Interactable\+Item}} (const \mbox{\hyperlink{struct_vector2f}{Vector2f}} \&position, float width, float height)
+\item 
+\mbox{\hyperlink{struct_rectf}{Rectf}} \mbox{\hyperlink{class_interactable_item_a446bdb0ccbff7de5951c0a3175bab008}{Get\+Bounds}} () const noexcept
+\item 
+bool \mbox{\hyperlink{class_interactable_item_aca9a06af6a60be1d7cc2e61ea6a18893}{Has\+Collision\+Bounds}} () const noexcept
+\item 
+virtual std\+::vector$<$ \mbox{\hyperlink{struct_vector2f}{Vector2f}} $>$ \mbox{\hyperlink{class_interactable_item_a4f4343a4b509fdf7253038f67238c5ae}{Get\+Collision\+Bounds}} () const noexcept
+\item 
+\mbox{\hyperlink{class_interactable_item_a9124be31fe21f1cbe122579dde8f9252}{Interactable\+Item}} (const \mbox{\hyperlink{class_interactable_item}{Interactable\+Item}} \&other)=default
+\item 
+\mbox{\hyperlink{class_interactable_item_ae94edc84b2ceb14edb952a3edb676772}{Interactable\+Item}} (\mbox{\hyperlink{class_interactable_item}{Interactable\+Item}} \&\&other) noexcept=default
+\item 
+\mbox{\hyperlink{class_interactable_item}{Interactable\+Item}} \& \mbox{\hyperlink{class_interactable_item_a67139551064d009752d97e2e77ef865f}{operator=}} (const \mbox{\hyperlink{class_interactable_item}{Interactable\+Item}} \&other)=default
+\item 
+\mbox{\hyperlink{class_interactable_item}{Interactable\+Item}} \& \mbox{\hyperlink{class_interactable_item_a4d5baa6774ebb9137c08921d3c421d09}{operator=}} (\mbox{\hyperlink{class_interactable_item}{Interactable\+Item}} \&\&other) noexcept=default
+\item 
+virtual \mbox{\hyperlink{class_interactable_item_aa3d008d77d5f29c2673a991e24ed9301}{\texorpdfstring{$\sim$}{\string~}\+Interactable\+Item}} () noexcept=default
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{class_counted_item}{Counted\+Item$<$ Dash\+Crystal $>$}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_counted_item_a379818e68b8231fbfad8c51cbf2add57}{Counted\+Item}} ()
+\item 
+\mbox{\hyperlink{class_counted_item}{Counted\+Item}} \& \mbox{\hyperlink{class_counted_item_aa782288d34bfef1fbb3e7660f203aac5}{operator=}} (const \mbox{\hyperlink{class_counted_item}{Counted\+Item}} \&other)=default
+\item 
+virtual \mbox{\hyperlink{class_counted_item_aea020fda431fdcb47017df22721022c7}{\texorpdfstring{$\sim$}{\string~}\+Counted\+Item}} () noexcept
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Protected Member Functions inherited from \mbox{\hyperlink{class_counted_item}{Counted\+Item$<$ Dash\+Crystal $>$}}}
+\begin{DoxyCompactItemize}
+\item 
+static size\+\_\+t \mbox{\hyperlink{class_counted_item_a7a4f3ec5e121b459d51a818c9ed0e269}{Get\+Count}} () noexcept
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_interactable_item}{Interactable\+Item}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_rectf}{Rectf}} \mbox{\hyperlink{class_interactable_item_afddb710738697e6bbbd141c154d50335}{m\+\_\+\+Bounds}}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{struct_vector2f}{Vector2f}} $>$ \mbox{\hyperlink{class_interactable_item_aa38359a5d89f9690f9b8cddc4de3458e}{m\+\_\+\+Collision\+Bounds}}
+\end{DoxyCompactItemize}
+
+
+\label{doc-constructors}
+\Hypertarget{class_dash_crystal_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_dash_crystal_a374494580df528b1eed16b39dd79ff93}\index{DashCrystal@{DashCrystal}!DashCrystal@{DashCrystal}}
+\index{DashCrystal@{DashCrystal}!DashCrystal@{DashCrystal}}
+\doxysubsubsection{\texorpdfstring{DashCrystal()}{DashCrystal()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \label{class_dash_crystal_a374494580df528b1eed16b39dd79ff93} 
+Dash\+Crystal\+::\+Dash\+Crystal (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_rectf}{Rectf}} \&}]{bounds}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_dash_crystal_a374494580df528b1eed16b39dd79ff93_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_dash_crystal_a374494580df528b1eed16b39dd79ff93_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_dash_crystal_a843db39ea21e3a57415cab8b745996fa}\index{DashCrystal@{DashCrystal}!DashCrystal@{DashCrystal}}
+\index{DashCrystal@{DashCrystal}!DashCrystal@{DashCrystal}}
+\doxysubsubsection{\texorpdfstring{DashCrystal()}{DashCrystal()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \label{class_dash_crystal_a843db39ea21e3a57415cab8b745996fa} 
+Dash\+Crystal\+::\+Dash\+Crystal (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_dash_crystal}{Dash\+Crystal}} \&}]{other}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_dash_crystal_a843db39ea21e3a57415cab8b745996fa_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_dash_crystal_a7589462bb22d6a26b33dfd60c64b53c0}\index{DashCrystal@{DashCrystal}!DashCrystal@{DashCrystal}}
+\index{DashCrystal@{DashCrystal}!DashCrystal@{DashCrystal}}
+\doxysubsubsection{\texorpdfstring{DashCrystal()}{DashCrystal()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily \label{class_dash_crystal_a7589462bb22d6a26b33dfd60c64b53c0} 
+Dash\+Crystal\+::\+Dash\+Crystal (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_dash_crystal}{Dash\+Crystal}} \&\&}]{other}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}, {\ttfamily [noexcept]}}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_dash_crystal_a7589462bb22d6a26b33dfd60c64b53c0_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_dash_crystal_ae37888a2bcb94362f1aa2a6f2a7f2477}\index{DashCrystal@{DashCrystal}!````~DashCrystal@{\texorpdfstring{$\sim$}{\string~}DashCrystal}}
+\index{````~DashCrystal@{\texorpdfstring{$\sim$}{\string~}DashCrystal}!DashCrystal@{DashCrystal}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}DashCrystal()}{\string~DashCrystal()}}
+{\footnotesize\ttfamily \label{class_dash_crystal_ae37888a2bcb94362f1aa2a6f2a7f2477} 
+Dash\+Crystal\+::\texorpdfstring{$\sim$}{\string~}\+Dash\+Crystal (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}, {\ttfamily [noexcept]}}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_dash_crystal_ae37888a2bcb94362f1aa2a6f2a7f2477_cgraph}
+\end{center}
+\end{figure}
+
+
+\label{doc-func-members}
+\Hypertarget{class_dash_crystal_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_dash_crystal_a38c87bd8df73b7cb6bab596ee5d55f33}\index{DashCrystal@{DashCrystal}!Draw@{Draw}}
+\index{Draw@{Draw}!DashCrystal@{DashCrystal}}
+\doxysubsubsection{\texorpdfstring{Draw()}{Draw()}}
+{\footnotesize\ttfamily \label{class_dash_crystal_a38c87bd8df73b7cb6bab596ee5d55f33} 
+void Dash\+Crystal\+::\+Draw (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_interactable_item_af87c8f5b507f809c6eb2ea5b43d83c25}{Interactable\+Item}}.
+
+\Hypertarget{class_dash_crystal_af1e409144bb1cdc5f3973e9191ac81ef}\index{DashCrystal@{DashCrystal}!operator=@{operator=}}
+\index{operator=@{operator=}!DashCrystal@{DashCrystal}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_dash_crystal_af1e409144bb1cdc5f3973e9191ac81ef} 
+\mbox{\hyperlink{class_dash_crystal}{Dash\+Crystal}} \& Dash\+Crystal\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_dash_crystal}{Dash\+Crystal}} \&}]{other}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_dash_crystal_af1e409144bb1cdc5f3973e9191ac81ef_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_dash_crystal_ae59d4773b95458aa91591a0720905abe}\index{DashCrystal@{DashCrystal}!operator=@{operator=}}
+\index{operator=@{operator=}!DashCrystal@{DashCrystal}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_dash_crystal_ae59d4773b95458aa91591a0720905abe} 
+\mbox{\hyperlink{class_dash_crystal}{Dash\+Crystal}} \& Dash\+Crystal\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_dash_crystal}{Dash\+Crystal}} \&\&}]{other}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}, {\ttfamily [noexcept]}}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_dash_crystal_ae59d4773b95458aa91591a0720905abe_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_dash_crystal_ae9d188a3998de0c2de1ee162ba5e1273}\index{DashCrystal@{DashCrystal}!PlayerInteraction@{PlayerInteraction}}
+\index{PlayerInteraction@{PlayerInteraction}!DashCrystal@{DashCrystal}}
+\doxysubsubsection{\texorpdfstring{PlayerInteraction()}{PlayerInteraction()}}
+{\footnotesize\ttfamily \label{class_dash_crystal_ae9d188a3998de0c2de1ee162ba5e1273} 
+void Dash\+Crystal\+::\+Player\+Interaction (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_character}{Character}} \&}]{character}{, }\item[{float}]{elapsed\+Sec}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_interactable_item_a18b200bb2e7fc662ea1c2d1a11e483d2}{Interactable\+Item}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_dash_crystal_ae9d188a3998de0c2de1ee162ba5e1273_cgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Celeste/\mbox{\hyperlink{_dash_crystal_8h}{Dash\+Crystal.\+h}}\item 
+Celeste/\mbox{\hyperlink{_dash_crystal_8cpp}{Dash\+Crystal.\+cpp}}\end{DoxyCompactItemize}

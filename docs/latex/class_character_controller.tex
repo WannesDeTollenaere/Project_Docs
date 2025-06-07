@@ -1,0 +1,145 @@
+\doxysection{Character\+Controller Class Reference}
+\hypertarget{class_character_controller}{}\label{class_character_controller}\index{CharacterController@{CharacterController}}
+
+
+{\ttfamily \#include $<$Character\+Controller.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_character_controller_a7c3e4c2476ca8f6c4a94bf5c1766aae0}{Character\+Controller}} (const \mbox{\hyperlink{struct_vector2f}{Vector2f}} \&start\+Pos, float width=20.f, float heigth=20.f)
+\item 
+void \mbox{\hyperlink{class_character_controller_ad8b0a065cb10e6a2b1900057648ab4d9}{Move}} (const \mbox{\hyperlink{struct_vector2f}{Vector2f}} \&delta\+Movement, const std\+::vector$<$ std\+::vector$<$ \mbox{\hyperlink{struct_vector2f}{Vector2f}} $>$ $>$ \&world\+Vertex\+Table)
+\item 
+void \mbox{\hyperlink{class_character_controller_a9f85da12db6b7f0a375235f54b425b05}{Jump}} ()
+\item 
+void \mbox{\hyperlink{class_character_controller_a7e6e40b5a158112debbd105f4f8035a0}{Set\+Position}} (\mbox{\hyperlink{struct_vector2f}{Vector2f}} position)
+\item 
+void \mbox{\hyperlink{class_character_controller_a94c7b7ebfbddd5b3b1c4409a339b9ab8}{Offset\+Position}} (const \mbox{\hyperlink{struct_vector2f}{Vector2f}} \&offset)
+\item 
+\mbox{\hyperlink{struct_rectf}{Rectf}} \mbox{\hyperlink{class_character_controller_a059501cb5c0330b7baf253571919b96e}{Get\+Hit\+Box}} () const noexcept
+\item 
+\mbox{\hyperlink{struct_vector2f}{Vector2f}} \mbox{\hyperlink{class_character_controller_aa0009cf46a8ff0bf43bf6398f43a6d60}{Get\+Position}} () const noexcept
+\item 
+bool \mbox{\hyperlink{class_character_controller_a1f56ffee4c046fb4dd75b64cf7113ac9}{Is\+On\+Ground}} () const noexcept
+\item 
+bool \mbox{\hyperlink{class_character_controller_a9a20225fd27adeb9b642bcc90cde2a73}{Is\+On\+Ceiling}} () const noexcept
+\item 
+bool \mbox{\hyperlink{class_character_controller_a1586d8a630018e8608a0f59f5271c248}{Is\+Facing\+Wall}} () const noexcept
+\item 
+bool \mbox{\hyperlink{class_character_controller_abcfcda1eac581b9acbeca21ea1a3efbe}{Is\+Running\+Against\+Wall}} () const noexcept
+\item 
+float \mbox{\hyperlink{class_character_controller_ac4f6fbd8e14c3ff23837ed783c37fe18}{Get\+Width}} () const noexcept
+\item 
+float \mbox{\hyperlink{class_character_controller_a23ff8e105443bb930d1740025aa97eeb}{Get\+Height}} () const noexcept
+\item 
+std\+::vector$<$ \mbox{\hyperlink{struct_vector2x2f}{Vector2x2f}} $>$ \mbox{\hyperlink{class_character_controller_a9a4301bb6e1ef84274d326d046b1bab3}{Get\+Collision\+Rays}} () const noexcept
+\end{DoxyCompactItemize}
+
+
+\label{doc-constructors}
+\Hypertarget{class_character_controller_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_character_controller_a7c3e4c2476ca8f6c4a94bf5c1766aae0}\index{CharacterController@{CharacterController}!CharacterController@{CharacterController}}
+\index{CharacterController@{CharacterController}!CharacterController@{CharacterController}}
+\doxysubsubsection{\texorpdfstring{CharacterController()}{CharacterController()}}
+{\footnotesize\ttfamily \label{class_character_controller_a7c3e4c2476ca8f6c4a94bf5c1766aae0} 
+Character\+Controller\+::\+Character\+Controller (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_vector2f}{Vector2f}} \&}]{start\+Pos}{, }\item[{float}]{width}{ = {\ttfamily 20.f}, }\item[{float}]{heigth}{ = {\ttfamily 20.f}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+\label{doc-func-members}
+\Hypertarget{class_character_controller_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_character_controller_a9a4301bb6e1ef84274d326d046b1bab3}\index{CharacterController@{CharacterController}!GetCollisionRays@{GetCollisionRays}}
+\index{GetCollisionRays@{GetCollisionRays}!CharacterController@{CharacterController}}
+\doxysubsubsection{\texorpdfstring{GetCollisionRays()}{GetCollisionRays()}}
+{\footnotesize\ttfamily \label{class_character_controller_a9a4301bb6e1ef84274d326d046b1bab3} 
+std\+::vector$<$ \mbox{\hyperlink{struct_vector2x2f}{Vector2x2f}} $>$ Character\+Controller\+::\+Get\+Collision\+Rays (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+\Hypertarget{class_character_controller_a23ff8e105443bb930d1740025aa97eeb}\index{CharacterController@{CharacterController}!GetHeight@{GetHeight}}
+\index{GetHeight@{GetHeight}!CharacterController@{CharacterController}}
+\doxysubsubsection{\texorpdfstring{GetHeight()}{GetHeight()}}
+{\footnotesize\ttfamily \label{class_character_controller_a23ff8e105443bb930d1740025aa97eeb} 
+float Character\+Controller\+::\+Get\+Height (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+\Hypertarget{class_character_controller_a059501cb5c0330b7baf253571919b96e}\index{CharacterController@{CharacterController}!GetHitBox@{GetHitBox}}
+\index{GetHitBox@{GetHitBox}!CharacterController@{CharacterController}}
+\doxysubsubsection{\texorpdfstring{GetHitBox()}{GetHitBox()}}
+{\footnotesize\ttfamily \label{class_character_controller_a059501cb5c0330b7baf253571919b96e} 
+\mbox{\hyperlink{struct_rectf}{Rectf}} Character\+Controller\+::\+Get\+Hit\+Box (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+\Hypertarget{class_character_controller_aa0009cf46a8ff0bf43bf6398f43a6d60}\index{CharacterController@{CharacterController}!GetPosition@{GetPosition}}
+\index{GetPosition@{GetPosition}!CharacterController@{CharacterController}}
+\doxysubsubsection{\texorpdfstring{GetPosition()}{GetPosition()}}
+{\footnotesize\ttfamily \label{class_character_controller_aa0009cf46a8ff0bf43bf6398f43a6d60} 
+\mbox{\hyperlink{struct_vector2f}{Vector2f}} Character\+Controller\+::\+Get\+Position (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+\Hypertarget{class_character_controller_ac4f6fbd8e14c3ff23837ed783c37fe18}\index{CharacterController@{CharacterController}!GetWidth@{GetWidth}}
+\index{GetWidth@{GetWidth}!CharacterController@{CharacterController}}
+\doxysubsubsection{\texorpdfstring{GetWidth()}{GetWidth()}}
+{\footnotesize\ttfamily \label{class_character_controller_ac4f6fbd8e14c3ff23837ed783c37fe18} 
+float Character\+Controller\+::\+Get\+Width (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+\Hypertarget{class_character_controller_a1586d8a630018e8608a0f59f5271c248}\index{CharacterController@{CharacterController}!IsFacingWall@{IsFacingWall}}
+\index{IsFacingWall@{IsFacingWall}!CharacterController@{CharacterController}}
+\doxysubsubsection{\texorpdfstring{IsFacingWall()}{IsFacingWall()}}
+{\footnotesize\ttfamily \label{class_character_controller_a1586d8a630018e8608a0f59f5271c248} 
+bool Character\+Controller\+::\+Is\+Facing\+Wall (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+\Hypertarget{class_character_controller_a9a20225fd27adeb9b642bcc90cde2a73}\index{CharacterController@{CharacterController}!IsOnCeiling@{IsOnCeiling}}
+\index{IsOnCeiling@{IsOnCeiling}!CharacterController@{CharacterController}}
+\doxysubsubsection{\texorpdfstring{IsOnCeiling()}{IsOnCeiling()}}
+{\footnotesize\ttfamily \label{class_character_controller_a9a20225fd27adeb9b642bcc90cde2a73} 
+bool Character\+Controller\+::\+Is\+On\+Ceiling (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+\Hypertarget{class_character_controller_a1f56ffee4c046fb4dd75b64cf7113ac9}\index{CharacterController@{CharacterController}!IsOnGround@{IsOnGround}}
+\index{IsOnGround@{IsOnGround}!CharacterController@{CharacterController}}
+\doxysubsubsection{\texorpdfstring{IsOnGround()}{IsOnGround()}}
+{\footnotesize\ttfamily \label{class_character_controller_a1f56ffee4c046fb4dd75b64cf7113ac9} 
+bool Character\+Controller\+::\+Is\+On\+Ground (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+\Hypertarget{class_character_controller_abcfcda1eac581b9acbeca21ea1a3efbe}\index{CharacterController@{CharacterController}!IsRunningAgainstWall@{IsRunningAgainstWall}}
+\index{IsRunningAgainstWall@{IsRunningAgainstWall}!CharacterController@{CharacterController}}
+\doxysubsubsection{\texorpdfstring{IsRunningAgainstWall()}{IsRunningAgainstWall()}}
+{\footnotesize\ttfamily \label{class_character_controller_abcfcda1eac581b9acbeca21ea1a3efbe} 
+bool Character\+Controller\+::\+Is\+Running\+Against\+Wall (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+\Hypertarget{class_character_controller_a9f85da12db6b7f0a375235f54b425b05}\index{CharacterController@{CharacterController}!Jump@{Jump}}
+\index{Jump@{Jump}!CharacterController@{CharacterController}}
+\doxysubsubsection{\texorpdfstring{Jump()}{Jump()}}
+{\footnotesize\ttfamily \label{class_character_controller_a9f85da12db6b7f0a375235f54b425b05} 
+void Character\+Controller\+::\+Jump (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_character_controller_ad8b0a065cb10e6a2b1900057648ab4d9}\index{CharacterController@{CharacterController}!Move@{Move}}
+\index{Move@{Move}!CharacterController@{CharacterController}}
+\doxysubsubsection{\texorpdfstring{Move()}{Move()}}
+{\footnotesize\ttfamily \label{class_character_controller_ad8b0a065cb10e6a2b1900057648ab4d9} 
+void Character\+Controller\+::\+Move (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_vector2f}{Vector2f}} \&}]{delta\+Movement}{, }\item[{const std\+::vector$<$ std\+::vector$<$ \mbox{\hyperlink{struct_vector2f}{Vector2f}} $>$ $>$ \&}]{world\+Vertex\+Table}{}\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_character_controller_ad8b0a065cb10e6a2b1900057648ab4d9_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_character_controller_a94c7b7ebfbddd5b3b1c4409a339b9ab8}\index{CharacterController@{CharacterController}!OffsetPosition@{OffsetPosition}}
+\index{OffsetPosition@{OffsetPosition}!CharacterController@{CharacterController}}
+\doxysubsubsection{\texorpdfstring{OffsetPosition()}{OffsetPosition()}}
+{\footnotesize\ttfamily \label{class_character_controller_a94c7b7ebfbddd5b3b1c4409a339b9ab8} 
+void Character\+Controller\+::\+Offset\+Position (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_vector2f}{Vector2f}} \&}]{offset}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_character_controller_a7e6e40b5a158112debbd105f4f8035a0}\index{CharacterController@{CharacterController}!SetPosition@{SetPosition}}
+\index{SetPosition@{SetPosition}!CharacterController@{CharacterController}}
+\doxysubsubsection{\texorpdfstring{SetPosition()}{SetPosition()}}
+{\footnotesize\ttfamily \label{class_character_controller_a7e6e40b5a158112debbd105f4f8035a0} 
+void Character\+Controller\+::\+Set\+Position (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_vector2f}{Vector2f}}}]{position}{}\end{DoxyParamCaption})}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Celeste/\mbox{\hyperlink{_character_controller_8h}{Character\+Controller.\+h}}\item 
+Celeste/\mbox{\hyperlink{_character_controller_8cpp}{Character\+Controller.\+cpp}}\end{DoxyCompactItemize}

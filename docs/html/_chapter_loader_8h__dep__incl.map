@@ -1,0 +1,17 @@
+<map id="Celeste/ChapterLoader.h" name="Celeste/ChapterLoader.h">
+<area shape="rect" id="Node000001" title=" " alt="" coords="208,5,375,32"/>
+<area shape="rect" id="Node000002" href="$_chapter_loader_8cpp.html" title=" " alt="" coords="5,80,186,107"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="244,40,131,82,129,77,242,35"/>
+<area shape="rect" id="Node000003" href="$_level_manager_8h.html" title=" " alt="" coords="210,80,373,107"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="294,48,294,80,289,80,289,48"/>
+<area shape="rect" id="Node000008" href="$_pause_menu_8cpp.html" title=" " alt="" coords="397,80,562,107"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="339,35,447,77,446,82,337,40"/>
+<area shape="rect" id="Node000004" href="$_game_8h.html" title=" " alt="" coords="148,155,264,181"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="267,119,223,156,219,152,264,115"/>
+<area shape="rect" id="Node000007" href="$_level_manager_8cpp.html" title=" " alt="" coords="289,155,465,181"/>
+<area shape="poly" id="edge6_Node000003_Node000007" title=" " alt="" coords="319,115,364,152,360,156,316,119"/>
+<area shape="rect" id="Node000005" href="$_game_8cpp.html" title=" " alt="" coords="66,229,197,256"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="184,194,146,231,143,227,181,190"/>
+<area shape="rect" id="Node000006" href="$main_8cpp.html" title=" " alt="" coords="220,229,344,256"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="232,190,271,227,267,231,228,194"/>
+</map>

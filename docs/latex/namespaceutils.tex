@@ -1,0 +1,799 @@
+\doxysection{utils Namespace Reference}
+\hypertarget{namespaceutils}{}\label{namespaceutils}\index{utils@{utils}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structutils_1_1_hit_info}{Hit\+Info}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{namespaceutils_abc8380a69410c7b193d9d36474ae211f}{Set\+Color}} (const \mbox{\hyperlink{struct_color4f}{Color4f}} \&color)
+\item 
+void \mbox{\hyperlink{namespaceutils_a63429c6d2211fa7f462c636b1ced74a1}{Draw\+Point}} (float x, float y, float point\+Size=1.\+0f)
+\item 
+void \mbox{\hyperlink{namespaceutils_a1aebf079cac36129d948898128628dec}{Draw\+Point}} (const \mbox{\hyperlink{struct_vector2f}{Vector2f}} \&p, float point\+Size=1.\+0f)
+\item 
+void \mbox{\hyperlink{namespaceutils_ac1ecee8001879a011facf1ac7d223ade}{Draw\+Points}} (\mbox{\hyperlink{struct_vector2f}{Vector2f}} \texorpdfstring{$\ast$}{*}p\+Vertices, int nr\+Vertices, float point\+Size=1.\+0f)
+\item 
+void \mbox{\hyperlink{namespaceutils_a520daf5b44f3927437d3f2d69c590d71}{Draw\+Line}} (float x1, float y1, float x2, float y2, float line\+Width=1.\+0f)
+\item 
+void \mbox{\hyperlink{namespaceutils_ab45bf1c60021490b5b9dc6b0d2f29196}{Draw\+Line}} (const \mbox{\hyperlink{struct_vector2f}{Vector2f}} \&p1, const \mbox{\hyperlink{struct_vector2f}{Vector2f}} \&p2, float line\+Width=1.\+0f)
+\item 
+void \mbox{\hyperlink{namespaceutils_a6541c17958b98546380ff65b5c70f8f8}{Draw\+Triangle}} (const \mbox{\hyperlink{struct_vector2f}{Vector2f}} \&p1, const \mbox{\hyperlink{struct_vector2f}{Vector2f}} \&p2, const \mbox{\hyperlink{struct_vector2f}{Vector2f}} \&p3, float line\+Width=1)
+\item 
+void \mbox{\hyperlink{namespaceutils_adb88720e2dc8ed06c82c8b31af76d651}{Fill\+Triangle}} (const \mbox{\hyperlink{struct_vector2f}{Vector2f}} \&p1, const \mbox{\hyperlink{struct_vector2f}{Vector2f}} \&p2, const \mbox{\hyperlink{struct_vector2f}{Vector2f}} \&p3)
+\item 
+void \mbox{\hyperlink{namespaceutils_af7df218db7f714d95e40ea531d258e56}{Draw\+Rect}} (float left, float bottom, float width, float height, float line\+Width=1.\+0f)
+\item 
+void \mbox{\hyperlink{namespaceutils_a682480fcd876b9f693cd2df4f64bc632}{Draw\+Rect}} (const \mbox{\hyperlink{struct_vector2f}{Vector2f}} \&bottom\+Left, float width, float height, float line\+Width=1.\+0f)
+\item 
+void \mbox{\hyperlink{namespaceutils_a419f9ed5a7293999ffaece51ac5674fd}{Draw\+Rect}} (const \mbox{\hyperlink{struct_rectf}{Rectf}} \&rect, float line\+Width=1.\+0f)
+\item 
+void \mbox{\hyperlink{namespaceutils_a05d149f83e6b46ac17e537eccc2ab813}{Fill\+Rect}} (float left, float bottom, float width, float height)
+\item 
+void \mbox{\hyperlink{namespaceutils_ab39c50fd9be52594488f59e4d381da0f}{Fill\+Rect}} (const \mbox{\hyperlink{struct_vector2f}{Vector2f}} \&bottom\+Left, float width, float height)
+\item 
+void \mbox{\hyperlink{namespaceutils_aafcb149df86e64eaaa303e60a179f349}{Fill\+Rect}} (const \mbox{\hyperlink{struct_rectf}{Rectf}} \&rect)
+\item 
+void \mbox{\hyperlink{namespaceutils_a4580e5c28f2812f929cdbd60059b2635}{Draw\+Rounded\+Rect}} (const \mbox{\hyperlink{struct_rectf}{Rectf}} \&rect, float radius, int segments=16)
+\item 
+void \mbox{\hyperlink{namespaceutils_a7fa97460abc80be5344efcac9c42c4ff}{Draw\+Ellipse}} (float centerX, float centerY, float radX, float radY, float line\+Width=1.\+0f)
+\item 
+void \mbox{\hyperlink{namespaceutils_a59d413a76b0342f5c044e2b675ec8984}{Draw\+Ellipse}} (const \mbox{\hyperlink{struct_vector2f}{Vector2f}} \&center, float radX, float radY, float line\+Width=1.\+0f)
+\item 
+void \mbox{\hyperlink{namespaceutils_a3780b22e88f302fbfdc4efba6ffc2775}{Draw\+Ellipse}} (const \mbox{\hyperlink{struct_ellipsef}{Ellipsef}} \&ellipse, float line\+Width=1.\+0f)
+\item 
+void \mbox{\hyperlink{namespaceutils_aa8fda4c292a496aeb53a87e7b6dc32f1}{Fill\+Ellipse}} (float centerX, float centerY, float radX, float radY)
+\item 
+void \mbox{\hyperlink{namespaceutils_a4af415ba518cb6461cdfd54a1f058b03}{Fill\+Ellipse}} (const \mbox{\hyperlink{struct_ellipsef}{Ellipsef}} \&ellipse)
+\item 
+void \mbox{\hyperlink{namespaceutils_a87c3c7652408316d13dc140d28ab9fdd}{Fill\+Ellipse}} (const \mbox{\hyperlink{struct_vector2f}{Vector2f}} \&center, float radX, float radY)
+\item 
+void \mbox{\hyperlink{namespaceutils_af115929cc9a2314e416ddce6452b5b03}{Draw\+Arc}} (float centerX, float centerY, float radX, float radY, float from\+Angle, float till\+Angle, float line\+Width=1.\+0f)
+\item 
+void \mbox{\hyperlink{namespaceutils_ae4cda974ed78b09e48c7123fbe9d4771}{Draw\+Arc}} (const \mbox{\hyperlink{struct_vector2f}{Vector2f}} \&center, float radX, float radY, float from\+Angle, float till\+Angle, float line\+Width=1.\+0f)
+\item 
+void \mbox{\hyperlink{namespaceutils_aab3da7c977a8d7fabc7ba7b6b3904f04}{Fill\+Arc}} (float centerX, float centerY, float radX, float radY, float from\+Angle, float till\+Angle)
+\item 
+void \mbox{\hyperlink{namespaceutils_a2bcc865a72c5fedefa52449d1cfaaa8a}{Fill\+Arc}} (const \mbox{\hyperlink{struct_vector2f}{Vector2f}} \&center, float radX, float radY, float from\+Angle, float till\+Angle)
+\item 
+void \mbox{\hyperlink{namespaceutils_ad086100417473c16d55556cc406fe027}{Draw\+Polygon}} (const std\+::vector$<$ \mbox{\hyperlink{struct_vector2f}{Vector2f}} $>$ \&vertices, bool closed=true, float line\+Width=1.\+0f)
+\item 
+void \mbox{\hyperlink{namespaceutils_af912e0452ea507921a4af88c1e5dbc1d}{Draw\+Polygon}} (const \mbox{\hyperlink{struct_vector2f}{Vector2f}} \texorpdfstring{$\ast$}{*}p\+Vertices, size\+\_\+t nr\+Vertices, bool closed=true, float line\+Width=1.\+0f)
+\item 
+void \mbox{\hyperlink{namespaceutils_a77dc7eb9eda6bcfc4e3dedade84fb453}{Fill\+Polygon}} (const std\+::vector$<$ \mbox{\hyperlink{struct_vector2f}{Vector2f}} $>$ \&vertices)
+\item 
+void \mbox{\hyperlink{namespaceutils_a3612218d529ae3cc1ae42a492229077c}{Fill\+Polygon}} (const \mbox{\hyperlink{struct_vector2f}{Vector2f}} \texorpdfstring{$\ast$}{*}p\+Vertices, size\+\_\+t nr\+Vertices)
+\item 
+float \mbox{\hyperlink{namespaceutils_a8f553fab77ca28e07c8093ae74c5c794}{Get\+Distance}} (float x1, float y1, float x2, float y2)
+\item 
+float \mbox{\hyperlink{namespaceutils_a4a8ccad7e723559b22936b95fd218d16}{Get\+Distance}} (const \mbox{\hyperlink{struct_vector2f}{Vector2f}} \&p1, const \mbox{\hyperlink{struct_vector2f}{Vector2f}} \&p2)
+\item 
+bool \mbox{\hyperlink{namespaceutils_a7be64ef3ceca3af8e2f4c46d5fccc835}{Is\+Point\+In\+Rect}} (const \mbox{\hyperlink{struct_vector2f}{Vector2f}} \&p, const \mbox{\hyperlink{struct_rectf}{Rectf}} \&r)
+\item 
+bool \mbox{\hyperlink{namespaceutils_ab3d6c8d0c1fcd12ad5e7ca2535b0f1a5}{Is\+Point\+In\+Circle}} (const \mbox{\hyperlink{struct_vector2f}{Vector2f}} \&p, const \mbox{\hyperlink{struct_circlef}{Circlef}} \&c)
+\item 
+bool \mbox{\hyperlink{namespaceutils_a83962650bff2e24a62897e49b7137af0}{Is\+Point\+In\+Polygon}} (const \mbox{\hyperlink{struct_vector2f}{Vector2f}} \&p, const std\+::vector$<$ \mbox{\hyperlink{struct_vector2f}{Vector2f}} $>$ \&vertices)
+\item 
+bool \mbox{\hyperlink{namespaceutils_af8fae86290b2ddb0910a33d86b470cb6}{Is\+Point\+In\+Polygon}} (const \mbox{\hyperlink{struct_vector2f}{Vector2f}} \&p, const \mbox{\hyperlink{struct_vector2f}{Vector2f}} \texorpdfstring{$\ast$}{*}vertices, size\+\_\+t nr\+Vertices)
+\item 
+bool \mbox{\hyperlink{namespaceutils_a11a0eb68e467a22aed74f507057c39ed}{Is\+Overlapping}} (const \mbox{\hyperlink{struct_vector2f}{Vector2f}} \&a, const \mbox{\hyperlink{struct_vector2f}{Vector2f}} \&b, const \mbox{\hyperlink{struct_circlef}{Circlef}} \&c)
+\item 
+bool \mbox{\hyperlink{namespaceutils_aa1e275621728260abad0345dfb5ed70e}{Is\+Overlapping}} (const \mbox{\hyperlink{struct_vector2f}{Vector2f}} \&a, const \mbox{\hyperlink{struct_vector2f}{Vector2f}} \&b, const \mbox{\hyperlink{struct_rectf}{Rectf}} \&r)
+\item 
+bool \mbox{\hyperlink{namespaceutils_ac5267ff32eb73cd7d8c86c43ecf58546}{Is\+Overlapping}} (const \mbox{\hyperlink{struct_rectf}{Rectf}} \&r1, const \mbox{\hyperlink{struct_rectf}{Rectf}} \&r2)
+\item 
+bool \mbox{\hyperlink{namespaceutils_aa3cf9ab3831043ef5d09bb2a1a3508df}{Is\+Overlapping}} (const \mbox{\hyperlink{struct_rectf}{Rectf}} \&r, const \mbox{\hyperlink{struct_circlef}{Circlef}} \&c)
+\item 
+bool \mbox{\hyperlink{namespaceutils_a2811f4df8099ee0b733712e43d190051}{Is\+Overlapping}} (const \mbox{\hyperlink{struct_circlef}{Circlef}} \&c1, const \mbox{\hyperlink{struct_circlef}{Circlef}} \&c2)
+\item 
+bool \mbox{\hyperlink{namespaceutils_a334b78639099b0610f28ab357af9da19}{Is\+Overlapping}} (const std\+::vector$<$ \mbox{\hyperlink{struct_vector2f}{Vector2f}} $>$ \&vertices, const \mbox{\hyperlink{struct_circlef}{Circlef}} \&c)
+\item 
+bool \mbox{\hyperlink{namespaceutils_add1fefb9b373117ac9b359c75c7ea620}{Is\+Overlapping}} (const \mbox{\hyperlink{struct_vector2f}{Vector2f}} \texorpdfstring{$\ast$}{*}vertices, size\+\_\+t nr\+Vertices, const \mbox{\hyperlink{struct_circlef}{Circlef}} \&c)
+\item 
+bool \mbox{\hyperlink{namespaceutils_a907c18a579f4b5bac2aa39f8d64fa381}{Raycast}} (const \mbox{\hyperlink{struct_vector2f}{Vector2f}} \texorpdfstring{$\ast$}{*}vertices, const size\+\_\+t nr\+Vertices, const \mbox{\hyperlink{struct_vector2f}{Vector2f}} \&ray\+P1, const \mbox{\hyperlink{struct_vector2f}{Vector2f}} \&ray\+P2, \mbox{\hyperlink{structutils_1_1_hit_info}{Hit\+Info}} \&hit\+Info)
+\item 
+bool \mbox{\hyperlink{namespaceutils_aaa39be44524c9229c357e1e9505d2667}{Raycast}} (const std\+::vector$<$ \mbox{\hyperlink{struct_vector2f}{Vector2f}} $>$ \&vertices, const \mbox{\hyperlink{struct_vector2f}{Vector2f}} \&ray\+P1, const \mbox{\hyperlink{struct_vector2f}{Vector2f}} \&ray\+P2, \mbox{\hyperlink{structutils_1_1_hit_info}{Hit\+Info}} \&hit\+Info)
+\item 
+bool \mbox{\hyperlink{namespaceutils_a9ef86448634b099a56f145753593ab2f}{Intersect\+Line\+Segments}} (const \mbox{\hyperlink{struct_vector2f}{Vector2f}} \&p1, const \mbox{\hyperlink{struct_vector2f}{Vector2f}} \&p2, const \mbox{\hyperlink{struct_vector2f}{Vector2f}} \&q1, const \mbox{\hyperlink{struct_vector2f}{Vector2f}} \&q2, float \&out\+Lambda1, float \&out\+Lambda2, float epsilon=1e-\/6)
+\item 
+float \mbox{\hyperlink{namespaceutils_a760075559e6ab59c1daec763fab2b488}{Dist\+Point\+Line\+Segment}} (const \mbox{\hyperlink{struct_vector2f}{Vector2f}} \&p, const \mbox{\hyperlink{struct_vector2f}{Vector2f}} \&a, const \mbox{\hyperlink{struct_vector2f}{Vector2f}} \&b)
+\item 
+bool \mbox{\hyperlink{namespaceutils_afa48cca7d08708b5ce3581974e9c39aa}{Is\+Point\+On\+Line\+Segment}} (const \mbox{\hyperlink{struct_vector2f}{Vector2f}} \&p, const \mbox{\hyperlink{struct_vector2f}{Vector2f}} \&a, const \mbox{\hyperlink{struct_vector2f}{Vector2f}} \&b)
+\item 
+bool \mbox{\hyperlink{namespaceutils_aba86ae1a3e34dc14d3c16ccc94f06f0f}{Intersect\+Rect\+Line}} (const \mbox{\hyperlink{struct_rectf}{Rectf}} \&r, const \mbox{\hyperlink{struct_vector2f}{Vector2f}} \&p1, const \mbox{\hyperlink{struct_vector2f}{Vector2f}} \&p2, float \&intersect\+Min, float \&intersect\+Max)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+const float \mbox{\hyperlink{namespaceutils_a6f93d1b7ee9c68332ef8628404b1115f}{g\+\_\+\+Pi}} \{ 3.\+1415926535f \}
+\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{namespaceutils_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{namespaceutils_a760075559e6ab59c1daec763fab2b488}\index{utils@{utils}!DistPointLineSegment@{DistPointLineSegment}}
+\index{DistPointLineSegment@{DistPointLineSegment}!utils@{utils}}
+\doxysubsubsection{\texorpdfstring{DistPointLineSegment()}{DistPointLineSegment()}}
+{\footnotesize\ttfamily \label{namespaceutils_a760075559e6ab59c1daec763fab2b488} 
+float utils\+::\+Dist\+Point\+Line\+Segment (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_vector2f}{Vector2f}} \&}]{p}{, }\item[{const \mbox{\hyperlink{struct_vector2f}{Vector2f}} \&}]{a}{, }\item[{const \mbox{\hyperlink{struct_vector2f}{Vector2f}} \&}]{b}{}\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespaceutils_a760075559e6ab59c1daec763fab2b488_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespaceutils_a760075559e6ab59c1daec763fab2b488_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{namespaceutils_ae4cda974ed78b09e48c7123fbe9d4771}\index{utils@{utils}!DrawArc@{DrawArc}}
+\index{DrawArc@{DrawArc}!utils@{utils}}
+\doxysubsubsection{\texorpdfstring{DrawArc()}{DrawArc()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{namespaceutils_ae4cda974ed78b09e48c7123fbe9d4771} 
+void utils\+::\+Draw\+Arc (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_vector2f}{Vector2f}} \&}]{center}{, }\item[{float}]{radX}{, }\item[{float}]{radY}{, }\item[{float}]{from\+Angle}{, }\item[{float}]{till\+Angle}{, }\item[{float}]{line\+Width}{ = {\ttfamily 1.0f}}\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=273pt]{namespaceutils_ae4cda974ed78b09e48c7123fbe9d4771_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{namespaceutils_af115929cc9a2314e416ddce6452b5b03}\index{utils@{utils}!DrawArc@{DrawArc}}
+\index{DrawArc@{DrawArc}!utils@{utils}}
+\doxysubsubsection{\texorpdfstring{DrawArc()}{DrawArc()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{namespaceutils_af115929cc9a2314e416ddce6452b5b03} 
+void utils\+::\+Draw\+Arc (\begin{DoxyParamCaption}\item[{float}]{centerX}{, }\item[{float}]{centerY}{, }\item[{float}]{radX}{, }\item[{float}]{radY}{, }\item[{float}]{from\+Angle}{, }\item[{float}]{till\+Angle}{, }\item[{float}]{line\+Width}{ = {\ttfamily 1.0f}}\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=273pt]{namespaceutils_af115929cc9a2314e416ddce6452b5b03_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{namespaceutils_a3780b22e88f302fbfdc4efba6ffc2775}\index{utils@{utils}!DrawEllipse@{DrawEllipse}}
+\index{DrawEllipse@{DrawEllipse}!utils@{utils}}
+\doxysubsubsection{\texorpdfstring{DrawEllipse()}{DrawEllipse()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \label{namespaceutils_a3780b22e88f302fbfdc4efba6ffc2775} 
+void utils\+::\+Draw\+Ellipse (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_ellipsef}{Ellipsef}} \&}]{ellipse}{, }\item[{float}]{line\+Width}{ = {\ttfamily 1.0f}}\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=301pt]{namespaceutils_a3780b22e88f302fbfdc4efba6ffc2775_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{namespaceutils_a59d413a76b0342f5c044e2b675ec8984}\index{utils@{utils}!DrawEllipse@{DrawEllipse}}
+\index{DrawEllipse@{DrawEllipse}!utils@{utils}}
+\doxysubsubsection{\texorpdfstring{DrawEllipse()}{DrawEllipse()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \label{namespaceutils_a59d413a76b0342f5c044e2b675ec8984} 
+void utils\+::\+Draw\+Ellipse (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_vector2f}{Vector2f}} \&}]{center}{, }\item[{float}]{radX}{, }\item[{float}]{radY}{, }\item[{float}]{line\+Width}{ = {\ttfamily 1.0f}}\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=301pt]{namespaceutils_a59d413a76b0342f5c044e2b675ec8984_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{namespaceutils_a7fa97460abc80be5344efcac9c42c4ff}\index{utils@{utils}!DrawEllipse@{DrawEllipse}}
+\index{DrawEllipse@{DrawEllipse}!utils@{utils}}
+\doxysubsubsection{\texorpdfstring{DrawEllipse()}{DrawEllipse()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily \label{namespaceutils_a7fa97460abc80be5344efcac9c42c4ff} 
+void utils\+::\+Draw\+Ellipse (\begin{DoxyParamCaption}\item[{float}]{centerX}{, }\item[{float}]{centerY}{, }\item[{float}]{radX}{, }\item[{float}]{radY}{, }\item[{float}]{line\+Width}{ = {\ttfamily 1.0f}}\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=301pt]{namespaceutils_a7fa97460abc80be5344efcac9c42c4ff_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{namespaceutils_ab45bf1c60021490b5b9dc6b0d2f29196}\index{utils@{utils}!DrawLine@{DrawLine}}
+\index{DrawLine@{DrawLine}!utils@{utils}}
+\doxysubsubsection{\texorpdfstring{DrawLine()}{DrawLine()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{namespaceutils_ab45bf1c60021490b5b9dc6b0d2f29196} 
+void utils\+::\+Draw\+Line (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_vector2f}{Vector2f}} \&}]{p1}{, }\item[{const \mbox{\hyperlink{struct_vector2f}{Vector2f}} \&}]{p2}{, }\item[{float}]{line\+Width}{ = {\ttfamily 1.0f}}\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=279pt]{namespaceutils_ab45bf1c60021490b5b9dc6b0d2f29196_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{namespaceutils_a520daf5b44f3927437d3f2d69c590d71}\index{utils@{utils}!DrawLine@{DrawLine}}
+\index{DrawLine@{DrawLine}!utils@{utils}}
+\doxysubsubsection{\texorpdfstring{DrawLine()}{DrawLine()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{namespaceutils_a520daf5b44f3927437d3f2d69c590d71} 
+void utils\+::\+Draw\+Line (\begin{DoxyParamCaption}\item[{float}]{x1}{, }\item[{float}]{y1}{, }\item[{float}]{x2}{, }\item[{float}]{y2}{, }\item[{float}]{line\+Width}{ = {\ttfamily 1.0f}}\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=289pt]{namespaceutils_a520daf5b44f3927437d3f2d69c590d71_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{namespaceutils_a1aebf079cac36129d948898128628dec}\index{utils@{utils}!DrawPoint@{DrawPoint}}
+\index{DrawPoint@{DrawPoint}!utils@{utils}}
+\doxysubsubsection{\texorpdfstring{DrawPoint()}{DrawPoint()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{namespaceutils_a1aebf079cac36129d948898128628dec} 
+void utils\+::\+Draw\+Point (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_vector2f}{Vector2f}} \&}]{p}{, }\item[{float}]{point\+Size}{ = {\ttfamily 1.0f}}\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=288pt]{namespaceutils_a1aebf079cac36129d948898128628dec_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{namespaceutils_a63429c6d2211fa7f462c636b1ced74a1}\index{utils@{utils}!DrawPoint@{DrawPoint}}
+\index{DrawPoint@{DrawPoint}!utils@{utils}}
+\doxysubsubsection{\texorpdfstring{DrawPoint()}{DrawPoint()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{namespaceutils_a63429c6d2211fa7f462c636b1ced74a1} 
+void utils\+::\+Draw\+Point (\begin{DoxyParamCaption}\item[{float}]{x}{, }\item[{float}]{y}{, }\item[{float}]{point\+Size}{ = {\ttfamily 1.0f}}\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=288pt]{namespaceutils_a63429c6d2211fa7f462c636b1ced74a1_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{namespaceutils_ac1ecee8001879a011facf1ac7d223ade}\index{utils@{utils}!DrawPoints@{DrawPoints}}
+\index{DrawPoints@{DrawPoints}!utils@{utils}}
+\doxysubsubsection{\texorpdfstring{DrawPoints()}{DrawPoints()}}
+{\footnotesize\ttfamily \label{namespaceutils_ac1ecee8001879a011facf1ac7d223ade} 
+void utils\+::\+Draw\+Points (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_vector2f}{Vector2f}} \texorpdfstring{$\ast$}{*}}]{p\+Vertices}{, }\item[{int}]{nr\+Vertices}{, }\item[{float}]{point\+Size}{ = {\ttfamily 1.0f}}\end{DoxyParamCaption})}
+
+\Hypertarget{namespaceutils_ad086100417473c16d55556cc406fe027}\index{utils@{utils}!DrawPolygon@{DrawPolygon}}
+\index{DrawPolygon@{DrawPolygon}!utils@{utils}}
+\doxysubsubsection{\texorpdfstring{DrawPolygon()}{DrawPolygon()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{namespaceutils_ad086100417473c16d55556cc406fe027} 
+void utils\+::\+Draw\+Polygon (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ \mbox{\hyperlink{struct_vector2f}{Vector2f}} $>$ \&}]{vertices}{, }\item[{bool}]{closed}{ = {\ttfamily true}, }\item[{float}]{line\+Width}{ = {\ttfamily 1.0f}}\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=179pt]{namespaceutils_ad086100417473c16d55556cc406fe027_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=179pt]{namespaceutils_ad086100417473c16d55556cc406fe027_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{namespaceutils_af912e0452ea507921a4af88c1e5dbc1d}\index{utils@{utils}!DrawPolygon@{DrawPolygon}}
+\index{DrawPolygon@{DrawPolygon}!utils@{utils}}
+\doxysubsubsection{\texorpdfstring{DrawPolygon()}{DrawPolygon()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{namespaceutils_af912e0452ea507921a4af88c1e5dbc1d} 
+void utils\+::\+Draw\+Polygon (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_vector2f}{Vector2f}} \texorpdfstring{$\ast$}{*}}]{p\+Vertices}{, }\item[{size\+\_\+t}]{nr\+Vertices}{, }\item[{bool}]{closed}{ = {\ttfamily true}, }\item[{float}]{line\+Width}{ = {\ttfamily 1.0f}}\end{DoxyParamCaption})}
+
+\Hypertarget{namespaceutils_a419f9ed5a7293999ffaece51ac5674fd}\index{utils@{utils}!DrawRect@{DrawRect}}
+\index{DrawRect@{DrawRect}!utils@{utils}}
+\doxysubsubsection{\texorpdfstring{DrawRect()}{DrawRect()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \label{namespaceutils_a419f9ed5a7293999ffaece51ac5674fd} 
+void utils\+::\+Draw\+Rect (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_rectf}{Rectf}} \&}]{rect}{, }\item[{float}]{line\+Width}{ = {\ttfamily 1.0f}}\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=285pt]{namespaceutils_a419f9ed5a7293999ffaece51ac5674fd_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{namespaceutils_a682480fcd876b9f693cd2df4f64bc632}\index{utils@{utils}!DrawRect@{DrawRect}}
+\index{DrawRect@{DrawRect}!utils@{utils}}
+\doxysubsubsection{\texorpdfstring{DrawRect()}{DrawRect()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \label{namespaceutils_a682480fcd876b9f693cd2df4f64bc632} 
+void utils\+::\+Draw\+Rect (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_vector2f}{Vector2f}} \&}]{bottom\+Left}{, }\item[{float}]{width}{, }\item[{float}]{height}{, }\item[{float}]{line\+Width}{ = {\ttfamily 1.0f}}\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=285pt]{namespaceutils_a682480fcd876b9f693cd2df4f64bc632_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{namespaceutils_af7df218db7f714d95e40ea531d258e56}\index{utils@{utils}!DrawRect@{DrawRect}}
+\index{DrawRect@{DrawRect}!utils@{utils}}
+\doxysubsubsection{\texorpdfstring{DrawRect()}{DrawRect()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily \label{namespaceutils_af7df218db7f714d95e40ea531d258e56} 
+void utils\+::\+Draw\+Rect (\begin{DoxyParamCaption}\item[{float}]{left}{, }\item[{float}]{bottom}{, }\item[{float}]{width}{, }\item[{float}]{height}{, }\item[{float}]{line\+Width}{ = {\ttfamily 1.0f}}\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=285pt]{namespaceutils_af7df218db7f714d95e40ea531d258e56_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{namespaceutils_a4580e5c28f2812f929cdbd60059b2635}\index{utils@{utils}!DrawRoundedRect@{DrawRoundedRect}}
+\index{DrawRoundedRect@{DrawRoundedRect}!utils@{utils}}
+\doxysubsubsection{\texorpdfstring{DrawRoundedRect()}{DrawRoundedRect()}}
+{\footnotesize\ttfamily \label{namespaceutils_a4580e5c28f2812f929cdbd60059b2635} 
+void utils\+::\+Draw\+Rounded\+Rect (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_rectf}{Rectf}} \&}]{rect}{, }\item[{float}]{radius}{, }\item[{int}]{segments}{ = {\ttfamily 16}}\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespaceutils_a4580e5c28f2812f929cdbd60059b2635_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{namespaceutils_a6541c17958b98546380ff65b5c70f8f8}\index{utils@{utils}!DrawTriangle@{DrawTriangle}}
+\index{DrawTriangle@{DrawTriangle}!utils@{utils}}
+\doxysubsubsection{\texorpdfstring{DrawTriangle()}{DrawTriangle()}}
+{\footnotesize\ttfamily \label{namespaceutils_a6541c17958b98546380ff65b5c70f8f8} 
+void utils\+::\+Draw\+Triangle (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_vector2f}{Vector2f}} \&}]{p1}{, }\item[{const \mbox{\hyperlink{struct_vector2f}{Vector2f}} \&}]{p2}{, }\item[{const \mbox{\hyperlink{struct_vector2f}{Vector2f}} \&}]{p3}{, }\item[{float}]{line\+Width}{ = {\ttfamily 1}}\end{DoxyParamCaption})}
+
+\Hypertarget{namespaceutils_a2bcc865a72c5fedefa52449d1cfaaa8a}\index{utils@{utils}!FillArc@{FillArc}}
+\index{FillArc@{FillArc}!utils@{utils}}
+\doxysubsubsection{\texorpdfstring{FillArc()}{FillArc()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{namespaceutils_a2bcc865a72c5fedefa52449d1cfaaa8a} 
+void utils\+::\+Fill\+Arc (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_vector2f}{Vector2f}} \&}]{center}{, }\item[{float}]{radX}{, }\item[{float}]{radY}{, }\item[{float}]{from\+Angle}{, }\item[{float}]{till\+Angle}{}\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=252pt]{namespaceutils_a2bcc865a72c5fedefa52449d1cfaaa8a_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{namespaceutils_aab3da7c977a8d7fabc7ba7b6b3904f04}\index{utils@{utils}!FillArc@{FillArc}}
+\index{FillArc@{FillArc}!utils@{utils}}
+\doxysubsubsection{\texorpdfstring{FillArc()}{FillArc()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{namespaceutils_aab3da7c977a8d7fabc7ba7b6b3904f04} 
+void utils\+::\+Fill\+Arc (\begin{DoxyParamCaption}\item[{float}]{centerX}{, }\item[{float}]{centerY}{, }\item[{float}]{radX}{, }\item[{float}]{radY}{, }\item[{float}]{from\+Angle}{, }\item[{float}]{till\+Angle}{}\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=252pt]{namespaceutils_aab3da7c977a8d7fabc7ba7b6b3904f04_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{namespaceutils_a4af415ba518cb6461cdfd54a1f058b03}\index{utils@{utils}!FillEllipse@{FillEllipse}}
+\index{FillEllipse@{FillEllipse}!utils@{utils}}
+\doxysubsubsection{\texorpdfstring{FillEllipse()}{FillEllipse()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \label{namespaceutils_a4af415ba518cb6461cdfd54a1f058b03} 
+void utils\+::\+Fill\+Ellipse (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_ellipsef}{Ellipsef}} \&}]{ellipse}{}\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=280pt]{namespaceutils_a4af415ba518cb6461cdfd54a1f058b03_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{namespaceutils_a87c3c7652408316d13dc140d28ab9fdd}\index{utils@{utils}!FillEllipse@{FillEllipse}}
+\index{FillEllipse@{FillEllipse}!utils@{utils}}
+\doxysubsubsection{\texorpdfstring{FillEllipse()}{FillEllipse()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \label{namespaceutils_a87c3c7652408316d13dc140d28ab9fdd} 
+void utils\+::\+Fill\+Ellipse (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_vector2f}{Vector2f}} \&}]{center}{, }\item[{float}]{radX}{, }\item[{float}]{radY}{}\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=280pt]{namespaceutils_a87c3c7652408316d13dc140d28ab9fdd_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{namespaceutils_aa8fda4c292a496aeb53a87e7b6dc32f1}\index{utils@{utils}!FillEllipse@{FillEllipse}}
+\index{FillEllipse@{FillEllipse}!utils@{utils}}
+\doxysubsubsection{\texorpdfstring{FillEllipse()}{FillEllipse()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily \label{namespaceutils_aa8fda4c292a496aeb53a87e7b6dc32f1} 
+void utils\+::\+Fill\+Ellipse (\begin{DoxyParamCaption}\item[{float}]{centerX}{, }\item[{float}]{centerY}{, }\item[{float}]{radX}{, }\item[{float}]{radY}{}\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespaceutils_aa8fda4c292a496aeb53a87e7b6dc32f1_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{namespaceutils_a77dc7eb9eda6bcfc4e3dedade84fb453}\index{utils@{utils}!FillPolygon@{FillPolygon}}
+\index{FillPolygon@{FillPolygon}!utils@{utils}}
+\doxysubsubsection{\texorpdfstring{FillPolygon()}{FillPolygon()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{namespaceutils_a77dc7eb9eda6bcfc4e3dedade84fb453} 
+void utils\+::\+Fill\+Polygon (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ \mbox{\hyperlink{struct_vector2f}{Vector2f}} $>$ \&}]{vertices}{}\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=168pt]{namespaceutils_a77dc7eb9eda6bcfc4e3dedade84fb453_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=168pt]{namespaceutils_a77dc7eb9eda6bcfc4e3dedade84fb453_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{namespaceutils_a3612218d529ae3cc1ae42a492229077c}\index{utils@{utils}!FillPolygon@{FillPolygon}}
+\index{FillPolygon@{FillPolygon}!utils@{utils}}
+\doxysubsubsection{\texorpdfstring{FillPolygon()}{FillPolygon()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{namespaceutils_a3612218d529ae3cc1ae42a492229077c} 
+void utils\+::\+Fill\+Polygon (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_vector2f}{Vector2f}} \texorpdfstring{$\ast$}{*}}]{p\+Vertices}{, }\item[{size\+\_\+t}]{nr\+Vertices}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespaceutils_aafcb149df86e64eaaa303e60a179f349}\index{utils@{utils}!FillRect@{FillRect}}
+\index{FillRect@{FillRect}!utils@{utils}}
+\doxysubsubsection{\texorpdfstring{FillRect()}{FillRect()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \label{namespaceutils_aafcb149df86e64eaaa303e60a179f349} 
+void utils\+::\+Fill\+Rect (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_rectf}{Rectf}} \&}]{rect}{}\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=264pt]{namespaceutils_aafcb149df86e64eaaa303e60a179f349_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{namespaceutils_ab39c50fd9be52594488f59e4d381da0f}\index{utils@{utils}!FillRect@{FillRect}}
+\index{FillRect@{FillRect}!utils@{utils}}
+\doxysubsubsection{\texorpdfstring{FillRect()}{FillRect()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \label{namespaceutils_ab39c50fd9be52594488f59e4d381da0f} 
+void utils\+::\+Fill\+Rect (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_vector2f}{Vector2f}} \&}]{bottom\+Left}{, }\item[{float}]{width}{, }\item[{float}]{height}{}\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=264pt]{namespaceutils_ab39c50fd9be52594488f59e4d381da0f_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{namespaceutils_a05d149f83e6b46ac17e537eccc2ab813}\index{utils@{utils}!FillRect@{FillRect}}
+\index{FillRect@{FillRect}!utils@{utils}}
+\doxysubsubsection{\texorpdfstring{FillRect()}{FillRect()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily \label{namespaceutils_a05d149f83e6b46ac17e537eccc2ab813} 
+void utils\+::\+Fill\+Rect (\begin{DoxyParamCaption}\item[{float}]{left}{, }\item[{float}]{bottom}{, }\item[{float}]{width}{, }\item[{float}]{height}{}\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespaceutils_a05d149f83e6b46ac17e537eccc2ab813_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{namespaceutils_adb88720e2dc8ed06c82c8b31af76d651}\index{utils@{utils}!FillTriangle@{FillTriangle}}
+\index{FillTriangle@{FillTriangle}!utils@{utils}}
+\doxysubsubsection{\texorpdfstring{FillTriangle()}{FillTriangle()}}
+{\footnotesize\ttfamily \label{namespaceutils_adb88720e2dc8ed06c82c8b31af76d651} 
+void utils\+::\+Fill\+Triangle (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_vector2f}{Vector2f}} \&}]{p1}{, }\item[{const \mbox{\hyperlink{struct_vector2f}{Vector2f}} \&}]{p2}{, }\item[{const \mbox{\hyperlink{struct_vector2f}{Vector2f}} \&}]{p3}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespaceutils_a4a8ccad7e723559b22936b95fd218d16}\index{utils@{utils}!GetDistance@{GetDistance}}
+\index{GetDistance@{GetDistance}!utils@{utils}}
+\doxysubsubsection{\texorpdfstring{GetDistance()}{GetDistance()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{namespaceutils_a4a8ccad7e723559b22936b95fd218d16} 
+float utils\+::\+Get\+Distance (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_vector2f}{Vector2f}} \&}]{p1}{, }\item[{const \mbox{\hyperlink{struct_vector2f}{Vector2f}} \&}]{p2}{}\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=306pt]{namespaceutils_a4a8ccad7e723559b22936b95fd218d16_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{namespaceutils_a8f553fab77ca28e07c8093ae74c5c794}\index{utils@{utils}!GetDistance@{GetDistance}}
+\index{GetDistance@{GetDistance}!utils@{utils}}
+\doxysubsubsection{\texorpdfstring{GetDistance()}{GetDistance()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{namespaceutils_a8f553fab77ca28e07c8093ae74c5c794} 
+float utils\+::\+Get\+Distance (\begin{DoxyParamCaption}\item[{float}]{x1}{, }\item[{float}]{y1}{, }\item[{float}]{x2}{, }\item[{float}]{y2}{}\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=306pt]{namespaceutils_a8f553fab77ca28e07c8093ae74c5c794_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{namespaceutils_a9ef86448634b099a56f145753593ab2f}\index{utils@{utils}!IntersectLineSegments@{IntersectLineSegments}}
+\index{IntersectLineSegments@{IntersectLineSegments}!utils@{utils}}
+\doxysubsubsection{\texorpdfstring{IntersectLineSegments()}{IntersectLineSegments()}}
+{\footnotesize\ttfamily \label{namespaceutils_a9ef86448634b099a56f145753593ab2f} 
+bool utils\+::\+Intersect\+Line\+Segments (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_vector2f}{Vector2f}} \&}]{p1}{, }\item[{const \mbox{\hyperlink{struct_vector2f}{Vector2f}} \&}]{p2}{, }\item[{const \mbox{\hyperlink{struct_vector2f}{Vector2f}} \&}]{q1}{, }\item[{const \mbox{\hyperlink{struct_vector2f}{Vector2f}} \&}]{q2}{, }\item[{float \&}]{out\+Lambda1}{, }\item[{float \&}]{out\+Lambda2}{, }\item[{float}]{epsilon}{ = {\ttfamily 1e-\/6}}\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespaceutils_a9ef86448634b099a56f145753593ab2f_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespaceutils_a9ef86448634b099a56f145753593ab2f_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{namespaceutils_aba86ae1a3e34dc14d3c16ccc94f06f0f}\index{utils@{utils}!IntersectRectLine@{IntersectRectLine}}
+\index{IntersectRectLine@{IntersectRectLine}!utils@{utils}}
+\doxysubsubsection{\texorpdfstring{IntersectRectLine()}{IntersectRectLine()}}
+{\footnotesize\ttfamily \label{namespaceutils_aba86ae1a3e34dc14d3c16ccc94f06f0f} 
+bool utils\+::\+Intersect\+Rect\+Line (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_rectf}{Rectf}} \&}]{r}{, }\item[{const \mbox{\hyperlink{struct_vector2f}{Vector2f}} \&}]{p1}{, }\item[{const \mbox{\hyperlink{struct_vector2f}{Vector2f}} \&}]{p2}{, }\item[{float \&}]{intersect\+Min}{, }\item[{float \&}]{intersect\+Max}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespaceutils_a2811f4df8099ee0b733712e43d190051}\index{utils@{utils}!IsOverlapping@{IsOverlapping}}
+\index{IsOverlapping@{IsOverlapping}!utils@{utils}}
+\doxysubsubsection{\texorpdfstring{IsOverlapping()}{IsOverlapping()}\hspace{0.1cm}{\footnotesize\ttfamily [1/7]}}
+{\footnotesize\ttfamily \label{namespaceutils_a2811f4df8099ee0b733712e43d190051} 
+bool utils\+::\+Is\+Overlapping (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_circlef}{Circlef}} \&}]{c1}{, }\item[{const \mbox{\hyperlink{struct_circlef}{Circlef}} \&}]{c2}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespaceutils_aa3cf9ab3831043ef5d09bb2a1a3508df}\index{utils@{utils}!IsOverlapping@{IsOverlapping}}
+\index{IsOverlapping@{IsOverlapping}!utils@{utils}}
+\doxysubsubsection{\texorpdfstring{IsOverlapping()}{IsOverlapping()}\hspace{0.1cm}{\footnotesize\ttfamily [2/7]}}
+{\footnotesize\ttfamily \label{namespaceutils_aa3cf9ab3831043ef5d09bb2a1a3508df} 
+bool utils\+::\+Is\+Overlapping (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_rectf}{Rectf}} \&}]{r}{, }\item[{const \mbox{\hyperlink{struct_circlef}{Circlef}} \&}]{c}{}\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespaceutils_aa3cf9ab3831043ef5d09bb2a1a3508df_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{namespaceutils_ac5267ff32eb73cd7d8c86c43ecf58546}\index{utils@{utils}!IsOverlapping@{IsOverlapping}}
+\index{IsOverlapping@{IsOverlapping}!utils@{utils}}
+\doxysubsubsection{\texorpdfstring{IsOverlapping()}{IsOverlapping()}\hspace{0.1cm}{\footnotesize\ttfamily [3/7]}}
+{\footnotesize\ttfamily \label{namespaceutils_ac5267ff32eb73cd7d8c86c43ecf58546} 
+bool utils\+::\+Is\+Overlapping (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_rectf}{Rectf}} \&}]{r1}{, }\item[{const \mbox{\hyperlink{struct_rectf}{Rectf}} \&}]{r2}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespaceutils_a334b78639099b0610f28ab357af9da19}\index{utils@{utils}!IsOverlapping@{IsOverlapping}}
+\index{IsOverlapping@{IsOverlapping}!utils@{utils}}
+\doxysubsubsection{\texorpdfstring{IsOverlapping()}{IsOverlapping()}\hspace{0.1cm}{\footnotesize\ttfamily [4/7]}}
+{\footnotesize\ttfamily \label{namespaceutils_a334b78639099b0610f28ab357af9da19} 
+bool utils\+::\+Is\+Overlapping (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ \mbox{\hyperlink{struct_vector2f}{Vector2f}} $>$ \&}]{vertices}{, }\item[{const \mbox{\hyperlink{struct_circlef}{Circlef}} \&}]{c}{}\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespaceutils_a334b78639099b0610f28ab357af9da19_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{namespaceutils_a11a0eb68e467a22aed74f507057c39ed}\index{utils@{utils}!IsOverlapping@{IsOverlapping}}
+\index{IsOverlapping@{IsOverlapping}!utils@{utils}}
+\doxysubsubsection{\texorpdfstring{IsOverlapping()}{IsOverlapping()}\hspace{0.1cm}{\footnotesize\ttfamily [5/7]}}
+{\footnotesize\ttfamily \label{namespaceutils_a11a0eb68e467a22aed74f507057c39ed} 
+bool utils\+::\+Is\+Overlapping (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_vector2f}{Vector2f}} \&}]{a}{, }\item[{const \mbox{\hyperlink{struct_vector2f}{Vector2f}} \&}]{b}{, }\item[{const \mbox{\hyperlink{struct_circlef}{Circlef}} \&}]{c}{}\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespaceutils_a11a0eb68e467a22aed74f507057c39ed_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespaceutils_a11a0eb68e467a22aed74f507057c39ed_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{namespaceutils_aa1e275621728260abad0345dfb5ed70e}\index{utils@{utils}!IsOverlapping@{IsOverlapping}}
+\index{IsOverlapping@{IsOverlapping}!utils@{utils}}
+\doxysubsubsection{\texorpdfstring{IsOverlapping()}{IsOverlapping()}\hspace{0.1cm}{\footnotesize\ttfamily [6/7]}}
+{\footnotesize\ttfamily \label{namespaceutils_aa1e275621728260abad0345dfb5ed70e} 
+bool utils\+::\+Is\+Overlapping (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_vector2f}{Vector2f}} \&}]{a}{, }\item[{const \mbox{\hyperlink{struct_vector2f}{Vector2f}} \&}]{b}{, }\item[{const \mbox{\hyperlink{struct_rectf}{Rectf}} \&}]{r}{}\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespaceutils_aa1e275621728260abad0345dfb5ed70e_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{namespaceutils_add1fefb9b373117ac9b359c75c7ea620}\index{utils@{utils}!IsOverlapping@{IsOverlapping}}
+\index{IsOverlapping@{IsOverlapping}!utils@{utils}}
+\doxysubsubsection{\texorpdfstring{IsOverlapping()}{IsOverlapping()}\hspace{0.1cm}{\footnotesize\ttfamily [7/7]}}
+{\footnotesize\ttfamily \label{namespaceutils_add1fefb9b373117ac9b359c75c7ea620} 
+bool utils\+::\+Is\+Overlapping (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_vector2f}{Vector2f}} \texorpdfstring{$\ast$}{*}}]{vertices}{, }\item[{size\+\_\+t}]{nr\+Vertices}{, }\item[{const \mbox{\hyperlink{struct_circlef}{Circlef}} \&}]{c}{}\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespaceutils_add1fefb9b373117ac9b359c75c7ea620_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{namespaceutils_ab3d6c8d0c1fcd12ad5e7ca2535b0f1a5}\index{utils@{utils}!IsPointInCircle@{IsPointInCircle}}
+\index{IsPointInCircle@{IsPointInCircle}!utils@{utils}}
+\doxysubsubsection{\texorpdfstring{IsPointInCircle()}{IsPointInCircle()}}
+{\footnotesize\ttfamily \label{namespaceutils_ab3d6c8d0c1fcd12ad5e7ca2535b0f1a5} 
+bool utils\+::\+Is\+Point\+In\+Circle (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_vector2f}{Vector2f}} \&}]{p}{, }\item[{const \mbox{\hyperlink{struct_circlef}{Circlef}} \&}]{c}{}\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=321pt]{namespaceutils_ab3d6c8d0c1fcd12ad5e7ca2535b0f1a5_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{namespaceutils_a83962650bff2e24a62897e49b7137af0}\index{utils@{utils}!IsPointInPolygon@{IsPointInPolygon}}
+\index{IsPointInPolygon@{IsPointInPolygon}!utils@{utils}}
+\doxysubsubsection{\texorpdfstring{IsPointInPolygon()}{IsPointInPolygon()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{namespaceutils_a83962650bff2e24a62897e49b7137af0} 
+bool utils\+::\+Is\+Point\+In\+Polygon (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_vector2f}{Vector2f}} \&}]{p}{, }\item[{const std\+::vector$<$ \mbox{\hyperlink{struct_vector2f}{Vector2f}} $>$ \&}]{vertices}{}\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=194pt]{namespaceutils_a83962650bff2e24a62897e49b7137af0_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=330pt]{namespaceutils_a83962650bff2e24a62897e49b7137af0_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{namespaceutils_af8fae86290b2ddb0910a33d86b470cb6}\index{utils@{utils}!IsPointInPolygon@{IsPointInPolygon}}
+\index{IsPointInPolygon@{IsPointInPolygon}!utils@{utils}}
+\doxysubsubsection{\texorpdfstring{IsPointInPolygon()}{IsPointInPolygon()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{namespaceutils_af8fae86290b2ddb0910a33d86b470cb6} 
+bool utils\+::\+Is\+Point\+In\+Polygon (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_vector2f}{Vector2f}} \&}]{p}{, }\item[{const \mbox{\hyperlink{struct_vector2f}{Vector2f}} \texorpdfstring{$\ast$}{*}}]{vertices}{, }\item[{size\+\_\+t}]{nr\+Vertices}{}\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespaceutils_af8fae86290b2ddb0910a33d86b470cb6_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{namespaceutils_a7be64ef3ceca3af8e2f4c46d5fccc835}\index{utils@{utils}!IsPointInRect@{IsPointInRect}}
+\index{IsPointInRect@{IsPointInRect}!utils@{utils}}
+\doxysubsubsection{\texorpdfstring{IsPointInRect()}{IsPointInRect()}}
+{\footnotesize\ttfamily \label{namespaceutils_a7be64ef3ceca3af8e2f4c46d5fccc835} 
+bool utils\+::\+Is\+Point\+In\+Rect (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_vector2f}{Vector2f}} \&}]{p}{, }\item[{const \mbox{\hyperlink{struct_rectf}{Rectf}} \&}]{r}{}\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=316pt]{namespaceutils_a7be64ef3ceca3af8e2f4c46d5fccc835_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{namespaceutils_afa48cca7d08708b5ce3581974e9c39aa}\index{utils@{utils}!IsPointOnLineSegment@{IsPointOnLineSegment}}
+\index{IsPointOnLineSegment@{IsPointOnLineSegment}!utils@{utils}}
+\doxysubsubsection{\texorpdfstring{IsPointOnLineSegment()}{IsPointOnLineSegment()}}
+{\footnotesize\ttfamily \label{namespaceutils_afa48cca7d08708b5ce3581974e9c39aa} 
+bool utils\+::\+Is\+Point\+On\+Line\+Segment (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_vector2f}{Vector2f}} \&}]{p}{, }\item[{const \mbox{\hyperlink{struct_vector2f}{Vector2f}} \&}]{a}{, }\item[{const \mbox{\hyperlink{struct_vector2f}{Vector2f}} \&}]{b}{}\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespaceutils_afa48cca7d08708b5ce3581974e9c39aa_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespaceutils_afa48cca7d08708b5ce3581974e9c39aa_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{namespaceutils_aaa39be44524c9229c357e1e9505d2667}\index{utils@{utils}!Raycast@{Raycast}}
+\index{Raycast@{Raycast}!utils@{utils}}
+\doxysubsubsection{\texorpdfstring{Raycast()}{Raycast()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{namespaceutils_aaa39be44524c9229c357e1e9505d2667} 
+bool utils\+::\+Raycast (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ \mbox{\hyperlink{struct_vector2f}{Vector2f}} $>$ \&}]{vertices}{, }\item[{const \mbox{\hyperlink{struct_vector2f}{Vector2f}} \&}]{ray\+P1}{, }\item[{const \mbox{\hyperlink{struct_vector2f}{Vector2f}} \&}]{ray\+P2}{, }\item[{\mbox{\hyperlink{structutils_1_1_hit_info}{Hit\+Info}} \&}]{hit\+Info}{}\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespaceutils_aaa39be44524c9229c357e1e9505d2667_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{namespaceutils_a907c18a579f4b5bac2aa39f8d64fa381}\index{utils@{utils}!Raycast@{Raycast}}
+\index{Raycast@{Raycast}!utils@{utils}}
+\doxysubsubsection{\texorpdfstring{Raycast()}{Raycast()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{namespaceutils_a907c18a579f4b5bac2aa39f8d64fa381} 
+bool utils\+::\+Raycast (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_vector2f}{Vector2f}} \texorpdfstring{$\ast$}{*}}]{vertices}{, }\item[{const size\+\_\+t}]{nr\+Vertices}{, }\item[{const \mbox{\hyperlink{struct_vector2f}{Vector2f}} \&}]{ray\+P1}{, }\item[{const \mbox{\hyperlink{struct_vector2f}{Vector2f}} \&}]{ray\+P2}{, }\item[{\mbox{\hyperlink{structutils_1_1_hit_info}{Hit\+Info}} \&}]{hit\+Info}{}\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespaceutils_a907c18a579f4b5bac2aa39f8d64fa381_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=294pt]{namespaceutils_a907c18a579f4b5bac2aa39f8d64fa381_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{namespaceutils_abc8380a69410c7b193d9d36474ae211f}\index{utils@{utils}!SetColor@{SetColor}}
+\index{SetColor@{SetColor}!utils@{utils}}
+\doxysubsubsection{\texorpdfstring{SetColor()}{SetColor()}}
+{\footnotesize\ttfamily \label{namespaceutils_abc8380a69410c7b193d9d36474ae211f} 
+void utils\+::\+Set\+Color (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_color4f}{Color4f}} \&}]{color}{}\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespaceutils_abc8380a69410c7b193d9d36474ae211f_icgraph}
+\end{center}
+\end{figure}
+
+
+\label{doc-var-members}
+\Hypertarget{namespaceutils_doc-var-members}
+\doxysubsection{Variable Documentation}
+\Hypertarget{namespaceutils_a6f93d1b7ee9c68332ef8628404b1115f}\index{utils@{utils}!g\_Pi@{g\_Pi}}
+\index{g\_Pi@{g\_Pi}!utils@{utils}}
+\doxysubsubsection{\texorpdfstring{g\_Pi}{g\_Pi}}
+{\footnotesize\ttfamily \label{namespaceutils_a6f93d1b7ee9c68332ef8628404b1115f} 
+const float utils\+::g\+\_\+\+Pi \{ 3.\+1415926535f \}}
+

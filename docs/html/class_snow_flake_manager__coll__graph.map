@@ -1,0 +1,9 @@
+<map id="SnowFlakeManager" name="SnowFlakeManager">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,300,142,327"/>
+<area shape="rect" id="Node000002" href="$class_game_object.html" title=" " alt="" coords="26,224,121,251"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="76,266,76,300,71,300,71,266"/>
+<area shape="rect" id="Node000003" href="$struct_transform.html" title=" " alt="" coords="33,125,114,152"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="76,168,76,224,71,224,71,168"/>
+<area shape="rect" id="Node000004" href="$struct_vector2f.html" title=" " alt="" coords="39,5,108,32"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="76,48,76,125,71,125,71,48"/>
+</map>

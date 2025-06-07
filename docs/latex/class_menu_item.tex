@@ -1,0 +1,241 @@
+\doxysection{Menu\+Item Class Reference}
+\hypertarget{class_menu_item}{}\label{class_menu_item}\index{MenuItem@{MenuItem}}
+
+
+{\ttfamily \#include $<$Menu\+Item.\+h$>$}
+
+
+
+Inheritance diagram for Menu\+Item\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=288pt]{class_menu_item__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Menu\+Item\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=202pt]{class_menu_item__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_menu_item_a1dab15f86586e486bb0b90f3fc0db510}{Menu\+Item}} (const std\+::string \&title, const int font\+Size)
+\item 
+virtual void \mbox{\hyperlink{class_menu_item_a731b3c3ec8d6c67850ad01ef3acbb3b6}{Draw}} (bool selected) const
+\item 
+virtual float \mbox{\hyperlink{class_menu_item_a71c73bf07171a574e83e73c6908e9cbb}{Get\+Width}} () const
+\item 
+virtual float \mbox{\hyperlink{class_menu_item_a07c8f5adc4870b53e41d24851bd33c01}{Get\+Height}} () const
+\item 
+virtual void \mbox{\hyperlink{class_menu_item_aacb4eaf5fdd68936c1665b65ddf912f0}{Set\+Dst\+Rect}} (const \mbox{\hyperlink{struct_rectf}{Rectf}} \&rect)
+\item 
+virtual \mbox{\hyperlink{class_menu_item_adfaf02b281169b8bc9b3d3725ef74a3d}{\texorpdfstring{$\sim$}{\string~}\+Menu\+Item}} () noexcept=default
+\item 
+\mbox{\hyperlink{class_menu_item_a58ed9fd57ae28569d4ece70c6ab97ff5}{Menu\+Item}} (const \mbox{\hyperlink{class_menu_item}{Menu\+Item}} \&other)=default
+\item 
+\mbox{\hyperlink{class_menu_item}{Menu\+Item}} \& \mbox{\hyperlink{class_menu_item_a01018f8bda54da2c74445cfbf41fc6a1}{operator=}} (const \mbox{\hyperlink{class_menu_item}{Menu\+Item}} \&other)=default
+\item 
+\mbox{\hyperlink{class_menu_item_a21dc4f56a813a25af9be986f61cc5993}{Menu\+Item}} (\mbox{\hyperlink{class_menu_item}{Menu\+Item}} \&\&other) noexcept=default
+\item 
+\mbox{\hyperlink{class_menu_item}{Menu\+Item}} \& \mbox{\hyperlink{class_menu_item_ad6eaa7d8a1df9a14cf1f2c055a9ca2b7}{operator=}} (\mbox{\hyperlink{class_menu_item}{Menu\+Item}} \&\&other) noexcept=default
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_rectf}{Rectf}} \mbox{\hyperlink{class_menu_item_a4e7e9345532067ffab3537f4383bafe2}{m\+\_\+dst\+Rect}}
+\item 
+\mbox{\hyperlink{class_texture}{Texture}} \mbox{\hyperlink{class_menu_item_a154c29229c2eac5f7a94079f67584148}{m\+\_\+\+Text}}
+\item 
+std\+::string \mbox{\hyperlink{class_menu_item_ae5e50c770b9e4db5fc09bf856f2eafc4}{m\+\_\+\+Title}}
+\item 
+const int \mbox{\hyperlink{class_menu_item_a0e39d6d73c0e101651e1582a50cfc5dd}{m\+\_\+\+Font\+Size}}
+\end{DoxyCompactItemize}
+
+
+\label{doc-constructors}
+\Hypertarget{class_menu_item_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_menu_item_a1dab15f86586e486bb0b90f3fc0db510}\index{MenuItem@{MenuItem}!MenuItem@{MenuItem}}
+\index{MenuItem@{MenuItem}!MenuItem@{MenuItem}}
+\doxysubsubsection{\texorpdfstring{MenuItem()}{MenuItem()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \label{class_menu_item_a1dab15f86586e486bb0b90f3fc0db510} 
+Menu\+Item\+::\+Menu\+Item (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{title}{, }\item[{const int}]{font\+Size}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_menu_item_a1dab15f86586e486bb0b90f3fc0db510_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_menu_item_adfaf02b281169b8bc9b3d3725ef74a3d}\index{MenuItem@{MenuItem}!````~MenuItem@{\texorpdfstring{$\sim$}{\string~}MenuItem}}
+\index{````~MenuItem@{\texorpdfstring{$\sim$}{\string~}MenuItem}!MenuItem@{MenuItem}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}MenuItem()}{\string~MenuItem()}}
+{\footnotesize\ttfamily \label{class_menu_item_adfaf02b281169b8bc9b3d3725ef74a3d} 
+virtual Menu\+Item\+::\texorpdfstring{$\sim$}{\string~}\+Menu\+Item (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [default]}, {\ttfamily [noexcept]}}
+
+\Hypertarget{class_menu_item_a58ed9fd57ae28569d4ece70c6ab97ff5}\index{MenuItem@{MenuItem}!MenuItem@{MenuItem}}
+\index{MenuItem@{MenuItem}!MenuItem@{MenuItem}}
+\doxysubsubsection{\texorpdfstring{MenuItem()}{MenuItem()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \label{class_menu_item_a58ed9fd57ae28569d4ece70c6ab97ff5} 
+Menu\+Item\+::\+Menu\+Item (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_menu_item}{Menu\+Item}} \&}]{other}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=334pt]{class_menu_item_a58ed9fd57ae28569d4ece70c6ab97ff5_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_menu_item_a21dc4f56a813a25af9be986f61cc5993}\index{MenuItem@{MenuItem}!MenuItem@{MenuItem}}
+\index{MenuItem@{MenuItem}!MenuItem@{MenuItem}}
+\doxysubsubsection{\texorpdfstring{MenuItem()}{MenuItem()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily \label{class_menu_item_a21dc4f56a813a25af9be986f61cc5993} 
+Menu\+Item\+::\+Menu\+Item (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_menu_item}{Menu\+Item}} \&\&}]{other}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}, {\ttfamily [noexcept]}}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=334pt]{class_menu_item_a21dc4f56a813a25af9be986f61cc5993_cgraph}
+\end{center}
+\end{figure}
+
+
+\label{doc-func-members}
+\Hypertarget{class_menu_item_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_menu_item_a731b3c3ec8d6c67850ad01ef3acbb3b6}\index{MenuItem@{MenuItem}!Draw@{Draw}}
+\index{Draw@{Draw}!MenuItem@{MenuItem}}
+\doxysubsubsection{\texorpdfstring{Draw()}{Draw()}}
+{\footnotesize\ttfamily \label{class_menu_item_a731b3c3ec8d6c67850ad01ef3acbb3b6} 
+void Menu\+Item\+::\+Draw (\begin{DoxyParamCaption}\item[{bool}]{selected}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented in \mbox{\hyperlink{class_slider_menu_item_ab4a20e4b5122b3a824e797dac43eee8d}{Slider\+Menu\+Item}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=282pt]{class_menu_item_a731b3c3ec8d6c67850ad01ef3acbb3b6_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_menu_item_a07c8f5adc4870b53e41d24851bd33c01}\index{MenuItem@{MenuItem}!GetHeight@{GetHeight}}
+\index{GetHeight@{GetHeight}!MenuItem@{MenuItem}}
+\doxysubsubsection{\texorpdfstring{GetHeight()}{GetHeight()}}
+{\footnotesize\ttfamily \label{class_menu_item_a07c8f5adc4870b53e41d24851bd33c01} 
+float Menu\+Item\+::\+Get\+Height (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_menu_item_a07c8f5adc4870b53e41d24851bd33c01_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_menu_item_a71c73bf07171a574e83e73c6908e9cbb}\index{MenuItem@{MenuItem}!GetWidth@{GetWidth}}
+\index{GetWidth@{GetWidth}!MenuItem@{MenuItem}}
+\doxysubsubsection{\texorpdfstring{GetWidth()}{GetWidth()}}
+{\footnotesize\ttfamily \label{class_menu_item_a71c73bf07171a574e83e73c6908e9cbb} 
+float Menu\+Item\+::\+Get\+Width (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented in \mbox{\hyperlink{class_slider_menu_item_a616639abe83e2d60d80f49b60535af1e}{Slider\+Menu\+Item}}.
+
+\Hypertarget{class_menu_item_a01018f8bda54da2c74445cfbf41fc6a1}\index{MenuItem@{MenuItem}!operator=@{operator=}}
+\index{operator=@{operator=}!MenuItem@{MenuItem}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_menu_item_a01018f8bda54da2c74445cfbf41fc6a1} 
+\mbox{\hyperlink{class_menu_item}{Menu\+Item}} \& Menu\+Item\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_menu_item}{Menu\+Item}} \&}]{other}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=332pt]{class_menu_item_a01018f8bda54da2c74445cfbf41fc6a1_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_menu_item_ad6eaa7d8a1df9a14cf1f2c055a9ca2b7}\index{MenuItem@{MenuItem}!operator=@{operator=}}
+\index{operator=@{operator=}!MenuItem@{MenuItem}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_menu_item_ad6eaa7d8a1df9a14cf1f2c055a9ca2b7} 
+\mbox{\hyperlink{class_menu_item}{Menu\+Item}} \& Menu\+Item\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_menu_item}{Menu\+Item}} \&\&}]{other}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}, {\ttfamily [noexcept]}}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=332pt]{class_menu_item_ad6eaa7d8a1df9a14cf1f2c055a9ca2b7_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_menu_item_aacb4eaf5fdd68936c1665b65ddf912f0}\index{MenuItem@{MenuItem}!SetDstRect@{SetDstRect}}
+\index{SetDstRect@{SetDstRect}!MenuItem@{MenuItem}}
+\doxysubsubsection{\texorpdfstring{SetDstRect()}{SetDstRect()}}
+{\footnotesize\ttfamily \label{class_menu_item_aacb4eaf5fdd68936c1665b65ddf912f0} 
+void Menu\+Item\+::\+Set\+Dst\+Rect (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_rectf}{Rectf}} \&}]{rect}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented in \mbox{\hyperlink{class_slider_menu_item_a85e354bf8811a965eda5340767995efb}{Slider\+Menu\+Item}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_menu_item_aacb4eaf5fdd68936c1665b65ddf912f0_icgraph}
+\end{center}
+\end{figure}
+
+
+\label{doc-variable-members}
+\Hypertarget{class_menu_item_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_menu_item_a4e7e9345532067ffab3537f4383bafe2}\index{MenuItem@{MenuItem}!m\_dstRect@{m\_dstRect}}
+\index{m\_dstRect@{m\_dstRect}!MenuItem@{MenuItem}}
+\doxysubsubsection{\texorpdfstring{m\_dstRect}{m\_dstRect}}
+{\footnotesize\ttfamily \label{class_menu_item_a4e7e9345532067ffab3537f4383bafe2} 
+\mbox{\hyperlink{struct_rectf}{Rectf}} Menu\+Item\+::m\+\_\+dst\+Rect\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_menu_item_a0e39d6d73c0e101651e1582a50cfc5dd}\index{MenuItem@{MenuItem}!m\_FontSize@{m\_FontSize}}
+\index{m\_FontSize@{m\_FontSize}!MenuItem@{MenuItem}}
+\doxysubsubsection{\texorpdfstring{m\_FontSize}{m\_FontSize}}
+{\footnotesize\ttfamily \label{class_menu_item_a0e39d6d73c0e101651e1582a50cfc5dd} 
+const int Menu\+Item\+::m\+\_\+\+Font\+Size\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_menu_item_a154c29229c2eac5f7a94079f67584148}\index{MenuItem@{MenuItem}!m\_Text@{m\_Text}}
+\index{m\_Text@{m\_Text}!MenuItem@{MenuItem}}
+\doxysubsubsection{\texorpdfstring{m\_Text}{m\_Text}}
+{\footnotesize\ttfamily \label{class_menu_item_a154c29229c2eac5f7a94079f67584148} 
+\mbox{\hyperlink{class_texture}{Texture}} Menu\+Item\+::m\+\_\+\+Text\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_menu_item_ae5e50c770b9e4db5fc09bf856f2eafc4}\index{MenuItem@{MenuItem}!m\_Title@{m\_Title}}
+\index{m\_Title@{m\_Title}!MenuItem@{MenuItem}}
+\doxysubsubsection{\texorpdfstring{m\_Title}{m\_Title}}
+{\footnotesize\ttfamily \label{class_menu_item_ae5e50c770b9e4db5fc09bf856f2eafc4} 
+std\+::string Menu\+Item\+::m\+\_\+\+Title\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Celeste/\mbox{\hyperlink{_menu_item_8h}{Menu\+Item.\+h}}\item 
+Celeste/\mbox{\hyperlink{_menu_item_8cpp}{Menu\+Item.\+cpp}}\end{DoxyCompactItemize}

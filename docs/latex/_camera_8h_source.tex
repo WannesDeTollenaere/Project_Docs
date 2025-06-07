@@ -1,0 +1,33 @@
+\doxysection{Camera.\+h}
+\hypertarget{_camera_8h_source}{}\label{_camera_8h_source}\index{Celeste/Camera.h@{Celeste/Camera.h}}
+\mbox{\hyperlink{_camera_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_camera_a7a92181a06eeb80d7385d7747b09bbc1}{Camera}}\ final}
+\DoxyCodeLine{00003\ \{}
+\DoxyCodeLine{00004\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00005\ \ \ \ \ \textcolor{comment}{//\ CONSTRUCTOR}}
+\DoxyCodeLine{00006\ \ \ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{class_camera_a7a92181a06eeb80d7385d7747b09bbc1}{Camera}}(\textcolor{keywordtype}{float}\ screenWidth,\ \textcolor{keywordtype}{float}\ screenHeigth,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{struct_vector2f}{Vector2f}}\&\ iposition\ =\ \mbox{\hyperlink{struct_vector2f}{Vector2f}}\{0.f,\ 0.f\});}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \ \ \ \ \textcolor{comment}{//\ FUNCTIONS}}
+\DoxyCodeLine{00009\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_camera_a24c6d868a3de4c584db7a0895e66d91f}{Aim}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00010\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_camera_aa9ff1db6a7d5d00bcbddfdc5e21894e2}{Update}}(\textcolor{keywordtype}{float}\ elapsedSec,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{struct_rectf}{Rectf}}\&\ levelBounds,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{struct_vector2f}{Vector2f}}\&\ trackCenter);}
+\DoxyCodeLine{00011\ \ \ \ \ \mbox{\hyperlink{struct_vector2f}{Vector2f}}\ \mbox{\hyperlink{class_camera_a7c98fdb1f170ec648ae4c862a4050c0c}{Reset}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00012\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_camera_a55e9d56284bcab4d1a63d241593a9bef}{Shake}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{struct_vector2f}{Vector2f}}\&\ direction);}
+\DoxyCodeLine{00013\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00014\ \ \ \ \ \textcolor{comment}{//\ MEMBERS}}
+\DoxyCodeLine{00015\ \ \ \ \ \textcolor{keywordtype}{float}\ m\_ScreenWidth;}
+\DoxyCodeLine{00016\ \ \ \ \ \textcolor{keywordtype}{float}\ m\_ScreenHeigth;}
+\DoxyCodeLine{00017\ \ \ \ \ \textcolor{keywordtype}{float}\ m\_ShakeTimer;}
+\DoxyCodeLine{00018\ \ \ \ \ \textcolor{keywordtype}{float}\ m\_ShakeLength;}
+\DoxyCodeLine{00019\ \ \ \ \ \textcolor{keywordtype}{float}\ m\_ShakeAmount;}
+\DoxyCodeLine{00020\ \ \ \ \ \mbox{\hyperlink{struct_vector2f}{Vector2f}}\ m\_ShakeDirection;}
+\DoxyCodeLine{00021\ \ \ \ \ \mbox{\hyperlink{struct_vector2f}{Vector2f}}\ m\_DeltaMovement;}
+\DoxyCodeLine{00022\ \ \ \ \ \mbox{\hyperlink{struct_vector2f}{Vector2f}}\ m\_Pos;}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00024\ \ \ \ \ \textcolor{comment}{//\ FUCNTIONS}}
+\DoxyCodeLine{00025\ \ \ \ \ \textcolor{keywordtype}{float}\ EaseInEaseOutElastic(\textcolor{keywordtype}{float}\ t)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00026\ \};}
+\DoxyCodeLine{00027\ }
+
+\end{DoxyCode}

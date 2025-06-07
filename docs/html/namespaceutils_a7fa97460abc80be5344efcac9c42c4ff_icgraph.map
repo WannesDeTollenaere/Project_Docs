@@ -1,0 +1,7 @@
+<map id="utils::DrawEllipse" name="utils::DrawEllipse">
+<area shape="rect" id="Node000001" title=" " alt="" coords="177,31,300,57"/>
+<area shape="rect" id="Node000002" href="$namespaceutils.html#a3780b22e88f302fbfdc4efba6ffc2775" title=" " alt="" coords="5,5,129,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="161,35,129,30,130,25,162,30"/>
+<area shape="rect" id="Node000003" href="$namespaceutils.html#a59d413a76b0342f5c044e2b675ec8984" title=" " alt="" coords="5,56,129,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="162,58,130,63,129,58,161,53"/>
+</map>

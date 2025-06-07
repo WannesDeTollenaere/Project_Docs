@@ -1,0 +1,18 @@
+<map id="utils::IsOverlapping" name="utils::IsOverlapping">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,56,139,83"/>
+<area shape="rect" id="Node000002" href="$namespaceutils.html#a11a0eb68e467a22aed74f507057c39ed" title=" " alt="" coords="187,56,320,83"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="139,67,171,67,171,72,139,72"/>
+<area shape="rect" id="Node000003" href="$namespaceutils.html#a760075559e6ab59c1daec763fab2b488" title=" " alt="" coords="368,56,551,83"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="320,67,353,67,353,72,320,72"/>
+<area shape="rect" id="Node000004" href="$struct_vector2f.html#af8ceb9310d7065eb485e47b072a5b143" title=" " alt="" coords="599,5,743,32"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="518,53,597,34,598,39,519,58"/>
+<area shape="rect" id="Node000006" href="$struct_vector2f.html#acedb20d25ccc3009546e120eda010bf5" title=" " alt="" coords="795,93,912,120"/>
+<area shape="poly" id="edge6_Node000003_Node000006" title=" " alt="" coords="528,81,600,92,693,100,780,103,779,108,693,105,599,97,527,86"/>
+<area shape="rect" id="Node000007" href="$struct_vector2f.html#aba5dd756c385551a19d36b57d8cbf629" title=" " alt="" coords="599,56,743,83"/>
+<area shape="poly" id="edge7_Node000003_Node000007" title=" " alt="" coords="552,67,584,67,584,72,552,72"/>
+<area shape="rect" id="Node000005" href="$struct_vector2f.html#a3db9a868c58bc809e5e09a88d65a77ec" title=" " alt="" coords="791,31,916,57"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="743,26,776,31,775,36,742,31"/>
+<area shape="poly" id="edge5_Node000005_Node000005" title=" " alt="" coords="822,32,817,22,820,12,833,6,853,4,875,7,887,13,884,18,874,12,853,9,834,11,824,16,822,21,827,29"/>
+<area shape="poly" id="edge9_Node000007_Node000005" title=" " alt="" coords="742,57,775,52,776,57,743,62"/>
+<area shape="poly" id="edge8_Node000007_Node000006" title=" " alt="" coords="740,81,781,89,780,94,739,86"/>
+</map>

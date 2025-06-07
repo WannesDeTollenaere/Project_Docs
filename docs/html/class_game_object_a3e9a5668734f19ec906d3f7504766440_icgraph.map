@@ -1,0 +1,19 @@
+<map id="GameObject::GameObject" name="GameObject::GameObject">
+<area shape="rect" id="Node000001" title=" " alt="" coords="263,183,438,209"/>
+<area shape="rect" id="Node000002" href="$class_character.html#a36862a88801d72865f97525a766db2c5" title=" " alt="" coords="38,5,182,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="331,171,283,108,251,74,213,46,181,32,183,27,216,42,254,70,287,104,335,168"/>
+<area shape="rect" id="Node000003" href="$class_game_object.html#a5812fb39eeeded453c04aab7c32dfc94" title=" " alt="" coords="22,56,198,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="322,174,274,134,213,97,183,86,185,81,216,92,277,130,326,170"/>
+<area shape="rect" id="Node000004" href="$class_game_object.html#a1082b8c7009867cbe93b8e286c615445" title=" " alt="" coords="22,107,198,133"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="301,179,214,148,173,137,174,131,215,143,302,174"/>
+<area shape="rect" id="Node000005" href="$class_game_object.html#adec58543d6788c6d6f9995cec8db8677" title=" " alt="" coords="22,157,198,184"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="247,188,198,183,199,177,248,183"/>
+<area shape="rect" id="Node000006" href="$class_game_object.html#a1ea3c05884054770101bb74b23ac38f5" title=" " alt="" coords="22,208,198,235"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="248,209,199,215,198,209,247,204"/>
+<area shape="rect" id="Node000007" href="$class_game_object.html#a009590d8feb5bbcb63363cd0acd5ef8c" title=" " alt="" coords="31,259,189,285"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="302,218,215,249,174,261,173,255,214,244,301,213"/>
+<area shape="rect" id="Node000008" href="$class_game_object.html#a142ed3d978707c08b2ff348753a11bcb" title=" " alt="" coords="31,309,189,336"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="326,222,277,262,216,300,185,311,183,306,213,295,274,258,322,218"/>
+<area shape="rect" id="Node000009" href="$class_snow_flake_manager.html#a36a3785dc83ac5a2c77cc94e3ca15fbc" title=" " alt="" coords="5,360,215,403"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="334,224,286,287,253,321,216,350,195,362,192,357,213,346,250,317,282,284,330,221"/>
+</map>

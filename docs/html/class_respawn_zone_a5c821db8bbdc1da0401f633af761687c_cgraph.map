@@ -1,0 +1,22 @@
+<map id="RespawnZone::PlayerInteraction" name="RespawnZone::PlayerInteraction">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,56,217,83"/>
+<area shape="rect" id="Node000002" href="$class_character.html#a0b790800d6ff90eebee18bce25177fce" title=" " alt="" coords="287,5,434,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="180,53,276,33,277,38,181,58"/>
+<area shape="rect" id="Node000003" href="$namespaceutils.html#a11a0eb68e467a22aed74f507057c39ed" title=" " alt="" coords="294,56,427,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="217,67,278,67,278,72,217,72"/>
+<area shape="rect" id="Node000009" href="$class_character.html#ad251a2e58a761708dfc8a19a7c8f4074" title=" " alt="" coords="265,107,456,133"/>
+<area shape="poly" id="edge11_Node000001_Node000009" title=" " alt="" coords="181,81,277,100,276,106,180,86"/>
+<area shape="rect" id="Node000004" href="$namespaceutils.html#a760075559e6ab59c1daec763fab2b488" title=" " alt="" coords="504,56,687,83"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="427,67,488,67,488,72,427,72"/>
+<area shape="rect" id="Node000005" href="$struct_vector2f.html#af8ceb9310d7065eb485e47b072a5b143" title=" " alt="" coords="735,5,879,32"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="654,53,733,34,734,39,655,58"/>
+<area shape="rect" id="Node000007" href="$struct_vector2f.html#acedb20d25ccc3009546e120eda010bf5" title=" " alt="" coords="931,93,1048,120"/>
+<area shape="poly" id="edge7_Node000004_Node000007" title=" " alt="" coords="664,81,736,92,829,100,916,103,915,108,829,105,735,97,663,86"/>
+<area shape="rect" id="Node000008" href="$struct_vector2f.html#aba5dd756c385551a19d36b57d8cbf629" title=" " alt="" coords="735,56,879,83"/>
+<area shape="poly" id="edge8_Node000004_Node000008" title=" " alt="" coords="688,67,720,67,720,72,688,72"/>
+<area shape="rect" id="Node000006" href="$struct_vector2f.html#a3db9a868c58bc809e5e09a88d65a77ec" title=" " alt="" coords="927,31,1052,57"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="879,26,912,31,911,36,878,31"/>
+<area shape="poly" id="edge6_Node000006_Node000006" title=" " alt="" coords="958,32,953,22,956,12,969,6,989,4,1011,7,1023,13,1020,18,1010,12,989,9,970,11,960,16,958,21,963,29"/>
+<area shape="poly" id="edge10_Node000008_Node000006" title=" " alt="" coords="878,57,911,52,912,57,879,62"/>
+<area shape="poly" id="edge9_Node000008_Node000007" title=" " alt="" coords="876,81,917,89,916,94,875,86"/>
+</map>

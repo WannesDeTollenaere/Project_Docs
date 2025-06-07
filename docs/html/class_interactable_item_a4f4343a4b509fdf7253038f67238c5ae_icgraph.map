@@ -1,0 +1,5 @@
+<map id="InteractableItem::GetCollisionBounds" name="InteractableItem::GetCollisionBounds">
+<area shape="rect" id="Node000001" title=" " alt="" coords="214,5,408,48"/>
+<area shape="rect" id="Node000002" href="$class_interactable_item.html#a18b200bb2e7fc662ea1c2d1a11e483d2" title=" " alt="" coords="5,5,166,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="198,29,166,29,166,24,198,24"/>
+</map>

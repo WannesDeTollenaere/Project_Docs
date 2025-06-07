@@ -1,0 +1,252 @@
+\doxysection{Sound\+Effect Class Reference}
+\hypertarget{class_sound_effect}{}\label{class_sound_effect}\index{SoundEffect@{SoundEffect}}
+
+
+{\ttfamily \#include $<$Sound\+Effect.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_sound_effect_af9cbe049bf092fc8b8ee2d143a751864}{Sound\+Effect}} (const std\+::string \&path)
+\item 
+\mbox{\hyperlink{class_sound_effect_a5e03a7a8eb4c5b9d0548fb178b76a44c}{\texorpdfstring{$\sim$}{\string~}\+Sound\+Effect}} ()
+\item 
+\mbox{\hyperlink{class_sound_effect_a3215a43753819020ddb7c5712cbb2a8c}{Sound\+Effect}} (const \mbox{\hyperlink{class_sound_effect}{Sound\+Effect}} \&other)=delete
+\item 
+\mbox{\hyperlink{class_sound_effect}{Sound\+Effect}} \& \mbox{\hyperlink{class_sound_effect_ae448047b9961de859e265d4302a20759}{operator=}} (const \mbox{\hyperlink{class_sound_effect}{Sound\+Effect}} \&rhs)=delete
+\item 
+\mbox{\hyperlink{class_sound_effect_a0141cefbdff4e82801128081588f3731}{Sound\+Effect}} (\mbox{\hyperlink{class_sound_effect}{Sound\+Effect}} \&\&other)=delete
+\item 
+\mbox{\hyperlink{class_sound_effect}{Sound\+Effect}} \& \mbox{\hyperlink{class_sound_effect_a5e0259abb5e06ead8dfc922531c21d6e}{operator=}} (\mbox{\hyperlink{class_sound_effect}{Sound\+Effect}} \&\&rhs)=delete
+\item 
+bool \mbox{\hyperlink{class_sound_effect_a9ad602d2d962fb031553174c5bc73661}{Is\+Loaded}} () const
+\item 
+bool \mbox{\hyperlink{class_sound_effect_adf1e766977a93fa11e4193b0921b4f2a}{Play}} (const int loops)
+\item 
+void \mbox{\hyperlink{class_sound_effect_a29e116ab0d504eb72fd92583ac6ac0ac}{Set\+Volume}} (const int value)
+\item 
+int \mbox{\hyperlink{class_sound_effect_a7667f27305707a9b48a4f9c6b138f68a}{Get\+Volume}} () const
+\item 
+void \mbox{\hyperlink{class_sound_effect_a53dee3a0c954a9ad95dbc02e010ee111}{Stop}} ()
+\item 
+bool \mbox{\hyperlink{class_sound_effect_aa21809e43079964bb5588a322f45ff45}{Is\+Playing}} () const
+\item 
+bool \mbox{\hyperlink{class_sound_effect_a196f69e8d3b96b39a057917c26d58d19}{operator==}} (const \mbox{\hyperlink{class_sound_effect}{Sound\+Effect}} \&rhs)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{class_sound_effect_ade114dcce9986f314f980ae1675f7e19}{Set\+Global\+Volume}} (const int value)
+\item 
+static int \mbox{\hyperlink{class_sound_effect_a5e7eda73560b9c2d7513664c9a07903d}{Get\+Global\+Volume}} ()
+\item 
+static void \mbox{\hyperlink{class_sound_effect_a5a57e3bd47cefac396e0299bfa615335}{Stop\+All}} ()
+\item 
+static void \mbox{\hyperlink{class_sound_effect_aa6e3a2cc25c540625bec0bca9506b79b}{Pause\+All}} ()
+\item 
+static void \mbox{\hyperlink{class_sound_effect_aab2225b80198903638a50aff5c4dbac0}{Resume\+All}} ()
+\end{DoxyCompactItemize}
+
+
+\label{doc-constructors}
+\Hypertarget{class_sound_effect_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_sound_effect_af9cbe049bf092fc8b8ee2d143a751864}\index{SoundEffect@{SoundEffect}!SoundEffect@{SoundEffect}}
+\index{SoundEffect@{SoundEffect}!SoundEffect@{SoundEffect}}
+\doxysubsubsection{\texorpdfstring{SoundEffect()}{SoundEffect()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \label{class_sound_effect_af9cbe049bf092fc8b8ee2d143a751864} 
+Sound\+Effect\+::\+Sound\+Effect (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{path}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sound_effect_af9cbe049bf092fc8b8ee2d143a751864_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_sound_effect_a5e03a7a8eb4c5b9d0548fb178b76a44c}\index{SoundEffect@{SoundEffect}!````~SoundEffect@{\texorpdfstring{$\sim$}{\string~}SoundEffect}}
+\index{````~SoundEffect@{\texorpdfstring{$\sim$}{\string~}SoundEffect}!SoundEffect@{SoundEffect}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}SoundEffect()}{\string~SoundEffect()}}
+{\footnotesize\ttfamily \label{class_sound_effect_a5e03a7a8eb4c5b9d0548fb178b76a44c} 
+Sound\+Effect\+::\texorpdfstring{$\sim$}{\string~}\+Sound\+Effect (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_sound_effect_a3215a43753819020ddb7c5712cbb2a8c}\index{SoundEffect@{SoundEffect}!SoundEffect@{SoundEffect}}
+\index{SoundEffect@{SoundEffect}!SoundEffect@{SoundEffect}}
+\doxysubsubsection{\texorpdfstring{SoundEffect()}{SoundEffect()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \label{class_sound_effect_a3215a43753819020ddb7c5712cbb2a8c} 
+Sound\+Effect\+::\+Sound\+Effect (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_sound_effect}{Sound\+Effect}} \&}]{other}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sound_effect_a3215a43753819020ddb7c5712cbb2a8c_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_sound_effect_a0141cefbdff4e82801128081588f3731}\index{SoundEffect@{SoundEffect}!SoundEffect@{SoundEffect}}
+\index{SoundEffect@{SoundEffect}!SoundEffect@{SoundEffect}}
+\doxysubsubsection{\texorpdfstring{SoundEffect()}{SoundEffect()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily \label{class_sound_effect_a0141cefbdff4e82801128081588f3731} 
+Sound\+Effect\+::\+Sound\+Effect (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_sound_effect}{Sound\+Effect}} \&\&}]{other}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sound_effect_a0141cefbdff4e82801128081588f3731_cgraph}
+\end{center}
+\end{figure}
+
+
+\label{doc-func-members}
+\Hypertarget{class_sound_effect_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_sound_effect_a5e7eda73560b9c2d7513664c9a07903d}\index{SoundEffect@{SoundEffect}!GetGlobalVolume@{GetGlobalVolume}}
+\index{GetGlobalVolume@{GetGlobalVolume}!SoundEffect@{SoundEffect}}
+\doxysubsubsection{\texorpdfstring{GetGlobalVolume()}{GetGlobalVolume()}}
+{\footnotesize\ttfamily \label{class_sound_effect_a5e7eda73560b9c2d7513664c9a07903d} 
+int Sound\+Effect\+::\+Get\+Global\+Volume (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{class_sound_effect_a7667f27305707a9b48a4f9c6b138f68a}\index{SoundEffect@{SoundEffect}!GetVolume@{GetVolume}}
+\index{GetVolume@{GetVolume}!SoundEffect@{SoundEffect}}
+\doxysubsubsection{\texorpdfstring{GetVolume()}{GetVolume()}}
+{\footnotesize\ttfamily \label{class_sound_effect_a7667f27305707a9b48a4f9c6b138f68a} 
+int Sound\+Effect\+::\+Get\+Volume (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+\Hypertarget{class_sound_effect_a9ad602d2d962fb031553174c5bc73661}\index{SoundEffect@{SoundEffect}!IsLoaded@{IsLoaded}}
+\index{IsLoaded@{IsLoaded}!SoundEffect@{SoundEffect}}
+\doxysubsubsection{\texorpdfstring{IsLoaded()}{IsLoaded()}}
+{\footnotesize\ttfamily \label{class_sound_effect_a9ad602d2d962fb031553174c5bc73661} 
+bool Sound\+Effect\+::\+Is\+Loaded (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+\Hypertarget{class_sound_effect_aa21809e43079964bb5588a322f45ff45}\index{SoundEffect@{SoundEffect}!IsPlaying@{IsPlaying}}
+\index{IsPlaying@{IsPlaying}!SoundEffect@{SoundEffect}}
+\doxysubsubsection{\texorpdfstring{IsPlaying()}{IsPlaying()}}
+{\footnotesize\ttfamily \label{class_sound_effect_aa21809e43079964bb5588a322f45ff45} 
+bool Sound\+Effect\+::\+Is\+Playing (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sound_effect_aa21809e43079964bb5588a322f45ff45_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_sound_effect_ae448047b9961de859e265d4302a20759}\index{SoundEffect@{SoundEffect}!operator=@{operator=}}
+\index{operator=@{operator=}!SoundEffect@{SoundEffect}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_sound_effect_ae448047b9961de859e265d4302a20759} 
+\mbox{\hyperlink{class_sound_effect}{Sound\+Effect}} \& Sound\+Effect\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_sound_effect}{Sound\+Effect}} \&}]{rhs}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sound_effect_ae448047b9961de859e265d4302a20759_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_sound_effect_a5e0259abb5e06ead8dfc922531c21d6e}\index{SoundEffect@{SoundEffect}!operator=@{operator=}}
+\index{operator=@{operator=}!SoundEffect@{SoundEffect}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_sound_effect_a5e0259abb5e06ead8dfc922531c21d6e} 
+\mbox{\hyperlink{class_sound_effect}{Sound\+Effect}} \& Sound\+Effect\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_sound_effect}{Sound\+Effect}} \&\&}]{rhs}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sound_effect_a5e0259abb5e06ead8dfc922531c21d6e_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_sound_effect_a196f69e8d3b96b39a057917c26d58d19}\index{SoundEffect@{SoundEffect}!operator==@{operator==}}
+\index{operator==@{operator==}!SoundEffect@{SoundEffect}}
+\doxysubsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily \label{class_sound_effect_a196f69e8d3b96b39a057917c26d58d19} 
+bool Sound\+Effect\+::operator== (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_sound_effect}{Sound\+Effect}} \&}]{rhs}{}\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sound_effect_a196f69e8d3b96b39a057917c26d58d19_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_sound_effect_aa6e3a2cc25c540625bec0bca9506b79b}\index{SoundEffect@{SoundEffect}!PauseAll@{PauseAll}}
+\index{PauseAll@{PauseAll}!SoundEffect@{SoundEffect}}
+\doxysubsubsection{\texorpdfstring{PauseAll()}{PauseAll()}}
+{\footnotesize\ttfamily \label{class_sound_effect_aa6e3a2cc25c540625bec0bca9506b79b} 
+void Sound\+Effect\+::\+Pause\+All (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{class_sound_effect_adf1e766977a93fa11e4193b0921b4f2a}\index{SoundEffect@{SoundEffect}!Play@{Play}}
+\index{Play@{Play}!SoundEffect@{SoundEffect}}
+\doxysubsubsection{\texorpdfstring{Play()}{Play()}}
+{\footnotesize\ttfamily \label{class_sound_effect_adf1e766977a93fa11e4193b0921b4f2a} 
+bool Sound\+Effect\+::\+Play (\begin{DoxyParamCaption}\item[{const int}]{loops}{}\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sound_effect_adf1e766977a93fa11e4193b0921b4f2a_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_sound_effect_aab2225b80198903638a50aff5c4dbac0}\index{SoundEffect@{SoundEffect}!ResumeAll@{ResumeAll}}
+\index{ResumeAll@{ResumeAll}!SoundEffect@{SoundEffect}}
+\doxysubsubsection{\texorpdfstring{ResumeAll()}{ResumeAll()}}
+{\footnotesize\ttfamily \label{class_sound_effect_aab2225b80198903638a50aff5c4dbac0} 
+void Sound\+Effect\+::\+Resume\+All (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{class_sound_effect_ade114dcce9986f314f980ae1675f7e19}\index{SoundEffect@{SoundEffect}!SetGlobalVolume@{SetGlobalVolume}}
+\index{SetGlobalVolume@{SetGlobalVolume}!SoundEffect@{SoundEffect}}
+\doxysubsubsection{\texorpdfstring{SetGlobalVolume()}{SetGlobalVolume()}}
+{\footnotesize\ttfamily \label{class_sound_effect_ade114dcce9986f314f980ae1675f7e19} 
+void Sound\+Effect\+::\+Set\+Global\+Volume (\begin{DoxyParamCaption}\item[{const int}]{value}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{class_sound_effect_a29e116ab0d504eb72fd92583ac6ac0ac}\index{SoundEffect@{SoundEffect}!SetVolume@{SetVolume}}
+\index{SetVolume@{SetVolume}!SoundEffect@{SoundEffect}}
+\doxysubsubsection{\texorpdfstring{SetVolume()}{SetVolume()}}
+{\footnotesize\ttfamily \label{class_sound_effect_a29e116ab0d504eb72fd92583ac6ac0ac} 
+void Sound\+Effect\+::\+Set\+Volume (\begin{DoxyParamCaption}\item[{const int}]{value}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_sound_effect_a53dee3a0c954a9ad95dbc02e010ee111}\index{SoundEffect@{SoundEffect}!Stop@{Stop}}
+\index{Stop@{Stop}!SoundEffect@{SoundEffect}}
+\doxysubsubsection{\texorpdfstring{Stop()}{Stop()}}
+{\footnotesize\ttfamily \label{class_sound_effect_a53dee3a0c954a9ad95dbc02e010ee111} 
+void Sound\+Effect\+::\+Stop (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=327pt]{class_sound_effect_a53dee3a0c954a9ad95dbc02e010ee111_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=306pt]{class_sound_effect_a53dee3a0c954a9ad95dbc02e010ee111_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_sound_effect_a5a57e3bd47cefac396e0299bfa615335}\index{SoundEffect@{SoundEffect}!StopAll@{StopAll}}
+\index{StopAll@{StopAll}!SoundEffect@{SoundEffect}}
+\doxysubsubsection{\texorpdfstring{StopAll()}{StopAll()}}
+{\footnotesize\ttfamily \label{class_sound_effect_a5a57e3bd47cefac396e0299bfa615335} 
+void Sound\+Effect\+::\+Stop\+All (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Engine/\mbox{\hyperlink{_sound_effect_8h}{Sound\+Effect.\+h}}\item 
+Engine/\mbox{\hyperlink{_sound_effect_8cpp}{Sound\+Effect.\+cpp}}\end{DoxyCompactItemize}

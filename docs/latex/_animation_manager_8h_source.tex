@@ -1,0 +1,48 @@
+\doxysection{Animation\+Manager.\+h}
+\hypertarget{_animation_manager_8h_source}{}\label{_animation_manager_8h_source}\index{Celeste/AnimationManager.h@{Celeste/AnimationManager.h}}
+\mbox{\hyperlink{_animation_manager_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_texture_8h}{Texture.h}}"{}}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_animation_manager_a0819720dace774c4062059591bc8ed8b}{AnimationManager}}\ final}
+\DoxyCodeLine{00005\ \{}
+\DoxyCodeLine{00006\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00007\ \ \ \ \ \textcolor{comment}{//\ CONSTRUCTOR}}
+\DoxyCodeLine{00008\ \ \ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{class_animation_manager_a0819720dace774c4062059591bc8ed8b}{AnimationManager}}(\textcolor{keyword}{const}\ std::string\&\ path,\ \textcolor{keywordtype}{float}\ frameWidth,\ \textcolor{keywordtype}{float}\ frameHeight,\ \textcolor{keywordtype}{float}\ sBetweenFrames\ =\ 0.2f,\ \textcolor{keywordtype}{bool}\ loop\ =\ \textcolor{keyword}{true});}
+\DoxyCodeLine{00009\ \ \ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{class_animation_manager_a0819720dace774c4062059591bc8ed8b}{AnimationManager}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{struct_vector2f}{Vector2f}}\&\ pos,\ \textcolor{keyword}{const}\ std::string\&\ path,\ \textcolor{keywordtype}{float}\ frameWidth,\ \textcolor{keywordtype}{float}\ frameHeight,\ \textcolor{keywordtype}{float}\ sBetweenFrames\ =\ 0.2f,\ \textcolor{keywordtype}{bool}\ loop\ =\ \textcolor{keyword}{true});}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00011\ \ \ \ \ \textcolor{comment}{//\ FUNCTIONS}}
+\DoxyCodeLine{00012\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_animation_manager_a5ad7f4ddb1ff34967fcdb9d32fd28614}{NextFrame}}();}
+\DoxyCodeLine{00013\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_animation_manager_acf4134af510e2eb4af6fbfb2d6fbd33a}{ResetFrameCounter}}();}
+\DoxyCodeLine{00014\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_animation_manager_a878000640173ea3bd8f393ab0f2db626}{Update}}(\textcolor{keywordtype}{float}\ elapsedSec);}
+\DoxyCodeLine{00015\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_animation_manager_a374a9036b7fce2ba151ceba57d78d9ee}{Draw}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{struct_rectf}{Rectf}}\&\ dstRect\ =\ \{\})\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00017\ \ \ \ \ \textcolor{comment}{//\ SETTERS}}
+\DoxyCodeLine{00018\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_animation_manager_a0c5e7a0b1946293cb04ca42c89165c04}{SetSecondsBetweenFrames}}(\textcolor{keywordtype}{float}\ s);}
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00020\ \ \ \ \ \textcolor{comment}{//\ GETTERS}}
+\DoxyCodeLine{00021\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_animation_manager_aa296f16119fc58e67c29b4264b3491ec}{GetFrameCount}}()\ \textcolor{keyword}{const}\ \textcolor{keyword}{noexcept};}
+\DoxyCodeLine{00022\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_animation_manager_a396aabbc72269665b700298680088176}{GetCurrentFrameNumber}}()\ \textcolor{keyword}{const}\ \textcolor{keyword}{noexcept};}
+\DoxyCodeLine{00023\ \ \ \ \ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{class_animation_manager_a9a1d2019fb9c52e40f940d2978195e5a}{GetFrameWidth}}()\ \textcolor{keyword}{const}\ \textcolor{keyword}{noexcept};}
+\DoxyCodeLine{00024\ \ \ \ \ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{class_animation_manager_a0a93e3cc8d24708720390b68b985f3b3}{GetFrameHeight}}()\ \textcolor{keyword}{const}\ \textcolor{keyword}{noexcept};}
+\DoxyCodeLine{00025\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_animation_manager_a8fa4aaee27a113c2dd467c10197e049c}{IsEndOfAnimation}}()\ \textcolor{keyword}{const}\ \textcolor{keyword}{noexcept};}
+\DoxyCodeLine{00026\ }
+\DoxyCodeLine{00027\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00028\ \ \ \ \ \textcolor{comment}{//\ MEMBERS}}
+\DoxyCodeLine{00029\ \ \ \ \ \textcolor{keywordtype}{float}\ m\_FrameWidth,\ m\_FrameHeight;}
+\DoxyCodeLine{00030\ \ \ \ \ \textcolor{keywordtype}{float}\ m\_SBetweenFrames;}
+\DoxyCodeLine{00031\ \ \ \ \ \textcolor{keywordtype}{float}\ m\_TimePassedBetweenFrames;}
+\DoxyCodeLine{00032\ \ \ \ \ \textcolor{keywordtype}{int}\ m\_FrameCountX;}
+\DoxyCodeLine{00033\ \ \ \ \ \textcolor{keywordtype}{int}\ m\_CurrentFrame;}
+\DoxyCodeLine{00034\ \ \ \ \ \textcolor{keywordtype}{bool}\ m\_Loop;}
+\DoxyCodeLine{00035\ \ \ \ \ \mbox{\hyperlink{struct_rectf}{Rectf}}\ m\_SrcRect;}
+\DoxyCodeLine{00036\ \ \ \ \ \mbox{\hyperlink{class_texture}{Texture}}\ m\_AnimationSet;}
+\DoxyCodeLine{00037\ \ \ \ \ \mbox{\hyperlink{struct_vector2f}{Vector2f}}\ m\_Position;}
+\DoxyCodeLine{00038\ }
+\DoxyCodeLine{00039\ \ \ \ \ \textcolor{comment}{//\ FUNCTIONS}}
+\DoxyCodeLine{00040\ \ \ \ \ \mbox{\hyperlink{struct_rectf}{Rectf}}\ GetSrcRect();}
+\DoxyCodeLine{00041\ \};}
+\DoxyCodeLine{00042\ }
+
+\end{DoxyCode}

@@ -1,0 +1,244 @@
+\doxysection{Trampoline Class Reference}
+\hypertarget{class_trampoline}{}\label{class_trampoline}\index{Trampoline@{Trampoline}}
+
+
+{\ttfamily \#include $<$Trampoline.\+h$>$}
+
+
+
+Inheritance diagram for Trampoline\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=322pt]{class_trampoline__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Trampoline\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=322pt]{class_trampoline__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_trampoline_ace1cf28072a6f622073d499acfe3dee8}{Trampoline}} (float x, float y, float width, float height)
+\item 
+\mbox{\hyperlink{class_trampoline_a72099fca4a9de5e32f8fbb5e6d74a679}{Trampoline}} (const \mbox{\hyperlink{struct_rectf}{Rectf}} \&bounds)
+\item 
+void \mbox{\hyperlink{class_trampoline_a0fc132ff143a1be5c5fde7f094e0a1c3}{Draw}} () const override
+\item 
+void \mbox{\hyperlink{class_trampoline_a8c4a369bfdfba21767d45ec9f83be487}{Player\+Interaction}} (\mbox{\hyperlink{class_character}{Character}} \&character, float elapsed\+Sec) override
+\item 
+\mbox{\hyperlink{class_trampoline_abe2f88eae397242bc3085a86d522a019}{Trampoline}} (const \mbox{\hyperlink{class_trampoline}{Trampoline}} \&other)=default
+\item 
+\mbox{\hyperlink{class_trampoline_a36ba7988b88993ee872e412fc6e158a0}{Trampoline}} (\mbox{\hyperlink{class_trampoline}{Trampoline}} \&\&other) noexcept=default
+\item 
+\mbox{\hyperlink{class_trampoline}{Trampoline}} \& \mbox{\hyperlink{class_trampoline_a9b15452cd28b86bb95ad638707af3bb0}{operator=}} (const \mbox{\hyperlink{class_trampoline}{Trampoline}} \&other)=default
+\item 
+\mbox{\hyperlink{class_trampoline}{Trampoline}} \& \mbox{\hyperlink{class_trampoline_ada1743f336a2065ee4a0bd628d594a21}{operator=}} (\mbox{\hyperlink{class_trampoline}{Trampoline}} \&\&other) noexcept=default
+\item 
+virtual \mbox{\hyperlink{class_trampoline_ac7da59d8546a3e773d233cc92855bf18}{\texorpdfstring{$\sim$}{\string~}\+Trampoline}} () noexcept override
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_interactable_item}{Interactable\+Item}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_interactable_item_a5e5b9c459514e29098aaff5e62761569}{Interactable\+Item}} (const \mbox{\hyperlink{struct_rectf}{Rectf}} \&bounds)
+\item 
+\mbox{\hyperlink{class_interactable_item_a6bdd4d54f5965b13c2e68617c7321eb7}{Interactable\+Item}} (float x, float y, float width, float height)
+\item 
+\mbox{\hyperlink{class_interactable_item_a5a6b7071c26aea54f770dcddea4d4673}{Interactable\+Item}} (const \mbox{\hyperlink{struct_vector2f}{Vector2f}} \&position, float width, float height)
+\item 
+\mbox{\hyperlink{struct_rectf}{Rectf}} \mbox{\hyperlink{class_interactable_item_a446bdb0ccbff7de5951c0a3175bab008}{Get\+Bounds}} () const noexcept
+\item 
+bool \mbox{\hyperlink{class_interactable_item_aca9a06af6a60be1d7cc2e61ea6a18893}{Has\+Collision\+Bounds}} () const noexcept
+\item 
+virtual std\+::vector$<$ \mbox{\hyperlink{struct_vector2f}{Vector2f}} $>$ \mbox{\hyperlink{class_interactable_item_a4f4343a4b509fdf7253038f67238c5ae}{Get\+Collision\+Bounds}} () const noexcept
+\item 
+\mbox{\hyperlink{class_interactable_item_a9124be31fe21f1cbe122579dde8f9252}{Interactable\+Item}} (const \mbox{\hyperlink{class_interactable_item}{Interactable\+Item}} \&other)=default
+\item 
+\mbox{\hyperlink{class_interactable_item_ae94edc84b2ceb14edb952a3edb676772}{Interactable\+Item}} (\mbox{\hyperlink{class_interactable_item}{Interactable\+Item}} \&\&other) noexcept=default
+\item 
+\mbox{\hyperlink{class_interactable_item}{Interactable\+Item}} \& \mbox{\hyperlink{class_interactable_item_a67139551064d009752d97e2e77ef865f}{operator=}} (const \mbox{\hyperlink{class_interactable_item}{Interactable\+Item}} \&other)=default
+\item 
+\mbox{\hyperlink{class_interactable_item}{Interactable\+Item}} \& \mbox{\hyperlink{class_interactable_item_a4d5baa6774ebb9137c08921d3c421d09}{operator=}} (\mbox{\hyperlink{class_interactable_item}{Interactable\+Item}} \&\&other) noexcept=default
+\item 
+virtual \mbox{\hyperlink{class_interactable_item_aa3d008d77d5f29c2673a991e24ed9301}{\texorpdfstring{$\sim$}{\string~}\+Interactable\+Item}} () noexcept=default
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{class_counted_item}{Counted\+Item$<$ Trampoline $>$}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_counted_item_a379818e68b8231fbfad8c51cbf2add57}{Counted\+Item}} ()
+\item 
+\mbox{\hyperlink{class_counted_item}{Counted\+Item}} \& \mbox{\hyperlink{class_counted_item_aa782288d34bfef1fbb3e7660f203aac5}{operator=}} (const \mbox{\hyperlink{class_counted_item}{Counted\+Item}} \&other)=default
+\item 
+virtual \mbox{\hyperlink{class_counted_item_aea020fda431fdcb47017df22721022c7}{\texorpdfstring{$\sim$}{\string~}\+Counted\+Item}} () noexcept
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Protected Member Functions inherited from \mbox{\hyperlink{class_counted_item}{Counted\+Item$<$ Trampoline $>$}}}
+\begin{DoxyCompactItemize}
+\item 
+static size\+\_\+t \mbox{\hyperlink{class_counted_item_a7a4f3ec5e121b459d51a818c9ed0e269}{Get\+Count}} () noexcept
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_interactable_item}{Interactable\+Item}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_rectf}{Rectf}} \mbox{\hyperlink{class_interactable_item_afddb710738697e6bbbd141c154d50335}{m\+\_\+\+Bounds}}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{struct_vector2f}{Vector2f}} $>$ \mbox{\hyperlink{class_interactable_item_aa38359a5d89f9690f9b8cddc4de3458e}{m\+\_\+\+Collision\+Bounds}}
+\end{DoxyCompactItemize}
+
+
+\label{doc-constructors}
+\Hypertarget{class_trampoline_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_trampoline_ace1cf28072a6f622073d499acfe3dee8}\index{Trampoline@{Trampoline}!Trampoline@{Trampoline}}
+\index{Trampoline@{Trampoline}!Trampoline@{Trampoline}}
+\doxysubsubsection{\texorpdfstring{Trampoline()}{Trampoline()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily \label{class_trampoline_ace1cf28072a6f622073d499acfe3dee8} 
+Trampoline\+::\+Trampoline (\begin{DoxyParamCaption}\item[{float}]{x}{, }\item[{float}]{y}{, }\item[{float}]{width}{, }\item[{float}]{height}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=198pt]{class_trampoline_ace1cf28072a6f622073d499acfe3dee8_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_trampoline_ace1cf28072a6f622073d499acfe3dee8_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_trampoline_a72099fca4a9de5e32f8fbb5e6d74a679}\index{Trampoline@{Trampoline}!Trampoline@{Trampoline}}
+\index{Trampoline@{Trampoline}!Trampoline@{Trampoline}}
+\doxysubsubsection{\texorpdfstring{Trampoline()}{Trampoline()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily \label{class_trampoline_a72099fca4a9de5e32f8fbb5e6d74a679} 
+Trampoline\+::\+Trampoline (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_rectf}{Rectf}} \&}]{bounds}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_trampoline_a72099fca4a9de5e32f8fbb5e6d74a679_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_trampoline_abe2f88eae397242bc3085a86d522a019}\index{Trampoline@{Trampoline}!Trampoline@{Trampoline}}
+\index{Trampoline@{Trampoline}!Trampoline@{Trampoline}}
+\doxysubsubsection{\texorpdfstring{Trampoline()}{Trampoline()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily \label{class_trampoline_abe2f88eae397242bc3085a86d522a019} 
+Trampoline\+::\+Trampoline (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_trampoline}{Trampoline}} \&}]{other}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_trampoline_abe2f88eae397242bc3085a86d522a019_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_trampoline_a36ba7988b88993ee872e412fc6e158a0}\index{Trampoline@{Trampoline}!Trampoline@{Trampoline}}
+\index{Trampoline@{Trampoline}!Trampoline@{Trampoline}}
+\doxysubsubsection{\texorpdfstring{Trampoline()}{Trampoline()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily \label{class_trampoline_a36ba7988b88993ee872e412fc6e158a0} 
+Trampoline\+::\+Trampoline (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_trampoline}{Trampoline}} \&\&}]{other}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}, {\ttfamily [noexcept]}}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_trampoline_a36ba7988b88993ee872e412fc6e158a0_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_trampoline_ac7da59d8546a3e773d233cc92855bf18}\index{Trampoline@{Trampoline}!````~Trampoline@{\texorpdfstring{$\sim$}{\string~}Trampoline}}
+\index{````~Trampoline@{\texorpdfstring{$\sim$}{\string~}Trampoline}!Trampoline@{Trampoline}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}Trampoline()}{\string~Trampoline()}}
+{\footnotesize\ttfamily \label{class_trampoline_ac7da59d8546a3e773d233cc92855bf18} 
+Trampoline\+::\texorpdfstring{$\sim$}{\string~}\+Trampoline (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}, {\ttfamily [noexcept]}}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_trampoline_ac7da59d8546a3e773d233cc92855bf18_cgraph}
+\end{center}
+\end{figure}
+
+
+\label{doc-func-members}
+\Hypertarget{class_trampoline_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_trampoline_a0fc132ff143a1be5c5fde7f094e0a1c3}\index{Trampoline@{Trampoline}!Draw@{Draw}}
+\index{Draw@{Draw}!Trampoline@{Trampoline}}
+\doxysubsubsection{\texorpdfstring{Draw()}{Draw()}}
+{\footnotesize\ttfamily \label{class_trampoline_a0fc132ff143a1be5c5fde7f094e0a1c3} 
+void Trampoline\+::\+Draw (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_interactable_item_af87c8f5b507f809c6eb2ea5b43d83c25}{Interactable\+Item}}.
+
+\Hypertarget{class_trampoline_a9b15452cd28b86bb95ad638707af3bb0}\index{Trampoline@{Trampoline}!operator=@{operator=}}
+\index{operator=@{operator=}!Trampoline@{Trampoline}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_trampoline_a9b15452cd28b86bb95ad638707af3bb0} 
+\mbox{\hyperlink{class_trampoline}{Trampoline}} \& Trampoline\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_trampoline}{Trampoline}} \&}]{other}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=345pt]{class_trampoline_a9b15452cd28b86bb95ad638707af3bb0_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_trampoline_ada1743f336a2065ee4a0bd628d594a21}\index{Trampoline@{Trampoline}!operator=@{operator=}}
+\index{operator=@{operator=}!Trampoline@{Trampoline}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_trampoline_ada1743f336a2065ee4a0bd628d594a21} 
+\mbox{\hyperlink{class_trampoline}{Trampoline}} \& Trampoline\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_trampoline}{Trampoline}} \&\&}]{other}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}, {\ttfamily [noexcept]}}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=345pt]{class_trampoline_ada1743f336a2065ee4a0bd628d594a21_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_trampoline_a8c4a369bfdfba21767d45ec9f83be487}\index{Trampoline@{Trampoline}!PlayerInteraction@{PlayerInteraction}}
+\index{PlayerInteraction@{PlayerInteraction}!Trampoline@{Trampoline}}
+\doxysubsubsection{\texorpdfstring{PlayerInteraction()}{PlayerInteraction()}}
+{\footnotesize\ttfamily \label{class_trampoline_a8c4a369bfdfba21767d45ec9f83be487} 
+void Trampoline\+::\+Player\+Interaction (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_character}{Character}} \&}]{character}{, }\item[{float}]{elapsed\+Sec}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_interactable_item_a18b200bb2e7fc662ea1c2d1a11e483d2}{Interactable\+Item}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_trampoline_a8c4a369bfdfba21767d45ec9f83be487_cgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Celeste/\mbox{\hyperlink{_trampoline_8h}{Trampoline.\+h}}\item 
+Celeste/\mbox{\hyperlink{_trampoline_8cpp}{Trampoline.\+cpp}}\end{DoxyCompactItemize}

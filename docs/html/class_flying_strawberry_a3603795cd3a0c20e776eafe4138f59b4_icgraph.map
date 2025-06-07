@@ -1,0 +1,11 @@
+<map id="FlyingStrawberry::FlyingStrawberry" name="FlyingStrawberry::FlyingStrawberry">
+<area shape="rect" id="Node000001" title=" " alt="" coords="236,101,398,144"/>
+<area shape="rect" id="Node000002" href="$class_flying_strawberry.html#ac1a195cd4ae7ae45963af4d7630235eb" title=" " alt="" coords="15,5,178,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="259,96,187,62,159,51,161,46,189,58,261,92"/>
+<area shape="rect" id="Node000003" href="$class_flying_strawberry.html#aa70131b40e4fb24eb03a9c6ecbfd2d59" title=" " alt="" coords="15,72,178,115"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="220,112,178,107,179,102,220,107"/>
+<area shape="rect" id="Node000004" href="$class_flying_strawberry.html#a13e7820116a2e072653974d1cbd9496c" title=" " alt="" coords="5,139,188,165"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="221,138,189,142,188,137,220,133"/>
+<area shape="rect" id="Node000005" href="$class_flying_strawberry.html#a415c4868ba7ff99c77a638df1e7e0684" title=" " alt="" coords="5,189,188,216"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="255,153,189,180,152,191,151,186,187,175,253,148"/>
+</map>

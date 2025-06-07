@@ -1,0 +1,5 @@
+<map id="Transform" name="Transform">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,125,86,152"/>
+<area shape="rect" id="Node000002" href="$struct_vector2f.html" title=" " alt="" coords="11,5,80,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="48,48,48,125,43,125,43,48"/>
+</map>
